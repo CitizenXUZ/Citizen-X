@@ -1,0 +1,212 @@
+[
+  {
+    "id": 1,
+    "question": "Fill in the blank: The letter after D is ___.",
+    "options": {
+      "A": "C",
+      "B": "E",
+      "C": "F",
+      "D": "G"
+    },
+    "correct": "B",
+    "explanation": "Alphabet order is: A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z. Find the letter that comes right after D in this sequence.",
+    "explanation_simple": "Say the alphabet in order and choose the next letter after D.",
+    "explanation_detailed": "Start from A and go forward: A, B, C, D, E, F... When you reach D, the very next letter you say is the one that comes after it. Pick that next letter."
+  },
+  {
+    "id": 2,
+    "question": "Fill in the blank: The letter before N is ___.",
+    "options": {
+      "A": "L",
+      "B": "M",
+      "C": "O",
+      "D": "K"
+    },
+    "correct": "B",
+    "explanation": "Alphabet order is: A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z. Find the letter that comes right before N in this sequence.",
+    "explanation_simple": "Find the letter just before N in the alphabet.",
+    "explanation_detailed": "Move through the alphabet: ... L, M, N, O ... The letter before N is the one you say right before N in that sequence."
+  },
+  {
+    "id": 3,
+    "question": "Fill in the blank: The first letter in the English alphabet is ___.",
+    "options": {
+      "A": "Z",
+      "B": "A",
+      "C": "B",
+      "D": "C"
+    },
+    "correct": "B",
+    "explanation": "Alphabet order is: A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z. Use this sequence to pick the first letter.",
+    "explanation_simple": "Pick the very first letter of ABC.",
+    "explanation_detailed": "Think of the alphabet you learned: it begins with the first letter in the ABC song. That first letter is the answer."
+  },
+  {
+    "id": 4,
+    "question": "Fill in the blank: The last letter in the English alphabet is ___.",
+    "options": {
+      "A": "Y",
+      "B": "Z",
+      "C": "X",
+      "D": "W"
+    },
+    "correct": "B",
+    "explanation": "Alphabet order is: A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z. Use this sequence to pick the last letter.",
+    "explanation_simple": "Pick the very last letter of ABC.",
+    "explanation_detailed": "Think of the end of the alphabet: ... V, W, X, Y, Z. The last letter in the whole sequence is the answer."
+  },
+  {
+    "id": 5,
+    "question": "Fill in the blank: There are ___ letters in the English alphabet.",
+    "options": {
+      "A": "25",
+      "B": "26",
+      "C": "27",
+      "D": "28"
+    },
+    "correct": "B",
+    "explanation": "There are 5 vowels and 21 consonants in English. Add them together to get the total number of letters.",
+    "explanation_simple": "Count A to Z.",
+    "explanation_detailed": "The English alphabet has a fixed number of letters. If you count from A, B, C, all the way to Z, the number you get is the correct total."
+  },
+  {
+    "id": 6,
+    "question": "Which group of letters is in the correct order",
+    "options": {
+      "A": "A, C, B, D",
+      "B": "M, N, O, P",
+      "C": "Q, S, R, T",
+      "D": "X, W, Y, Z"
+    },
+    "correct": "B",
+    "explanation": "Alphabet order is: A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z. Correct order means each letter follows the one before it with no jumps.",
+    "explanation_simple": "Pick the group that goes forward step by step.",
+    "explanation_detailed": "Look at each option and check the order. The correct group is the one where every next letter is the next one in the alphabet."
+  },
+  {
+    "id": 7,
+    "question": "Which of these letters is a vowel",
+    "options": {
+      "A": "B",
+      "B": "C",
+      "C": "A",
+      "D": "F"
+    },
+    "correct": "C",
+    "explanation": "A vowel is one of the special letters we say with an open mouth: A, E, I, O, U. Choose the option that is one of these.",
+    "explanation_simple": "Vowels are A, E, I, O, U. Choose one of them.",
+    "explanation_detailed": "Vowels are a small group of five letters: A, E, I, O, U. Look at the options and pick the letter that belongs to this vowel group."
+  },
+  {
+    "id": 8,
+    "question": "Which of these letters is a consonant",
+    "options": {
+      "A": "O",
+      "B": "U",
+      "C": "E",
+      "D": "T"
+    },
+    "correct": "D",
+    "explanation": "A consonant is any letter that is not a vowel. Vowels are A, E, I, O, U.",
+    "explanation_simple": "Pick the letter that is not A, E, I, O, or U.",
+    "explanation_detailed": "First remember the vowels: A, E, I, O, U. A consonant is any other letter. Choose the option that is not in the vowel list."
+  },
+  {
+    "id": 9,
+    "question": "Choose the correct spelling of the number 13:",
+    "options": {
+      "A": "Therty",
+      "B": "Thirteen",
+      "C": "Threeten",
+      "D": "Thirty"
+    },
+    "correct": "B",
+    "explanation": "Numbers from 13 to 19 end with '-teen'. Use that pattern to choose the correct spelling.",
+    "explanation_simple": "Use the '-teen' ending for 13.",
+    "explanation_detailed": "For 13, English uses the base sound 'thir-' and adds '-teen'. Avoid spellings that use '-ty' or extra letters."
+  },
+  {
+    "id": 10,
+    "question": "Choose the correct spelling of the number 40:",
+    "options": {
+      "A": "Fourty",
+      "B": "Fortee",
+      "C": "Forty",
+      "D": "Fourtie"
+    },
+    "correct": "C",
+    "explanation": "The number 40 is spelled with '-ty' and does not use the letter 'u' from 'four'.",
+    "explanation_simple": "40 drops the 'u' from 'four'.",
+    "explanation_detailed": "The correct spelling for 40 uses 'for-' plus '-ty'. It removes the 'u' in 'four' and does not add extra letters."
+  },
+  {
+    "id": 11,
+    "question": "Choose the correct spelling of the number 80:",
+    "options": {
+      "A": "Eighty",
+      "B": "Eightty",
+      "C": "Eightee",
+      "D": "Eighti"
+    },
+    "correct": "A",
+    "explanation": "The number 80 keeps the 'gh' from 'eight' and ends with '-ty'.",
+    "explanation_simple": "Use 'eight' + '-ty'.",
+    "explanation_detailed": "Start with the word 'eight'. Keep the 'gh', then add the ending '-ty'. Avoid double letters or extra vowels."
+  },
+  {
+    "id": 12,
+    "question": "What number comes after twenty-nine",
+    "options": {
+      "A": "Twenty-eight",
+      "B": "Thirty",
+      "C": "Thirty-one",
+      "D": "Twenty-seven"
+    },
+    "correct": "B",
+    "explanation": "After twenty-nine, the next number in order is the answer.",
+    "explanation_simple": "Choose the next number after 29.",
+    "explanation_detailed": "Count forward: twenty-seven, twenty-eight, twenty-nine, then the next number. The word for that next number is correct."
+  },
+  {
+    "id": 13,
+    "question": "What number comes before twenty",
+    "options": {
+      "A": "Nineteen",
+      "B": "Twenty-one",
+      "C": "Eighteen",
+      "D": "Twenty-two"
+    },
+    "correct": "A",
+    "explanation": "Before twenty is the number just one step back.",
+    "explanation_simple": "Choose the number before 20.",
+    "explanation_detailed": "Count backward from twenty: the number right before 20 is the correct choice."
+  },
+  {
+    "id": 14,
+    "question": "Which number word is written correctly",
+    "options": {
+      "A": "Sixty",
+      "B": "Sixti",
+      "C": "Sixtie",
+      "D": "Sixthy"
+    },
+    "correct": "A",
+    "explanation": "The word for 60 ends with '-ty' and keeps the 'x' sound from six.",
+    "explanation_simple": "Choose the spelling with '-ty'.",
+    "explanation_detailed": "Start with 'six' and change the ending to '-ty'. The correct spelling keeps the x and does not add extra letters."
+  },
+  {
+    "id": 15,
+    "question": "Which of these numbers is the largest",
+    "options": {
+      "A": "Ninety",
+      "B": "Sixty",
+      "C": "Seventy",
+      "D": "Fifty"
+    },
+    "correct": "A",
+    "explanation": "Compare the sizes of the numbers and choose the biggest one.",
+    "explanation_simple": "Pick the largest number word.",
+    "explanation_detailed": "Think of the values: fifty = 50, sixty = 60, seventy = 70, ninety = 90. The largest value is the correct choice."
+  }
+]

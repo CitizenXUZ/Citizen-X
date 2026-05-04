@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "question": "She looked at ____ in the mirror.",
+    "options": {
+      "A": "her",
+      "B": "herself",
+      "C": "hers",
+      "D": "she"
+    },
+    "correct": "B",
+    "explanation": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_simple": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_detailed": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 2,
+    "question": "I did my homework by ____.",
+    "options": {
+      "A": "me",
+      "B": "myself",
+      "C": "mine",
+      "D": "I"
+    },
+    "correct": "B",
+    "explanation": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_simple": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_detailed": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 3,
+    "question": "They cooked dinner by ____.",
+    "options": {
+      "A": "theirselves",
+      "B": "themselves",
+      "C": "them",
+      "D": "they"
+    },
+    "correct": "B",
+    "explanation": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_simple": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_detailed": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 4,
+    "question": "He hurt ____ while playing football.",
+    "options": {
+      "A": "him",
+      "B": "himself",
+      "C": "his",
+      "D": "he"
+    },
+    "correct": "B",
+    "explanation": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_simple": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_detailed": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 5,
+    "question": "We enjoyed ____ at the party.",
+    "options": {
+      "A": "ourselves",
+      "B": "us",
+      "C": "our",
+      "D": "we"
+    },
+    "correct": "A",
+    "explanation": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_simple": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_detailed": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 6,
+    "question": "Did you make this cake by ____' (one person)",
+    "options": {
+      "A": "yourself",
+      "B": "yourselves",
+      "C": "you",
+      "D": "your"
+    },
+    "correct": "A",
+    "explanation": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_simple": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_detailed": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 7,
+    "question": "The cat can wash ____.",
+    "options": {
+      "A": "it",
+      "B": "itself",
+      "C": "its",
+      "D": "it's"
+    },
+    "correct": "B",
+    "explanation": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_simple": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_detailed": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 8,
+    "question": "My little sister is in the room by ____.",
+    "options": {
+      "A": "her",
+      "B": "herself",
+      "C": "she",
+      "D": "hers"
+    },
+    "correct": "B",
+    "explanation": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_simple": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_detailed": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 9,
+    "question": "Children should learn to dress ____.",
+    "options": {
+      "A": "them",
+      "B": "themselves",
+      "C": "their",
+      "D": "they"
+    },
+    "correct": "B",
+    "explanation": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_simple": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_detailed": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 10,
+    "question": "He was talking to ____ loudly.",
+    "options": {
+      "A": "him",
+      "B": "himself",
+      "C": "his",
+      "D": "he"
+    },
+    "correct": "B",
+    "explanation": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_simple": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_detailed": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 11,
+    "question": "I am proud of ____.",
+    "options": {
+      "A": "me",
+      "B": "myself",
+      "C": "mine",
+      "D": "I"
+    },
+    "correct": "B",
+    "explanation": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_simple": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_detailed": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 12,
+    "question": "She always blames ____ for mistakes.",
+    "options": {
+      "A": "herself",
+      "B": "her",
+      "C": "she",
+      "D": "hers"
+    },
+    "correct": "A",
+    "explanation": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_simple": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_detailed": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 13,
+    "question": "Let's make ____ comfortable.",
+    "options": {
+      "A": "ourselves",
+      "B": "us",
+      "C": "our",
+      "D": "we"
+    },
+    "correct": "A",
+    "explanation": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_simple": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_detailed": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 14,
+    "question": "You (one person) should behave ____ in class.",
+    "options": {
+      "A": "yourself",
+      "B": "yourselves",
+      "C": "your",
+      "D": "you"
+    },
+    "correct": "A",
+    "explanation": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_simple": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_detailed": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 15,
+    "question": "He taught ____ how to play the piano.",
+    "options": {
+      "A": "him",
+      "B": "himself",
+      "C": "his",
+      "D": "he"
+    },
+    "correct": "B",
+    "explanation": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_simple": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_detailed": "Reflexive pronouns are used when the subject and object are the same person or thing.",
+    "explanation_translations": {}
+  }
+]

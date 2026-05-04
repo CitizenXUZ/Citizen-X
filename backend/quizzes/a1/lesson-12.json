@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "question": "Fill in the blank: I have ___ friends in London.",
+    "options": {
+      "A": "any",
+      "B": "some",
+      "C": "no",
+      "D": "much"
+    },
+    "correct": "B",
+    "explanation": "Words like some/any/no/anything help us talk about quantity when we don’t say an exact number. First check: is the sentence positive, negative, or a question?",
+    "explanation_simple": "Positive → some; negative/questions → any; zero → no.",
+    "explanation_detailed": "Step 1: Check if the sentence is positive (no “not”) or negative (has “not”).\nStep 2: In positive sentences, we often use the word for “some (a little / a few)”.\nStep 3: In negative sentences, we often use the word used with negatives.\nStep 4: If the meaning is “zero”, choose the word that means “nothing / zero”.\nStep 5: Choose the option that matches the sentence type and meaning.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 2,
+    "question": "Choose the correct sentence:",
+    "options": {
+      "A": "I don't have some sugar.",
+      "B": "I have any sugar.",
+      "C": "I don't have any sugar.",
+      "D": "I haven't no sugar."
+    },
+    "correct": "C",
+    "explanation": "This checks how we use some/any/no in questions and negatives. Look at whether it’s a question, an offer, or a negative sentence.",
+    "explanation_simple": "Positive → often some. Negative/questions → often any. no = zero. Offers/requests often use some.",
+    "explanation_detailed": "Step 1: If it is a question, English often uses the question/negative word (not the positive word).\nStep 2: But offers/requests (Would you like…?) often use the positive word because we expect ‘yes’.\nStep 3: If it is negative, use the negative/question word (or use ‘no’ to mean zero).\nStep 4: Avoid double negatives (two negatives in one sentence) because they are not standard in English.\nStep 5: Choose the sentence that follows these rules.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 3,
+    "question": "Which sentence is correct",
+    "options": {
+      "A": "Do you have some money'",
+      "B": "Do you have any money'",
+      "C": "Do you have no money'",
+      "D": "Have you some money'"
+    },
+    "correct": "B",
+    "explanation": "This checks how we use some/any/no in questions and negatives. Look at whether it’s a question, an offer, or a negative sentence.",
+    "explanation_simple": "Positive → often some. Negative/questions → often any. no = zero. Offers/requests often use some.",
+    "explanation_detailed": "Step 1: If it is a question, English often uses the question/negative word (not the positive word).\nStep 2: But offers/requests (Would you like…?) often use the positive word because we expect ‘yes’.\nStep 3: If it is negative, use the negative/question word (or use ‘no’ to mean zero).\nStep 4: Avoid double negatives (two negatives in one sentence) because they are not standard in English.\nStep 5: Choose the sentence that follows these rules.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 4,
+    "question": "Fill in the blank: There are ___ apples on the table.",
+    "options": {
+      "A": "some",
+      "B": "any",
+      "C": "no",
+      "D": "much"
+    },
+    "correct": "A",
+    "explanation": "Words like some/any/no/anything help us talk about quantity when we don’t say an exact number. First check: is the sentence positive, negative, or a question?",
+    "explanation_simple": "Positive → some; negative/questions → any; zero → no.",
+    "explanation_detailed": "Step 1: Check if the sentence is positive (no “not”) or negative (has “not”).\nStep 2: In positive sentences, we often use the word for “some (a little / a few)”.\nStep 3: In negative sentences, we often use the word used with negatives.\nStep 4: If the meaning is “zero”, choose the word that means “nothing / zero”.\nStep 5: Choose the option that matches the sentence type and meaning.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 5,
+    "question": "Choose the correct sentence (negative):",
+    "options": {
+      "A": "I haven't any friends.",
+      "B": "I have no friends.",
+      "C": "I don't have any friends.",
+      "D": "All of the above."
+    },
+    "correct": "D",
+    "explanation": "This question is about different correct ways to say “zero” or “not any”.",
+    "explanation_simple": "You can say “not any” or “no” (but don’t use two negatives together).",
+    "explanation_detailed": "Step 1: Read each sentence option and find its meaning: negative vs ‘zero’.\nStep 2: In English, a negative sentence can use: do/does + not + any.\nStep 3: Another way is using ‘no’ (meaning zero) without an extra ‘not’.\nStep 4: Some forms are both acceptable and mean the same thing.\nStep 5: Choose the option that matches that idea.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 6,
+    "question": "Choose the correct sentence (offer):",
+    "options": {
+      "A": "Would you like some tea'",
+      "B": "Would you like any tea'",
+      "C": "Would you like no tea'",
+      "D": "You like some tea'"
+    },
+    "correct": "A",
+    "explanation": "This checks how we use some/any/no in questions and negatives. Look at whether it’s a question, an offer, or a negative sentence.",
+    "explanation_simple": "Positive → often some. Negative/questions → often any. no = zero. Offers/requests often use some.",
+    "explanation_detailed": "Step 1: If it is a question, English often uses the question/negative word (not the positive word).\nStep 2: But offers/requests (Would you like…?) often use the positive word because we expect ‘yes’.\nStep 3: If it is negative, use the negative/question word (or use ‘no’ to mean zero).\nStep 4: Avoid double negatives (two negatives in one sentence) because they are not standard in English.\nStep 5: Choose the sentence that follows these rules.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 7,
+    "question": "Fill in the blank: ___ there any students in the class",
+    "options": {
+      "A": "Are",
+      "B": "Is",
+      "C": "Do",
+      "D": "Have"
+    },
+    "correct": "A",
+    "explanation": "Look at the noun (students = plural). Choose the correct form of ‘to be’ for a question.",
+    "explanation_simple": "Plural noun → Are there… ?",
+    "explanation_detailed": "Step 1: This is a question about ‘there is/there are’.\nStep 2: Use ‘Are’ with plural (students) and ‘Is’ with singular (a student).\nStep 3: Then choose the option that matches the noun number.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 8,
+    "question": "Fill in the blank: I have ___ milk left. (a small amount)",
+    "options": {
+      "A": "some",
+      "B": "any",
+      "C": "a little",
+      "D": "no"
+    },
+    "correct": "C",
+    "explanation": "Words like some/any/no/anything help us talk about quantity when we don’t say an exact number. First check: is the sentence positive, negative, or a question?",
+    "explanation_simple": "Positive → some; negative/questions → any; zero → no.",
+    "explanation_detailed": "Step 1: Check if the sentence is positive (no “not”) or negative (has “not”).\nStep 2: In positive sentences, we often use the word for “some (a little / a few)”.\nStep 3: In negative sentences, we often use the word used with negatives.\nStep 4: If the meaning is “zero”, choose the word that means “nothing / zero”.\nStep 5: Choose the option that matches the sentence type and meaning.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 9,
+    "question": "Fill in the blank: Choose the correct negative: She doesn't have ___ time today.",
+    "options": {
+      "A": "some",
+      "B": "any",
+      "C": "a few",
+      "D": "few"
+    },
+    "correct": "B",
+    "explanation": "Words like some/any/no/anything help us talk about quantity when we don’t say an exact number. First check: is the sentence positive, negative, or a question?",
+    "explanation_simple": "Positive → often some. Negative/questions → often any. no = zero. Offers/requests often use some.",
+    "explanation_detailed": "Step 1: Decide: positive, negative, or question.\nStep 2: Use some/any/no with the correct sentence type.\nStep 3: Avoid double negatives.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 10,
+    "question": "Fill in the blank: There are ___ people in the room. (only 3-4)",
+    "options": {
+      "A": "some",
+      "B": "no",
+      "C": "any",
+      "D": "a few"
+    },
+    "correct": "D",
+    "explanation": "Words like some/any/no/anything help us talk about quantity when we don’t say an exact number. First check: is the sentence positive, negative, or a question?",
+    "explanation_simple": "Positive → some; negative/questions → any; zero → no.",
+    "explanation_detailed": "Step 1: Check if the sentence is positive (no “not”) or negative (has “not”).\nStep 2: In positive sentences, we often use the word for “some (a little / a few)”.\nStep 3: In negative sentences, we often use the word used with negatives.\nStep 4: If the meaning is “zero”, choose the word that means “nothing / zero”.\nStep 5: Choose the option that matches the sentence type and meaning.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 11,
+    "question": "Which is correct",
+    "options": {
+      "A": "I have no brothers.",
+      "B": "I don't have no brothers.",
+      "C": "I haven't some brothers.",
+      "D": "I have any brothers."
+    },
+    "correct": "A",
+    "explanation": "This checks how we use some/any/no in questions and negatives. Look at whether it’s a question, an offer, or a negative sentence.",
+    "explanation_simple": "Positive → often some. Negative/questions → often any. no = zero. Offers/requests often use some.",
+    "explanation_detailed": "Step 1: If it is a question, English often uses the question/negative word (not the positive word).\nStep 2: But offers/requests (Would you like…?) often use the positive word because we expect ‘yes’.\nStep 3: If it is negative, use the negative/question word (or use ‘no’ to mean zero).\nStep 4: Avoid double negatives (two negatives in one sentence) because they are not standard in English.\nStep 5: Choose the sentence that follows these rules.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 12,
+    "question": "Choose the correct sentence:",
+    "options": {
+      "A": "I saw any birds.",
+      "B": "I saw some birds.",
+      "C": "I saw no bird's.",
+      "D": "I didn't saw any birds."
+    },
+    "correct": "B",
+    "explanation": "This checks some/any in a past positive sentence. Look at whether the sentence is positive and in the past.",
+    "explanation_simple": "Past positive (saw) → often some.",
+    "explanation_detailed": "Step 1: This sentence is about the past (saw).\nStep 2: In positive past sentences, we often use the positive word for quantity (some), not the question/negative word.\nStep 3: Avoid incorrect past forms (like ‘didn't saw’).\nStep 4: Choose the option that matches a correct past positive sentence.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 13,
+    "question": "Fill in the blank: Do you have ___ questions",
+    "options": {
+      "A": "some",
+      "B": "any",
+      "C": "no",
+      "D": "every"
+    },
+    "correct": "B",
+    "explanation": "This checks how we use some/any/no in questions and negatives. Look at whether it’s a question, an offer, or a negative sentence.",
+    "explanation_simple": "Positive → often some. Negative/questions → often any. no = zero. Offers/requests often use some.",
+    "explanation_detailed": "Step 1: If it is a question, English often uses the question/negative word (not the positive word).\nStep 2: But offers/requests (Would you like…?) often use the positive word because we expect ‘yes’.\nStep 3: If it is negative, use the negative/question word (or use ‘no’ to mean zero).\nStep 4: Avoid double negatives (two negatives in one sentence) because they are not standard in English.\nStep 5: Choose the sentence that follows these rules.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 14,
+    "question": "Choose the correct sentence:",
+    "options": {
+      "A": "I have some problems.",
+      "B": "I don't have some problems.",
+      "C": "I no have problems.",
+      "D": "I haven't some problems."
+    },
+    "correct": "A",
+    "explanation": "Words like some/any/no/anything help us talk about quantity when we don’t say an exact number. First check: is the sentence positive, negative, or a question?",
+    "explanation_simple": "Positive → some; negative/questions → any; zero → no.",
+    "explanation_detailed": "Step 1: Check if the sentence is positive (no “not”) or negative (has “not”).\nStep 2: In positive sentences, we often use the word for “some (a little / a few)”.\nStep 3: In negative sentences, we often use the word used with negatives.\nStep 4: If the meaning is “zero”, choose the word that means “nothing / zero”.\nStep 5: Choose the option that matches the sentence type and meaning.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 15,
+    "question": "Which sentence means “I have nothing”",
+    "options": {
+      "A": "I don't have some thing.",
+      "B": "I don't have anything.",
+      "C": "I have no thing.",
+      "D": "I don't have anythings."
+    },
+    "correct": "B",
+    "explanation": "This checks how we use some/any/no in questions and negatives. Look at whether it’s a question, an offer, or a negative sentence.",
+    "explanation_simple": "Positive → often some. Negative/questions → often any. no = zero. Offers/requests often use some.",
+    "explanation_detailed": "Step 1: If it is a question, English often uses the question/negative word (not the positive word).\nStep 2: But offers/requests (Would you like…?) often use the positive word because we expect ‘yes’.\nStep 3: If it is negative, use the negative/question word (or use ‘no’ to mean zero).\nStep 4: Avoid double negatives (two negatives in one sentence) because they are not standard in English.\nStep 5: Choose the sentence that follows these rules.",
+    "explanation_translations": {}
+  }
+]

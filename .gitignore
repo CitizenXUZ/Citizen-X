@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+*.db
+server-*.err
+server-*.out
+node_modules/
+backend/uploads/
+desktop.ini
+.codex

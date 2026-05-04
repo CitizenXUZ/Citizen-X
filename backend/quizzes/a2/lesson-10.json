@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "question": "Choose the correct sentence:",
+    "options": {
+      "A": "I will be go to school tomorrow",
+      "B": "I will be going to school tomorrow",
+      "C": "I will going to school tomorrow",
+      "D": "I will goes to school tomorrow"
+    },
+    "correct": "B",
+    "explanation": "This quiz is about Future Continuous: an action that is in progress at a future time. The pattern is: future helper + be + verb-ing.",
+    "explanation_simple": "Future Continuous = future helper + be + verb-ing.",
+    "explanation_detailed": "Future Continuous is used when we imagine an action happening ‘in the middle’ at a future time.\nExample idea: “Tomorrow, at a certain time, I am in the middle of doing something.”\nStructure to look for: 1) a future helper word, 2) the word “be”, 3) an action word with -ing.\nNow read the options and choose the sentence that follows this exact structure.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 2,
+    "question": "Which sentence is negative?",
+    "options": {
+      "A": "She will be reading a book",
+      "B": "She will be not reading a book",
+      "C": "She will not be reading a book",
+      "D": "She will reading a book"
+    },
+    "correct": "C",
+    "explanation": "A negative sentence says NO. In Future Continuous, we make it negative by putting “not” after the future helper and before “be”.",
+    "explanation_simple": "Negative Future Continuous: future helper + not + be + verb-ing.",
+    "explanation_detailed": "1) A negative sentence usually has the word “not” (it means ‘no’).\n2) In Future Continuous, we still need the 3 parts: future helper + be + verb-ing.\n3) To make it negative, “not” goes between the future helper and “be”.\n4) The action word must stay in -ing form.\nChoose the option that has “not” in the correct place and keeps the -ing form.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 3,
+    "question": "Choose the correct question form:",
+    "options": {
+      "A": "Will you be watch TV tonight?",
+      "B": "Will you watching TV tonight?",
+      "C": "Will you be watching TV tonight?",
+      "D": "Will you watches TV tonight?"
+    },
+    "correct": "C",
+    "explanation": "This is a Future Continuous question. In questions, the helper goes first, then the subject, then “be”, then verb-ing.",
+    "explanation_simple": "Question order: helper + subject + be + verb-ing.",
+    "explanation_detailed": "1) A question in English often starts with a helper word.\n2) For Future Continuous, the word order is: future helper + subject + “be” + action word with -ing.\n3) Check that the action word ends with -ing (because it shows the action is in progress).\nChoose the option that follows this order and has the -ing form.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 4,
+    "question": "Complete the sentence: Tomorrow at 8 PM, I ___ dinner.",
+    "options": {
+      "A": "will be cooked",
+      "B": "will be cooking",
+      "C": "will cooking",
+      "D": "will cook"
+    },
+    "correct": "B",
+    "explanation": "“Tomorrow at 8 PM” is a specific future time. Use Future Continuous to show the action is happening at that time: helper + be + verb-ing.",
+    "explanation_simple": "Specific future time → Future Continuous (helper + be + -ing).",
+    "explanation_detailed": "1) The sentence gives a clear future moment: “tomorrow at 8 PM”.\n2) We imagine what is happening at that exact time.\n3) To show ‘in progress’ in the future, use Future Continuous.\n4) Look for the option that has: future helper + “be” + an -ing action word.\nChoose that option.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 5,
+    "question": "Which sentence is correct?",
+    "options": {
+      "A": "We will be play football in the evening",
+      "B": "We will be playing football in the evening",
+      "C": "We will playing football in the evening",
+      "D": "We will plays football in the evening"
+    },
+    "correct": "B",
+    "explanation": "For Future Continuous, you need “be” and an -ing verb. Also, the main action word must not have -s after the helper.",
+    "explanation_simple": "Future Continuous needs: helper + be + verb-ing.",
+    "explanation_detailed": "1) Future Continuous describes an action happening in the future at a certain time.\n2) The structure is: future helper + “be” + action word with -ing.\n3) After the helper, we do not add -s to the main action word.\nChoose the sentence that has “be” and the -ing form and keeps the action word correct.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 6,
+    "question": "Choose the correct negative form: He ___ at the party tomorrow.",
+    "options": {
+      "A": "will not be dance",
+      "B": "will not be dancing",
+      "C": "will be not dancing",
+      "D": "will dances not"
+    },
+    "correct": "B",
+    "explanation": "This is Future Continuous negative. Put “not” after the future helper, then use “be” + verb-ing.",
+    "explanation_simple": "Negative: helper + not + be + verb-ing.",
+    "explanation_detailed": "1) “Tomorrow” is future time.\n2) The sentence is negative (it means the action does NOT happen).\n3) In Future Continuous negatives, the order is: future helper + not + “be” + -ing action word.\n4) Check that the action word ends with -ing.\nChoose the option that matches this pattern.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 7,
+    "question": "Form a question: She / work / at the office / tomorrow morning",
+    "options": {
+      "A": "Will she be working at the office tomorrow morning?",
+      "B": "Will she working at the office tomorrow morning?",
+      "C": "She will be working at the office tomorrow morning?",
+      "D": "Will she works at the office tomorrow morning?"
+    },
+    "correct": "A",
+    "explanation": "Make a Future Continuous question: start with the future helper, then “she”, then “be”, then the -ing form of “work”.",
+    "explanation_simple": "Question: helper + she + be + working … ?",
+    "explanation_detailed": "1) We need a question, so the helper must come first.\n2) We are talking about a future time (“tomorrow morning”).\n3) Future Continuous question order is: future helper + subject + “be” + verb-ing.\n4) The action word must be in -ing form.\nChoose the option that starts with the helper and keeps the correct order.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 8,
+    "question": "Complete the sentence: At 7 PM tonight, we ___ TV.",
+    "options": {
+      "A": "will watch",
+      "B": "will be watching",
+      "C": "will watching",
+      "D": "will watched"
+    },
+    "correct": "B",
+    "explanation": "A specific time (“at 7 PM tonight”) means we talk about an action in progress then. Use Future Continuous: helper + be + verb-ing.",
+    "explanation_simple": "At a future time → helper + be + -ing.",
+    "explanation_detailed": "1) “At 7 PM tonight” is a clear future moment.\n2) The sentence asks what is happening at that time.\n3) Future Continuous shows an action in progress in the future.\n4) Look for the option with: future helper + “be” + action word ending in -ing.\nChoose that option.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 9,
+    "question": "Choose the correct sentence:",
+    "options": {
+      "A": "I will be sleep at 10 PM",
+      "B": "I will be sleeping at 10 PM",
+      "C": "I will sleeping at 10 PM",
+      "D": "I will sleeps at 10 PM"
+    },
+    "correct": "B",
+    "explanation": "This talks about a specific future time (“at 10 PM”). Use Future Continuous: helper + be + verb-ing.",
+    "explanation_simple": "Specific future time → Future Continuous (-ing).",
+    "explanation_detailed": "1) The sentence has a future clock time.\n2) We want to show the action is happening at that exact time.\n3) That is Future Continuous.\n4) Choose the option that has the three parts: future helper + “be” + -ing action word.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 10,
+    "question": "Which is negative?",
+    "options": {
+      "A": "They will be studying all night",
+      "B": "They will not be studying all night",
+      "C": "They will studying all night",
+      "D": "They not will be studying all night"
+    },
+    "correct": "B",
+    "explanation": "A negative sentence has “not”. In Future Continuous, “not” goes after the future helper and before “be”.",
+    "explanation_simple": "Negative: helper + not + be + verb-ing.",
+    "explanation_detailed": "1) Find the word “not” to spot a negative.\n2) In Future Continuous, the correct order is: future helper + not + “be” + -ing action word.\n3) Don’t move “not” to a strange place.\nChoose the option that keeps this correct order.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 11,
+    "question": "Complete the sentence: This time tomorrow, I ___ on the plane.",
+    "options": {
+      "A": "will be fly",
+      "B": "will be flying",
+      "C": "will flying",
+      "D": "will flown"
+    },
+    "correct": "B",
+    "explanation": "“This time tomorrow” means a future moment. Use Future Continuous to show what is happening then: helper + be + verb-ing.",
+    "explanation_simple": "This time tomorrow → helper + be + -ing.",
+    "explanation_detailed": "1) “This time tomorrow” points to one exact moment in the future.\n2) We imagine we are ‘in the middle’ of an action at that moment.\n3) That is Future Continuous.\n4) Choose the option with: future helper + “be” + action word ending in -ing.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 12,
+    "question": "Form the correct question: you / meet / friends / at 6 PM",
+    "options": {
+      "A": "Will you be meet friends at 6 PM",
+      "B": "Will you meeting friends at 6 PM",
+      "C": "Will you be meeting friends at 6 PM",
+      "D": "Will you meets friends at 6 PM"
+    },
+    "correct": "C",
+    "explanation": "To make a Future Continuous question, start with the helper, then “you”, then “be”, then verb-ing.",
+    "explanation_simple": "Question order: helper + you + be + meeting … ?",
+    "explanation_detailed": "1) We need a question, so the helper goes first.\n2) “At 6 PM” is a specific future time.\n3) Future Continuous question pattern: future helper + subject + “be” + verb-ing.\n4) The action word must have -ing.\nChoose the option that matches this pattern.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 13,
+    "question": "Complete the sentence: Next week at this time, we ___ for our exams.",
+    "options": {
+      "A": "will be preparing",
+      "B": "will preparing",
+      "C": "will be prepare",
+      "D": "will prepares"
+    },
+    "correct": "A",
+    "explanation": "“Next week at this time” is a future moment. Use Future Continuous: helper + be + verb-ing.",
+    "explanation_simple": "Next week at this time → Future Continuous.",
+    "explanation_detailed": "1) The sentence gives a future time and a specific moment.\n2) We want to show an action in progress at that moment.\n3) Future Continuous uses: future helper + “be” + -ing action word.\nChoose the option that has this structure.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 14,
+    "question": "Choose the correct sentence:",
+    "options": {
+      "A": "She will be cook dinner at 7 PM",
+      "B": "She will be cooking dinner at 7 PM",
+      "C": "She will cooking dinner at 7 PM",
+      "D": "She will cooks dinner at 7 PM"
+    },
+    "correct": "B",
+    "explanation": "A future time (“at 7 PM”) + action in progress → Future Continuous. Look for helper + be + verb-ing.",
+    "explanation_simple": "At a future time → helper + be + -ing.",
+    "explanation_detailed": "1) The sentence talks about a clock time in the future.\n2) For an action happening at that time, we use Future Continuous.\n3) Structure: future helper + “be” + action word with -ing.\nChoose the option that follows this structure and keeps the action word correct.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 15,
+    "question": "Which is a question?",
+    "options": {
+      "A": "He will be watching TV at 9 PM",
+      "B": "Will he be watching TV at 9 PM",
+      "C": "He will watching TV at 9 PM",
+      "D": "Will he watching TV at 9 PM"
+    },
+    "correct": "B",
+    "explanation": "A question in Future Continuous starts with the helper word and usually ends with a question mark. The order is helper + he + be + verb-ing.",
+    "explanation_simple": "Question: helper first + subject + be + -ing (and a ?).",
+    "explanation_detailed": "1) Look for a sentence that is really a question (it should be asking, not telling).\n2) In English, questions often start with a helper word.\n3) For Future Continuous, the order is: future helper + subject + “be” + verb-ing.\n4) A question usually has a question mark at the end.\nChoose the option that follows this question pattern.",
+    "explanation_translations": {}
+  }
+]

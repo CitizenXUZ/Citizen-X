@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "question": "Fill in the blank: A noun is ___.",
+    "options": {
+      "A": "A word that shows an action",
+      "B": "A word for a person, place, or thing",
+      "C": "A word that describes a verb",
+      "D": "A word that connects sentences"
+    },
+    "correct": "B",
+    "explanation": "A noun is a naming word. It can name a person (mom), a place (park), a thing (toy), or an idea (love). Read the options and choose the one that says this meaning.",
+    "explanation_simple": "A noun is a naming word. It can name a person, place, thing, or idea. Choose the option that says this meaning.",
+    "explanation_detailed": "A noun is a word that names something. It can be a person (mom), a place (park), a thing (ball), or an idea (love). Read each option and choose the one that explains this meaning.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 2,
+    "question": "Fill in the blank: The noun is ___.",
+    "options": {
+      "A": "run",
+      "B": "quickly",
+      "C": "dog",
+      "D": "fast"
+    },
+    "correct": "C",
+    "explanation": "Look for a word that is a thing you can name or point to. A noun is not an action and not how something is done. Choose the naming word.",
+    "explanation_simple": "A noun is a thing you can name or point to. The other words show actions or how something is done. Choose the naming word.",
+    "explanation_detailed": "Ask yourself: can I see it, touch it, or name it? If yes, it can be a noun. Words that show actions or tell how are not nouns. Check each option and choose the naming word.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 3,
+    "question": "Which sentence has a noun",
+    "options": {
+      "A": "She runs fast.",
+      "B": "The boy is happy.",
+      "C": "Run quickly.",
+      "D": "Very fast."
+    },
+    "correct": "B",
+    "explanation": "A sentence has a noun if it names a person, place, or thing. Read each sentence and look for a naming word. Pick the sentence that names someone or something.",
+    "explanation_simple": "A noun is a naming word. Read each sentence and look for a person, place, or thing. Choose the sentence that has one.",
+    "explanation_detailed": "Read each sentence slowly. If you hear a word that names someone or something (like a boy, a city, a toy), that sentence has a noun. Choose the sentence with that naming word.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 4,
+    "question": "Which word is a noun",
+    "options": {
+      "A": "blue",
+      "B": "happiness",
+      "C": "quickly",
+      "D": "run"
+    },
+    "correct": "B",
+    "explanation": "A noun can name a real thing or an idea/feeling you cannot touch. It is not a color, not an action, and not a word that tells how. Choose the word that names a thing or an idea.",
+    "explanation_simple": "A noun can name a thing or an idea/feeling you cannot touch. It is not a color word, not an action, and not a word that tells how. Pick the naming word.",
+    "explanation_detailed": "Some words describe (like colors), some show actions (like run), and some tell how. A noun is the name of a thing or an idea/feeling (like joy or love). Look at each option and choose the word that acts as a name.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 5,
+    "question": "Fill in the blank: In the sentence \"The cat is sleeping.\" the noun is ___.",
+    "options": {
+      "A": "the",
+      "B": "cat",
+      "C": "is",
+      "D": "sleeping"
+    },
+    "correct": "B",
+    "explanation": "In a sentence, the noun tells who or what the sentence is about. Read the sentence and find the word that names the animal. Choose that naming word.",
+    "explanation_simple": "In the sentence, find the word that names the animal. That naming word is the noun. Choose it.",
+    "explanation_detailed": "A noun tells who or what the sentence is about. Read the sentence and ask: what animal is being talked about? The word that names that animal is the noun. Pick that word.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 6,
+    "question": "Which word is a person noun",
+    "options": {
+      "A": "teacher",
+      "B": "school",
+      "C": "table",
+      "D": "water"
+    },
+    "correct": "A",
+    "explanation": "A person noun names a person or a job. It is not a place, object, or material. Choose the word that is a person.",
+    "explanation_simple": "A person noun names a person or a job. It is not a place or object. Choose the word that is a person.",
+    "explanation_detailed": "Person nouns can be names or jobs like parent, doctor, or firefighter. Places and things are not person nouns. Look at the options and choose the one that is a person.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 7,
+    "question": "Fill in the blank: The place noun is ___.",
+    "options": {
+      "A": "city",
+      "B": "run",
+      "C": "beautiful",
+      "D": "quickly"
+    },
+    "correct": "A",
+    "explanation": "A place noun is a location you can go to, like a home or a park. Choose the word that names a place.",
+    "explanation_simple": "A place noun is a location you can go to. It is not an action or describing word. Choose the place word.",
+    "explanation_detailed": "Think of places you can visit, like home, school, or park. Those are place nouns. Read the options and choose the word that is a location.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 8,
+    "question": "Which word is a thing noun",
+    "options": {
+      "A": "jump",
+      "B": "book",
+      "C": "happy",
+      "D": "slowly"
+    },
+    "correct": "B",
+    "explanation": "A thing noun names an object you can see or touch. It is not an action or a feeling. Choose the object word.",
+    "explanation_simple": "A thing noun names an object you can see or touch. It is not an action or a feeling. Choose the object word.",
+    "explanation_detailed": "If you can hold it, see it, or point to it, it can be a thing noun. Actions and feelings are not nouns. Check each option and choose the object word.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 9,
+    "question": "Which word is a noun",
+    "options": {
+      "A": "sing",
+      "B": "singer",
+      "C": "singing",
+      "D": "sang"
+    },
+    "correct": "B",
+    "explanation": "Some words show actions, but a noun can be the name of the person who does the action. Choose the word that names a person.",
+    "explanation_simple": "Some words are actions. A noun can be the name of the person who does the action. Choose the person word.",
+    "explanation_detailed": "Some options show the action itself or the action happening. The noun is the person who does the action. Look for the word that names the person.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 10,
+    "question": "Which word is the noun in this sentence: My friend likes music.",
+    "options": {
+      "A": "likes",
+      "B": "music",
+      "C": "my",
+      "D": "likes"
+    },
+    "correct": "B",
+    "explanation": "Read the sentence and ask: what thing is being liked? The word that names that thing is the noun among the options. Choose the naming word.",
+    "explanation_simple": "Read the sentence and ask: what thing is liked? The word that names that thing is the noun. Choose it.",
+    "explanation_detailed": "In the sentence, one word names the thing being liked. Actions tell what someone does; the noun names the thing. Find the naming word for the thing in the sentence.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 11,
+    "question": "Which word is a noun",
+    "options": {
+      "A": "quickly",
+      "B": "computer",
+      "C": "run",
+      "D": "tall"
+    },
+    "correct": "B",
+    "explanation": "A noun is a naming word for a thing. The other options show actions, descriptions, or how something is done. Choose the thing word.",
+    "explanation_simple": "A noun names a person, place, or thing. The other words describe, show actions, or tell how. Choose the naming word.",
+    "explanation_detailed": "Check each option: is it a thing you can name? If yes, it is a noun. Words that show actions or descriptions are not nouns. Pick the word that names a thing.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 12,
+    "question": "Which sentence contains a noun",
+    "options": {
+      "A": "Run fast.",
+      "B": "The car is red.",
+      "C": "Quickly go.",
+      "D": "Very tall."
+    },
+    "correct": "B",
+    "explanation": "A sentence contains a noun if it names a person or thing. Read each sentence and find the one that names something.",
+    "explanation_simple": "A sentence has a noun if it names a person or thing. Read each sentence and find the one that names something.",
+    "explanation_detailed": "Read each sentence and look for a word that names a person, place, or thing. The sentence that contains that naming word is the correct one.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 13,
+    "question": "Which word is a noun",
+    "options": {
+      "A": "beautiful",
+      "B": "beauty",
+      "C": "beautifully",
+      "D": "beautify"
+    },
+    "correct": "B",
+    "explanation": "A noun can name an idea, like kindness or joy. It is not a describing word, not an action, and not a word that tells how. Choose the idea or thing word.",
+    "explanation_simple": "A noun can name an idea like kindness or joy. It is not a describing word and not an action. Choose the idea word.",
+    "explanation_detailed": "Some words describe how something looks or happens. A noun names the idea itself. Pick the option that is the name of the idea.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 14,
+    "question": "Fill in the blank: The proper noun is ___.",
+    "options": {
+      "A": "city",
+      "B": "country",
+      "C": "Samarkand",
+      "D": "river"
+    },
+    "correct": "C",
+    "explanation": "A proper noun is a special name of one specific person or place, and it starts with a capital letter. Choose the special name.",
+    "explanation_simple": "A proper noun is a special name of one specific person or place, and it starts with a capital letter. Choose the special name.",
+    "explanation_detailed": "Proper nouns are special names for one specific person or place. They start with a capital letter. Read the options and choose the specific name.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 15,
+    "question": "Which word is the noun in this sentence: The students read a book.",
+    "options": {
+      "A": "read",
+      "B": "students",
+      "C": "a",
+      "D": "the"
+    },
+    "correct": "B",
+    "explanation": "In the sentence, the noun is the word that names the people. Action words tell what they do, and small words like articles are not nouns. Choose the naming word for the people.",
+    "explanation_simple": "In the sentence, find the word that names the people. That naming word is the noun. Choose it.",
+    "explanation_detailed": "Ask: who is doing the action? The word that names the people is the noun. Small words like articles are not nouns. Choose the naming word for the people.",
+    "explanation_translations": {}
+  }
+]

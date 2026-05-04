@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "question": "There is ____ in the kitchen.",
+    "options": {
+      "A": "somebody",
+      "B": "anybody",
+      "C": "nobody",
+      "D": "everybody"
+    },
+    "correct": "A",
+    "explanation": "The verb 'to be' changes with the subject and tense.",
+    "explanation_simple": "The verb 'to be' changes with the subject and tense.",
+    "explanation_detailed": "The verb 'to be' changes with the subject and tense.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 2,
+    "question": "I can't find my keys ____.",
+    "options": {
+      "A": "somewhere",
+      "B": "anywhere",
+      "C": "everywhere",
+      "D": "nowhere"
+    },
+    "correct": "B",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 3,
+    "question": "____ knows that he is a great teacher.",
+    "options": {
+      "A": "Someone",
+      "B": "Anyone",
+      "C": "Everyone",
+      "D": "No one"
+    },
+    "correct": "C",
+    "explanation": "The verb 'to be' changes with the subject and tense.",
+    "explanation_simple": "The verb 'to be' changes with the subject and tense.",
+    "explanation_detailed": "The verb 'to be' changes with the subject and tense.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 4,
+    "question": "We didn't buy ____ at the supermarket.",
+    "options": {
+      "A": "nothing",
+      "B": "something",
+      "C": "anything",
+      "D": "everything"
+    },
+    "correct": "C",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 5,
+    "question": "Would you like ____ to drink?",
+    "options": {
+      "A": "something",
+      "B": "anything",
+      "C": "nothing",
+      "D": "everything"
+    },
+    "correct": "A",
+    "explanation": "The phrase translates to something.",
+    "explanation_simple": "The phrase translates to something.",
+    "explanation_detailed": "The phrase translates to something.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 6,
+    "question": "I met ____ special yesterday.",
+    "options": {
+      "A": "something",
+      "B": "somebody",
+      "C": "somewhere",
+      "D": "anyone"
+    },
+    "correct": "B",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 7,
+    "question": "There is ____ in the room, it's empty.",
+    "options": {
+      "A": "someone",
+      "B": "nobody",
+      "C": "anyone",
+      "D": "everyone"
+    },
+    "correct": "B",
+    "explanation": "The verb 'to be' changes with the subject and tense.",
+    "explanation_simple": "The verb 'to be' changes with the subject and tense.",
+    "explanation_detailed": "The verb 'to be' changes with the subject and tense.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 8,
+    "question": "He didn't go ____ last weekend.",
+    "options": {
+      "A": "somewhere",
+      "B": "anywhere",
+      "C": "nowhere",
+      "D": "everywhere"
+    },
+    "correct": "B",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 9,
+    "question": "She has ____ to talk to about her problem.",
+    "options": {
+      "A": "anyone",
+      "B": "someone",
+      "C": "no one",
+      "D": "everyone"
+    },
+    "correct": "B",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 10,
+    "question": "____ helped me with my homework. (I got help)",
+    "options": {
+      "A": "Anyone",
+      "B": "No one",
+      "C": "Anything",
+      "D": "Someone"
+    },
+    "correct": "D",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 11,
+    "question": "I saw ____ strange in the sky last night.",
+    "options": {
+      "A": "something",
+      "B": "anything",
+      "C": "nothing",
+      "D": "everything"
+    },
+    "correct": "A",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 12,
+    "question": "We can go ____ you like.",
+    "options": {
+      "A": "somewhere",
+      "B": "anywhere",
+      "C": "nowhere",
+      "D": "everyone"
+    },
+    "correct": "B",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 13,
+    "question": "____ can be a hero if they try hard enough.",
+    "options": {
+      "A": "Someone",
+      "B": "Anyone",
+      "C": "No one",
+      "D": "Everyone"
+    },
+    "correct": "B",
+    "explanation": "Enough means sufficient amount or quantity.",
+    "explanation_simple": "Enough means sufficient amount or quantity.",
+    "explanation_detailed": "Enough means sufficient amount or quantity.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 14,
+    "question": "There is ____ outside. I think I heard a noise.",
+    "options": {
+      "A": "anybody",
+      "B": "nobody",
+      "C": "somebody",
+      "D": "no one"
+    },
+    "correct": "C",
+    "explanation": "With I, the correct form of 'to be' is somebody.",
+    "explanation_simple": "With I, the correct form of 'to be' is somebody.",
+    "explanation_detailed": "With I, the correct form of 'to be' is somebody.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 15,
+    "question": "I didn't do ____ interesting today.",
+    "options": {
+      "A": "something",
+      "B": "nothing",
+      "C": "everything",
+      "D": "anything"
+    },
+    "correct": "D",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  }
+]

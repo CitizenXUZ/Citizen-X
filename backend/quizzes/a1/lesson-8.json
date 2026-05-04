@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "question": "Fill in the blank: Choose the correct article: I have ___ apple.",
+    "options": {
+      "A": "a",
+      "B": "an",
+      "C": "the",
+      "D": "—"
+    },
+    "correct": "B",
+    "explanation": "You are talking about one apple (a single fruit). Choose the article we use with one thing when the next word starts with a vowel sound (A, E, I, O, U).",
+    "explanation_simple": "One thing + vowel sound (A/E/I/O/U) → choose the right article.",
+    "explanation_detailed": "Step 1: We will choose by eliminating options that do NOT fit the grammar or meaning.\nStep 2: Read the sentence and find the key word after the blank (that word tells us what grammar we need).\nStep 3: Look at the next word (“apple”). Decide if it starts with a vowel sound (A/E/I/O/U sound) or a consonant sound.\nStep 4: Now eliminate options:\n- Option A: This article is used before consonant sounds, so it does not fit if the next word starts with a vowel sound.\n- Option C: This article is used for something specific/known (for example: the only one, or already mentioned). If the sentence is about one new thing or a general idea, it does not fit.\n- Option D: No article is usually used with plural or uncountable nouns, or with some fixed expressions. With one singular countable noun, leaving it empty is often not correct.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 2,
+    "question": "Fill in the blank: Choose the correct article: She is ___ teacher.",
+    "options": {
+      "A": "the",
+      "B": "an",
+      "C": "—",
+      "D": "a"
+    },
+    "correct": "D",
+    "explanation": "‘Teacher’ is a job and it is one person. Choose the indefinite article used before a consonant sound (the ‘t’ sound).",
+    "explanation_simple": "One job noun + consonant sound → choose the correct indefinite article.",
+    "explanation_detailed": "Step 1: We will choose by eliminating options that do NOT fit the grammar or meaning.\nStep 2: Read the sentence and find the key word after the blank (that word tells us what grammar we need).\nStep 3: Look at the next word (“teacher”). Decide if it starts with a vowel sound (A/E/I/O/U sound) or a consonant sound.\nStep 4: Now eliminate options:\n- Option A: This article is used for something specific/known (for example: the only one, or already mentioned). If the sentence is about one new thing or a general idea, it does not fit.\n- Option B: This article is used before vowel sounds, so it does not fit if the next word starts with a consonant sound.\n- Option C: No article is usually used with plural or uncountable nouns, or with some fixed expressions. With one singular countable noun, leaving it empty is often not correct.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 3,
+    "question": "Fill in the blank: Choose the correct article: He bought ___ new car yesterday.",
+    "options": {
+      "A": "a",
+      "B": "an",
+      "C": "the",
+      "D": "—"
+    },
+    "correct": "A",
+    "explanation": "This talks about buying one new car. Choose the indefinite article used before a consonant sound (the first sound in ‘new’).",
+    "explanation_simple": "One car + consonant sound → indefinite article for consonants.",
+    "explanation_detailed": "Step 1: We will choose by eliminating options that do NOT fit the grammar or meaning.\nStep 2: Read the sentence and find the key word after the blank (that word tells us what grammar we need).\nStep 3: Look at the next word (“new”). Decide if it starts with a vowel sound (A/E/I/O/U sound) or a consonant sound.\nStep 4: Now eliminate options:\n- Option B: This article is used before vowel sounds, so it does not fit if the next word starts with a consonant sound.\n- Option C: This article is used for something specific/known (for example: the only one, or already mentioned). If the sentence is about one new thing or a general idea, it does not fit.\n- Option D: No article is usually used with plural or uncountable nouns, or with some fixed expressions. With one singular countable noun, leaving it empty is often not correct.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 4,
+    "question": "Fill in the blank: Choose the correct article: ___ moon is very bright tonight.",
+    "options": {
+      "A": "A",
+      "B": "An",
+      "C": "The",
+      "D": "—"
+    },
+    "correct": "C",
+    "explanation": "The moon is special/unique (there is only one moon for Earth). When we talk about something unique or already known, we use the definite article.",
+    "explanation_simple": "Unique/known thing (moon) → definite article.",
+    "explanation_detailed": "Step 1: We will choose by eliminating options that do NOT fit the grammar or meaning.\nStep 2: Read the sentence and find the key word after the blank (that word tells us what grammar we need).\nStep 3: Look at the next word (“moon”). Decide if it starts with a vowel sound (A/E/I/O/U sound) or a consonant sound.\nStep 4: Now eliminate options:\n- Option A: This article is used before consonant sounds, so it does not fit if the next word starts with a vowel sound.\n- Option B: This article is used before vowel sounds, so it does not fit if the next word starts with a consonant sound.\n- Option D: No article is usually used with plural or uncountable nouns, or with some fixed expressions. With one singular countable noun, leaving it empty is often not correct.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 5,
+    "question": "Fill in the blank: Choose the correct article: I saw ___ elephant at the zoo.",
+    "options": {
+      "A": "a",
+      "B": "an",
+      "C": "the",
+      "D": "—"
+    },
+    "correct": "B",
+    "explanation": "You saw one elephant (a single animal). Choose the indefinite article used before a vowel sound (the first sound in ‘elephant’).",
+    "explanation_simple": "One elephant + vowel sound → indefinite article for vowels.",
+    "explanation_detailed": "Step 1: We will choose by eliminating options that do NOT fit the grammar or meaning.\nStep 2: Read the sentence and find the key word after the blank (that word tells us what grammar we need).\nStep 3: Look at the next word (“elephant”). Decide if it starts with a vowel sound (A/E/I/O/U sound) or a consonant sound.\nStep 4: Now eliminate options:\n- Option A: This article is used before consonant sounds, so it does not fit if the next word starts with a vowel sound.\n- Option C: This article is used for something specific/known (for example: the only one, or already mentioned). If the sentence is about one new thing or a general idea, it does not fit.\n- Option D: No article is usually used with plural or uncountable nouns, or with some fixed expressions. With one singular countable noun, leaving it empty is often not correct.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 6,
+    "question": "Fill in the blank: Choose the correct article: She has ___ old phone, but she wants a new one.",
+    "options": {
+      "A": "an",
+      "B": "a",
+      "C": "the",
+      "D": "—"
+    },
+    "correct": "A",
+    "explanation": "You talk about one old phone. Choose the indefinite article used before a vowel sound (the first sound in ‘old’).",
+    "explanation_simple": "One phone + vowel sound in the next word → choose the right indefinite article.",
+    "explanation_detailed": "Step 1: We will choose by eliminating options that do NOT fit the grammar or meaning.\nStep 2: Read the sentence and find the key word after the blank (that word tells us what grammar we need).\nStep 3: Look at the next word (“old”). Decide if it starts with a vowel sound (A/E/I/O/U sound) or a consonant sound.\nStep 4: Now eliminate options:\n- Option B: This article is used before consonant sounds, so it does not fit if the next word starts with a vowel sound.\n- Option C: This article is used for something specific/known (for example: the only one, or already mentioned). If the sentence is about one new thing or a general idea, it does not fit.\n- Option D: No article is usually used with plural or uncountable nouns, or with some fixed expressions. With one singular countable noun, leaving it empty is often not correct.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 7,
+    "question": "Fill in the blank: Choose the correct article: ___ weather is nice today.",
+    "options": {
+      "A": "A",
+      "B": "An",
+      "C": "—",
+      "D": "The"
+    },
+    "correct": "D",
+    "explanation": "‘Weather’ is not countable like ‘one weather’. For general talk we often use no article, but for a specific time (like today) we often use the definite article.",
+    "explanation_simple": "‘Weather’ is uncountable. For today (specific), choose the option for specific/known weather.",
+    "explanation_detailed": "Step 1: We will choose by eliminating options that do NOT fit the grammar or meaning.\nStep 2: Read the sentence and find the key word after the blank (that word tells us what grammar we need).\nStep 3: Look at the next word (“weather”). Decide if it starts with a vowel sound (A/E/I/O/U sound) or a consonant sound.\nStep 4: Now eliminate options:\n- Option A: This article is used before consonant sounds, so it does not fit if the next word starts with a vowel sound.\n- Option B: This article is used before vowel sounds, so it does not fit if the next word starts with a consonant sound.\n- Option C: No article is usually used with plural or uncountable nouns, or with some fixed expressions. With one singular countable noun, leaving it empty is often not correct.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 8,
+    "question": "Fill in the blank: Choose the correct article: My brother is reading ___ interesting book.",
+    "options": {
+      "A": "a",
+      "B": "the",
+      "C": "an",
+      "D": "—"
+    },
+    "correct": "C",
+    "explanation": "‘Book’ is one thing. Choose the indefinite article based on the SOUND of the next word. ‘Interesting’ starts with a vowel sound.",
+    "explanation_simple": "One book + ‘interesting’ starts with a vowel sound → choose the right indefinite article.",
+    "explanation_detailed": "Step 1: We will choose by eliminating options that do NOT fit the grammar or meaning.\nStep 2: Read the sentence and find the key word after the blank (that word tells us what grammar we need).\nStep 3: Look at the next word (“interesting”). Decide if it starts with a vowel sound (A/E/I/O/U sound) or a consonant sound.\nStep 4: Now eliminate options:\n- Option A: This article is used before consonant sounds, so it does not fit if the next word starts with a vowel sound.\n- Option B: This article is used for something specific/known (for example: the only one, or already mentioned). If the sentence is about one new thing or a general idea, it does not fit.\n- Option D: No article is usually used with plural or uncountable nouns, or with some fixed expressions. With one singular countable noun, leaving it empty is often not correct.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 9,
+    "question": "Fill in the blank: I ___ a bike.",
+    "options": {
+      "A": "has",
+      "B": "have",
+      "C": "had",
+      "D": "having"
+    },
+    "correct": "B",
+    "explanation": "In the present simple, the verb form depends on the subject. With ‘I/you/we/they’ we use the base form (no special ending).",
+    "explanation_simple": "Subject ‘I’ → base form.",
+    "explanation_detailed": "Step 1: We will choose by eliminating options that do NOT fit the grammar or meaning.\nStep 2: Read the sentence and find the key word after the blank (that word tells us what grammar we need).\nStep 3: This is about the verb ‘have’ (possession: you own something).\nStep 4: Eliminate options by checking the subject (I/you/we/they vs he/she/it) and whether the sentence is negative or a question. Here the subject is “I”.\nStep 5: Now eliminate options:\n- Option A: This form is only for he/she/it. If the subject is I/you/we/they, it does not fit.\n- Option C: This is a past form. If the sentence is about now (not “yesterday/last year”), it does not fit.\n- Option D: This is an -ing form. In simple sentences, -ing needs a form of ‘to be’ (am/is/are), so it does not fit here.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 10,
+    "question": "Fill in the blank: She ___ a cat.",
+    "options": {
+      "A": "have",
+      "B": "had",
+      "C": "has",
+      "D": "having"
+    },
+    "correct": "C",
+    "explanation": "The subject is ‘She’ (he/she/it group). In the present simple, this group uses the special third-person form.",
+    "explanation_simple": "Subject ‘she’ → third-person form.",
+    "explanation_detailed": "Step 1: We will choose by eliminating options that do NOT fit the grammar or meaning.\nStep 2: Read the sentence and find the key word after the blank (that word tells us what grammar we need).\nStep 3: This is about the verb ‘have’ (possession: you own something).\nStep 4: Eliminate options by checking the subject (I/you/we/they vs he/she/it) and whether the sentence is negative or a question. Here the subject is “She”.\nStep 5: Now eliminate options:\n- Option A: This form is for I/you/we/they. If the subject is he/she/it, it does not fit.\n- Option B: This is a past form. If the sentence is about now (not “yesterday/last year”), it does not fit.\n- Option D: This is an -ing form. In simple sentences, -ing needs a form of ‘to be’ (am/is/are), so it does not fit here.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 11,
+    "question": "Fill in the blank: Choose the correct negative sentence: He ___ not a car.",
+    "options": {
+      "A": "have",
+      "B": "has",
+      "C": "haven't",
+      "D": "having"
+    },
+    "correct": "B",
+    "explanation": "This is a negative sentence with ‘He’. The blank comes before ‘not’, so choose the correct present form for ‘he/she/it’, then keep ‘not’ after it.",
+    "explanation_simple": "Negative with ‘he’ → choose the he/she/it present form, then add ‘not’.",
+    "explanation_detailed": "Step 1: We will choose by eliminating options that do NOT fit the grammar or meaning.\nStep 2: Read the sentence and find the key word after the blank (that word tells us what grammar we need).\nStep 3: This is about the verb ‘have’ (possession: you own something).\nStep 4: Eliminate options by checking the subject (I/you/we/they vs he/she/it) and whether the sentence is negative or a question. Here the subject is “He”.\nStep 5: Now eliminate options:\n- Option A: This form is for I/you/we/they. If the subject is he/she/it, it does not fit.\n- Option C: With he/she/it, the negative form uses ‘has’, not ‘have’.\n- Option D: This is an -ing form. In simple sentences, -ing needs a form of ‘to be’ (am/is/are), so it does not fit here.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 12,
+    "question": "Fill in the blank: ___ you got a computer",
+    "options": {
+      "A": "Has",
+      "B": "Have",
+      "C": "Do",
+      "D": "Are"
+    },
+    "correct": "B",
+    "explanation": "This question uses the pattern with ‘got’. In questions, the helper verb comes before the subject. With ‘you’, choose the same form used with ‘I/you/we/they’.",
+    "explanation_simple": "Question with ‘you’ → use the I/you/we/they form before the subject.",
+    "explanation_detailed": "Step 1: We will choose by eliminating options that do NOT fit the grammar or meaning.\nStep 2: Read the sentence and find the key word after the blank (that word tells us what grammar we need).\nStep 3: This is about the verb ‘have’ (possession: you own something).\nStep 4: Eliminate options by checking the subject (I/you/we/they vs he/she/it) and whether the sentence is negative or a question.\nStep 5: Now eliminate options:\n- Option A: This form is only for he/she/it. If the subject is I/you/we/they, it does not fit.\n- Option C: This is a helper for actions. For possession with ‘have (got)’, we normally use have/has, not do/does/did, in this blank.\n- Option D: This is a form of ‘to be’. It does not show possession like ‘have/has’.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 13,
+    "question": "Fill in the blank: They ___ many friends.",
+    "options": {
+      "A": "has",
+      "B": "had",
+      "C": "have",
+      "D": "having"
+    },
+    "correct": "C",
+    "explanation": "The subject is ‘They’. In present simple, ‘I/you/we/they’ use the base form.",
+    "explanation_simple": "Subject ‘they’ → base form.",
+    "explanation_detailed": "Step 1: We will choose by eliminating options that do NOT fit the grammar or meaning.\nStep 2: Read the sentence and find the key word after the blank (that word tells us what grammar we need).\nStep 3: This is about the verb ‘have’ (possession: you own something).\nStep 4: Eliminate options by checking the subject (I/you/we/they vs he/she/it) and whether the sentence is negative or a question. Here the subject is “They”.\nStep 5: Now eliminate options:\n- Option A: This form is only for he/she/it. If the subject is I/you/we/they, it does not fit.\n- Option B: This is a past form. If the sentence is about now (not “yesterday/last year”), it does not fit.\n- Option D: This is an -ing form. In simple sentences, -ing needs a form of ‘to be’ (am/is/are), so it does not fit here.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 14,
+    "question": "Fill in the blank: ___ she got a brother",
+    "options": {
+      "A": "Have",
+      "B": "Does",
+      "C": "Did",
+      "D": "Has"
+    },
+    "correct": "D",
+    "explanation": "This is a ‘got’ question with ‘she’. Put the helper verb first. For ‘she’ (he/she/it), choose the he/she/it form.",
+    "explanation_simple": "Question + ‘she’ → he/she/it form goes first.",
+    "explanation_detailed": "Step 1: We will choose by eliminating options that do NOT fit the grammar or meaning.\nStep 2: Read the sentence and find the key word after the blank (that word tells us what grammar we need).\nStep 3: This is about the verb ‘have’ (possession: you own something).\nStep 4: Eliminate options by checking the subject (I/you/we/they vs he/she/it) and whether the sentence is negative or a question.\nStep 5: Now eliminate options:\n- Option A: This form is for I/you/we/they. If the subject is he/she/it, it does not fit.\n- Option B: This is a helper for actions. For possession with ‘have (got)’, we normally use have/has, not do/does/did, in this blank.\n- Option C: This is a helper for actions. For possession with ‘have (got)’, we normally use have/has, not do/does/did, in this blank.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 15,
+    "question": "Fill in the blank: Choose the correct negative form: I ___ not got a pen.",
+    "options": {
+      "A": "have",
+      "B": "has",
+      "C": "am",
+      "D": "are"
+    },
+    "correct": "A",
+    "explanation": "This is the negative form of the ‘got’ pattern with ‘I’. Use the I/you/we/they form before ‘not got’.",
+    "explanation_simple": "‘I’ + ‘not got’ → I/you/we/they form.",
+    "explanation_detailed": "Step 1: We will choose by eliminating options that do NOT fit the grammar or meaning.\nStep 2: Read the sentence and find the key word after the blank (that word tells us what grammar we need).\nStep 3: This is about the verb ‘have’ (possession: you own something).\nStep 4: Eliminate options by checking the subject (I/you/we/they vs he/she/it) and whether the sentence is negative or a question. Here the subject is “I”.\nStep 5: Now eliminate options:\n- Option B: This form is only for he/she/it. If the subject is I/you/we/they, it does not fit.\n- Option C: This is a form of ‘to be’. It does not show possession like ‘have/has’.\n- Option D: This is a form of ‘to be’. It does not show possession like ‘have/has’.",
+    "explanation_translations": {}
+  }
+]

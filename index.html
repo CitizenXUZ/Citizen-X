@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English with Mr.Sam</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="hero-header">
+  <p id="header-greeting" class="header-greeting" hidden></p>
+	  <div class="header-actions header-actions-left">
+	    <a href="#" id="profile-btn" class="btn" hidden>Profile</a>
+	    <a href="#" id="mentor-students-btn" class="btn mentor-students-btn" hidden>
+	      Students
+	      <span id="mentor-students-badge" class="admin-requests-badge" hidden>0</span>
+	    </a>
+	    <a href="admin.html" id="admin-panel-btn" class="btn" hidden>
+	      Admin Panel
+	      <span id="admin-panel-badge" class="admin-panel-badge" hidden>0</span>
+	    </a>
+	  </div>
+  <div class="logo"><img src="assets/images/logo.png" alt="English with Mr.Sam"></div>
+  <div class="header-actions header-actions-right">
+    <a href="#" id="login-btn" class="btn">Login</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-info-grid">
+    <article class="hero-info-card">
+      <h3>What is IELTS</h3>
+      <p>IELTS is an international English exam that checks your Listening, Reading, Writing, and Speaking skills for study, work, and migration.</p>
+    </article>
+    <article class="hero-info-card">
+      <h3>What is CEFR</h3>
+      <p>CEFR is a global language scale from A1 to C2. It helps you understand your current English level and choose the right course.</p>
+    </article>
+  </div>
+  <div class="hero-image">
+    <img src="https://i.pinimg.com/1200x/b4/ab/72/b4ab7222da63b12c06c8e3ba9290bd0b.jpg" alt="Platform Preview">
+  </div>
+</section>
+
+<section id="levels" class="levels">
+  <h2>Choose Your Level</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>A1 - Beginner</h3>
+      <ul>
+        <li>20 Video Lessons</li>
+        <li>Grammar Basics</li>
+        <li>Final Test</li>
+      </ul>
+      <a href="a1.html" class="btn">Start A1</a>
+    </div>
+
+    <div class="card">
+      <h3>A2 - Elementary</h3>
+      <ul>
+        <li>25 Video Lessons</li>
+        <li>Speaking Practice</li>
+        <li>Final Test</li>
+      </ul>
+      <a href="a2.html" class="btn">Start A2</a>
+    </div>
+
+    <div class="card">
+      <h3>B1 - Intermediate</h3>
+      <ul>
+        <li>30 Video Lessons</li>
+        <li>Writing Tasks</li>
+        <li>Progress Tracking</li>
+      </ul>
+      <a href="b1.html" class="btn">Start B1</a>
+    </div>
+
+    <div class="card">
+      <h3>B2 - Upper-Intermediate</h3>
+      <ul>
+        <li>Advanced Grammar</li>
+        <li>IELTS Practice</li>
+        <li>Final Certification</li>
+      </ul>
+      <a href="b2.html" class="btn">Start B2</a>
+    </div>
+  </div>
+  <div class="knowledge-test-wrap">
+    <p class="knowledge-test-note">If you don't know which level to study you can:</p>
+    <a href="#" class="btn knowledge-test-btn" id="knowledge-test-open-btn">Test Your Knowledge</a>
+  </div>
+  <div class="upgrade-banner">
+    <div class="upgrade-text">
+      <h3>Upgrade to Pro</h3>
+      <p>You are on Demo! Please Upgrade to get full access.</p>
+    </div>
+    <a href="#" class="btn upgrade-btn" id="upgrade-open-btn">Upgrade to Pro</a>
+  </div>
+</section>
+
+	<section class="results-section">
+	  <h2 class="results-title" style="--results-title-image: url('https://static.vecteezy.com/system/resources/thumbnails/053/045/372/small_2x/abstract-white-geometric-hexagon-pattern-background-free-photo.jpg');">Our results</h2>
+	  <div class="results-home-grid">
+	    <div class="results-mobile-masonry" data-section="home" aria-label="Certificates mosaic"></div>
+	    <div class="results-modal-tiles results-modal-tiles--home" data-section="home">
+	      <article class="results-modal-tile">
+	        <div class="results-modal-certificate" data-overlay="Your IELTS Certificate">
+	          <img src="https://i.pinimg.com/736x/a4/ce/16/a4ce16b7b526102a9a679cb0efec1cad.jpg" alt="IELTS certificate" loading="lazy" decoding="async" class="js-certificate-viewer">
+	        </div>
+	        <div class="results-modal-person">
+	          <span class="results-modal-name">Your IELTS Certificate</span>
+	          <span class="results-modal-quote">Small steps every day lead to big results.</span>
+	        </div>
+	      </article>
+	      <article class="results-modal-tile">
+	        <div class="results-modal-certificate">
+	          <img src="assets/certificates/ruxshona.PNG" alt="Ruxshona M. certificate" loading="lazy" decoding="async" class="js-certificate-viewer">
+	        </div>
+	        <div class="results-modal-person">
+	          <span class="results-modal-name">Ruxshona M.</span>
+	          <span class="results-modal-quote">Consistency turns goals into achievements.</span>
+	        </div>
+	      </article>
+	      <article class="results-modal-tile">
+	        <div class="results-modal-certificate" data-overlay="Your CEFR Certificate">
+	          <img src="assets/images/bg-cefr-c1.jpg" alt="CEFR certificate" loading="lazy" decoding="async" class="js-certificate-viewer">
+	        </div>
+	        <div class="results-modal-person">
+	          <span class="results-modal-name">Your CEFR Certificate</span>
+	          <span class="results-modal-quote">Practice today brings confidence tomorrow.</span>
+	        </div>
+	      </article>
+	      <article class="results-modal-tile">
+	        <div class="results-modal-certificate">
+	          <img src="assets/certificates/alisher.PNG" alt="Alisher B. certificate" loading="lazy" decoding="async" class="js-certificate-viewer">
+	        </div>
+	        <div class="results-modal-person">
+	          <span class="results-modal-name">Alisher B.</span>
+	          <span class="results-modal-quote">Hard topics become easy with practice.</span>
+	        </div>
+	      </article>
+	      <article class="results-modal-tile">
+	        <div class="results-modal-certificate">
+	          <img src="assets/certificates/farmon_cefr.PNG" alt="Farmon A. certificate" loading="lazy" decoding="async" class="js-certificate-viewer">
+	        </div>
+	        <div class="results-modal-person">
+	          <span class="results-modal-name">Farmon A.</span>
+	          <span class="results-modal-quote">Every lesson moves you closer to your target score.</span>
+	        </div>
+	      </article>
+	    </div>
+	  </div>
+	  <a href="results.html" class="btn results-learn-btn">See more Results</a>
+	  <h2 class="results-title about-title">About us</h2>
+	  <div class="about-team">
+	    <article class="about-person about-person-featured">
+      <div class="about-avatar">
+        <img src="assets/images/Mr_Sam_ava.jpg" alt="Mr.Sam">
+      </div>
+      <div class="about-info">
+        <h3>Sunnatullo Raxmatullaev (Mr.Sam) - Founder & Lead Teacher</h3>
+        <p>IELTS/ESL teacher with a practical exam strategy, CEFR-based planning, and clear step-by-step guidance. 5+ years of experience, over 500 satisfied students, and 100+ success stories on international and national exams. Levels: from Beginner (A1) to Advanced (C1/C2).</p>
+      </div>
+    </article>
+
+    <div class="about-grid">
+      <article class="about-person">
+        <div class="about-avatar">
+          <img src="assets/images/Azamat.jpg" alt="Azamat">
+        </div>
+        <div class="about-info">
+          <h3>Azamat - Co-founder and Developer</h3>
+          <p>Leads development, ensures code quality, and turns ideas into working products. Creator of the platform English with Mr.Sam and other projects.</p>
+        </div>
+      </article>
+      <article class="about-person">
+        <div class="about-avatar">
+			<img src="assets/images/Shokhjakhon.jpg" alt="Shokhjakhon">
+		</div>
+        <div class="about-info">
+          <h3>Shokhjakhon - Head of Mentors</h3>
+          <p>Ensures every student develops fluency, confidence, and natural pronunciation across all mentors' work.</p>
+        </div>
+      </article>
+      <article class="about-person">
+        <div class="about-avatar">
+			<img src="assets/images/Javohir_K.jpg" alt="Javohir">	
+		</div>
+        <div class="about-info">
+          <h3>Javohir - Head of Design</h3>
+          <p>Ensures every visual element is clear, functional, and aesthetically strong.</p>
+        </div>
+      </article>
+      <article class="about-person">
+        <div class="about-avatar">
+			<img src="https://i.pinimg.com/736x/0a/3e/76/0a3e76adf7e9eb9e6ce840e3d1f1a0de.jpg" alt="Amirshox">	
+		</div>
+        <div class="about-info">
+          <h3>Amirshox - Head of Student Support</h3>
+          <p>Ensures every student feels heard, helped, and supported throughout their journey.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+  <a href="#" class="btn mentors-more-btn">View more about team</a>
+</section>
+
+<section class="contact-section" id="contact">
+  <h2 class="results-title contact-title">Contact us</h2>
+  <div class="contact-card">
+    <form class="contact-form" id="contact-form">
+      <h3>Send us a message</h3>
+      <input id="contact-name" type="text" placeholder="Your name" required>
+      <input id="contact-email" type="email" placeholder="Email address" required>
+      <textarea id="contact-message" placeholder="Write your message..." rows="5" required></textarea>
+      <button type="submit" class="btn contact-submit-btn">Send Message</button>
+      <p class="contact-status" id="contact-status" role="status" aria-live="polite"></p>
+    </form>
+
+    <div class="contact-info">
+      <h3>Get in touch</h3>
+      <p><strong>Email:</strong> englishwithmrsam@gmail.com</p>
+      <p><strong>Phone:</strong> +998 93 350 34 59</p>
+      <p><strong>Telegram:</strong> @English_with_MrSam_bot</p>
+      <p><strong>Working hours:</strong> Mon-Sat, 09:00-20:00 (GMT+5)</p>
+      <div class="contact-quick-links">
+        <a href="https://wa.me/998933503459" class="btn contact-link-btn contact-link-btn--whatsapp" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://t.me/English_with_MrSam_bot" class="btn contact-link-btn contact-link-btn--telegram" target="_blank" rel="noopener">Telegram</a>
+        <a href="mailto:englishwithmrsam@gmail.com" class="btn contact-link-btn contact-link-btn--gmail">Gmail</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="knowledge-test-modal" class="knowledge-test-modal" aria-hidden="true">
+  <div class="knowledge-test-card" role="dialog" aria-modal="true" aria-labelledby="knowledge-test-title">
+    <button
+      type="button"
+      class="knowledge-test-close"
+      id="knowledge-test-close-btn"
+      aria-label="Close test modal"
+    >&times;</button>
+    <h3 id="knowledge-test-title">English Level Placement Test</h3>
+    <p id="knowledge-test-help" class="knowledge-test-help">Answer all questions to get your recommended level: A1, A2, B1, or B2.</p>
+    <p id="knowledge-test-progress" class="knowledge-test-progress"></p>
+    <h4 id="knowledge-test-question" class="knowledge-test-question"></h4>
+    <div id="knowledge-test-options" class="knowledge-test-options"></div>
+    <p id="knowledge-test-feedback" class="knowledge-test-feedback"></p>
+    <div class="knowledge-test-actions">
+      <button type="button" class="btn knowledge-test-next-btn" id="knowledge-test-next-btn" disabled>Next</button>
+      <button type="button" class="btn knowledge-test-restart-btn" id="knowledge-test-restart-btn" hidden>Retake test</button>
+    </div>
+  </div>
+</div>
+
+<div id="upgrade-modal" class="upgrade-modal" aria-hidden="true">
+  <div class="upgrade-modal-card" role="dialog" aria-modal="true" aria-labelledby="upgrade-modal-title">
+    <button type="button" class="upgrade-modal-close" id="upgrade-close-btn" aria-label="Close upgrade plans">&times;</button>
+    <button id="admin-subscriptions-edit-btn" type="button" class="btn admin-subscriptions-edit-btn" hidden>Edit Subscriptions</button>
+    <h3 id="upgrade-modal-title" class="upgrade-modal-title">IELTS COURSE</h3>
+    <div class="upgrade-plan-grid">
+      <div class="upgrade-plan-row">
+        <article class="upgrade-plan-card">
+          <div class="upgrade-plan-head">
+            <h4>A1</h4>
+          </div>
+          <p class="upgrade-plan-subtitle">What's included:</p>
+          <ul class="upgrade-feature-list">
+            <li>20 beginner video lessons</li>
+            <li>Basic grammar and vocabulary practice</li>
+            <li>Pronunciation drills for daily speech</li>
+            <li>Mini quizzes after each unit</li>
+            <li>Teacher support and feedback</li>
+          </ul>
+          <button type="button" class="btn upgrade-plan-price-btn" data-level="A1" data-price="175 000 so'm">
+            <span class="upgrade-old-price">350 000 so'm</span>
+            <span class="upgrade-off-badge">50% off</span>
+            <span class="upgrade-new-price">175 000 so'm</span>
+          </button>
+        </article>
+        <article class="upgrade-plan-card upgrade-plan-card--express">
+          <div class="upgrade-plan-head">
+            <h4>A1</h4>
+            <span class="upgrade-badge upgrade-badge--express">Express</span>
+          </div>
+          <p class="upgrade-plan-subtitle">What's included:</p>
+          <ul class="upgrade-feature-list">
+            <li>20 beginner video lessons</li>
+            <li>Basic grammar and vocabulary practice</li>
+            <li>Pronunciation drills for daily speech</li>
+            <li>Mini quizzes after each unit</li>
+            <li>Teacher support and feedback</li>
+          </ul>
+          <button type="button" class="btn upgrade-plan-price-btn" data-level="A1" data-price="225 000 so'm (Express)">
+            <span class="upgrade-old-price">450 000 so'm</span>
+            <span class="upgrade-off-badge">50% off</span>
+            <span class="upgrade-new-price">225 000 so'm</span>
+          </button>
+        </article>
+      </div>
+      <div class="upgrade-plan-row">
+        <article class="upgrade-plan-card">
+          <div class="upgrade-plan-head">
+            <h4>A2</h4>
+          </div>
+          <p class="upgrade-plan-subtitle">What's included:</p>
+          <ul class="upgrade-feature-list">
+            <li>25 elementary level video lessons</li>
+            <li>Sentence building and speaking tasks</li>
+            <li>Grammar tests with explanations</li>
+            <li>Weekly progress checkpoints</li>
+            <li>Teacher support and feedback</li>
+          </ul>
+          <button type="button" class="btn upgrade-plan-price-btn" data-level="A2" data-price="200 000 so'm">
+            <span class="upgrade-old-price">400 000 so'm</span>
+            <span class="upgrade-off-badge">50% off</span>
+            <span class="upgrade-new-price">200 000 so'm</span>
+          </button>
+        </article>
+        <article class="upgrade-plan-card upgrade-plan-card--express">
+          <div class="upgrade-plan-head">
+            <h4>A2</h4>
+            <span class="upgrade-badge upgrade-badge--express">Express</span>
+          </div>
+          <p class="upgrade-plan-subtitle">What's included:</p>
+          <ul class="upgrade-feature-list">
+            <li>25 elementary level video lessons</li>
+            <li>Sentence building and speaking tasks</li>
+            <li>Grammar tests with explanations</li>
+            <li>Weekly progress checkpoints</li>
+            <li>Teacher support and feedback</li>
+          </ul>
+          <button type="button" class="btn upgrade-plan-price-btn" data-level="A2" data-price="250 000 so'm (Express)">
+            <span class="upgrade-old-price">500 000 so'm</span>
+            <span class="upgrade-off-badge">50% off</span>
+            <span class="upgrade-new-price">250 000 so'm</span>
+          </button>
+        </article>
+      </div>
+      <div class="upgrade-plan-row">
+        <article class="upgrade-plan-card">
+          <div class="upgrade-plan-head">
+            <h4>B1</h4>
+          </div>
+          <p class="upgrade-plan-subtitle">What's included:</p>
+          <ul class="upgrade-feature-list">
+            <li>30 intermediate video lessons</li>
+            <li>Writing and reading improvement tasks</li>
+            <li>Essay structure training</li>
+            <li>Mock tests with analytics</li>
+            <li>Teacher support and feedback</li>
+          </ul>
+          <button type="button" class="btn upgrade-plan-price-btn" data-level="B1" data-price="225 000 so'm">
+            <span class="upgrade-old-price">450 000 so'm</span>
+            <span class="upgrade-off-badge">50% off</span>
+            <span class="upgrade-new-price">225 000 so'm</span>
+          </button>
+        </article>
+        <article class="upgrade-plan-card upgrade-plan-card--express">
+          <div class="upgrade-plan-head">
+            <h4>B1</h4>
+            <span class="upgrade-badge upgrade-badge--express">Express</span>
+          </div>
+          <p class="upgrade-plan-subtitle">What's included:</p>
+          <ul class="upgrade-feature-list">
+            <li>30 intermediate video lessons</li>
+            <li>Writing and reading improvement tasks</li>
+            <li>Essay structure training</li>
+            <li>Mock tests with analytics</li>
+            <li>Teacher support and feedback</li>
+          </ul>
+          <button type="button" class="btn upgrade-plan-price-btn" data-level="B1" data-price="275 000 so'm (Express)">
+            <span class="upgrade-old-price">550 000 so'm</span>
+            <span class="upgrade-off-badge">50% off</span>
+            <span class="upgrade-new-price">275 000 so'm</span>
+          </button>
+        </article>
+      </div>
+      <div class="upgrade-plan-row">
+        <article class="upgrade-plan-card">
+          <div class="upgrade-plan-head">
+            <h4>B2</h4>
+          </div>
+          <p class="upgrade-plan-subtitle">What's included:</p>
+          <ul class="upgrade-feature-list">
+            <li>Advanced grammar and fluency lessons</li>
+            <li>Academic writing practice</li>
+            <li>Exam-oriented speaking sessions</li>
+            <li>Full unit tests with explanations</li>
+            <li>Teacher support and feedback</li>
+          </ul>
+          <button type="button" class="btn upgrade-plan-price-btn" data-level="B2" data-price="250 000 so'm">
+            <span class="upgrade-old-price">500 000 so'm</span>
+            <span class="upgrade-off-badge">50% off</span>
+            <span class="upgrade-new-price">250 000 so'm</span>
+          </button>
+        </article>
+        <article class="upgrade-plan-card upgrade-plan-card--express">
+          <div class="upgrade-plan-head">
+            <h4>B2</h4>
+            <span class="upgrade-badge upgrade-badge--express">Express</span>
+          </div>
+          <p class="upgrade-plan-subtitle">What's included:</p>
+          <ul class="upgrade-feature-list">
+            <li>Advanced grammar and fluency lessons</li>
+            <li>Academic writing practice</li>
+            <li>Exam-oriented speaking sessions</li>
+            <li>Full unit tests with explanations</li>
+            <li>Teacher support and feedback</li>
+          </ul>
+          <button type="button" class="btn upgrade-plan-price-btn" data-level="B2" data-price="300 000 so'm (Express)">
+            <span class="upgrade-old-price">600 000 so'm</span>
+            <span class="upgrade-off-badge">50% off</span>
+            <span class="upgrade-new-price">300 000 so'm</span>
+          </button>
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="enroll-modal" class="enroll-modal" aria-hidden="true">
+	  <div class="enroll-modal-card" role="dialog" aria-modal="true" aria-labelledby="enroll-modal-title">
+	    <button type="button" class="enroll-modal-close" id="enroll-close-btn" aria-label="Close enrollment form">&times;</button>
+	    <h3 id="enroll-modal-title">Course Enrollment</h3>
+	    <p id="enroll-plan-note" class="enroll-plan-note"></p>
+	    <form id="enroll-form" class="enroll-form">
+	      <input id="enroll-full-name" type="text" placeholder="Name" required>
+	      <input id="enroll-surname" type="text" placeholder="Surname" required>
+	      <input id="enroll-phone" type="tel" placeholder="Phone number" required>
+	      <input id="enroll-telegram" type="text" placeholder="Telegram username (optional)">
+	      <div class="enroll-select" id="enroll-schedule-wrap">
+	        <label class="enroll-select-label" for="enroll-schedule">Preferred schedule</label>
+	        <select id="enroll-schedule" required>
+          <option value="" disabled selected>Select days</option>
+          <option value="mwf">Mon / Wed / Fri</option>
+          <option value="tthsa">Tue / Thu / Sat</option>
+        </select>
+      </div>
+      <p class="legal-signup">Already have an account? <a href="#" class="legal-link js-open-login">Login</a></p>
+      <label class="legal-consent-wrap" for="enroll-consent">
+        <input id="enroll-consent" class="legal-consent-checkbox" type="checkbox">
+        <span>
+          I agree to
+          <a href="#" class="legal-link" data-legal-open="terms">Terms and Conditions</a>
+          and
+          <a href="#" class="legal-link" data-legal-open="privacy">Privacy Policy</a>
+        </span>
+	      </label>
+	      <p id="enroll-message" class="enroll-message"></p>
+	      <div class="enroll-actions">
+	        <button type="submit" class="btn enroll-submit-btn" disabled>Send request</button>
+	      </div>
+	    </form>
+	  </div>
+	</div>
+
+<div id="enroll-success-modal" class="enroll-success-modal" aria-hidden="true">
+  <div class="enroll-success-card" role="dialog" aria-modal="true" aria-labelledby="enroll-success-title">
+    <div class="enroll-success-check" aria-hidden="true">
+      <svg viewBox="0 0 72 72">
+        <circle cx="36" cy="36" r="32"></circle>
+        <path d="M22 37.5l9 9 19-20"></path>
+      </svg>
+    </div>
+    <h3 id="enroll-success-title">Request sent</h3>
+    <p class="enroll-success-text">Your request has been received.</p>
+    <button type="button" id="enroll-success-menu" class="btn enroll-success-menu-btn">Menu</button>
+  </div>
+</div>
+
+<div id="login-modal" class="login-modal" aria-hidden="true">
+  <div class="login-modal-card">
+    <h3>Login</h3>
+    <form id="login-form" class="login-form">
+      <input id="login-username" type="text" placeholder="Login" required>
+      <input id="login-password" type="password" placeholder="Password" required>
+      <label class="login-show-wrap">
+        <input id="login-show-password" type="checkbox">
+        <span>Show password</span>
+      </label>
+      <p class="legal-signup">Don't have account ? <a href="#" class="legal-link js-open-upgrade">Sign up</a></p>
+      <label class="legal-consent-wrap" for="login-consent">
+        <input id="login-consent" class="legal-consent-checkbox" type="checkbox">
+        <span>
+          I agree to
+          <a href="#" class="legal-link" data-legal-open="terms">Terms and Conditions</a>
+          and
+          <a href="#" class="legal-link" data-legal-open="privacy">Privacy Policy</a>
+        </span>
+      </label>
+      <p id="login-error" class="login-error"></p>
+      <div class="login-actions">
+        <button type="button" id="login-cancel" class="btn login-cancel-btn">Cancel</button>
+        <button type="submit" class="btn login-submit-btn" disabled>Sign in</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div id="terms-modal" class="legal-modal" aria-hidden="true">
+  <div class="legal-modal-card" role="dialog" aria-modal="true" aria-labelledby="terms-title">
+    <button type="button" id="terms-close-btn" class="legal-modal-close" aria-label="Close terms">&times;</button>
+    <h3 id="terms-title">Terms and Conditions</h3>
+    <pre class="legal-text">1. Platform Description
+The Platform provides online courses for learning English, including:
+Video lessons
+Tests
+Homework assignments
+Live lessons
+Chat with the instructor (Telegram Support)
+Access to the Platform is provided via a monthly subscription.
+
+2. Account Creation
+Accounts are created only by administrators after payment. Users cannot create their own accounts.
+Users must provide accurate information.
+Sharing your account with others is strictly prohibited. Accounts may be terminated immediately if this rule is violated.
+
+3. Use of Platform
+Users may access courses and materials for personal educational use only.
+Users may not copy, publish, distribute, or sell any content from the Platform. All intellectual property rights belong to the Platform.
+The Platform may update courses, lessons, or assignments. Users will be notified of major changes via Telegram or Instagram.
+We do not guarantee any specific level of English proficiency. Progress depends on individual effort.
+
+4. Payment
+Subscription is monthly and does not renew automatically. Users must purchase each month individually.
+Payment is handled via Click, Payme, Uzum.
+No refunds are provided under any circumstances, including account deletion.
+
+5. Intellectual Property
+All content on the Platform, including videos, tests, lessons, homework, and live sessions, is protected by intellectual property law.
+Users may not copy, share, or distribute any materials from the Platform.
+
+6. Privacy
+We collect the following user data: name, email, phone number, and device information to ensure account security.
+During use of the Platform, we track: lesson progress, test results, and homework completion.
+Payment data is processed via Click, Payme, and Uzum.
+Contact for privacy inquiries: englishwithmrsam@gmail.com
+
+7. Termination
+Users may request account deletion via email or Telegram, providing a reason.
+Access to the Platform ends automatically after the subscription period expires.
+
+8. Governing Law
+These Terms are governed by the laws of the Republic of Uzbekistan.
+Disputes will first be attempted to resolve via negotiation. If unresolved, disputes may be brought to the court where the owner is located.
+
+9. Changes to Terms
+We reserve the right to update these Terms at any time.
+Major changes will be announced via Telegram and Instagram.
+Continued use of the Platform after changes indicates acceptance of the new Terms.</pre>
+  </div>
+</div>
+
+<div id="privacy-modal" class="legal-modal" aria-hidden="true">
+  <div class="legal-modal-card" role="dialog" aria-modal="true" aria-labelledby="privacy-title">
+    <button type="button" id="privacy-close-btn" class="legal-modal-close" aria-label="Close privacy policy">&times;</button>
+    <h3 id="privacy-title">Privacy Policy</h3>
+    <pre class="legal-text">Privacy Policy - English with Mr.Sam
+Last Updated: [04.05.2026]
+Welcome to English with Mr.Sam ("we," "our," or "us"), a platform operated by Sunnatullo Raxmatullaev's team. Your privacy is important to us. This Privacy Policy explains how we collect, use, store, and protect your information when you use our website and services (the "Platform"). By using our Platform, you agree to the terms outlined in this Privacy Policy.
+
+1. Information We Collect
+We may collect the following types of information:
+1.1 Personal Information:
+Name
+Email address
+Phone number
+1.2 Device and Activity Information:
+Devices used to access the Platform
+Login activity, course progress, completed lessons, test results, and submitted assignments
+1.3 Payment Information:
+Payment data required to process course subscriptions through Click, Payme, and Uzum (handled by third-party payment processors)
+1.4 User-Generated Content:
+Any feedback, messages, or submissions provided within the Platform or to Telegram Support
+
+2. How We Use Your Information
+We use the collected information to:
+Provide and maintain access to courses, lessons, tests, and assignments
+Track course progress and performance
+Communicate with users via email or Telegram regarding account access, course updates, and support
+Prevent account sharing and fraudulent activity
+Improve our Platform and educational content
+
+3. Sharing Your Information
+We do not sell or rent your personal information. We may share your information in the following situations:
+Service Providers: Third-party providers that help operate the Platform (hosting, analytics, payment processing)
+Legal Requirements: When required by law or to protect our rights, property, or safety
+Business Transfers: In the event of a merger, acquisition, or sale of assets
+
+4. Data Storage and Security
+Your data is stored securely using industry-standard practices
+While we strive to protect your information, no method of transmission over the internet is completely secure
+
+5. User Rights
+You have the following rights regarding your personal information:
+Access: Request a copy of the data we collect about you
+Correction: Update or correct inaccurate information
+Deletion: Request deletion of your account and data by contacting us via email or Telegram
+Opt-Out: Opt out of promotional communications
+Contact for privacy inquiries: englishwithmrsam@gmail.com
+
+6. Third-Party Links
+Our Platform may contain links to third-party websites or services
+We are not responsible for the privacy practices of these third-party platforms
+
+7. Changes to This Privacy Policy
+We may update this Privacy Policy from time to time
+Updates will be posted on the Platform and/or communicated via Telegram or Instagram
+Continued use of the Platform indicates acceptance of any changes
+
+8. Contact Us
+For questions or concerns about this Privacy Policy, you may contact us via:
+Email: englishwithmrsam@gmail.com
+Telegram: @English_with_MrSam_bot</pre>
+  </div>
+</div>
+
+		  <div id="profile-modal" class="profile-modal" aria-hidden="true">
+	    <div class="profile-modal-card">
+	      <div class="profile-topbar">
+	        <h3 id="profile-title">Profile</h3>
+	        <button type="button" id="profile-close-btn" class="btn profile-close-btn">Close</button>
+		  </div>
+	      <div id="profile-mentor-block" class="profile-mentor">
+	        <div class="profile-mentor-card">
+	          <div class="profile-mentor-avatar">
+	            <img id="profile-mentor-avatar" src="assets/images/Mr_Sam_ava.jpg" alt="Mentor photo">
+	          </div>
+	          <div class="profile-mentor-content">
+	            <p id="profile-mentor-kicker" class="profile-mentor-kicker">Your Mentor</p>
+	            <h4 id="profile-mentor-name" class="profile-mentor-name">Mentor: �</h4>
+	            <p id="profile-mentor-text" class="profile-mentor-text">Mentor info will appear here.</p>
+	            <div id="profile-mentor-contact" class="profile-mentor-contact">
+	              <span class="profile-mentor-contact-label">Contact</span>
+	              <div class="profile-mentor-contact-actions"></div>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+        <div id="profile-user" class="profile-user">
+          <div class="profile-mentor-card profile-user-card">
+            <div class="profile-mentor-avatar profile-user-avatar">
+              <img id="profile-user-avatar" src="" alt="User photo" hidden>
+              <div id="profile-user-avatar-fallback" class="profile-user-avatar-fallback" aria-hidden="true">U</div>
+            </div>
+            <div class="profile-mentor-content">
+              <p id="profile-user-kicker" class="profile-mentor-kicker">You</p>
+              <h4 id="profile-user-name" class="profile-mentor-name">-</h4>
+              <div id="profile-user-avatar-actions" class="profile-user-avatar-actions" hidden>
+                <input id="profile-user-avatar-input" type="file" accept="image/*" hidden>
+                <button type="button" id="profile-user-avatar-btn" class="profile-mentor-contact-btn">Add photo</button>
+                <span id="profile-user-avatar-msg" class="profile-user-avatar-msg" aria-live="polite"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="mentor-self-edit" class="mentor-self-edit" hidden>
+          <h4 class="mentor-self-edit-title">Edit mentor contact</h4>
+          <div class="mentor-self-edit-grid">
+            <input id="mentor-self-name" type="text" class="mentor-self-edit-input" placeholder="Name">
+            <input id="mentor-self-phone" type="tel" class="mentor-self-edit-input" placeholder="Phone (+998...)">
+            <input id="mentor-self-telegram" type="text" class="mentor-self-edit-input" placeholder="Telegram username (@name)">
+            <input id="mentor-self-instagram" type="text" class="mentor-self-edit-input" placeholder="Instagram username (@name)">
+          </div>
+          <textarea id="mentor-self-info" class="mentor-self-edit-textarea" rows="3" placeholder="Mentor info"></textarea>
+          <div class="mentor-self-edit-actions">
+            <button type="button" id="mentor-self-save" class="btn mentor-self-edit-save">Save</button>
+            <span id="mentor-self-save-msg" class="mentor-self-edit-msg"></span>
+          </div>
+        </div>
+        <div id="profile-public-stats" class="profile-public-stats" hidden></div>
+	      <div id="profile-self-stats" class="profile-self-stats">
+	      <div class="profile-grid">
+	        <article class="profile-stat-card">
+	          <h4>Your level</h4>
+	          <p id="profile-level">-</p>
+	        </article>
+        <article class="profile-stat-card">
+          <h4>Average progress</h4>
+          <p id="profile-progress">-</p>
+        </article>
+      </div>
+      <div class="profile-subscription">
+        <article class="profile-stat-card profile-subscription-card">
+          <h4>Subscription time left</h4>
+          <p id="profile-subscription-remaining">-</p>
+        </article>
+        <article class="profile-stat-card profile-achievements-card">
+          <h4>Achievements</h4>
+          <p id="profile-achievements-progress" class="profile-achievements-progress">-</p>
+          <div id="profile-achievements" class="profile-achievements-list">-</div>
+          <button type="button" id="profile-achievements-btn" class="btn profile-achievements-btn">Achievements</button>
+        </article>
+      </div>
+        <div class="profile-extras">
+          <div class="profile-extras-grid">
+            <article class="profile-stat-card">
+              <h4>Lessons completed</h4>
+              <p id="profile-lessons-completed">-</p>
+            </article>
+            <article class="profile-stat-card">
+              <h4>Next lesson unlocks in</h4>
+              <p id="profile-next-unlock">-</p>
+            </article>
+          </div>
+	          <div class="profile-support">
+	            <p class="profile-support-label">Support / Contact</p>
+	            <div class="profile-support-actions">
+	              <a class="profile-support-icon" href="https://t.me/English_with_MrSam_bot" target="_blank" rel="noopener" aria-label="Telegram">
+	                <img src="assets/images/icons8-telegram-96.png" alt="Telegram" class="profile-support-icon-img">
+	              </a>
+	              <a class="profile-support-icon" href="mailto:englishwithmrsam@gmail.com" aria-label="Gmail">
+	                <img src="assets/images/icons8-gmail-96.png" alt="Gmail" class="profile-support-icon-img">
+	              </a>
+              <a class="profile-support-icon" href="https://www.instagram.com/english_with_mrsam?igsh=a3o1bjBubnNldWZz" target="_blank" rel="noopener" aria-label="Instagram">
+                <img src="assets/images/icons8-instagram-94.png" alt="Instagram" class="profile-support-icon-img profile-support-icon-img--instagram">
+              </a>
+            </div>
+          </div>
+        </div>
+      <div class="profile-upgrade-row">
+        <button type="button" id="profile-upgrade-btn" class="btn profile-upgrade-btn knowledge-test-btn">See more courses</button>
+      </div>
+      </div>
+      </div>
+    </div>
+
+    <div id="mentor-students-modal" class="profile-modal mentor-students-modal" aria-hidden="true">
+      <div class="profile-modal-card mentor-students-card">
+        <div class="profile-topbar">
+          <h3>Students</h3>
+          <button type="button" id="mentor-students-close" class="btn profile-close-btn">Close</button>
+        </div>
+        <p id="mentor-students-note" class="admin-delete-note">Loading...</p>
+        <div id="mentor-students-homework-alert" class="mentor-homework-alert" hidden></div>
+        <div id="mentor-students-grid" class="mentor-students-grid"></div>
+      </div>
+    </div>
+
+	    <div id="mentor-student-modal" class="profile-modal mentor-student-modal" aria-hidden="true">
+	      <div class="profile-modal-card mentor-student-card">
+	        <div class="profile-topbar">
+	          <h3 id="mentor-student-title">Student</h3>
+	          <div class="mentor-student-top-actions">
+	            <button type="button" id="mentor-view-progress-btn" class="btn admin-view-progress-btn" hidden>View Progress</button>
+	            <button type="button" id="mentor-homework-btn" class="btn mentor-homework-btn" hidden>
+	              Homework
+	              <span id="mentor-homework-badge" class="admin-requests-badge" hidden>0</span>
+	            </button>
+	            <button type="button" id="mentor-student-close" class="btn profile-close-btn">Close</button>
+	          </div>
+	        </div>
+	        <div id="mentor-student-body" class="admin-user-info-body"></div>
+	      </div>
+	    </div>
+
+	    <div id="mentor-homework-modal" class="admin-progress-modal mentor-homework-modal" aria-hidden="true">
+	      <div class="admin-progress-modal-card mentor-homework-card">
+	        <div class="admin-progress-topbar">
+	          <h3 id="mentor-homework-title">Homework</h3>
+	          <button type="button" id="mentor-homework-close" class="btn admin-progress-close-btn">Close</button>
+	        </div>
+	        <div class="admin-progress-layout is-mentor-view">
+	          <section class="admin-progress-main">
+	            <p id="mentor-homework-note" class="admin-progress-note">Loading...</p>
+	            <div id="mentor-homework-lessons" class="admin-progress-lessons mentor-homework-lessons"></div>
+	          </section>
+	        </div>
+	      </div>
+	    </div>
+
+		    <div id="mentor-homework-review-modal" class="admin-delete-confirm-modal mentor-homework-review-modal" aria-hidden="true">
+		      <div class="admin-delete-confirm-card mentor-homework-review-card" role="dialog" aria-modal="true" aria-labelledby="mentor-homework-review-title">
+		        <div class="mentor-homework-review-header">
+		          <h3 id="mentor-homework-review-title">Check homework</h3>
+		          <a id="mentor-homework-review-download" class="btn mentor-homework-review-download-btn" href="#" target="_blank" rel="noopener" aria-disabled="true">Download Homework</a>
+		        </div>
+		        <p id="mentor-homework-review-meta" class="mentor-homework-review-meta">-</p>
+		        <div class="mentor-homework-review-form">
+		          <label class="mentor-homework-review-label" for="mentor-homework-review-score">Score (1–5)</label>
+		          <select id="mentor-homework-review-score" class="mentor-homework-review-score">
+		            <option value="5">5</option>
+	            <option value="4">4</option>
+	            <option value="3">3</option>
+	            <option value="2">2</option>
+	            <option value="1">1</option>
+	          </select>
+	          <label class="mentor-homework-review-label" for="mentor-homework-review-comment">Comment</label>
+	          <textarea id="mentor-homework-review-comment" class="mentor-homework-review-comment" placeholder="Write a comment..."></textarea>
+	          <p id="mentor-homework-review-message" class="mentor-homework-review-message"></p>
+	        </div>
+	        <div class="admin-delete-confirm-actions">
+	          <button type="button" id="mentor-homework-review-cancel" class="btn admin-delete-confirm-cancel-btn">Cancel</button>
+	          <button type="button" id="mentor-homework-review-save" class="btn admin-delete-confirm-accept-btn">Save</button>
+	        </div>
+	      </div>
+	    </div>
+
+    <div id="mentor-progress-modal" class="admin-progress-modal mentor-progress-modal" aria-hidden="true">
+      <div class="admin-progress-modal-card">
+        <div class="admin-progress-topbar">
+          <h3 id="mentor-progress-title">Student Progress</h3>
+          <button type="button" id="mentor-progress-close" class="btn admin-progress-close-btn">Close</button>
+        </div>
+        <div class="admin-progress-layout is-mentor-view">
+          <section class="admin-progress-main">
+            <p id="mentor-progress-note" class="admin-progress-note">Loading...</p>
+            <div id="mentor-progress-lessons" class="admin-progress-lessons"></div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div id="achievements-modal" class="achievements-modal" aria-hidden="true">
+      <div class="achievements-modal-card" role="dialog" aria-modal="true" aria-labelledby="achievements-title">
+        <div class="achievements-modal-header">
+          <h3 id="achievements-title">Achievements</h3>
+          <button type="button" id="achievements-leaderboard-btn" class="btn achievements-leaderboard-btn">Leaderboard</button>
+          <button type="button" id="achievements-close-btn" class="btn achievements-modal-close">Close</button>
+        </div>
+        <p id="achievements-modal-progress" class="achievements-modal-progress">-</p>
+        <div id="achievements-modal-list" class="achievements-modal-list"></div>
+      </div>
+    </div>
+
+  <div id="leaderboard-modal" class="leaderboard-modal" aria-hidden="true">
+    <div class="leaderboard-modal-card" role="dialog" aria-modal="true" aria-labelledby="leaderboard-title">
+      <div class="leaderboard-modal-header">
+        <h3 id="leaderboard-title">Leaderboard</h3>
+        <button type="button" id="leaderboard-close-btn" class="btn leaderboard-modal-close">Close</button>
+      </div>
+      <div id="leaderboard-modal-list" class="leaderboard-modal-list">-</div>
+    </div>
+  </div>
+
+<div class="certificate-viewer" id="certificate-viewer" aria-hidden="true">
+  <div class="certificate-viewer__backdrop" data-cert-close></div>
+  <div class="certificate-viewer__dialog" role="dialog" aria-modal="true" aria-label="Certificate preview">
+    <button class="certificate-viewer__close" type="button" aria-label="Close" data-cert-close>×</button>
+    <img class="certificate-viewer__img" id="certificate-viewer-img" alt="Certificate preview">
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

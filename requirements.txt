@@ -1,0 +1,2 @@
+# No external dependencies — the server uses only Python standard library modules.
+# This file is required by Railway/Heroku to detect a Python project.

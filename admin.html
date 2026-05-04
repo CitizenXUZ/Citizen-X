@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel - English with Mr.Sam</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="admin-header">
+  <div class="logo"><img src="assets/images/logo.png" alt="English with Mr.Sam"></div>
+  <a href="index.html" class="btn">Home</a>
+</header>
+
+<main class="admin-page" data-admin-page>
+  <p id="admin-guard-message" class="admin-guard" hidden>Admin access required.</p>
+
+  <section id="admin-content" hidden>
+    <div class="admin-head">
+      <h1>Admin Panel</h1>
+      <p>Signed in as <strong id="admin-user">-</strong></p>
+      <div class="admin-search-wrap">
+        <input id="admin-username-search" type="text" class="admin-username-search" placeholder="Search by username or phone">
+      </div>
+      <div class="admin-head-actions">
+        <button id="admin-search-btn" type="button" class="btn admin-search-btn">Search</button>
+      </div>
+    </div>
+
+    <div class="admin-stats">
+      <article class="admin-stat-card admin-stat-card-users">
+        <h3>Total Users</h3>
+        <p id="admin-stat-users">0</p>
+      </article>
+      <article class="admin-stat-card admin-stat-card-action">
+        <h3 class="admin-stat-card-title">Manage Students</h3>
+        <p class="admin-stat-card-hint">Open student management actions</p>
+        <button id="admin-manage-btn" type="button" class="btn admin-manage-btn">
+          Manage Students
+          <span id="admin-manage-badge" class="admin-requests-badge" hidden>0</span>
+        </button>
+      </article>
+      <article class="admin-stat-card admin-stat-card-action">
+        <h3 class="admin-stat-card-title">Progress</h3>
+        <p class="admin-stat-card-hint">Open student lesson performance</p>
+        <button id="admin-view-progress-btn" type="button" class="btn admin-view-progress-btn">View Progress</button>
+      </article>
+    </div>
+
+    <section class="admin-table-card">
+      <h2>Users</h2>
+      <div class="admin-table-wrap">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Level</th>
+              <th>Username</th>
+              <th>Schedule</th>
+              <th>Phone</th>
+              <th>Role</th>
+              <th>Created At</th>
+              <th>Payment Approval</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="admin-users-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="admin-table-card">
+      <h2>Test Your Knowledge Attempts</h2>
+      <div class="admin-table-wrap">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>User</th>
+              <th>Correct</th>
+              <th>Total</th>
+              <th>Points</th>
+              <th>Recommended Level</th>
+              <th>Submitted</th>
+            </tr>
+          </thead>
+          <tbody id="admin-knowledge-body"></tbody>
+        </table>
+      </div>
+      <div class="admin-table-toggle-wrap">
+        <button id="admin-knowledge-toggle-btn" type="button" class="btn admin-table-toggle-btn" hidden>Expand table</button>
+      </div>
+    </section>
+
+    <section class="admin-table-card">
+      <h2>A1 Students</h2>
+      <div id="admin-level-table-a1"></div>
+    </section>
+
+    <section class="admin-table-card">
+      <h2>A2 Students</h2>
+      <div id="admin-level-table-a2"></div>
+    </section>
+
+    <section class="admin-table-card">
+      <h2>B1 Students</h2>
+      <div id="admin-level-table-b1"></div>
+    </section>
+
+    <section class="admin-table-card">
+      <h2>B2 Students</h2>
+      <div id="admin-level-table-b2"></div>
+    </section>
+  </section>
+</main>
+
+<div id="admin-create-modal" class="admin-create-modal" aria-hidden="true">
+  <div class="admin-create-modal-card">
+	    <h3 id="admin-create-title">Create User</h3>
+	    <form id="admin-create-form" class="admin-create-form">
+	      <select id="admin-create-role">
+	        <option value="student">Student</option>
+	        <option value="mentor">Mentor</option>
+	      </select>
+	      <input id="admin-create-name" type="text" placeholder="Name" readonly>
+	      <input id="admin-create-second-name" type="text" placeholder="Second Name" class="is-hidden">
+	      <input id="admin-create-phone" type="tel" placeholder="Phone" readonly>
+	      <select id="admin-create-level" disabled>
+	        <option value="">Level</option>
+	        <option value="a1">A1</option>
+	        <option value="a1-express">A1 Express</option>
+        <option value="a2">A2</option>
+        <option value="a2-express">A2 Express</option>
+        <option value="b1">B1</option>
+        <option value="b1-express">B1 Express</option>
+        <option value="b2">B2</option>
+        <option value="b2-express">B2 Express</option>
+      </select>
+	      <div id="admin-create-schedule-group" class="admin-create-schedule-group">
+	        <select id="admin-create-schedule">
+	          <option value="mwf">Mon / Wed / Fri</option>
+	          <option value="tthsa">Tue / Thu / Sat</option>
+	        </select>
+	        <p class="admin-create-hint">Express levels unlock daily.</p>
+	      </div>
+	      <select id="admin-create-mentor" class="is-hidden">
+	        <option value="">Choose Mentor</option>
+	      </select>
+	      <input id="admin-create-username" type="text" placeholder="Username" readonly>
+	      <input id="admin-create-password" type="text" placeholder="Password" readonly>
+	      <input id="admin-create-profile-photo" type="file" accept=".png,.jpg,.jpeg,.webp" hidden>
+	      <button type="button" id="admin-create-payment-approval" class="btn admin-payment-approval-btn">
+	        Payment Approval
+	      </button>
+	      <p id="admin-create-profile-photo-message" class="admin-create-message"></p>
+	      <p id="admin-create-message" class="admin-create-message"></p>
+	      <div class="admin-create-actions">
+	        <button type="button" id="admin-create-cancel" class="btn admin-create-cancel-btn">Cancel</button>
+	        <button type="submit" id="admin-create-submit" class="btn admin-create-submit-btn">Create</button>
+	      </div>
+	    </form>
+	  </div>
+	</div>
+
+<div id="admin-edit-modal" class="admin-create-modal" aria-hidden="true">
+  <div class="admin-create-modal-card">
+    <h3>Edit User</h3>
+    <form id="admin-edit-form" class="admin-create-form">
+      <input id="admin-edit-name" type="text" placeholder="Name" required>
+      <input id="admin-edit-phone" type="tel" placeholder="Phone" required>
+      <select id="admin-edit-level" required>
+        <option value="">Level</option>
+        <option value="a1">A1</option>
+        <option value="a1-express">A1 Express</option>
+        <option value="a2">A2</option>
+        <option value="a2-express">A2 Express</option>
+        <option value="b1">B1</option>
+        <option value="b1-express">B1 Express</option>
+        <option value="b2">B2</option>
+        <option value="b2-express">B2 Express</option>
+      </select>
+      <select id="admin-edit-schedule" required>
+        <option value="mwf">Mon / Wed / Fri</option>
+        <option value="tthsa">Tue / Thu / Sat</option>
+      </select>
+      <p class="admin-create-hint">Express levels unlock daily.</p>
+      <input id="admin-edit-username" type="text" placeholder="Username" required>
+      <input id="admin-edit-password" type="text" placeholder="New password (optional)" minlength="6">
+      <p id="admin-edit-message" class="admin-create-message"></p>
+      <div class="admin-create-actions">
+        <button type="button" id="admin-edit-cancel" class="btn admin-create-cancel-btn">Cancel</button>
+        <button type="submit" id="admin-edit-submit" class="btn admin-create-submit-btn">Save</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div id="admin-user-info-modal" class="admin-create-modal admin-user-info-modal" aria-hidden="true">
+  <div class="admin-create-modal-card admin-user-info-card">
+    <div class="admin-manage-topbar">
+      <h3 id="admin-user-info-title">More Info</h3>
+      <div class="admin-mentors-top-actions">
+        <button type="button" id="admin-user-info-edit" class="btn admin-payment-approval-btn">Edit</button>
+        <button type="button" id="admin-user-info-close" class="btn admin-manage-close-btn">Close</button>
+      </div>
+    </div>
+    <p id="admin-user-info-note" class="admin-delete-note">Select a user to view details.</p>
+    <div id="admin-user-info-body" class="admin-user-info-body"></div>
+  </div>
+</div>
+
+<div id="admin-password-reset-modal" class="admin-create-modal" aria-hidden="true">
+  <div class="admin-create-modal-card">
+    <h3>Admin confirmation</h3>
+    <form id="admin-password-reset-form" class="admin-create-form">
+      <p class="admin-create-hint">Enter the 6-digit PIN sent to your Telegram.</p>
+      <input id="admin-password-reset-code" type="text" inputmode="numeric" autocomplete="one-time-code" placeholder="PIN code" required>
+      <p class="admin-create-hint">Optional: set a new password (min 6 chars). Leave empty to generate one-time password.</p>
+      <input id="admin-password-reset-new" type="text" placeholder="New password (optional)" minlength="6">
+      <p id="admin-password-reset-message" class="admin-create-message"></p>
+      <div class="admin-create-actions">
+        <button type="button" id="admin-password-reset-cancel" class="btn admin-create-cancel-btn">Cancel</button>
+        <button type="submit" id="admin-password-reset-submit" class="btn admin-create-submit-btn">Confirm</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div id="admin-mentor-modal" class="admin-create-modal admin-mentor-modal" aria-hidden="true">
+  <div class="admin-create-modal-card">
+    <h3>Create Mentor</h3>
+    <form id="admin-mentor-form" class="admin-create-form">
+      <input id="admin-mentor-name" type="text" placeholder="Name" required>
+      <select id="admin-mentor-level" required>
+        <option value="">Level</option>
+        <option value="a1">A1</option>
+        <option value="a2">A2</option>
+        <option value="b1">B1</option>
+        <option value="b2">B2</option>
+      </select>
+      <input id="admin-mentor-phone" type="tel" placeholder="Phone number" required>
+      <input id="admin-mentor-email" type="email" placeholder="Email" required>
+      <input id="admin-mentor-telegram" type="text" placeholder="Telegram username" required>
+      <textarea id="admin-mentor-info" placeholder="Info" required></textarea>
+      <input id="admin-mentor-avatar" type="file" accept=".png,.jpg,.jpeg,.webp" hidden>
+      <p id="admin-mentor-avatar-message" class="admin-create-message"></p>
+      <p id="admin-mentor-message" class="admin-create-message"></p>
+      <div class="admin-create-actions">
+        <button type="button" id="admin-mentor-cancel" class="btn admin-create-cancel-btn">Cancel</button>
+        <button type="button" id="admin-mentor-avatar-btn" class="btn admin-payment-approval-btn">Upload Avatar</button>
+        <button type="submit" id="admin-mentor-submit" class="btn admin-create-submit-btn">Create</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div id="admin-mentors-modal" class="admin-create-modal admin-mentors-modal" aria-hidden="true">
+  <div class="admin-create-modal-card admin-mentors-modal-card">
+    <div class="admin-manage-topbar">
+      <h3>Mentors</h3>
+      <div class="admin-mentors-top-actions">
+        <button type="button" id="admin-mentors-create-btn" class="btn admin-payment-approval-btn">Create Mentor</button>
+        <button type="button" id="admin-mentors-close" class="btn admin-manage-close-btn">Close</button>
+      </div>
+    </div>
+    <p id="admin-mentors-note" class="admin-delete-note">No mentors yet.</p>
+    <div class="admin-table-wrap">
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>Avatar</th>
+            <th>Name</th>
+            <th>Level</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Telegram</th>
+            <th>Info</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="admin-mentors-body"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="admin-mentor-edit-modal" class="admin-create-modal admin-mentor-edit-modal" aria-hidden="true">
+  <div class="admin-create-modal-card">
+    <h3>Edit Mentor</h3>
+    <form id="admin-mentor-edit-form" class="admin-create-form">
+      <input id="admin-mentor-edit-name" type="text" placeholder="Name" required>
+      <select id="admin-mentor-edit-level" required>
+        <option value="">Level</option>
+        <option value="a1">A1</option>
+        <option value="a2">A2</option>
+        <option value="b1">B1</option>
+        <option value="b2">B2</option>
+      </select>
+      <input id="admin-mentor-edit-phone" type="tel" placeholder="Phone number" required>
+      <input id="admin-mentor-edit-email" type="email" placeholder="Email" required>
+      <input id="admin-mentor-edit-telegram" type="text" placeholder="Telegram username" required>
+      <textarea id="admin-mentor-edit-info" placeholder="Info" required></textarea>
+      <input id="admin-mentor-edit-avatar" type="file" accept=".png,.jpg,.jpeg,.webp" hidden>
+      <p id="admin-mentor-edit-avatar-message" class="admin-create-message"></p>
+      <p id="admin-mentor-edit-message" class="admin-create-message"></p>
+      <div class="admin-create-actions">
+        <button type="button" id="admin-mentor-edit-cancel" class="btn admin-create-cancel-btn">Cancel</button>
+        <button type="button" id="admin-mentor-edit-avatar-btn" class="btn admin-payment-approval-btn">Upload Avatar</button>
+        <button type="submit" id="admin-mentor-edit-submit" class="btn admin-create-submit-btn">Save</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div id="admin-progress-modal" class="admin-progress-modal" aria-hidden="true">
+  <div class="admin-progress-modal-card">
+    <div class="admin-progress-topbar">
+      <h3 id="admin-progress-title">Student Progress</h3>
+      <button type="button" id="admin-progress-close" class="btn admin-progress-close-btn">Close</button>
+    </div>
+    <div class="admin-progress-layout">
+      <aside class="admin-progress-users">
+        <h4>Students</h4>
+        <div id="admin-progress-users-list" class="admin-progress-users-list"></div>
+      </aside>
+      <section class="admin-progress-main">
+        <p id="admin-progress-note" class="admin-progress-note">Select a student to view lesson progress.</p>
+        <div id="admin-progress-lessons" class="admin-progress-lessons"></div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<div id="admin-manage-modal" class="admin-manage-modal" aria-hidden="true">
+  <div class="admin-manage-modal-card">
+    <div class="admin-manage-topbar">
+      <h3>Manage Students</h3>
+      <button type="button" id="admin-manage-close" class="btn admin-manage-close-btn">Close</button>
+    </div>
+    <div class="admin-manage-actions">
+      <button id="admin-manage-create-btn" type="button" class="btn admin-manage-action-btn is-create">
+        Create User
+        <span id="admin-requests-badge" class="admin-requests-badge" hidden>0</span>
+      </button>
+      <button id="admin-manage-renewals-btn" type="button" class="btn admin-manage-action-btn is-renewals">
+        Renewal Requests
+        <span id="admin-renewals-badge" class="admin-requests-badge" hidden>0</span>
+      </button>
+      <button id="admin-manage-requests-btn" type="button" class="btn admin-manage-action-btn is-requests">
+        Purchase Requests
+      </button>
+      <button id="admin-manage-mentor-btn" type="button" class="btn admin-manage-action-btn is-mentor">Mentors</button>
+      <button id="admin-manage-devices-btn" type="button" class="btn admin-manage-action-btn is-devices">Device Log</button>
+      <button id="admin-manage-delete-btn" type="button" class="btn admin-manage-action-btn is-danger">Delete User</button>
+    </div>
+  </div>
+</div>
+
+<div id="admin-create-queue-modal" class="admin-create-queue-modal" aria-hidden="true">
+  <div class="admin-create-queue-modal-card">
+    <div class="admin-create-queue-topbar">
+      <h3>Create Users</h3>
+      <div class="admin-create-queue-top-actions">
+        <button type="button" id="admin-create-queue-manual" class="btn admin-create-queue-manual-btn">Add manually</button>
+        <button type="button" id="admin-create-queue-close" class="btn admin-create-queue-close-btn">Close</button>
+      </div>
+    </div>
+    <p id="admin-create-queue-note" class="admin-create-queue-note">Incoming purchase requests.</p>
+    <div id="admin-create-queue-list" class="admin-create-queue-list"></div>
+  </div>
+</div>
+
+<div id="admin-renewals-modal" class="admin-renewals-modal" aria-hidden="true">
+  <div class="admin-renewals-modal-card">
+    <div class="admin-renewals-topbar">
+      <h3>Renewal Requests</h3>
+      <div class="admin-renewals-top-actions">
+        <button type="button" id="admin-payment-approval-btn" class="btn admin-payment-approval-btn">Payment approval</button>
+        <button type="button" id="admin-renewals-close" class="btn admin-renewals-close-btn">Close</button>
+      </div>
+    </div>
+    <p id="admin-renewals-note" class="admin-renewals-note">Incoming renewal requests.</p>
+    <div class="admin-table-wrap">
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Telegram</th>
+            <th>Level</th>
+            <th>Price</th>
+            <th>Username</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="admin-renewals-body"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="admin-payments-modal" class="admin-payments-modal" aria-hidden="true">
+  <div class="admin-payments-modal-card">
+    <div class="admin-payments-topbar">
+      <h3>Payment approval</h3>
+      <button type="button" id="admin-payments-close" class="btn admin-payments-close-btn">Close</button>
+    </div>
+    <div id="admin-payment-form" class="admin-payment-form">
+      <input id="admin-payment-username" type="text" placeholder="Username" required>
+      <input id="admin-payment-date" type="date" required>
+      <input id="admin-payment-file" type="file" accept=".png,.jpg,.jpeg,.pdf" required>
+      <button type="button" id="admin-payment-submit" class="btn admin-payment-submit-btn">Upload proof</button>
+      <p id="admin-payment-message" class="admin-payment-message"></p>
+    </div>
+    <div class="admin-table-wrap">
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>Username</th>
+            <th>Payment Date</th>
+            <th>File</th>
+          </tr>
+        </thead>
+        <tbody id="admin-payments-body"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="admin-delete-modal" class="admin-delete-modal" aria-hidden="true">
+  <div class="admin-delete-modal-card">
+    <div class="admin-delete-topbar">
+      <h3>Delete Users</h3>
+      <button type="button" id="admin-delete-close" class="btn admin-delete-close-btn">Close</button>
+    </div>
+    <p id="admin-delete-note" class="admin-delete-note">Select a user to delete.</p>
+    <div class="admin-table-wrap">
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Level</th>
+            <th>Username</th>
+            <th>Role</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="admin-delete-body"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="admin-delete-confirm-modal" class="admin-delete-confirm-modal" aria-hidden="true">
+  <div class="admin-delete-confirm-card">
+    <h3>Confirm delete</h3>
+    <p id="admin-delete-confirm-text">Delete user <strong id="admin-delete-confirm-username">-</strong>?</p>
+    <div class="admin-delete-confirm-actions">
+      <button type="button" id="admin-delete-confirm-cancel" class="btn admin-delete-confirm-cancel-btn">Cancel</button>
+      <button type="button" id="admin-delete-confirm-accept" class="btn admin-delete-confirm-accept-btn">Confirm</button>
+    </div>
+  </div>
+</div>
+
+<div id="admin-requests-modal" class="admin-requests-modal" aria-hidden="true">
+  <div class="admin-requests-modal-card">
+    <div class="admin-requests-topbar">
+      <h3>Purchase Requests</h3>
+      <button type="button" id="admin-requests-close" class="btn admin-requests-close-btn">Close</button>
+    </div>
+    <p id="admin-requests-note" class="admin-requests-note">Incoming requests from users.</p>
+    <div class="admin-requests-search">
+      <input id="admin-requests-search" type="text" placeholder="Search requests">
+      <button id="admin-requests-search-btn" type="button" class="btn admin-requests-search-btn">Search</button>
+    </div>
+    <div class="admin-table-wrap">
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Telegram</th>
+            <th>Level</th>
+            <th>Schedule</th>
+            <th>Price</th>
+            <th>Username</th>
+            <th>Created At</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="admin-requests-body"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="admin-devices-modal" class="admin-devices-modal" aria-hidden="true">
+  <div class="admin-devices-modal-card">
+    <div class="admin-devices-topbar">
+      <h3>Device Log</h3>
+      <button type="button" id="admin-devices-close" class="btn admin-devices-close-btn">Close</button>
+    </div>
+    <p id="admin-devices-note" class="admin-devices-note">Devices used to log in.</p>
+    <div class="admin-table-wrap">
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>Username</th>
+            <th>Devices</th>
+            <th>Types</th>
+            <th>Last Seen</th>
+          </tr>
+        </thead>
+        <tbody id="admin-devices-body"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="admin-device-detail-modal" class="admin-device-detail-modal" aria-hidden="true">
+  <div class="admin-device-detail-card" role="dialog" aria-modal="true" aria-labelledby="admin-device-detail-title">
+    <div class="admin-device-detail-topbar">
+      <h3 id="admin-device-detail-title">Device Details</h3>
+      <button type="button" id="admin-device-detail-close" class="btn admin-device-detail-close-btn">Close</button>
+    </div>
+    <div class="admin-device-detail-grid">
+      <div class="admin-device-detail-item">
+        <span class="admin-device-detail-label">Username</span>
+        <p id="admin-device-detail-username">-</p>
+      </div>
+      <div class="admin-device-detail-item">
+        <span class="admin-device-detail-label">Device Type</span>
+        <p id="admin-device-detail-type">-</p>
+      </div>
+      <div class="admin-device-detail-item">
+        <span class="admin-device-detail-label">First Seen</span>
+        <p id="admin-device-detail-first">-</p>
+      </div>
+      <div class="admin-device-detail-item">
+        <span class="admin-device-detail-label">Last Seen</span>
+        <p id="admin-device-detail-last">-</p>
+      </div>
+      <div class="admin-device-detail-item">
+        <span class="admin-device-detail-label">Login Count</span>
+        <p id="admin-device-detail-count">-</p>
+      </div>
+      <div class="admin-device-detail-item">
+        <span class="admin-device-detail-label">Last IP</span>
+        <p id="admin-device-detail-ip">-</p>
+      </div>
+      <div class="admin-device-detail-item">
+        <span class="admin-device-detail-label">Location</span>
+        <p id="admin-device-detail-location">-</p>
+      </div>
+      <div class="admin-device-detail-item">
+        <span class="admin-device-detail-label">Timezone</span>
+        <p id="admin-device-detail-timezone">-</p>
+      </div>
+      <div class="admin-device-detail-item">
+        <span class="admin-device-detail-label">Provider</span>
+        <p id="admin-device-detail-org">-</p>
+      </div>
+      <div class="admin-device-detail-item">
+        <span class="admin-device-detail-label">Browser / OS</span>
+        <p id="admin-device-detail-agent">-</p>
+      </div>
+    </div>
+    <div class="admin-device-detail-item admin-device-detail-ua">
+      <span class="admin-device-detail-label">User Agent</span>
+      <p id="admin-device-detail-ua">-</p>
+    </div>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
