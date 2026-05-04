@@ -29,13 +29,19 @@
 
 <section class="hero">
   <div class="hero-info-grid">
-    <article class="hero-info-card">
-      <h3>What is IELTS</h3>
-      <p>IELTS is an international English exam that checks your Listening, Reading, Writing, and Speaking skills for study, work, and migration.</p>
+    <article class="hero-info-card hero-daily-card" id="daily-motivation-card">
+      <div class="hero-daily-header">
+        <span class="hero-daily-badge">✦ Daily Motivation</span>
+        <button type="button" class="hero-daily-edit-btn" id="daily-motivation-edit-btn" hidden aria-label="Edit motivations">Edit</button>
+      </div>
+      <p class="hero-daily-text" id="daily-motivation-text">Loading...</p>
     </article>
-    <article class="hero-info-card">
-      <h3>What is CEFR</h3>
-      <p>CEFR is a global language scale from A1 to C2. It helps you understand your current English level and choose the right course.</p>
+    <article class="hero-info-card hero-daily-card" id="daily-tip-card">
+      <div class="hero-daily-header">
+        <span class="hero-daily-badge hero-daily-badge--tip">💡 Did You Know?</span>
+        <button type="button" class="hero-daily-edit-btn" id="daily-tip-edit-btn" hidden aria-label="Edit tips">Edit</button>
+      </div>
+      <p class="hero-daily-text" id="daily-tip-text">Loading...</p>
     </article>
   </div>
   <div class="hero-image">
@@ -209,14 +215,17 @@
 <section class="contact-section" id="contact">
   <h2 class="results-title contact-title">Contact us</h2>
   <div class="contact-card">
-    <form class="contact-form" id="contact-form">
-      <h3>Send us a message</h3>
-      <input id="contact-name" type="text" placeholder="Your name" required>
-      <input id="contact-email" type="email" placeholder="Email address" required>
-      <textarea id="contact-message" placeholder="Write your message..." rows="5" required></textarea>
-      <button type="submit" class="btn contact-submit-btn">Send Message</button>
-      <p class="contact-status" id="contact-status" role="status" aria-live="polite"></p>
-    </form>
+    <div class="contact-est-block">
+      <span class="contact-est-label">EST</span>
+      <span class="contact-est-year">2026</span>
+      <p class="contact-est-tagline">Where every lesson brings you closer to fluency</p>
+      <ul class="contact-est-facts">
+        <li><span class="contact-est-icon">🎓</span> Structured A1–B2 curriculum</li>
+        <li><span class="contact-est-icon">🌍</span> Students from across Central Asia</li>
+        <li><span class="contact-est-icon">📋</span> Weekly homework &amp; live feedback</li>
+        <li><span class="contact-est-icon">🏆</span> Progress tracked lesson by lesson</li>
+      </ul>
+    </div>
 
     <div class="contact-info">
       <h3>Get in touch</h3>
@@ -232,6 +241,41 @@
     </div>
   </div>
 </section>
+
+<div id="daily-pin-modal" class="admin-lessons-modal" aria-hidden="true">
+  <div class="admin-lessons-card" role="dialog" aria-modal="true" aria-labelledby="daily-pin-title">
+    <div class="admin-lessons-header">
+      <h2 class="admin-lessons-title" id="daily-pin-title">Admin verification</h2>
+      <button type="button" class="admin-lessons-close" id="daily-pin-close" aria-label="Close">&times;</button>
+    </div>
+    <div class="admin-lessons-body">
+      <p class="admin-lessons-hint">A PIN has been sent to your Telegram. You can also use your permanent code.</p>
+      <input id="daily-pin-input" class="admin-lessons-input" type="text" inputmode="numeric" placeholder="Enter PIN / code">
+      <p id="daily-pin-status" class="admin-lessons-status" aria-live="polite"></p>
+      <div style="display:flex;gap:8px;margin-top:8px;">
+        <button type="button" class="btn admin-lessons-primary" id="daily-pin-submit">Submit</button>
+        <button type="button" class="btn admin-lessons-secondary" id="daily-pin-resend">Resend PIN</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="daily-content-modal" class="admin-lessons-modal" aria-hidden="true">
+  <div class="admin-lessons-card" role="dialog" aria-modal="true" aria-labelledby="daily-content-modal-title">
+    <div class="admin-lessons-header">
+      <h2 class="admin-lessons-title" id="daily-content-modal-title">Edit content</h2>
+      <button type="button" class="admin-lessons-close" id="daily-content-modal-close" aria-label="Close">&times;</button>
+    </div>
+    <div class="admin-lessons-body">
+      <div id="daily-content-list" class="daily-content-list"></div>
+      <div class="daily-content-add-row">
+        <textarea id="daily-content-new-text" class="daily-content-textarea" placeholder="Add new item..." rows="2"></textarea>
+        <button type="button" class="btn admin-lessons-primary" id="daily-content-add-btn">Add</button>
+      </div>
+      <p id="daily-content-status" class="admin-lessons-status" aria-live="polite"></p>
+    </div>
+  </div>
+</div>
 
 <div id="knowledge-test-modal" class="knowledge-test-modal" aria-hidden="true">
   <div class="knowledge-test-card" role="dialog" aria-modal="true" aria-labelledby="knowledge-test-title">

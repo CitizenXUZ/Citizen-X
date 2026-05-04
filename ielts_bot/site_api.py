@@ -179,7 +179,11 @@ def bot_login(phone: str, username: str, password: str) -> dict:
 
 
 def get_admin_perm_code(chat_id: int) -> str:
-    url = f"{config.SITE_API_URL}/api/bot/admin/perm-code?chat_id={int(chat_id)}"
+    params = {"chat_id": str(int(chat_id))}
+    admin_username = getattr(config, "SITE_ADMIN_USERNAME", "")
+    if admin_username:
+        params["username"] = admin_username
+    url = f"{config.SITE_API_URL}/api/bot/admin/perm-code?{urllib.parse.urlencode(params)}"
     try:
         with urllib.request.urlopen(url, timeout=3) as response:
             data = json.loads(response.read().decode("utf-8", errors="ignore"))

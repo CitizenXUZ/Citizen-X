@@ -1328,8 +1328,10 @@ if (lessonPage) {
     }
 
     if (presentationBtn) {
+      if (typeof getPresentationUrl === "function" && !getPresentationUrl(course, lessonNumber)) {
+        presentationBtn.hidden = true;
+      } else {
       const ua = typeof navigator !== "undefined" ? navigator.userAgent || "" : "";
-      const isIOS =
         /iPad|iPhone|iPod/i.test(ua) ||
         (typeof navigator !== "undefined" &&
           navigator.platform === "MacIntel" &&
@@ -1374,6 +1376,7 @@ if (lessonPage) {
           presentationBtn.hidden = false;
         }
       })();
+      } // end else (getPresentationUrl check)
     }
 
     if (videoEl && !isYoutubeVideo) {
@@ -5584,7 +5587,13 @@ const initAdminLessonsEditing = () => {
     if (stored) {
       const verify = await verifyCode(stored);
       if (verify.ok && verify.data && verify.data.ok) {
-        await openLessonsManagerSafe();
+        if (typeof window.__ewmsDailyContentCallback === "function") {
+          const cb = window.__ewmsDailyContentCallback;
+          window.__ewmsDailyContentCallback = null;
+          await cb();
+        } else {
+          await openLessonsManagerSafe();
+        }
         return;
       }
       safeClearStored();
@@ -5650,8 +5659,14 @@ const initAdminLessonsEditing = () => {
         if (verify.data.method === "permanent" || /[A-Za-z]/.test(code)) {
           localStorage.setItem(`${ADMIN_EDIT_CODE_STORAGE_PREFIX}${authState.username}`, code);
         }
-        await openLessonsManagerSafe();
         closeAdminModal("admin-edit-code-modal");
+        if (typeof window.__ewmsDailyContentCallback === "function") {
+          const cb = window.__ewmsDailyContentCallback;
+          window.__ewmsDailyContentCallback = null;
+          await cb();
+        } else {
+          await openLessonsManagerSafe();
+        }
         return;
       }
       const error = (verify.data && verify.data.error) || "invalid_code";
@@ -17001,4 +17016,374 @@ document.addEventListener("keydown", (event) => {
     quizModal.setAttribute("aria-hidden", "true");
     syncModalBodyScroll();
   }
+  const dailyModal = document.getElementById("daily-content-modal");
+  if (event.key === "Escape" && dailyModal && dailyModal.classList.contains("is-open")) {
+    closeAdminModal("daily-content-modal");
+  }
 });
+
+// ── Daily content cards ───────────────────────────────────────────────────────
+(() => {
+  const motivationEl = document.getElementById("daily-motivation-text");
+  const tipEl = document.getElementById("daily-tip-text");
+  const motivationEditBtn = document.getElementById("daily-motivation-edit-btn");
+  const tipEditBtn = document.getElementById("daily-tip-edit-btn");
+
+  // Show edit buttons only for admins
+  const _auth = getAuthState();
+  if (_auth && _auth.role === "admin" && _auth.username) {
+    if (motivationEditBtn) motivationEditBtn.hidden = false;
+    if (tipEditBtn) tipEditBtn.hidden = false;
+  }
+
+  // Fetch and render today's content
+  ensureApiBaseUrl().then(() => {
+    fetchWithTimeout(`${API_BASE_URL}/api/daily-content`, {}, 4000)
+      .then((resp) => resp.ok ? resp.json() : null)
+      .then((data) => {
+        if (!data) return;
+        if (data.motivation && motivationEl) motivationEl.textContent = data.motivation.text;
+        if (data.tip && tipEl) tipEl.textContent = data.tip.text;
+      })
+      .catch(() => {});
+  });
+
+  // ── Admin editor state ──
+  let _editType = "motivation";
+  let _verifiedCode = "";
+
+  const getStoredCode = () => {
+    const auth = getAuthState();
+    if (!auth || !auth.username) return "";
+    try { return localStorage.getItem(`${ADMIN_EDIT_CODE_STORAGE_PREFIX}${auth.username}`) || ""; } catch (_e) { return ""; }
+  };
+
+  const saveStoredCode = (code) => {
+    const auth = getAuthState();
+    if (!auth || !auth.username) return;
+    try { localStorage.setItem(`${ADMIN_EDIT_CODE_STORAGE_PREFIX}${auth.username}`, code); } catch (_e) { /* */ }
+  };
+
+  const clearStoredCode = () => {
+    const auth = getAuthState();
+    if (!auth || !auth.username) return;
+    try { localStorage.removeItem(`${ADMIN_EDIT_CODE_STORAGE_PREFIX}${auth.username}`); } catch (_e) { /* */ }
+  };
+
+  const adminPayload = () => {
+    const auth = getAuthState();
+    return { admin_username: (auth && auth.username) || "", code: _verifiedCode };
+  };
+
+  // ── Daily PIN modal helpers ──
+  const openDailyPinModal = () => {
+    const input = document.getElementById("daily-pin-input");
+    const status = document.getElementById("daily-pin-status");
+    if (input) { input.value = ""; input.focus(); }
+    if (status) status.textContent = "";
+    openAdminModal("daily-pin-modal");
+  };
+
+  const closeDailyPinModal = () => closeAdminModal("daily-pin-modal");
+
+  const sendPin = async () => {
+    const auth = getAuthState();
+    const statusEl = document.getElementById("daily-pin-status");
+    if (statusEl) statusEl.textContent = "Sending PIN...";
+    try {
+      await ensureApiBaseUrl();
+      const res = await adminPostJson("/api/admin/edit-access/request", { admin_username: auth.username });
+      if (res.ok && res.data && res.data.ok) {
+        if (statusEl) statusEl.textContent = "PIN sent to Telegram.";
+      } else {
+        const err = (res.data && res.data.error) || "error";
+        if (statusEl) statusEl.textContent =
+          err === "admin_telegram_not_linked" || err === "telegram_chat_id_not_linked"
+            ? "Telegram not linked to this account."
+            : err === "telegram_bot_not_configured" ? "Telegram bot not configured."
+            : "Failed to send PIN.";
+      }
+    } catch (_e) {
+      if (statusEl) statusEl.textContent = "Server error.";
+    }
+  };
+
+  // ── Content editor ──
+  const openDailyEditor = async (type) => {
+    _editType = type;
+    const modal = document.getElementById("daily-content-modal");
+    const titleEl = document.getElementById("daily-content-modal-title");
+    const listEl = document.getElementById("daily-content-list");
+    const statusEl = document.getElementById("daily-content-status");
+    if (!modal) return;
+    if (titleEl) titleEl.textContent = type === "motivation" ? "Edit Daily Motivations" : "Edit Daily Tips";
+    if (listEl) listEl.innerHTML = "<div class='admin-lessons-status'>Loading...</div>";
+    if (statusEl) statusEl.textContent = "";
+    openAdminModal("daily-content-modal");
+    await renderDailyList(type);
+  };
+
+  const AUTH_ERRORS = new Set(["pin_expired", "pin_not_requested", "invalid_code", "banned", "invalid_request"]);
+
+  const showReauthPrompt = (statusEl, type) => {
+    if (!statusEl) return;
+    statusEl.innerHTML = "";
+    const msg = document.createElement("span");
+    msg.textContent = "Code expired. ";
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.textContent = "Re-authenticate";
+    btn.style.cssText = "background:#1e88e5;color:#fff;border:none;border-radius:8px;padding:3px 10px;cursor:pointer;font-size:0.85rem;margin-left:4px;";
+    btn.addEventListener("click", () => {
+      _verifiedCode = "";
+      clearStoredCode();
+      closeAdminModal("daily-content-modal");
+      openDailyPinModal();
+      sendPin();
+      window.__ewmsDailyReauthType = type;
+    });
+    statusEl.appendChild(msg);
+    statusEl.appendChild(btn);
+  };
+
+  const renderDailyList = async (type) => {
+    const listEl = document.getElementById("daily-content-list");
+    const statusEl = document.getElementById("daily-content-status");
+    if (!listEl) return;
+    try {
+      await ensureApiBaseUrl();
+      const resp = await fetchWithTimeout(`${API_BASE_URL}/api/admin/daily-content/list`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...adminPayload(), type }),
+      }, 6000);
+      const data = await resp.json().catch(() => ({}));
+      if (!resp.ok || !data.items) {
+        const err = data.error || "";
+        if (AUTH_ERRORS.has(err)) {
+          listEl.innerHTML = "";
+          showReauthPrompt(statusEl, type);
+        } else {
+          if (statusEl) statusEl.textContent = err || "Failed to load.";
+          listEl.innerHTML = "";
+        }
+        return;
+      }
+      listEl.innerHTML = "";
+      // Track unsaved changes: Set of item ids with unsaved edits
+      const _unsaved = new Set();
+      data.items.forEach((item) => {
+        const row = document.createElement("div");
+        row.className = "daily-content-item" + (item.active ? "" : " is-inactive");
+        const textarea = document.createElement("textarea");
+        textarea.className = "daily-content-item-text";
+        textarea.value = item.text;
+        textarea.rows = 2;
+        const actions = document.createElement("div");
+        actions.className = "daily-content-item-actions";
+
+        // Save button — shows "Saved" until edited again
+        const saveBtn = document.createElement("button");
+        saveBtn.type = "button";
+        saveBtn.className = "daily-content-btn daily-content-btn--save";
+        saveBtn.textContent = "Save";
+        saveBtn.disabled = true; // disabled until text changes
+
+        // Toggle button
+        const toggleBtn = document.createElement("button");
+        toggleBtn.type = "button";
+        toggleBtn.className = "daily-content-btn daily-content-btn--toggle" + (item.active ? "" : " is-show");
+        toggleBtn.textContent = item.active ? "Hide" : "Show";
+
+        const delBtn = document.createElement("button");
+        delBtn.type = "button";
+        delBtn.className = "daily-content-btn daily-content-btn--delete";
+        delBtn.textContent = "✕";
+
+        // Enable Save when text changes
+        textarea.addEventListener("input", () => {
+          const changed = textarea.value.trim() !== item.text;
+          saveBtn.disabled = !changed;
+          if (changed) {
+            saveBtn.textContent = "Save";
+            _unsaved.add(item.id);
+          } else {
+            _unsaved.delete(item.id);
+          }
+        });
+
+        saveBtn.addEventListener("click", async () => {
+          const newText = textarea.value.trim();
+          if (!newText) return;
+          saveBtn.disabled = true;
+          saveBtn.textContent = "Saving...";
+          const res = await fetchWithTimeout(`${API_BASE_URL}/api/admin/daily-content/update`, {
+            method: "POST", headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ ...adminPayload(), id: item.id, text: newText }),
+          }, 6000).catch(() => null);
+          if (res && res.ok) {
+            item.text = newText; // update baseline
+            saveBtn.textContent = "Saved";
+            saveBtn.disabled = true; // stays disabled until next edit
+            _unsaved.delete(item.id);
+          } else {
+            saveBtn.textContent = "Save";
+            saveBtn.disabled = false;
+          }
+        });
+
+        toggleBtn.addEventListener("click", async () => {
+          const newActive = !item.active;
+          await fetchWithTimeout(`${API_BASE_URL}/api/admin/daily-content/update`, {
+            method: "POST", headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ ...adminPayload(), id: item.id, active: newActive }),
+          }, 6000).catch(() => null);
+          item.active = newActive;
+          row.className = "daily-content-item" + (newActive ? "" : " is-inactive");
+          toggleBtn.textContent = newActive ? "Hide" : "Show";
+          toggleBtn.className = "daily-content-btn daily-content-btn--toggle" + (newActive ? "" : " is-show");
+        });
+
+        // Store unsaved tracker reference on the list element
+        if (!listEl._unsaved) listEl._unsaved = _unsaved;
+
+        delBtn.addEventListener("click", async () => {
+          if (!confirm("Delete this item?")) return;
+          await fetchWithTimeout(`${API_BASE_URL}/api/admin/daily-content/delete`, {
+            method: "POST", headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ ...adminPayload(), id: item.id }),
+          }, 6000).catch(() => null);
+          row.remove();
+        });
+
+        actions.append(saveBtn, toggleBtn, delBtn);
+        row.append(textarea, actions);
+        listEl.appendChild(row);
+      });
+    } catch (_e) {
+      if (statusEl) statusEl.textContent = "Error loading content.";
+    }
+  };
+
+  // ── Wire up Edit buttons ──
+  const onEditClick = async (type) => {
+    const auth = getAuthState();
+    if (!auth || auth.role !== "admin") return;
+    _editType = type;
+
+    // Try stored code first
+    const stored = getStoredCode();
+    if (stored) {
+      try {
+        await ensureApiBaseUrl();
+        const res = await adminPostJson("/api/admin/edit-access/verify", { admin_username: auth.username, code: stored });
+        if (res.ok && res.data && res.data.ok) {
+          _verifiedCode = stored;
+          openDailyEditor(type);
+          return;
+        }
+      } catch (_e) { /* */ }
+      clearStoredCode();
+    }
+
+    // No valid stored code — open PIN modal and immediately send PIN
+    openDailyPinModal();
+    sendPin();
+  };
+
+  if (motivationEditBtn) motivationEditBtn.addEventListener("click", () => onEditClick("motivation"));
+  if (tipEditBtn) tipEditBtn.addEventListener("click", () => onEditClick("tip"));
+
+  // PIN modal submit
+  const pinSubmitBtn = document.getElementById("daily-pin-submit");
+  const pinResendBtn = document.getElementById("daily-pin-resend");
+  const pinCloseBtn = document.getElementById("daily-pin-close");
+  const pinInput = document.getElementById("daily-pin-input");
+
+  if (pinSubmitBtn) {
+    pinSubmitBtn.addEventListener("click", async () => {
+      const code = (pinInput && pinInput.value.trim()) || "";
+      const statusEl = document.getElementById("daily-pin-status");
+      if (!code) { if (statusEl) statusEl.textContent = "Enter the code."; return; }
+      if (statusEl) statusEl.textContent = "Checking...";
+      pinSubmitBtn.disabled = true;
+      try {
+        const auth = getAuthState();
+        await ensureApiBaseUrl();
+        const res = await adminPostJson("/api/admin/edit-access/verify", { admin_username: auth.username, code });
+        if (res.ok && res.data && res.data.ok) {
+          _verifiedCode = code;
+          if (/[A-Za-z]/.test(code) || res.data.method === "permanent") saveStoredCode(code);
+          const typeToOpen = window.__ewmsDailyReauthType || _editType;
+          window.__ewmsDailyReauthType = null;
+          closeDailyPinModal();
+          openDailyEditor(typeToOpen);
+        } else {
+          const err = (res.data && res.data.error) || "wrong_code";
+          const left = res.data && res.data.attempts_left;
+          if (statusEl) statusEl.textContent = err === "banned" ? "Too many attempts. Banned." :
+            left ? `Wrong code. Attempts left: ${left}` : "Wrong code.";
+        }
+      } catch (_e) {
+        const statusEl = document.getElementById("daily-pin-status");
+        if (statusEl) statusEl.textContent = "Server error.";
+      }
+      pinSubmitBtn.disabled = false;
+    });
+  }
+
+  if (pinInput) {
+    pinInput.addEventListener("keydown", (e) => { if (e.key === "Enter") pinSubmitBtn && pinSubmitBtn.click(); });
+  }
+
+  if (pinResendBtn) pinResendBtn.addEventListener("click", sendPin);
+  if (pinCloseBtn) pinCloseBtn.addEventListener("click", closeDailyPinModal);
+
+  // Daily content editor close — warn about unsaved changes
+  const editorCloseBtn = document.getElementById("daily-content-modal-close");
+  const closeDailyEditor = () => {
+    const listEl = document.getElementById("daily-content-list");
+    const unsaved = listEl && listEl._unsaved;
+    if (unsaved && unsaved.size > 0) {
+      if (!confirm(`You have ${unsaved.size} unsaved change(s). Close anyway? Unsaved text will be lost.`)) return;
+    }
+    closeAdminModal("daily-content-modal");
+  };
+  if (editorCloseBtn) editorCloseBtn.addEventListener("click", closeDailyEditor);
+
+  // Add new item
+  const addBtn = document.getElementById("daily-content-add-btn");
+  if (addBtn) {
+    addBtn.addEventListener("click", async () => {
+      const textarea = document.getElementById("daily-content-new-text");
+      const statusEl = document.getElementById("daily-content-status");
+      const text = (textarea && textarea.value.trim()) || "";
+      if (!text) { if (statusEl) statusEl.textContent = "Enter text first."; return; }
+      addBtn.disabled = true;
+      try {
+        await ensureApiBaseUrl();
+        const resp = await fetchWithTimeout(`${API_BASE_URL}/api/admin/daily-content/create`, {
+          method: "POST", headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ ...adminPayload(), type: _editType, text }),
+        }, 6000);
+        const data = await resp.json().catch(() => ({}));
+        if (resp.ok && data.ok) {
+          if (textarea) textarea.value = "";
+          if (statusEl) statusEl.textContent = "";
+          await renderDailyList(_editType);
+        } else {
+          const err = data.error || "Failed to add.";
+          if (AUTH_ERRORS.has(err)) {
+            showReauthPrompt(statusEl, _editType);
+          } else {
+            if (statusEl) statusEl.textContent = err;
+          }
+        }
+      } catch (_e) {
+        const statusEl = document.getElementById("daily-content-status");
+        if (statusEl) statusEl.textContent = "Error.";
+      }
+      addBtn.disabled = false;
+    });
+  }
+})();

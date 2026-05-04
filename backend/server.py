@@ -2346,6 +2346,65 @@ def init_db():
         """
     )
 
+    cur.execute(
+        """
+        CREATE TABLE IF NOT EXISTS daily_content (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            type TEXT NOT NULL,
+            text TEXT NOT NULL DEFAULT '',
+            active INTEGER NOT NULL DEFAULT 1,
+            created_at TEXT NOT NULL
+        )
+        """
+    )
+
+    _default_motivations = [
+        "Every expert was once a beginner. Keep going.",
+        "You don't have to be great to start, but you have to start to be great.",
+        "Mistakes are proof that you are trying.",
+        "A new language is a new life.",
+        "Progress, not perfection.",
+        "Small steps every day lead to big results.",
+        "Believe you can and you're halfway there.",
+        "The secret to getting ahead is getting started.",
+        "Fluency is built one word at a time.",
+        "Your only limit is your own mind.",
+        "Consistency beats talent every single time.",
+        "Dream in English, think in English, speak in English.",
+        "Every sentence you speak today is one step closer to fluency.",
+        "Hard work beats talent when talent doesn't work hard.",
+        "You are braver than you believe and more capable than you know.",
+    ]
+    _default_tips = [
+        "Listen to English music and try to understand the lyrics — it trains your ear.",
+        "Label objects around your home with their English names to build vocabulary passively.",
+        "Watch your favourite shows with English subtitles instead of your native language.",
+        "Speak out loud when you practise — thinking is not the same as speaking.",
+        "Read one short English article every morning to start your day actively.",
+        "Keep a small notebook for new words and review it before bed.",
+        "Use new words in sentences immediately — that's how they stick.",
+        "Don't be afraid to make mistakes; native speakers love when you try.",
+        "Record yourself speaking and listen back — you'll spot patterns to improve.",
+        "Find a language partner or join a speaking club to practise regularly.",
+        "Learn common phrasal verbs in context, not as isolated lists.",
+        "Watch English YouTube videos on topics you already love.",
+        "Repeat new vocabulary out loud at least 3 times to lock it in memory.",
+        "Set your phone and apps to English — constant exposure matters.",
+        "Translate songs or movie quotes you love — it's fun and effective.",
+    ]
+
+    cur.execute("SELECT COUNT(*) as cnt FROM daily_content WHERE type = 'motivation'")
+    if cur.fetchone()["cnt"] == 0:
+        now_iso = utc_now().isoformat()
+        for m in _default_motivations:
+            cur.execute("INSERT INTO daily_content (type, text, active, created_at) VALUES ('motivation', ?, 1, ?)", (m, now_iso))
+
+    cur.execute("SELECT COUNT(*) as cnt FROM daily_content WHERE type = 'tip'")
+    if cur.fetchone()["cnt"] == 0:
+        now_iso = utc_now().isoformat()
+        for t in _default_tips:
+            cur.execute("INSERT INTO daily_content (type, text, active, created_at) VALUES ('tip', ?, 1, ?)", (t, now_iso))
+
     conn.commit()
     conn.close()
 
@@ -2398,8 +2457,8 @@ def verify_admin_edit_code(cur: sqlite3.Cursor, admin_username: str, code: str) 
     provided_hash = hash_password(code, salt)
     if provided_hash == expected_hash:
         cur.execute(
-            "UPDATE admin_edit_pins SET pin_hash = '', salt = '', expires_at = '', attempts_left = 0 WHERE admin_username = ?",
-            (admin_username,),
+            "UPDATE admin_edit_pins SET attempts_left = ? WHERE admin_username = ?",
+            (ADMIN_EDIT_PIN_MAX_ATTEMPTS, admin_username),
         )
         return True, "", "pin"
 
@@ -3949,6 +4008,30 @@ class Handler(BaseHTTPRequestHandler):
             self.wfile.write(json.dumps({"course": course, "student": dict(student), "lessons": lessons}).encode("utf-8"))
             return
 
+        if parsed.path == "/api/daily-content":
+            conn = get_connection()
+            cur = conn.cursor()
+            tz_offset_hours = 5
+            now_local = utc_now() + timedelta(hours=tz_offset_hours)
+            epoch = datetime(2026, 1, 1)
+            day_index = (now_local.date() - epoch.date()).days
+            result = {}
+            for content_type in ("motivation", "tip"):
+                cur.execute(
+                    "SELECT id, text FROM daily_content WHERE type = ? AND active = 1 ORDER BY id ASC",
+                    (content_type,),
+                )
+                rows = cur.fetchall()
+                if rows:
+                    item = rows[day_index % len(rows)]
+                    result[content_type] = {"id": item["id"], "text": item["text"]}
+                else:
+                    result[content_type] = None
+            conn.close()
+            self._set_headers(200)
+            self.wfile.write(json.dumps(result).encode("utf-8"))
+            return
+
         if parsed.path == "/api/leaderboard/achievements":
             params = {key: values[0] for key, values in parse_qs(parsed.query).items()}
             try:
@@ -4019,6 +4102,7 @@ class Handler(BaseHTTPRequestHandler):
         if parsed.path == "/api/bot/admin/perm-code":
             params = {key: values[0] for key, values in parse_qs(parsed.query).items()}
             chat_id_raw = params.get("chat_id", "").strip()
+            req_username = params.get("username", "").strip()
             try:
                 req_chat_id = int(chat_id_raw)
             except (ValueError, TypeError):
@@ -4039,7 +4123,12 @@ class Handler(BaseHTTPRequestHandler):
                 self._set_headers(403)
                 self.wfile.write(json.dumps({"error": "forbidden"}).encode("utf-8"))
                 return
-            lookup_username = str(admin_row["username"]) if admin_row else ADMIN_USERNAME
+            if admin_row:
+                lookup_username = str(admin_row["username"])
+            elif req_username:
+                lookup_username = req_username
+            else:
+                lookup_username = ADMIN_USERNAME
             try:
                 cur.execute(
                     "SELECT perm_code_plain FROM admin_edit_pins WHERE admin_username = ?",
@@ -5512,19 +5601,14 @@ class Handler(BaseHTTPRequestHandler):
 
             if perm_code:
                 tg_text = (
-                    f"🔑 Admin edit PIN — {admin_username}\n\n"
-                    f"⏱ One-time PIN: {pin}\n"
-                    f"Valid for {ADMIN_EDIT_PIN_TTL_MINUTES} minutes.\n\n"
+                    f"🔑 PIN: {pin}  ({ADMIN_EDIT_PIN_TTL_MINUTES} min)\n\n"
                     f"🔐 Permanent code: {perm_code}\n"
-                    f"This code will not be sent again.\n"
-                    f"Use /mycode in the bot to view it later."
+                    f"Save it — won't be sent again. Use /mycode to view later."
                 )
             else:
                 tg_text = (
-                    f"🔑 Admin edit PIN — {admin_username}\n\n"
-                    f"⏱ One-time PIN: {pin}\n"
-                    f"Valid for {ADMIN_EDIT_PIN_TTL_MINUTES} minutes.\n\n"
-                    f"Use /mycode in the bot to view your permanent code."
+                    f"🔑 PIN: {pin}  ({ADMIN_EDIT_PIN_TTL_MINUTES} min)\n\n"
+                    f"Use /mycode to view your permanent code."
                 )
             sent = send_telegram_message_to(recipients, tg_text)
             if not sent:
@@ -6465,6 +6549,99 @@ class Handler(BaseHTTPRequestHandler):
                 json.dumps({"status": "created", "id": mentor_id, "name": name, "level": course_level}).encode("utf-8")
             )
             return
+
+        if self.path in ("/api/admin/daily-content/list", "/api/admin/daily-content/create",
+                        "/api/admin/daily-content/update", "/api/admin/daily-content/delete"):
+            data = self._read_json()
+            admin_username = str(data.get("admin_username", "") or "").strip()
+            code = str(data.get("code", "") or "").strip()
+            if not admin_username or not code:
+                self._set_headers(400)
+                self.wfile.write(json.dumps({"error": "invalid_request"}).encode("utf-8"))
+                return
+            conn = get_connection()
+            cur = conn.cursor()
+            ok, error, _method = verify_admin_edit_code(cur, admin_username, code)
+            if not ok:
+                conn.commit()
+                conn.close()
+                self._set_headers(400)
+                self.wfile.write(json.dumps({"error": error}).encode("utf-8"))
+                return
+
+            if self.path == "/api/admin/daily-content/list":
+                content_type = str(data.get("type", "") or "").strip()
+                if content_type not in ("motivation", "tip"):
+                    conn.close()
+                    self._set_headers(400)
+                    self.wfile.write(json.dumps({"error": "invalid type"}).encode("utf-8"))
+                    return
+                cur.execute(
+                    "SELECT id, text, active FROM daily_content WHERE type = ? ORDER BY id ASC",
+                    (content_type,),
+                )
+                items = [{"id": r["id"], "text": r["text"], "active": bool(r["active"])} for r in cur.fetchall()]
+                conn.close()
+                self._set_headers(200)
+                self.wfile.write(json.dumps({"items": items}).encode("utf-8"))
+                return
+
+            if self.path == "/api/admin/daily-content/create":
+                content_type = str(data.get("type", "") or "").strip()
+                text = str(data.get("text", "") or "").strip()
+                if content_type not in ("motivation", "tip") or not text:
+                    conn.close()
+                    self._set_headers(400)
+                    self.wfile.write(json.dumps({"error": "invalid_request"}).encode("utf-8"))
+                    return
+                now_iso = utc_now().isoformat()
+                cur.execute(
+                    "INSERT INTO daily_content (type, text, active, created_at) VALUES (?, ?, 1, ?)",
+                    (content_type, text, now_iso),
+                )
+                new_id = cur.lastrowid
+                conn.commit()
+                conn.close()
+                self._set_headers(200)
+                self.wfile.write(json.dumps({"ok": True, "id": new_id}).encode("utf-8"))
+                return
+
+            if self.path == "/api/admin/daily-content/update":
+                item_id = data.get("id")
+                text = str(data.get("text", "") or "").strip()
+                active = data.get("active")
+                try:
+                    item_id = int(item_id)
+                except (TypeError, ValueError):
+                    conn.close()
+                    self._set_headers(400)
+                    self.wfile.write(json.dumps({"error": "invalid id"}).encode("utf-8"))
+                    return
+                if text:
+                    cur.execute("UPDATE daily_content SET text = ? WHERE id = ?", (text, item_id))
+                if active is not None:
+                    cur.execute("UPDATE daily_content SET active = ? WHERE id = ?", (1 if active else 0, item_id))
+                conn.commit()
+                conn.close()
+                self._set_headers(200)
+                self.wfile.write(json.dumps({"ok": True}).encode("utf-8"))
+                return
+
+            if self.path == "/api/admin/daily-content/delete":
+                item_id = data.get("id")
+                try:
+                    item_id = int(item_id)
+                except (TypeError, ValueError):
+                    conn.close()
+                    self._set_headers(400)
+                    self.wfile.write(json.dumps({"error": "invalid id"}).encode("utf-8"))
+                    return
+                cur.execute("DELETE FROM daily_content WHERE id = ?", (item_id,))
+                conn.commit()
+                conn.close()
+                self._set_headers(200)
+                self.wfile.write(json.dumps({"ok": True}).encode("utf-8"))
+                return
 
         if self.path == "/api/admin/users/create":
             data = self._read_json()
