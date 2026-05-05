@@ -21,7 +21,20 @@ const PRESENTATIONS_BY_COURSE = {
     19: true,
     20: true,
   },
-  a2: {},
+  a2: {
+    1: true,
+    2: true,
+    3: true,
+    4: true,
+    5: true,
+    6: true,
+    7: true,
+    8: true,
+    9: true,
+    10: true,
+    11: true,
+    12: true,
+  },
   b1: {},
   b2: {},
 };
@@ -49,7 +62,9 @@ const PRESENTATION_FILES_BY_COURSE = {
     19: "future_simple_tense.pdf",
     20: "used_to.pdf",
   },
-  a2: {},
+  a2: {
+    1: "reflexive_pronoun.pdf",
+  },
   b1: {},
   b2: {},
 };
