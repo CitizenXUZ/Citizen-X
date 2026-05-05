@@ -1514,7 +1514,7 @@ if (presentationPage) {
     if (!pdfUrl) {
       const presentationFile = typeof getPresentationFile === "function" ? getPresentationFile(course, lessonNumber) : "";
       if (presentationFile) {
-        pdfUrl = `assets/presentations/${encodeURIComponent(presentationFile)}`;
+        pdfUrl = `/assets/presentations/${encodeURIComponent(presentationFile)}`;
       }
     }
 
