@@ -3004,7 +3004,11 @@ class Handler(BaseHTTPRequestHandler):
                 rel = presentation_path.resolve().relative_to(WEB_ROOT.resolve())
                 url = f"/{rel.as_posix()}"
             except (OSError, ValueError):
-                url = f"/backend/uploads/presentations/{presentation_path.name}"
+                try:
+                    rel = presentation_path.resolve().relative_to(DEFAULT_DB_DIR.resolve())
+                    url = f"/backend/uploads/{rel.as_posix()}"
+                except (OSError, ValueError):
+                    url = f"/backend/uploads/presentations/{presentation_path.name}"
 
             self._set_headers(200)
             self.wfile.write(
