@@ -1362,7 +1362,7 @@ if (lessonPage) {
         presentationBtn.classList.remove("is-loading");
       } else {
       const ua = typeof navigator !== "undefined" ? navigator.userAgent || "" : "";
-        /iPad|iPhone|iPod/i.test(ua) ||
+      const isIOS = /iPad|iPhone|iPod/i.test(ua) ||
         (typeof navigator !== "undefined" &&
           navigator.platform === "MacIntel" &&
           typeof navigator.maxTouchPoints === "number" &&
@@ -1376,7 +1376,21 @@ if (lessonPage) {
       const fallbackPresentationUrl = `presentation.html?course=${encodeURIComponent(course)}&lesson=${lessonNumber}`;
       presentationBtn.href = fallbackPresentationUrl;
 
-      // Decide availability + best URL via server-side info (supports admin-uploaded PDFs).
+      // If static file defined in presentations.js — show button immediately, no API needed
+      const hasStaticFile = typeof getPresentationFile === "function" && Boolean(getPresentationFile(course, lessonNumber));
+      if (hasStaticFile) {
+        const staticFile = getPresentationFile(course, lessonNumber);
+        const staticUrl = `/assets/presentations/${encodeURIComponent(staticFile)}`;
+        if (isIOS || isSmallScreen) {
+          presentationBtn.href = staticUrl;
+        } else {
+          presentationBtn.href = fallbackPresentationUrl;
+        }
+        presentationBtn.classList.remove("is-loading");
+        presentationBtn.removeAttribute("aria-disabled");
+        presentationBtn.hidden = false;
+      } else {
+      // No static file — ask Railway (Edit Menu uploads)
       (async () => {
         try {
           await ensureApiBaseUrl();
@@ -1393,7 +1407,6 @@ if (lessonPage) {
             return;
           }
           const url = typeof info.url === "string" ? info.url : "";
-          // Static repo files → relative URL (Vercel); uploaded files → Railway URL
           const absoluteUrl = url
             ? url.startsWith("http")
               ? url
@@ -1402,7 +1415,6 @@ if (lessonPage) {
                 : url
             : "";
           if (absoluteUrl && (isIOS || isSmallScreen)) {
-            // Mobile: open the PDF directly so iOS/Android show the native viewer.
             presentationBtn.href = absoluteUrl;
           } else {
             presentationBtn.href = fallbackPresentationUrl;
@@ -1411,12 +1423,12 @@ if (lessonPage) {
           presentationBtn.removeAttribute("aria-disabled");
           presentationBtn.hidden = false;
         } catch (error) {
-          // Fallback: keep the presentation page link (it will show "not available" if needed).
           presentationBtn.classList.remove("is-loading");
           presentationBtn.removeAttribute("aria-disabled");
           presentationBtn.hidden = false;
         }
       })();
+      }
       } // end else (getPresentationUrl check)
     }
 
@@ -1485,30 +1497,38 @@ if (presentationPage) {
       noteEl.textContent = "";
     }
     let pdfUrl = "";
-    try {
-      await ensureApiBaseUrl();
-      const resp = await fetchWithTimeout(
-        `${API_BASE_URL}/api/presentation/info?course=${encodeURIComponent(course)}&lesson=${encodeURIComponent(
-          lessonNumber
-        )}`,
-        {},
-        6000
-      );
-      const info = await resp.json().catch(() => ({}));
-      if (resp.ok && info && info.available && typeof info.url === "string" && info.url) {
-        const rawUrl = info.url;
-        if (rawUrl.startsWith("http")) {
-          pdfUrl = rawUrl;
-        } else if (rawUrl.startsWith("/backend/uploads/")) {
-          // Admin-uploaded file stored on Railway volume — use Railway URL
-          pdfUrl = `${API_BASE_URL}${rawUrl}`;
-        } else {
-          // Static file from GitHub repo — serve directly from Vercel (relative URL)
-          pdfUrl = rawUrl;
+
+    // If a static file is defined in presentations.js — use it directly from Vercel, no API call needed
+    const staticPresentationFile = typeof getPresentationFile === "function" ? getPresentationFile(course, lessonNumber) : "";
+    if (staticPresentationFile) {
+      pdfUrl = `/assets/presentations/${encodeURIComponent(staticPresentationFile)}`;
+    }
+
+    // For lessons without a static file — ask Railway (Edit Menu uploads)
+    if (!pdfUrl) {
+      try {
+        await ensureApiBaseUrl();
+        const resp = await fetchWithTimeout(
+          `${API_BASE_URL}/api/presentation/info?course=${encodeURIComponent(course)}&lesson=${encodeURIComponent(
+            lessonNumber
+          )}`,
+          {},
+          6000
+        );
+        const info = await resp.json().catch(() => ({}));
+        if (resp.ok && info && info.available && typeof info.url === "string" && info.url) {
+          const rawUrl = info.url;
+          if (rawUrl.startsWith("http")) {
+            pdfUrl = rawUrl;
+          } else if (rawUrl.startsWith("/backend/uploads/")) {
+            pdfUrl = `${API_BASE_URL}${rawUrl}`;
+          } else {
+            pdfUrl = rawUrl;
+          }
         }
+      } catch (error) {
+        // ignore
       }
-    } catch (error) {
-      // ignore
     }
 
     if (!pdfUrl) {
