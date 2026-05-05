@@ -68,12 +68,23 @@ const getPresentationUrl = (course, lessonNumber) => {
   const normalizedCourse = String(course || "").trim().toLowerCase();
   const safeLessonNumber = Number(lessonNumber) || 1;
   const courseMap = PRESENTATIONS_BY_COURSE[normalizedCourse];
-  const hasFile =
-    typeof getPresentationFile === "function"
-      ? Boolean(getPresentationFile(normalizedCourse, safeLessonNumber))
-      : true;
-  if (courseMap && courseMap[safeLessonNumber] && hasFile) {
-    return `presentation.html?course=${encodeURIComponent(normalizedCourse)}&lesson=${safeLessonNumber}`;
+
+  // Explicitly disabled (value is strictly false) — hide button immediately
+  if (courseMap && courseMap[safeLessonNumber] === false) {
+    return "";
   }
-  return "";
+
+  // Explicitly enabled with a known static file
+  if (courseMap && courseMap[safeLessonNumber] === true) {
+    const hasFile =
+      typeof getPresentationFile === "function"
+        ? Boolean(getPresentationFile(normalizedCourse, safeLessonNumber))
+        : true;
+    if (hasFile) {
+      return `presentation.html?course=${encodeURIComponent(normalizedCourse)}&lesson=${safeLessonNumber}`;
+    }
+  }
+
+  // Not defined (e.g. a2, b1, b2) — return null so the caller checks the server API
+  return null;
 };

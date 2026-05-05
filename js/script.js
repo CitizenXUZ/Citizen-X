@@ -1328,7 +1328,7 @@ if (lessonPage) {
     }
 
     if (presentationBtn) {
-      if (typeof getPresentationUrl === "function" && !getPresentationUrl(course, lessonNumber)) {
+      if (typeof getPresentationUrl === "function" && getPresentationUrl(course, lessonNumber) === "") {
         presentationBtn.hidden = true;
       } else {
       const ua = typeof navigator !== "undefined" ? navigator.userAgent || "" : "";
