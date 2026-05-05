@@ -1112,13 +1112,22 @@ def get_presentation_path(course: str, lesson_number: int):
     if lesson_num <= 0:
         return None
 
+    # If a named static file is defined in code, it takes priority (permanent GitHub file)
+    course_map = PRESENTATIONS_BY_COURSE.get(course_key, {})
+    filename = course_map.get(lesson_num)
+    if filename:
+        static_path = STATIC_PRESENTATIONS_DIR / filename
+        if static_path.exists():
+            return static_path
+        static_course_path = STATIC_PRESENTATIONS_DIR / course_key / filename
+        if static_course_path.exists():
+            return static_course_path
+
     # Admin override upload: uploads/presentations/<course>/lesson-<n>.pdf
     override = PRESENTATIONS_DIR / course_key / f"lesson-{lesson_num}.pdf"
     if override.exists():
         return override
 
-    course_map = PRESENTATIONS_BY_COURSE.get(course_key, {})
-    filename = course_map.get(lesson_num)
     if filename:
         path = PRESENTATIONS_DIR / filename
         if path.exists():
@@ -1126,11 +1135,7 @@ def get_presentation_path(course: str, lesson_number: int):
         course_path = PRESENTATIONS_DIR / course_key / filename
         if course_path.exists():
             return course_path
-            
-        # Check static dir
-        static_path = STATIC_PRESENTATIONS_DIR / filename
-        if static_path.exists():
-            return static_path
+
         static_course_path = STATIC_PRESENTATIONS_DIR / course_key / filename
         if static_course_path.exists():
             return static_course_path
