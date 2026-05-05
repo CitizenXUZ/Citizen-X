@@ -1028,6 +1028,13 @@ if (lessonPage) {
   const course = (params.get("course") || "a1").toLowerCase();
   const lessonNumber = Number(params.get("lesson")) || 1;
   const isEditMode = params.get("edit") === "1";
+
+  // Set correct hrefs immediately (synchronously) so fast clicks never land on wrong lesson
+  const _tasksBtn = document.getElementById("go-tasks-btn");
+  const _presentationBtn = document.getElementById("lesson-presentation-btn");
+  if (_tasksBtn) _tasksBtn.href = `tasks.html?course=${course}&lesson=${lessonNumber}&open=quiz`;
+  if (_presentationBtn) _presentationBtn.href = `presentation.html?course=${course}&lesson=${lessonNumber}`;
+
   (async () => {
     const hasAccess = await checkServerLessonAccess(course, lessonNumber);
     if (!hasAccess) {
@@ -1179,6 +1186,12 @@ if (lessonPage) {
 
     if (tasksBtn) {
       tasksBtn.href = `tasks.html?course=${course}&lesson=${lessonNumber}&open=quiz`;
+      tasksBtn.classList.remove("is-loading");
+      tasksBtn.removeAttribute("aria-disabled");
+    }
+    if (homeworkBtn) {
+      homeworkBtn.classList.remove("is-loading");
+      homeworkBtn.disabled = false;
     }
 
     const tasksUrl = `tasks.html?course=${course}&lesson=${lessonNumber}`;
@@ -1330,6 +1343,7 @@ if (lessonPage) {
     if (presentationBtn) {
       if (typeof getPresentationUrl === "function" && getPresentationUrl(course, lessonNumber) === "") {
         presentationBtn.hidden = true;
+        presentationBtn.classList.remove("is-loading");
       } else {
       const ua = typeof navigator !== "undefined" ? navigator.userAgent || "" : "";
         /iPad|iPhone|iPod/i.test(ua) ||
@@ -1370,9 +1384,13 @@ if (lessonPage) {
           } else {
             presentationBtn.href = fallbackPresentationUrl;
           }
+          presentationBtn.classList.remove("is-loading");
+          presentationBtn.removeAttribute("aria-disabled");
           presentationBtn.hidden = false;
         } catch (error) {
           // Fallback: keep the presentation page link (it will show "not available" if needed).
+          presentationBtn.classList.remove("is-loading");
+          presentationBtn.removeAttribute("aria-disabled");
           presentationBtn.hidden = false;
         }
       })();

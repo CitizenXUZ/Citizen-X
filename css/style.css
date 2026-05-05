@@ -5101,6 +5101,12 @@ header .btn {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.lesson-nav-btn.is-loading {
+  opacity: 0.45;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
 .presentation-page {
   padding: 26px 8% 56px;
   user-select: none;
