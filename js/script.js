@@ -1029,11 +1029,27 @@ if (lessonPage) {
   const lessonNumber = Number(params.get("lesson")) || 1;
   const isEditMode = params.get("edit") === "1";
 
-  // Set correct hrefs immediately (synchronously) so fast clicks never land on wrong lesson
+  // Set correct hrefs immediately (synchronously) — no server data needed for these URLs
   const _tasksBtn = document.getElementById("go-tasks-btn");
   const _presentationBtn = document.getElementById("lesson-presentation-btn");
-  if (_tasksBtn) _tasksBtn.href = `tasks.html?course=${course}&lesson=${lessonNumber}&open=quiz`;
-  if (_presentationBtn) _presentationBtn.href = `presentation.html?course=${course}&lesson=${lessonNumber}`;
+  const _backBtn = document.getElementById("back-lessons-btn");
+  const _homeworkBtn = document.getElementById("lesson-homework-btn");
+  if (_tasksBtn) {
+    _tasksBtn.href = `tasks.html?course=${course}&lesson=${lessonNumber}&open=quiz`;
+    _tasksBtn.classList.remove("is-loading");
+    _tasksBtn.removeAttribute("aria-disabled");
+  }
+  if (_backBtn) {
+    _backBtn.href = `${course}.html`;
+  }
+  if (_homeworkBtn) {
+    _homeworkBtn.classList.remove("is-loading");
+    _homeworkBtn.disabled = false;
+  }
+  if (_presentationBtn) {
+    _presentationBtn.href = `presentation.html?course=${course}&lesson=${lessonNumber}`;
+    // presentationBtn stays is-loading until API confirms availability
+  }
 
   (async () => {
     const hasAccess = await checkServerLessonAccess(course, lessonNumber);
@@ -1377,7 +1393,14 @@ if (lessonPage) {
             return;
           }
           const url = typeof info.url === "string" ? info.url : "";
-          const absoluteUrl = url ? (url.startsWith("http") ? url : `${API_BASE_URL}${url}`) : "";
+          // Static repo files → relative URL (Vercel); uploaded files → Railway URL
+          const absoluteUrl = url
+            ? url.startsWith("http")
+              ? url
+              : url.startsWith("/backend/uploads/")
+                ? `${API_BASE_URL}${url}`
+                : url
+            : "";
           if (absoluteUrl && (isIOS || isSmallScreen)) {
             // Mobile: open the PDF directly so iOS/Android show the native viewer.
             presentationBtn.href = absoluteUrl;
@@ -1473,7 +1496,16 @@ if (presentationPage) {
       );
       const info = await resp.json().catch(() => ({}));
       if (resp.ok && info && info.available && typeof info.url === "string" && info.url) {
-        pdfUrl = info.url.startsWith("http") ? info.url : `${API_BASE_URL}${info.url}`;
+        const rawUrl = info.url;
+        if (rawUrl.startsWith("http")) {
+          pdfUrl = rawUrl;
+        } else if (rawUrl.startsWith("/backend/uploads/")) {
+          // Admin-uploaded file stored on Railway volume — use Railway URL
+          pdfUrl = `${API_BASE_URL}${rawUrl}`;
+        } else {
+          // Static file from GitHub repo — serve directly from Vercel (relative URL)
+          pdfUrl = rawUrl;
+        }
       }
     } catch (error) {
       // ignore
