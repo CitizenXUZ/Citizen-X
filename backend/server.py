@@ -465,7 +465,9 @@ PRESENTATIONS_BY_COURSE = {
         19: "future_simple_tense.pdf",
         20: "used_to.pdf",
     },
-    "a2": {},
+    "a2": {
+        1: "reflexive_pronoun.pdf",
+    },
     "b1": {},
     "b2": {},
 }
