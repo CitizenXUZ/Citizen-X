@@ -1192,6 +1192,15 @@ def try_link_chat(phone_raw: str, chat_id: int):
     return status, data or {}
 
 
+def try_link_parent_chat(phone: str, chat_id: int):
+    """Link a parent's Telegram by their phone stored in user_parents."""
+    params: dict = {"phone": phone, "chat_id": str(int(chat_id))}
+    if BOT_SYNC_TOKEN:
+        params["token"] = BOT_SYNC_TOKEN
+    status, data = site_get_json("/api/bot/parent-link-chat", params)
+    return status, data or {}
+
+
 def handle_text(chat_id: int, role: str, first_name: str, text: str):
     normalized = (text or "").strip()
     lowered = normalized.lower()
@@ -1213,29 +1222,27 @@ def handle_text(chat_id: int, role: str, first_name: str, text: str):
         if state.get("state") == "parent_first":
             payload["first_name"] = normalized
             set_state(chat_id, "parent_last", encode_state_payload(payload))
-            prompt = "Введите фамилию родителя."
             if mode == "edit":
-                prompt = f"Введите новую фамилию или нажмите Save.\nТекущая: <b>{escape_html(str(payload.get('last_name') or '-') )}</b>"
-            if flow_message_id:
-                edit_message_text(chat_id, flow_message_id, prompt, reply_markup=build_parent_edit_skip_keyboard("last"))
+                prompt = f"Введите новую фамилию или нажмите Save.\nТекущая: <b>{escape_html(str(payload.get('last_name') or '-'))}</b>"
+                if flow_message_id:
+                    edit_message_text(chat_id, flow_message_id, prompt, reply_markup=build_parent_edit_skip_keyboard("last"))
+                else:
+                    send_message(chat_id, prompt, reply_markup=build_parent_edit_skip_keyboard("last"))
             else:
-                msg = send_message(chat_id, prompt, reply_markup=build_parent_edit_skip_keyboard("last")) or {}
-                payload["message_id"] = int(msg.get("message_id") or 0) if isinstance(msg, dict) else 0
-                set_state(chat_id, "parent_last", encode_state_payload(payload))
+                send_message(chat_id, "Введите фамилию родителя.")
             return
 
         if state.get("state") == "parent_last":
             payload["last_name"] = normalized
             set_state(chat_id, "parent_phone", encode_state_payload(payload))
-            prompt = "Введите номер телефона родителя (например, <code>+998901234567</code>)."
             if mode == "edit":
-                prompt = f"Введите новый номер телефона или нажмите Save.\nТекущий: <b>{escape_html(str(payload.get('parent_phone') or '-') )}</b>"
-            if flow_message_id:
-                edit_message_text(chat_id, flow_message_id, prompt, reply_markup=build_parent_edit_skip_keyboard("phone"))
+                prompt = f"Введите новый номер или нажмите Save.\nТекущий: <b>{escape_html(str(payload.get('parent_phone') or '-'))}</b>"
+                if flow_message_id:
+                    edit_message_text(chat_id, flow_message_id, prompt, reply_markup=build_parent_edit_skip_keyboard("phone"))
+                else:
+                    send_message(chat_id, prompt, reply_markup=build_parent_edit_skip_keyboard("phone"))
             else:
-                msg = send_message(chat_id, prompt, reply_markup=build_parent_edit_skip_keyboard("phone")) or {}
-                payload["message_id"] = int(msg.get("message_id") or 0) if isinstance(msg, dict) else 0
-                set_state(chat_id, "parent_phone", encode_state_payload(payload))
+                send_message(chat_id, "Введите номер телефона родителя (например, <code>+998901234567</code>).")
             return
 
         if state.get("state") == "parent_phone":
@@ -1251,18 +1258,45 @@ def handle_text(chat_id: int, role: str, first_name: str, text: str):
             clear_state(chat_id)
             if status == 200:
                 label = "Маму" if relation == "mother" else "Папу" if relation == "father" else "родителя"
-                msg = f"✅ Сохранено: {label}.\n{escape_html(str(payload.get('first_name') or '').strip())} {escape_html(str(payload.get('last_name') or '').strip())} — {escape_html(str(payload.get('parent_phone') or '').strip())}"
-                if flow_message_id:
+                first = escape_html(str(payload.get("first_name") or "").strip())
+                last = escape_html(str(payload.get("last_name") or "").strip())
+                pphone = escape_html(str(payload.get("parent_phone") or "").strip())
+                msg = f"✅ Сохранено: {label}.\n{first} {last} — {pphone}"
+                if mode == "edit" and flow_message_id:
                     edit_message_text(chat_id, flow_message_id, msg, reply_markup=build_parent_saved_keyboard(relation))
                 else:
                     send_message(chat_id, msg, reply_markup=build_parent_saved_keyboard(relation))
                 return
-            err_text = "Не удалось сохранить. Проверьте данные и попробуйте еще раз."
-            if flow_message_id:
-                edit_message_text(chat_id, flow_message_id, err_text, reply_markup=build_parents_keyboard())
-            else:
-                send_message(chat_id, err_text, reply_markup=build_parents_keyboard())
+            send_message(chat_id, "Не удалось сохранить. Проверьте данные и попробуйте ещё раз.", reply_markup=build_parents_keyboard())
             return
+
+    if state and state.get("state") == "awaiting_parent_self_phone":
+        if lowered in {"/cancel", "отмена"}:
+            clear_state(chat_id)
+            send_message(chat_id, "Действие отменено.", reply_markup=build_remove_keyboard())
+            return
+        phone = normalized.strip()
+        status, data = try_link_parent_chat(phone, chat_id)
+        clear_state(chat_id)
+        if status == 200 and isinstance(data, dict) and data.get("status") == "ok":
+            send_message(
+                chat_id,
+                "✅ <b>Готово!</b>\n\nВаш Telegram подключён. Теперь вы будете получать уведомления об успехах вашего ребёнка в <b>English with Mr.Sam</b>.",
+                reply_markup=build_remove_keyboard(),
+            )
+        elif status == 404:
+            send_message(
+                chat_id,
+                f"❌ Номер <b>{escape_html(phone)}</b> не найден в системе.\n\nПопросите вашего ребёнка добавить ваш номер телефона через меню «Родители» в боте.",
+                reply_markup=build_remove_keyboard(),
+            )
+        else:
+            send_message(
+                chat_id,
+                "⚠️ Не удалось подключиться. Проверьте номер и попробуйте снова.",
+                reply_markup=build_remove_keyboard(),
+            )
+        return
 
     if state and state.get("state") in {"awaiting_login_phone", "awaiting_login_username", "awaiting_login_password"}:
         if lowered in {"/cancel", "отмена", "назад"}:
@@ -1426,6 +1460,18 @@ def handle_command(chat_id: int, role: str, first_name: str, username: str, text
         return
     if command == "/level":
         handle_level(chat_id)
+        return
+    if command == "/parent":
+        clear_state(chat_id)
+        set_state(chat_id, "awaiting_parent_self_phone", encode_state_payload({}))
+        send_message(
+            chat_id,
+            "👨‍👩‍👧 <b>Раздел для родителей</b>\n\n"
+            "Введите ваш номер телефона (который ваш ребёнок указал при добавлении вас в профиле), "
+            "и вы начнёте получать уведомления о его результатах.\n\n"
+            "Пример: <code>+998901234567</code>\n\nОтмена: /cancel",
+            reply_markup=build_remove_keyboard(),
+        )
         return
     if command == "/admin":
         if role != "admin":
@@ -1657,16 +1703,19 @@ def handle_update(update: dict):
                 "first_name": str(existing.get("first_name") or "").strip(),
                 "last_name": str(existing.get("last_name") or "").strip(),
                 "parent_phone": str(existing.get("phone") or "").strip(),
-                "message_id": int(message_id or 0),
+                # For "add" mode keep message_id=0 so every step sends a NEW message
+                "message_id": int(message_id or 0) if mode == "edit" else 0,
             }
             set_state(int(chat_id), "parent_first", encode_state_payload(payload))
-            prompt = "Введите имя родителя."
             if mode == "edit":
                 prompt = f"Введите новое имя или нажмите Save.\nТекущее: <b>{escape_html(payload['first_name'] or '-')}</b>"
-            if message_id:
-                edit_message_text(int(chat_id), message_id, prompt, reply_markup=build_parent_edit_skip_keyboard("first"))
+                if message_id:
+                    edit_message_text(int(chat_id), message_id, prompt, reply_markup=build_parent_edit_skip_keyboard("first"))
+                else:
+                    send_message(int(chat_id), prompt, reply_markup=build_parent_edit_skip_keyboard("first"))
             else:
-                send_message(int(chat_id), prompt, reply_markup=build_parent_edit_skip_keyboard("first"))
+                # "add" mode — always new message, no skip button
+                send_message(int(chat_id), "Введите имя родителя.")
             return
         if data.startswith("par:skip:"):
             state = get_state(int(chat_id))
@@ -1812,6 +1861,7 @@ def set_bot_commands():
         {"command": "recommend", "description": "Рекомендации по уровню"},
         {"command": "level", "description": "Выбрать уровень"},
         {"command": "myid", "description": "Показать chat_id"},
+        {"command": "parent", "description": "Для родителей — получать уведомления"},
         {"command": "help", "description": "Подсказка"},
     ]
     api_call("setMyCommands", {"commands": json.dumps(commands, ensure_ascii=False)})
