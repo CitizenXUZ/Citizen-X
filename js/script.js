@@ -2716,7 +2716,10 @@ if (tasksPage) {
   };
 
   await ensureApiBaseUrl();
-  const loadedQuestions = await fetchQuizQuestions(course, lessonNumber);
+  const [loadedQuestions, quizStatusPayload] = await Promise.all([
+    fetchQuizQuestions(course, lessonNumber),
+    fetchQuizStatus(course, lessonNumber),
+  ]);
   const hasQuiz = loadedQuestions.length > 0;
   setRuntimeStatus(
     hasQuiz
@@ -2724,7 +2727,6 @@ if (tasksPage) {
       : `Tests not found for this lesson (course=${course}, lesson=${lessonNumber}).`,
     hasQuiz ? "" : "error"
   );
-  const quizStatusPayload = hasQuiz ? await fetchQuizStatus(course, lessonNumber) : { has_attempt: false };
   const hasQuizAttempt = !!(quizStatusPayload && quizStatusPayload.has_attempt);
   const openParam = params.get("open") || "";
   const openHomeworkOnly = openParam.toLowerCase() === "homework";
@@ -2748,6 +2750,7 @@ if (tasksPage) {
     if (openHomeworkOnly) {
       openHomeworkModal();
     }
+    window.dispatchEvent(new CustomEvent("ewms:tasks-ready"));
     return;
   }
 
@@ -2778,6 +2781,7 @@ if (tasksPage) {
   } else {
     showTasksCard();
   }
+  window.dispatchEvent(new CustomEvent("ewms:tasks-ready"));
 
   // Always allow taking the quiz when opening tasks.
 
@@ -3608,6 +3612,7 @@ if (tasksPage) {
         runtimeStatusEl.hidden = false;
         runtimeStatusEl.classList.add("is-error");
       }
+      window.dispatchEvent(new CustomEvent("ewms:tasks-ready"));
     }
   })();
 }

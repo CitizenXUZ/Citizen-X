@@ -8,6 +8,17 @@
 </head>
 <body>
 
+<div id="tasks-loading-overlay" class="results-loading-overlay is-active" aria-hidden="false">
+  <div class="results-loading-card">
+    <div class="results-loading-spinner"></div>
+    <p class="results-loading-text" id="tasks-loading-text">Loading tasks...</p>
+    <div class="results-loading-bar-wrap">
+      <div class="results-loading-bar" id="tasks-loading-bar"></div>
+    </div>
+    <p class="results-loading-percent" id="tasks-loading-percent">0%</p>
+  </div>
+</div>
+
 <header class="level-header">
   <div class="logo"><img src="assets/images/logo.png" alt="English with Mr.Sam"></div>
   <a id="tasks-back-btn" href="a1.html" class="btn">Back to lessons</a>
@@ -142,6 +153,57 @@
 </div>
 
 <script src="js/script.js"></script>
+<script>
+(function () {
+  var overlay = document.getElementById("tasks-loading-overlay");
+  var bar = document.getElementById("tasks-loading-bar");
+  var percent = document.getElementById("tasks-loading-percent");
+  var textEl = document.getElementById("tasks-loading-text");
+  if (!overlay) return;
+
+  // Detect mode from URL to show correct label
+  var params = new URLSearchParams(window.location.search);
+  var openParam = (params.get("open") || "").toLowerCase();
+  if (openParam === "homework" && textEl) {
+    textEl.textContent = "Loading homework...";
+  }
+
+  var hidden = false;
+  function hide() {
+    if (hidden) return;
+    hidden = true;
+    if (bar) bar.style.width = "100%";
+    if (percent) percent.textContent = "100%";
+    setTimeout(function () {
+      overlay.classList.remove("is-active");
+      overlay.setAttribute("aria-hidden", "true");
+    }, 120);
+  }
+
+  // Animate progress bar while loading
+  var progress = 0;
+  var tickInterval = setInterval(function () {
+    if (hidden) { clearInterval(tickInterval); return; }
+    // Accelerate quickly to ~85%, then slow down
+    var step = progress < 60 ? 4 : progress < 80 ? 1.5 : 0.4;
+    progress = Math.min(progress + step, 88);
+    if (bar) bar.style.width = progress + "%";
+    if (percent) percent.textContent = Math.round(progress) + "%";
+  }, 80);
+
+  // Safety fallback: hide after 8s no matter what
+  var fallback = setTimeout(function () {
+    clearInterval(tickInterval);
+    hide();
+  }, 8000);
+
+  window.addEventListener("ewms:tasks-ready", function () {
+    clearInterval(tickInterval);
+    clearTimeout(fallback);
+    hide();
+  }, { once: true });
+})();
+</script>
 </body>
 </html>
 
