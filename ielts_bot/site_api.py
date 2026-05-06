@@ -173,6 +173,29 @@ def link_telegram_chat_id(phone: str, chat_id: int) -> bool:
     return isinstance(data, dict) and data.get("status") == "linked"
 
 
+def link_parent_chat(phone: str, chat_id: int) -> dict:
+    """Link a parent's Telegram chat_id by their phone number stored in user_parents."""
+    if not phone or not chat_id:
+        return {"error": "missing_params"}
+    token = getattr(config, "BOT_SYNC_TOKEN", "") or ""
+    params: dict = {"phone": phone, "chat_id": str(int(chat_id))}
+    if token:
+        params["token"] = token
+    url = f"{config.SITE_API_URL}/api/bot/parent-link-chat?{urllib.parse.urlencode(params)}"
+    try:
+        with urllib.request.urlopen(url, timeout=3) as response:
+            return json.loads(response.read().decode("utf-8", errors="ignore"))
+    except urllib.error.HTTPError as exc:
+        try:
+            return json.loads(exc.read().decode("utf-8", errors="ignore"))
+        except Exception:
+            return {"error": "request_failed"}
+    except urllib.error.URLError:
+        return {"error": "request_failed"}
+    except json.JSONDecodeError:
+        return {"error": "invalid_response"}
+
+
 def bot_login(phone: str, username: str, password: str) -> dict:
     payload = {"phone": phone or "", "username": username or "", "password": password or ""}
     return _post_json("/api/bot/login", payload, timeout=4.0)

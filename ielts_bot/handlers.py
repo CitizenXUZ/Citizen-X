@@ -758,9 +758,15 @@ def start_add_parent_flow(chat_id: int, lang: str, message_id: Optional[int] = N
         _set_state_with_payload(chat_id, "awaiting_phone", {"next": "parents"})
         _replace_with_text(chat_id, message_id, has_photo, i18n.t(lang, "phone_request"), reply_markup=keyboards.build_remove_keyboard(lang))
         return
-    _set_state_with_payload(chat_id, "awaiting_parent_phone", {})
-    text = i18n.t(lang, "parent_add_phone")
-    _replace_with_text(chat_id, message_id, has_photo, text, reply_markup=keyboards.build_parents_cancel_keyboard(lang))
+    # Ask for first name first — each step sends a NEW message (no editing)
+    _set_state_with_payload(chat_id, "awaiting_parent_first_name", {})
+    telegram_api.send_message(chat_id, i18n.t(lang, "parent_add_first_name"), reply_markup=keyboards.build_parents_cancel_keyboard(lang))
+
+
+def handle_parent_self_link(chat_id: int, lang: str):
+    """Entry point for parents who want to link their Telegram without a site account."""
+    db.set_state(chat_id, "awaiting_parent_self_phone")
+    telegram_api.send_message(chat_id, i18n.t(lang, "parent_self_start"))
 
 
 def handle_tip(chat_id: int, lang: str, message_id: Optional[int] = None, has_photo: bool = False):
@@ -1599,18 +1605,6 @@ def handle_text(chat_id: int, role: str, first_name: str, text: str, lang: str):
         save_news_from_message(chat_id, first_name or "", normalized, lang)
         return
 
-    if state and state.get("state") == "awaiting_parent_phone":
-        phone = _normalize_phone_input(normalized)
-        digits = re.sub(r"\D", "", phone)
-        if len(digits) < 7:
-            telegram_api.send_message(chat_id, i18n.t(lang, "parent_phone_error"), reply_markup=keyboards.build_parents_cancel_keyboard(lang))
-            return
-        payload = _load_state_payload(state)
-        payload["phone"] = phone
-        _set_state_with_payload(chat_id, "awaiting_parent_first_name", payload)
-        telegram_api.send_message(chat_id, i18n.t(lang, "parent_add_first_name"), reply_markup=keyboards.build_parents_cancel_keyboard(lang))
-        return
-
     if state and state.get("state") == "awaiting_parent_first_name":
         if not normalized:
             telegram_api.send_message(chat_id, i18n.t(lang, "parent_add_first_name"), reply_markup=keyboards.build_parents_cancel_keyboard(lang))
@@ -1627,8 +1621,34 @@ def handle_text(chat_id: int, role: str, first_name: str, text: str, lang: str):
             return
         payload = _load_state_payload(state)
         payload["last_name"] = normalized
+        _set_state_with_payload(chat_id, "awaiting_parent_phone", payload)
+        telegram_api.send_message(chat_id, i18n.t(lang, "parent_add_phone"), reply_markup=keyboards.build_parents_cancel_keyboard(lang))
+        return
+
+    if state and state.get("state") == "awaiting_parent_phone":
+        phone = _normalize_phone_input(normalized)
+        digits = re.sub(r"\D", "", phone)
+        if len(digits) < 7:
+            telegram_api.send_message(chat_id, i18n.t(lang, "parent_phone_error"), reply_markup=keyboards.build_parents_cancel_keyboard(lang))
+            return
+        payload = _load_state_payload(state)
+        payload["phone"] = phone
         _set_state_with_payload(chat_id, "awaiting_parent_relation", payload)
         telegram_api.send_message(chat_id, i18n.t(lang, "parent_add_relation"), reply_markup=keyboards.build_parent_relation_keyboard(lang))
+        return
+
+    if state and state.get("state") == "awaiting_parent_self_phone":
+        phone = _normalize_phone_input(normalized)
+        digits = re.sub(r"\D", "", phone)
+        if len(digits) < 7:
+            telegram_api.send_message(chat_id, i18n.t(lang, "parent_phone_error"))
+            return
+        result = site_api.link_parent_chat(phone, chat_id)
+        db.clear_state(chat_id)
+        if isinstance(result, dict) and result.get("status") == "ok":
+            telegram_api.send_message(chat_id, i18n.t(lang, "parent_self_success"))
+        else:
+            telegram_api.send_message(chat_id, i18n.t(lang, "parent_self_not_found", phone=phone))
         return
 
     if state and state.get("state") == "awaiting_level":
@@ -1763,6 +1783,9 @@ def handle_command(chat_id: int, role: str, first_name: str, username: str, text
         return
     if command == "/parents":
         render_parents(chat_id, lang)
+        return
+    if command == "/parent":
+        handle_parent_self_link(chat_id, lang)
         return
     if command == "/tip":
         handle_tip(chat_id, lang)

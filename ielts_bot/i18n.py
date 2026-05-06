@@ -127,6 +127,40 @@ STRINGS = {
         "ru": "✅ Родитель добавлен.",
         "en": "✅ Parent saved.",
     },
+    "parent_self_start": {
+        "ru": (
+            "👨‍👩‍👧 <b>Раздел для родителей</b>\n\n"
+            "Введите ваш номер телефона (который ваш ребёнок указал в вашем профиле на сайте), "
+            "и вы начнёте получать уведомления об его результатах."
+        ),
+        "en": (
+            "👨‍👩‍👧 <b>Parent section</b>\n\n"
+            "Enter your phone number (the one your child added in your profile on the site) "
+            "to receive progress notifications."
+        ),
+    },
+    "parent_self_success": {
+        "ru": (
+            "✅ <b>Готово!</b>\n\n"
+            "Ваш Telegram подключён. Теперь вы будете получать уведомления об успехах "
+            "вашего ребёнка в <b>English with Mr.Sam</b>."
+        ),
+        "en": (
+            "✅ <b>Done!</b>\n\n"
+            "Your Telegram is now linked. You will receive notifications about your child's "
+            "progress in <b>English with Mr.Sam</b>."
+        ),
+    },
+    "parent_self_not_found": {
+        "ru": (
+            "❌ Номер <b>{phone}</b> не найден.\n\n"
+            "Попросите вашего ребёнка добавить ваш номер телефона через меню «Родители» в боте."
+        ),
+        "en": (
+            "❌ Phone <b>{phone}</b> is not registered.\n\n"
+            "Ask your child to add your phone number via the 'Parents' menu in the bot."
+        ),
+    },
     "tip_title": {
         "ru": "<b>Совет IELTS</b>\n{text}",
         "en": "<b>IELTS tip</b>\n{text}",
