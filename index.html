@@ -56,8 +56,7 @@
       <h3>A1 - Beginner</h3>
       <ul>
         <li>20 Video Lessons</li>
-        <li>Essential Grammar &amp; Vocabulary</li>
-        <li>Lesson Presentations &amp; Quizzes</li>
+        <li>Grammar, Presentations &amp; Quizzes</li>
         <li>Mentor Guidance &amp; Support</li>
       </ul>
       <a href="a1.html" class="btn">Start A1</a>
@@ -66,9 +65,8 @@
     <div class="card">
       <h3>A2 - Elementary</h3>
       <ul>
-        <li>13 Video Lessons · 26 Topics</li>
-        <li>124 Irregular Verbs Covered</li>
-        <li>Lesson Presentations &amp; Quizzes</li>
+        <li>13 Lessons · 26 Topics</li>
+        <li>124 Irregular Verbs · Quizzes</li>
         <li>Personal Mentor Guidance</li>
       </ul>
       <a href="a2.html" class="btn">Start A2</a>
@@ -78,8 +76,7 @@
       <h3>B1 - Intermediate</h3>
       <ul>
         <li>27 Video Lessons</li>
-        <li>Speaking &amp; Writing Practice</li>
-        <li>Lesson Presentations &amp; Quizzes</li>
+        <li>Speaking, Writing &amp; Quizzes</li>
         <li>Mentor Guidance &amp; Feedback</li>
       </ul>
       <a href="b1.html" class="btn">Start B1</a>
@@ -89,8 +86,7 @@
       <h3>B2 - Upper-Intermediate</h3>
       <ul>
         <li>Advanced Grammar &amp; Fluency</li>
-        <li>IELTS-Oriented Practice</li>
-        <li>Academic Writing &amp; Speaking</li>
+        <li>IELTS Practice &amp; Academic Writing</li>
         <li>Mentor Guidance &amp; Feedback</li>
       </ul>
       <a href="b2.html" class="btn">Start B2</a>
@@ -161,7 +157,18 @@
 	      </article>
 	    </div>
 	  </div>
-	  <a href="results.html" class="btn results-learn-btn">See more Results</a>
+	  <a href="results.html" class="btn results-learn-btn" id="see-more-results-btn">See more Results</a>
+
+<div id="results-loading-overlay" class="results-loading-overlay" aria-hidden="true">
+  <div class="results-loading-card">
+    <div class="results-loading-spinner"></div>
+    <p class="results-loading-text">Loading results...</p>
+    <div class="results-loading-bar-wrap">
+      <div class="results-loading-bar" id="results-loading-bar"></div>
+    </div>
+    <p class="results-loading-percent" id="results-loading-percent">0%</p>
+  </div>
+</div>
 	  <h2 class="results-title about-title">About us</h2>
 	  <div class="about-team">
 	    <article class="about-person about-person-featured">

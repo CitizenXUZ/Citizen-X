@@ -17457,3 +17457,37 @@ document.addEventListener("keydown", (event) => {
     });
   }
 })();
+
+// See more Results — loading overlay with progress bar
+(function () {
+  const btn = document.getElementById("see-more-results-btn");
+  const overlay = document.getElementById("results-loading-overlay");
+  const bar = document.getElementById("results-loading-bar");
+  const percent = document.getElementById("results-loading-percent");
+  if (!btn || !overlay || !bar || !percent) return;
+
+  btn.addEventListener("click", function (e) {
+    e.preventDefault();
+    overlay.classList.add("is-active");
+    overlay.setAttribute("aria-hidden", "false");
+
+    const duration = 3000;
+    const interval = 50;
+    let elapsed = 0;
+
+    const timer = setInterval(function () {
+      elapsed += interval;
+      const raw = elapsed / duration;
+      // Ease-out so bar slows near 100%
+      const pct = Math.min(100, Math.round((1 - Math.pow(1 - raw, 2)) * 100));
+      bar.style.width = pct + "%";
+      percent.textContent = pct + "%";
+
+      if (elapsed >= duration) {
+        clearInterval(timer);
+        window.location.href = btn.href;
+      }
+    }, interval);
+  });
+})();
+

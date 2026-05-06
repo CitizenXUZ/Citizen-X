@@ -4295,6 +4295,70 @@ header .btn {
   box-shadow: 0 20px 44px rgba(212, 60, 8, 0.24);
 }
 
+/* Results loading overlay */
+.results-loading-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 20, 40, 0.72);
+  backdrop-filter: blur(6px);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+.results-loading-overlay.is-active {
+  display: flex;
+}
+.results-loading-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 44px 48px 36px;
+  text-align: center;
+  min-width: 280px;
+  max-width: 360px;
+  width: 90%;
+  box-shadow: 0 24px 64px rgba(0,0,0,0.22);
+}
+.results-loading-spinner {
+  width: 52px;
+  height: 52px;
+  border: 5px solid #e8eef6;
+  border-top-color: #1a6eb5;
+  border-radius: 50%;
+  margin: 0 auto 18px;
+  animation: results-spin 0.9s linear infinite;
+}
+@keyframes results-spin {
+  to { transform: rotate(360deg); }
+}
+.results-loading-text {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0f2a45;
+  margin: 0 0 20px;
+  letter-spacing: 0.01em;
+}
+.results-loading-bar-wrap {
+  background: #e8eef6;
+  border-radius: 999px;
+  height: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.results-loading-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #1a6eb5, #2563eb);
+  border-radius: 999px;
+  transition: width 0.1s linear;
+}
+.results-loading-percent {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1a6eb5;
+  margin: 0;
+}
+
 .mentors-more-btn {
   margin-top: 8px;
   border: 2px solid #1f2c39;
@@ -9064,6 +9128,7 @@ header .btn {
   .about-person-featured {
     flex-direction: column;
     text-align: center;
+    align-items: center;
     padding: 16px;
   }
 
