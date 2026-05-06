@@ -352,53 +352,56 @@
   var percent = document.getElementById("results-loading-percent");
   if (!overlay || !bar || !percent) return;
 
-  var animDone = false;   // 3s progress bar finished
-  var pageLoaded = false; // window.load fired (static images done)
-  var certsReady = false; // admin certs fetched + their images loaded
+  var hidden = false;
+  var pageLoaded = false;
+  var certsReady = false;
 
   function hide() {
-    overlay.classList.remove("is-active");
-    overlay.setAttribute("aria-hidden", "true");
+    if (hidden) return;
+    hidden = true;
+    bar.style.width = "100%";
+    percent.textContent = "100%";
+    setTimeout(function () {
+      overlay.classList.remove("is-active");
+      overlay.setAttribute("aria-hidden", "true");
+    }, 120);
   }
 
   function tryHide() {
-    if (animDone && pageLoaded && certsReady) hide();
+    if (pageLoaded && certsReady) hide();
   }
 
-  // 1. Progress bar: ease-out to 100% over 3s
-  var duration = 3000;
-  var interval = 50;
-  var elapsed = 0;
-  var timer = setInterval(function () {
-    elapsed += interval;
-    var raw = Math.min(elapsed / duration, 1);
-    var pct = Math.min(100, Math.round((1 - Math.pow(1 - raw, 2)) * 100));
-    bar.style.width = pct + "%";
-    percent.textContent = pct + "%";
-    if (elapsed >= duration) {
-      clearInterval(timer);
-      animDone = true;
-      tryHide();
-    }
-  }, interval);
+  // Animate quickly to ~88%, then wait for data
+  var progress = 0;
+  var tickInterval = setInterval(function () {
+    if (hidden) { clearInterval(tickInterval); return; }
+    var step = progress < 60 ? 4 : progress < 80 ? 1.5 : 0.4;
+    progress = Math.min(progress + step, 88);
+    bar.style.width = progress + "%";
+    percent.textContent = Math.round(progress) + "%";
+  }, 80);
 
-  // 2. Wait for ALL static images (window.load) + 250ms for masonry relayout
+  // Wait for static images
   if (document.readyState === "complete") {
-    setTimeout(function () { pageLoaded = true; tryHide(); }, 250);
+    setTimeout(function () { pageLoaded = true; tryHide(); }, 150);
   } else {
     window.addEventListener("load", function () {
-      setTimeout(function () { pageLoaded = true; tryHide(); }, 250);
+      setTimeout(function () { pageLoaded = true; tryHide(); }, 150);
     });
   }
 
-  // 3. Wait for admin-uploaded certs to be fetched AND their images loaded
+  // Wait for admin-uploaded certs
   window.addEventListener("ewms:certs-ready", function () {
-    setTimeout(function () { certsReady = true; tryHide(); }, 300);
+    clearInterval(tickInterval);
+    setTimeout(function () { certsReady = true; tryHide(); }, 200);
   }, { once: true });
 
-  // Safety fallback: if event never fires (e.g. no admin certs), unlock after 10s
+  // Safety fallback: hide after 10s no matter what
   setTimeout(function () {
-    if (!certsReady) { certsReady = true; tryHide(); }
+    clearInterval(tickInterval);
+    if (!certsReady) { certsReady = true; }
+    if (!pageLoaded) { pageLoaded = true; }
+    tryHide();
   }, 10000);
 })();
 </script>

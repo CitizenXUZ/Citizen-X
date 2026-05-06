@@ -1204,6 +1204,10 @@ if (lessonPage) {
       tasksBtn.href = `tasks.html?course=${course}&lesson=${lessonNumber}&open=quiz`;
       tasksBtn.classList.remove("is-loading");
       tasksBtn.removeAttribute("aria-disabled");
+      tasksBtn.addEventListener("click", function () {
+        tasksBtn.textContent = "Loading...";
+        tasksBtn.classList.add("is-loading");
+      });
     }
     if (homeworkBtn) {
       homeworkBtn.classList.remove("is-loading");
@@ -1324,10 +1328,13 @@ if (lessonPage) {
     if (homeworkBtn) {
       homeworkBtn.addEventListener("click", async () => {
         homeworkBtn.disabled = true;
+        const origText = homeworkBtn.textContent;
+        homeworkBtn.textContent = "Loading...";
         try {
           await handleHomeworkClick();
         } finally {
           homeworkBtn.disabled = false;
+          homeworkBtn.textContent = origText;
         }
       });
     }
@@ -2380,10 +2387,7 @@ if (tasksPage) {
     }
     homeworkModal.classList.remove("is-open");
     homeworkModal.setAttribute("aria-hidden", "true");
-    if (typeof openHomeworkOnly !== "undefined" && openHomeworkOnly) {
-      window.location.href = `${course}.html`;
-      return;
-    }
+    window.location.href = `${course}.html`;
   };
 
   const setHomeworkStatus = (message, tone = "") => {
