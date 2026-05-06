@@ -8,6 +8,17 @@
 </head>
 <body>
 
+<div id="results-loading-overlay" class="results-loading-overlay is-active" aria-hidden="false">
+  <div class="results-loading-card">
+    <div class="results-loading-spinner"></div>
+    <p class="results-loading-text">Loading results...</p>
+    <div class="results-loading-bar-wrap">
+      <div class="results-loading-bar" id="results-loading-bar"></div>
+    </div>
+    <p class="results-loading-percent" id="results-loading-percent">0%</p>
+  </div>
+</div>
+
 <header class="level-header">
   <div class="level-header-actions level-header-actions-left">
   </div>
@@ -334,6 +345,32 @@
 </div>
 	
 	<script src="js/script.js"></script>
+<script>
+(function () {
+  var overlay = document.getElementById("results-loading-overlay");
+  var bar = document.getElementById("results-loading-bar");
+  var percent = document.getElementById("results-loading-percent");
+  if (!overlay || !bar || !percent) return;
+
+  var duration = 3000;
+  var interval = 50;
+  var elapsed = 0;
+
+  var timer = setInterval(function () {
+    elapsed += interval;
+    var raw = elapsed / duration;
+    var pct = Math.min(100, Math.round((1 - Math.pow(1 - raw, 2)) * 100));
+    bar.style.width = pct + "%";
+    percent.textContent = pct + "%";
+
+    if (elapsed >= duration) {
+      clearInterval(timer);
+      overlay.classList.remove("is-active");
+      overlay.setAttribute("aria-hidden", "true");
+    }
+  }, interval);
+})();
+</script>
 </body>
 </html>
 
