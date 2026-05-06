@@ -352,8 +352,9 @@
   var percent = document.getElementById("results-loading-percent");
   if (!overlay || !bar || !percent) return;
 
-  var animDone = false;
-  var pageLoaded = false;
+  var animDone = false;   // 3s progress bar finished
+  var pageLoaded = false; // window.load fired (static images done)
+  var certsReady = false; // admin certs fetched + their images loaded
 
   function hide() {
     overlay.classList.remove("is-active");
@@ -361,10 +362,10 @@
   }
 
   function tryHide() {
-    if (animDone && pageLoaded) hide();
+    if (animDone && pageLoaded && certsReady) hide();
   }
 
-  // Progress bar: ease-out to 100% over 3s
+  // 1. Progress bar: ease-out to 100% over 3s
   var duration = 3000;
   var interval = 50;
   var elapsed = 0;
@@ -381,7 +382,7 @@
     }
   }, interval);
 
-  // Wait for ALL images to finish loading, then give masonry 250ms to relayout
+  // 2. Wait for ALL static images (window.load) + 250ms for masonry relayout
   if (document.readyState === "complete") {
     setTimeout(function () { pageLoaded = true; tryHide(); }, 250);
   } else {
@@ -389,6 +390,16 @@
       setTimeout(function () { pageLoaded = true; tryHide(); }, 250);
     });
   }
+
+  // 3. Wait for admin-uploaded certs to be fetched AND their images loaded
+  window.addEventListener("ewms:certs-ready", function () {
+    setTimeout(function () { certsReady = true; tryHide(); }, 300);
+  }, { once: true });
+
+  // Safety fallback: if event never fires (e.g. no admin certs), unlock after 10s
+  setTimeout(function () {
+    if (!certsReady) { certsReady = true; tryHide(); }
+  }, 10000);
 })();
 </script>
 </body>

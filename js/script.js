@@ -5823,8 +5823,9 @@ const renderResultsCertificates = (items) => {
         const name = escapeHtml(String(it.name || "").trim() || "Student");
         const motto = escapeHtml(String(it.motto || "").trim() || "Beautiful quote");
         const image = String(it.image || "").trim();
+        // No lazy loading — we want images to load immediately so the overlay can wait for them
         const imageHtml = image
-          ? `<img src="${escapeHtml(image)}" alt="${name} certificate" loading="lazy" decoding="async">`
+          ? `<img src="${escapeHtml(image)}" alt="${name} certificate" decoding="async">`
           : "Certificate";
         return `
           <article class="results-modal-tile" data-cert-id="${escapeHtml(String(it.id || ""))}">
@@ -5850,9 +5851,27 @@ const renderResultsCertificates = (items) => {
   }
 };
 
+// Wait for all <img> inside resultsEl to finish loading (with timeout fallback)
+const waitForCertImages = (resultsEl) =>
+  new Promise((resolve) => {
+    const imgs = Array.from(resultsEl.querySelectorAll(".results-modal-tiles img"));
+    const pending = imgs.filter((img) => !img.complete);
+    if (!pending.length) { resolve(); return; }
+    let remaining = pending.length;
+    const done = () => { if (--remaining === 0) resolve(); };
+    pending.forEach((img) => {
+      img.addEventListener("load", done, { once: true });
+      img.addEventListener("error", done, { once: true });
+    });
+    setTimeout(resolve, 7000); // safety fallback
+  });
+
 const loadAndRenderCertificatesOverrides = async () => {
   const resultsEl = document.querySelector(".results-standalone");
-  if (!resultsEl) return [];
+  if (!resultsEl) {
+    window.dispatchEvent(new CustomEvent("ewms:certs-ready"));
+    return [];
+  }
   await ensureApiBaseUrl();
   try {
     const response = await fetchWithTimeout(`${API_BASE_URL}/api/certificates/overrides`, {}, 6000);
@@ -5860,6 +5879,8 @@ const loadAndRenderCertificatesOverrides = async () => {
     const items = Array.isArray(payload && payload.items ? payload.items : []) ? payload.items : [];
     if (items.length) {
       renderResultsCertificates(items);
+      // Wait for dynamically-inserted images to load before signalling ready
+      await waitForCertImages(resultsEl);
     } else {
       applyCertificateViewerBindings();
     }
@@ -5867,6 +5888,9 @@ const loadAndRenderCertificatesOverrides = async () => {
   } catch (error) {
     applyCertificateViewerBindings();
     return [];
+  } finally {
+    // Always signal: overlay can now safely hide
+    window.dispatchEvent(new CustomEvent("ewms:certs-ready"));
   }
 };
 
