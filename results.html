@@ -352,23 +352,43 @@
   var percent = document.getElementById("results-loading-percent");
   if (!overlay || !bar || !percent) return;
 
+  var animDone = false;
+  var pageLoaded = false;
+
+  function hide() {
+    overlay.classList.remove("is-active");
+    overlay.setAttribute("aria-hidden", "true");
+  }
+
+  function tryHide() {
+    if (animDone && pageLoaded) hide();
+  }
+
+  // Progress bar: ease-out to 100% over 3s
   var duration = 3000;
   var interval = 50;
   var elapsed = 0;
-
   var timer = setInterval(function () {
     elapsed += interval;
-    var raw = elapsed / duration;
+    var raw = Math.min(elapsed / duration, 1);
     var pct = Math.min(100, Math.round((1 - Math.pow(1 - raw, 2)) * 100));
     bar.style.width = pct + "%";
     percent.textContent = pct + "%";
-
     if (elapsed >= duration) {
       clearInterval(timer);
-      overlay.classList.remove("is-active");
-      overlay.setAttribute("aria-hidden", "true");
+      animDone = true;
+      tryHide();
     }
   }, interval);
+
+  // Wait for ALL images to finish loading, then give masonry 250ms to relayout
+  if (document.readyState === "complete") {
+    setTimeout(function () { pageLoaded = true; tryHide(); }, 250);
+  } else {
+    window.addEventListener("load", function () {
+      setTimeout(function () { pageLoaded = true; tryHide(); }, 250);
+    });
+  }
 })();
 </script>
 </body>
