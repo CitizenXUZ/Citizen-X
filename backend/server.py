@@ -415,6 +415,30 @@ def send_telegram_message_to(chat_ids: list[int], text: str, parse_mode: str = "
             sent += 1
     return sent > 0
 
+def format_course_label(course: str) -> str:
+    """Return a human-readable course label, e.g. 'a1' -> 'A1', 'a1_express' -> 'A1 Express'."""
+    return str(course or "").strip().upper().replace("_", " ")
+
+
+def notify_parents(user_id: int, message: str) -> None:
+    """Send a Telegram message to all parents of user_id who have linked their Telegram account."""
+    if not TG_BOT_TOKEN:
+        return
+    try:
+        conn = get_connection()
+        cur = conn.cursor()
+        cur.execute(
+            "SELECT telegram_chat_id FROM user_parents WHERE user_id = ? AND telegram_chat_id > 0",
+            (user_id,),
+        )
+        chat_ids = [int(row["telegram_chat_id"]) for row in cur.fetchall()]
+        conn.close()
+        if chat_ids:
+            send_telegram_message_to(chat_ids, message)
+    except Exception:
+        pass  # Never fail the main request due to notification errors
+
+
 ADMIN_USERNAME = os.environ.get("EWMS_ADMIN_USERNAME", "azamat_admin").strip()
 RAW_ADMIN_PASSWORD = os.environ.get("EWMS_ADMIN_PASSWORD", "").strip()
 ADMIN_PASSWORD = RAW_ADMIN_PASSWORD
@@ -2163,6 +2187,12 @@ def init_db():
         cur.execute("ALTER TABLE quiz_answer_events ADD COLUMN question_id INTEGER")
     if "selected_option" not in quiz_event_columns:
         cur.execute("ALTER TABLE quiz_answer_events ADD COLUMN selected_option TEXT")
+
+    # Add telegram_chat_id to user_parents so parents can link their Telegram account
+    cur.execute("PRAGMA table_info(user_parents)")
+    parent_columns = {row["name"] for row in cur.fetchall()}
+    if "telegram_chat_id" not in parent_columns:
+        cur.execute("ALTER TABLE user_parents ADD COLUMN telegram_chat_id INTEGER NOT NULL DEFAULT 0")
 
     cur.execute(
         """
@@ -4232,6 +4262,54 @@ class Handler(BaseHTTPRequestHandler):
             # POST-only endpoint
             self._set_headers(405)
             self.wfile.write(json.dumps({"error": "method_not_allowed"}).encode("utf-8"))
+            return
+
+        if parsed.path == "/api/bot/parent-link-chat":
+            # Link a parent's Telegram chat_id by their phone number.
+            # Called by the bot when a parent shares their phone number.
+            params = {key: values[0] for key, values in parse_qs(parsed.query).items()}
+            phone_raw = params.get("phone", "").strip()
+            phone = normalize_phone(phone_raw)
+            chat_id_raw = str(params.get("chat_id", "") or "").strip()
+            token = str(params.get("token", "") or "").strip()
+
+            if not phone or not chat_id_raw:
+                self._set_headers(400)
+                self.wfile.write(json.dumps({"error": "phone and chat_id are required"}).encode("utf-8"))
+                return
+            try:
+                chat_id = int(chat_id_raw)
+            except (TypeError, ValueError):
+                chat_id = 0
+            if chat_id <= 0:
+                self._set_headers(400)
+                self.wfile.write(json.dumps({"error": "invalid chat_id"}).encode("utf-8"))
+                return
+            if BOT_SYNC_TOKEN and token != BOT_SYNC_TOKEN:
+                self._set_headers(403)
+                self.wfile.write(json.dumps({"error": "invalid token"}).encode("utf-8"))
+                return
+
+            conn = get_connection()
+            cur = conn.cursor()
+            cur.execute(
+                "SELECT id, user_id, relation FROM user_parents WHERE phone = ?",
+                (phone,),
+            )
+            rows = cur.fetchall()
+            if not rows:
+                conn.close()
+                self._set_headers(404)
+                self.wfile.write(json.dumps({"error": "parent not found"}).encode("utf-8"))
+                return
+            cur.execute(
+                "UPDATE user_parents SET telegram_chat_id = ? WHERE phone = ?",
+                (chat_id, phone),
+            )
+            conn.commit()
+            conn.close()
+            self._set_headers(200)
+            self.wfile.write(json.dumps({"status": "ok", "chat_id": chat_id, "linked": len(rows)}).encode("utf-8"))
             return
 
         if parsed.path == "/api/bot/link-chat":
@@ -7811,14 +7889,25 @@ class Handler(BaseHTTPRequestHandler):
                 ],
             )
             cur.execute(
-                "SELECT id, level, lesson_schedule, created_at, access_started_at FROM users WHERE id = ?",
+                "SELECT id, full_name, level, lesson_schedule, created_at, access_started_at FROM users WHERE id = ?",
                 (user["id"],),
             )
             user_row = cur.fetchone()
             if user_row is not None:
                 build_progress_summary(cur, user_row)
             conn.commit()
+
+            # Notify parents about quiz result (after commit, before close)
+            student_full_name = str(user_row["full_name"] if user_row else "").strip() or username
             conn.close()
+            if len(questions) > 0:
+                pct = round(correct_count / len(questions) * 100)
+                course_label = format_course_label(course)
+                notify_parents(
+                    int(user["id"]),
+                    f"📊 Ваш ребёнок {student_full_name} выполнил задания {course_label} урока {lesson_number} на {pct}%.\n"
+                    f"Правильных ответов: {correct_count} из {len(questions)}.",
+                )
 
             self._set_headers(200)
             self.wfile.write(
@@ -7941,8 +8030,26 @@ class Handler(BaseHTTPRequestHandler):
                 """,
                 (reviewed_at, row["user_id"], row["course"], row["lesson_number"]),
             )
+
+            # Fetch student full_name for parent notification
+            cur.execute("SELECT full_name FROM users WHERE id = ?", (row["user_id"],))
+            student_name_row = cur.fetchone()
+            student_full_name = str(student_name_row["full_name"] if student_name_row else "").strip()
+
             conn.commit()
             conn.close()
+
+            # Notify parents about homework grade
+            if student_full_name:
+                course_label = format_course_label(str(row["course"] or ""))
+                lesson_num = int(row["lesson_number"])
+                score_stars = "⭐" * score
+                notify_parents(
+                    int(row["user_id"]),
+                    f"📝 Ваш ребёнок {student_full_name} получил оценку {score}/5 {score_stars} "
+                    f"за домашнее задание {course_label} урока {lesson_num}."
+                    + (f"\n💬 Комментарий: {comment}" if comment else ""),
+                )
 
             self._set_headers(200)
             self.wfile.write(
