@@ -1,4 +1,7 @@
 #!/bin/bash
+echo "Seeding quiz translations..."
+python backend/seed_quiz_translations.py
+
 echo "Starting backend server..."
 python backend/server.py --host 0.0.0.0 --port ${PORT:-8000} &
 

@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "question": "What is the main focus of the lesson?",
+    "options": {
+      "A": "Speaking skills",
+      "B": "Writing skills",
+      "C": "Listening skills",
+      "D": "Reading skills"
+    },
+    "correct": "A",
+    "explanation": "The lesson talks about greeting people, introducing yourself, and keeping a conversation. These are things you do with your voice, not with writing or reading. Choose the option that matches oral communication.",
+    "explanation_simple": "The lesson is about talking and conversation. Choose the option about speaking, not writing, listening, or reading.",
+    "explanation_detailed": "Think about the examples in the lesson: saying hello, introducing yourself, asking questions, and answering politely. All of these happen when people talk to each other. So the correct option is the one about speaking and conversation.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 2,
+    "question": "Which combination is considered essential for learning a language effectively?",
+    "options": {
+      "A": "Pronunciation and accent",
+      "B": "Grammar and vocabulary",
+      "C": "Listening and reading",
+      "D": "Writing and spelling"
+    },
+    "correct": "B",
+    "explanation": "To communicate well, you need words to say and rules to put them together. One helps you build sentences, and the other gives you the pieces. Choose the pair that gives both the words and the rules.",
+    "explanation_simple": "You need words to say and rules to join them. Pick the pair that means words plus rules.",
+    "explanation_detailed": "If you know many words but no rules, your sentences can be messy. If you know rules but no words, you cannot say much. The lesson says both parts are needed, so choose the option that includes words and grammar together.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 3,
+    "question": "What is the role of vocabulary in communication?",
+    "options": {
+      "A": "It helps you write faster",
+      "B": "It helps you understand grammar rules",
+      "C": "It allows you to express ideas and meaning",
+      "D": "It improves your accent"
+    },
+    "correct": "C",
+    "explanation": "Vocabulary means words. Without words, you cannot say what you think or feel. Choose the option that says words help you express ideas and meaning.",
+    "explanation_simple": "Words let you say your ideas. Pick the option that says vocabulary helps you express meaning.",
+    "explanation_detailed": "Imagine you have a good idea but do not know the words. You cannot share the idea. Vocabulary is the set of words that lets you explain things and share meaning. Choose the option that matches this role.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 4,
+    "question": "Why is grammar necessary in speech?",
+    "options": {
+      "A": "To make sentences longer",
+      "B": "To sound more formal",
+      "C": "To avoid using new words",
+      "D": "To express ideas correctly and clearly"
+    },
+    "correct": "D",
+    "explanation": "Grammar is like the rules of a game. It helps you put words in the right order so people understand you. Choose the option about saying ideas correctly and clearly.",
+    "explanation_simple": "Grammar helps you put words in order so your meaning is clear. Pick the option about clear, correct ideas.",
+    "explanation_detailed": "If grammar is wrong, people may misunderstand you. Grammar helps you make correct sentences so your ideas are clear. So pick the option that talks about making your meaning clear, not making sentences longer or avoiding new words.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 5,
+    "question": "What does the proverb in the lesson emphasize?",
+    "options": {
+      "A": "Practice is more important than talent",
+      "B": "First impressions are very important",
+      "C": "Time should be used wisely",
+      "D": "Learning never stops"
+    },
+    "correct": "B",
+    "explanation": "The proverb says the first time people meet you matters a lot. It teaches that the first impression can be the strongest. Choose the option about first impressions.",
+    "explanation_simple": "The proverb says the first meeting is very important. Pick the option about first impressions.",
+    "explanation_detailed": "When you meet someone for the first time, they remember that moment. The lesson repeats that the first impression is the best impression. So choose the option that says first impressions are very important.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 6,
+    "question": "Which phrase is the most appropriate to ask for a self-introduction?",
+    "options": {
+      "A": "Tell me your name",
+      "B": "Who are you exactly?",
+      "C": "Can you introduce yourself?",
+      "D": "What do you want?"
+    },
+    "correct": "C",
+    "explanation": "You need a polite question that invites the person to introduce themselves. Avoid rude or aggressive questions. Choose the option that politely asks for a self‑introduction.",
+    "explanation_simple": "Pick the polite question that asks a person to introduce themselves.",
+    "explanation_detailed": "A good question is respectful and gives the person a chance to say who they are. It should not sound angry or demanding. Choose the option that politely asks for an introduction.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 7,
+    "question": "Which topics are considered inappropriate to discuss with strangers?",
+    "options": {
+      "A": "Daily routine and hobbies",
+      "B": "Weather and travel",
+      "C": "Education and career",
+      "D": "Money, politics, religion, and personal family details"
+    },
+    "correct": "D",
+    "explanation": "With strangers, some topics can make people uncomfortable. The lesson warns about private and sensitive topics. Choose the option with money, politics, religion, and family details.",
+    "explanation_simple": "Some topics are too private with strangers. Pick the option with sensitive topics like money, politics, religion, and family.",
+    "explanation_detailed": "At first meetings, it is safer to avoid very private or sensitive topics. The lesson lists money, politics, religion, and personal family details as topics to avoid. Choose the option that groups those topics.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 8,
+    "question": "What is usually the first step when introducing yourself?",
+    "options": {
+      "A": "Saying your full name",
+      "B": "Talking about your hobbies",
+      "C": "Mentioning your age",
+      "D": "Describing your personality"
+    },
+    "correct": "A",
+    "explanation": "When you introduce yourself, you start with who you are. The first thing people usually say is their full name. Choose the option about giving your full name.",
+    "explanation_simple": "Start an introduction by saying who you are. That means giving your full name.",
+    "explanation_detailed": "Before hobbies or age, people need to know your name. The lesson says introductions begin with your full name. So choose the option that says you start with your full name.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 9,
+    "question": "How is a typical English full name structured?",
+    "options": {
+      "A": "First name, last name only",
+      "B": "First name, middle name, last name",
+      "C": "Last name, first name, title",
+      "D": "Nickname, surname, title"
+    },
+    "correct": "B",
+    "explanation": "In English, people often have three parts to a full name. It starts with the given name, then a middle name, then the family name. Choose the option with that order.",
+    "explanation_simple": "A typical English full name has three parts: first, middle, and last. Choose the option with those parts.",
+    "explanation_detailed": "The lesson explains that many English names are written as first name, middle name, and last name (family name). The order starts with the given name and ends with the family name. Choose the option that matches this structure.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 10,
+    "question": "What is the main purpose of asking “How are you?”",
+    "options": {
+      "A": "To begin or maintain polite interaction",
+      "B": "To ask about someone's job",
+      "C": "To know someone's age",
+      "D": "To check nationality"
+    },
+    "correct": "A",
+    "explanation": "This question is a polite way to start or continue a conversation. It checks how the person is doing, not their job, age, or country. Choose the option about polite interaction.",
+    "explanation_simple": "People say this to be polite and friendly in conversation. Pick that idea.",
+    "explanation_detailed": "When you say “How are you?”, you are being polite and friendly. It helps start or keep a conversation. It is not about work, age, or nationality. Choose the option that matches this purpose.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 11,
+    "question": "Which response may sound impolite in a formal conversation?",
+    "options": {
+      "A": "I’m doing well, thank you",
+      "B": "I’m fine, thanks. And you?",
+      "C": "Everything is great, thank you",
+      "D": "Fine"
+    },
+    "correct": "D",
+    "explanation": "In a formal conversation, a very short one-word answer can sound cold. A polite reply usually adds thanks or asks back. Choose the option that is only one word.",
+    "explanation_simple": "A one‑word reply can sound rude in formal talk. Pick the very short answer.",
+    "explanation_detailed": "Formal conversation is more polite. People usually say a full response like \"I'm fine, thank you\" and may ask back. A single short word can sound unfriendly. Choose the option that is only one word.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 12,
+    "question": "Why do people sometimes give extended answers to “Where are you from?”",
+    "options": {
+      "A": "To avoid the question",
+      "B": "To confuse the listener",
+      "C": "To provide clearer and more complete information",
+      "D": "To show off vocabulary"
+    },
+    "correct": "C",
+    "explanation": "Sometimes people say their country and also where they live now so the listener understands better. That gives clearer information. Choose the option about being clear and complete.",
+    "explanation_simple": "People add more details to be clear, like country and current city. Pick the option about clearer information.",
+    "explanation_detailed": "The lesson shows that you can say your country and then add where you live now. This helps the listener understand your background. Choose the option that says people want to be clearer and more complete.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 13,
+    "question": "Which phrase is best to begin a formal self-introduction?",
+    "options": {
+      "A": "Hi bro",
+      "B": "What’s up",
+      "C": "Let me introduce myself",
+      "D": "Hey there"
+    },
+    "correct": "C",
+    "explanation": "A formal introduction uses polite, serious words. Slang or very casual greetings are not formal. Choose the option that sounds polite and formal.",
+    "explanation_simple": "Formal introductions use polite words, not slang. Pick the formal option.",
+    "explanation_detailed": "When you speak formally (for example at an interview), you avoid casual words like “bro” or “what’s up.” You choose a polite sentence that begins your self‑introduction. Choose the option that is formal.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 14,
+    "question": "What idea does the teacher express about English varieties?",
+    "options": {
+      "A": "Only British English is correct",
+      "B": "American English is easier",
+      "C": "There are completely different English languages",
+      "D": "English is one language with different dialects"
+    },
+    "correct": "D",
+    "explanation": "The teacher says there is one English language, but accents and spellings can be different. Choose the option about one language with different dialects.",
+    "explanation_simple": "There is one English, but people speak it a little differently. Pick that idea.",
+    "explanation_detailed": "The lesson explains that English is not two separate languages. It is one language with different accents, dialects, and some spelling differences. Choose the option that says this.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 15,
+    "question": "Why is learning culture important along with language?",
+    "options": {
+      "A": "To memorize more words",
+      "B": "To understand how to communicate appropriately",
+      "C": "To improve spelling",
+      "D": "To learn faster grammar"
+    },
+    "correct": "B",
+    "explanation": "Language is not only words. Culture helps you know what is polite and what topics are okay. Choose the option about communicating appropriately.",
+    "explanation_simple": "Culture teaches what is polite and how to speak appropriately. Pick the option about proper communication.",
+    "explanation_detailed": "The lesson says you should learn the culture too, because it tells you how to speak politely and correctly in real situations. This helps you communicate the right way. Choose the option about appropriate communication.",
+    "explanation_translations": {}
+  }
+]

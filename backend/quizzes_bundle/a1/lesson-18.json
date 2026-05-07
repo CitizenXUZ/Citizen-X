@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "question": "Choose the correct sentence:",
+    "options": {
+      "A": "I play football yesterday.",
+      "B": "I played football yesterday.",
+      "C": "I am playing football yesterday.",
+      "D": "I was play football yesterday."
+    },
+    "correct": "B",
+    "explanation": "Past Simple talks about finished actions in the past (yesterday, last week, in 2020). Use past verb forms, and use did/didn’t for questions and negatives.",
+    "explanation_simple": "Past Simple: yesterday/last… Regular verb + -ed; irregular has special form. Negatives/questions use did/didn’t + base verb.",
+    "explanation_detailed": "Step 1: Look for past time words: yesterday, last night, last week, last year.\nStep 2: For actions, use the past form of the verb (regular: -ed; irregular: special form).\nStep 3: For negatives, use didn’t + base verb (not past form).\nStep 4: For questions, start with Did + subject + base verb.\nStep 5: For ‘to be’, use was/were (no did).",
+    "explanation_translations": {}
+  },
+  {
+    "id": 2,
+    "question": "Fill in the blank: Choose the correct verb form: They ___ to the park last Sunday.",
+    "options": {
+      "A": "go",
+      "B": "goes",
+      "C": "went",
+      "D": "going"
+    },
+    "correct": "C",
+    "explanation": "Past Simple talks about finished actions in the past (yesterday, last week, in 2020). Use past verb forms, and use did/didn’t for questions and negatives.",
+    "explanation_simple": "Past Simple: yesterday/last… Regular verb + -ed; irregular has special form. Negatives/questions use did/didn’t + base verb.",
+    "explanation_detailed": "Step 1: Look for past time words: yesterday, last night, last week, last year.\nStep 2: For actions, use the past form of the verb (regular: -ed; irregular: special form).\nStep 3: For negatives, use didn’t + base verb (not past form).\nStep 4: For questions, start with Did + subject + base verb.\nStep 5: For ‘to be’, use was/were (no did).",
+    "explanation_translations": {}
+  },
+  {
+    "id": 3,
+    "question": "Choose the correct sentence:",
+    "options": {
+      "A": "She write an essay last week.",
+      "B": "She wrote an essay last week.",
+      "C": "She writes an essay last week.",
+      "D": "She writed an essay last week."
+    },
+    "correct": "B",
+    "explanation": "Past Simple talks about finished actions in the past (yesterday, last week, in 2020). Use past verb forms, and use did/didn’t for questions and negatives.",
+    "explanation_simple": "Past Simple: yesterday/last… Regular verb + -ed; irregular has special form. Negatives/questions use did/didn’t + base verb.",
+    "explanation_detailed": "Step 1: Look for past time words: yesterday, last night, last week, last year.\nStep 2: For actions, use the past form of the verb (regular: -ed; irregular: special form).\nStep 3: For negatives, use didn’t + base verb (not past form).\nStep 4: For questions, start with Did + subject + base verb.\nStep 5: For ‘to be’, use was/were (no did).",
+    "explanation_translations": {}
+  },
+  {
+    "id": 4,
+    "question": "Fill in the blank: Choose the correct negative form: He ___ watch TV yesterday.",
+    "options": {
+      "A": "didn't",
+      "B": "wasn't",
+      "C": "don't",
+      "D": "hasn't"
+    },
+    "correct": "A",
+    "explanation": "Past Simple talks about finished actions in the past (yesterday, last week, in 2020). Use past verb forms, and use did/didn’t for questions and negatives.",
+    "explanation_simple": "Past Simple: yesterday/last… Regular verb + -ed; irregular has special form. Negatives/questions use did/didn’t + base verb.",
+    "explanation_detailed": "Step 1: Look for past time words: yesterday, last night, last week, last year.\nStep 2: For actions, use the past form of the verb (regular: -ed; irregular: special form).\nStep 3: For negatives, use didn’t + base verb (not past form).\nStep 4: For questions, start with Did + subject + base verb.\nStep 5: For ‘to be’, use was/were (no did).",
+    "explanation_translations": {}
+  },
+  {
+    "id": 5,
+    "question": "Fill in the blank: Choose the correct full sentence: We ___ a movie last night.",
+    "options": {
+      "A": "watching",
+      "B": "watches",
+      "C": "watched",
+      "D": "watch"
+    },
+    "correct": "C",
+    "explanation": "Past Simple talks about finished actions in the past (yesterday, last week, in 2020). Use past verb forms, and use did/didn’t for questions and negatives.",
+    "explanation_simple": "Past Simple: yesterday/last… Regular verb + -ed; irregular has special form. Negatives/questions use did/didn’t + base verb.",
+    "explanation_detailed": "Step 1: Look for past time words: yesterday, last night, last week, last year.\nStep 2: For actions, use the past form of the verb (regular: -ed; irregular: special form).\nStep 3: For negatives, use didn’t + base verb (not past form).\nStep 4: For questions, start with Did + subject + base verb.\nStep 5: For ‘to be’, use was/were (no did).",
+    "explanation_translations": {}
+  },
+  {
+    "id": 6,
+    "question": "Fill in the blank: ___ you go to school yesterday",
+    "options": {
+      "A": "Do",
+      "B": "Did",
+      "C": "Does",
+      "D": "Was"
+    },
+    "correct": "B",
+    "explanation": "Past Simple talks about finished actions in the past (yesterday, last week, in 2020). Use past verb forms, and use did/didn’t for questions and negatives.",
+    "explanation_simple": "Past Simple: yesterday/last… Regular verb + -ed; irregular has special form. Negatives/questions use did/didn’t + base verb.",
+    "explanation_detailed": "Step 1: Look for past time words: yesterday, last night, last week, last year.\nStep 2: For actions, use the past form of the verb (regular: -ed; irregular: special form).\nStep 3: For negatives, use didn’t + base verb (not past form).\nStep 4: For questions, start with Did + subject + base verb.\nStep 5: For ‘to be’, use was/were (no did).",
+    "explanation_translations": {}
+  },
+  {
+    "id": 7,
+    "question": "Fill in the blank: I ___ at home yesterday.",
+    "options": {
+      "A": "am",
+      "B": "is",
+      "C": "was",
+      "D": "were"
+    },
+    "correct": "C",
+    "explanation": "Past Simple talks about finished actions in the past (yesterday, last week, in 2020). Use past verb forms, and use did/didn’t for questions and negatives.",
+    "explanation_simple": "Past Simple: yesterday/last… Regular verb + -ed; irregular has special form. Negatives/questions use did/didn’t + base verb.",
+    "explanation_detailed": "Step 1: Look for past time words: yesterday, last night, last week, last year.\nStep 2: For actions, use the past form of the verb (regular: -ed; irregular: special form).\nStep 3: For negatives, use didn’t + base verb (not past form).\nStep 4: For questions, start with Did + subject + base verb.\nStep 5: For ‘to be’, use was/were (no did).",
+    "explanation_translations": {}
+  },
+  {
+    "id": 8,
+    "question": "Fill in the blank: They ___ happy yesterday.",
+    "options": {
+      "A": "was",
+      "B": "were",
+      "C": "are",
+      "D": "be"
+    },
+    "correct": "B",
+    "explanation": "Past Simple talks about finished actions in the past (yesterday, last week, in 2020). Use past verb forms, and use did/didn’t for questions and negatives.",
+    "explanation_simple": "Past Simple: yesterday/last… Regular verb + -ed; irregular has special form. Negatives/questions use did/didn’t + base verb.",
+    "explanation_detailed": "Step 1: Look for past time words: yesterday, last night, last week, last year.\nStep 2: For actions, use the past form of the verb (regular: -ed; irregular: special form).\nStep 3: For negatives, use didn’t + base verb (not past form).\nStep 4: For questions, start with Did + subject + base verb.\nStep 5: For ‘to be’, use was/were (no did).",
+    "explanation_translations": {}
+  },
+  {
+    "id": 9,
+    "question": "Fill in the blank: He didn't ___ his homework.",
+    "options": {
+      "A": "do",
+      "B": "did",
+      "C": "does",
+      "D": "doing"
+    },
+    "correct": "A",
+    "explanation": "Past Simple talks about finished actions in the past (yesterday, last week, in 2020). Use past verb forms, and use did/didn’t for questions and negatives.",
+    "explanation_simple": "Past Simple: yesterday/last… Regular verb + -ed; irregular has special form. Negatives/questions use did/didn’t + base verb.",
+    "explanation_detailed": "Step 1: Look for past time words: yesterday, last night, last week, last year.\nStep 2: For actions, use the past form of the verb (regular: -ed; irregular: special form).\nStep 3: For negatives, use didn’t + base verb (not past form).\nStep 4: For questions, start with Did + subject + base verb.\nStep 5: For ‘to be’, use was/were (no did).",
+    "explanation_translations": {}
+  },
+  {
+    "id": 10,
+    "question": "Fill in the blank: ___ he at the party yesterday",
+    "options": {
+      "A": "Do",
+      "B": "Did",
+      "C": "Was",
+      "D": "Were"
+    },
+    "correct": "C",
+    "explanation": "Past Simple talks about finished actions in the past (yesterday, last week, in 2020). Use past verb forms, and use did/didn’t for questions and negatives.",
+    "explanation_simple": "Past Simple: yesterday/last… Regular verb + -ed; irregular has special form. Negatives/questions use did/didn’t + base verb.",
+    "explanation_detailed": "Step 1: Look for past time words: yesterday, last night, last week, last year.\nStep 2: For actions, use the past form of the verb (regular: -ed; irregular: special form).\nStep 3: For negatives, use didn’t + base verb (not past form).\nStep 4: For questions, start with Did + subject + base verb.\nStep 5: For ‘to be’, use was/were (no did).",
+    "explanation_translations": {}
+  },
+  {
+    "id": 11,
+    "question": "Choose the correct translation: “I did not go to school.”",
+    "options": {
+      "A": "Я не хожу в школу.",
+      "B": "Я не пошёл в школу.",
+      "C": "Я не иду в школу.",
+      "D": "Я не пойду в школу."
+    },
+    "correct": "B",
+    "explanation": "Past Simple talks about finished actions in the past (yesterday, last week, in 2020). Use past verb forms, and use did/didn’t for questions and negatives.",
+    "explanation_simple": "Past Simple: yesterday/last… Regular verb + -ed; irregular has special form. Negatives/questions use did/didn’t + base verb.",
+    "explanation_detailed": "Step 1: Look for past time words: yesterday, last night, last week, last year.\nStep 2: For actions, use the past form of the verb (regular: -ed; irregular: special form).\nStep 3: For negatives, use didn’t + base verb (not past form).\nStep 4: For questions, start with Did + subject + base verb.\nStep 5: For ‘to be’, use was/were (no did).",
+    "explanation_translations": {}
+  },
+  {
+    "id": 12,
+    "question": "Fill in the blank: They ___ lunch at 2 o'clock yesterday.",
+    "options": {
+      "A": "eat",
+      "B": "ate",
+      "C": "eating",
+      "D": "eaten"
+    },
+    "correct": "B",
+    "explanation": "Past Simple talks about finished actions in the past (yesterday, last week, in 2020). Use past verb forms, and use did/didn’t for questions and negatives.",
+    "explanation_simple": "Past Simple: yesterday/last… Regular verb + -ed; irregular has special form. Negatives/questions use did/didn’t + base verb.",
+    "explanation_detailed": "Step 1: Look for past time words: yesterday, last night, last week, last year.\nStep 2: For actions, use the past form of the verb (regular: -ed; irregular: special form).\nStep 3: For negatives, use didn’t + base verb (not past form).\nStep 4: For questions, start with Did + subject + base verb.\nStep 5: For ‘to be’, use was/were (no did).",
+    "explanation_translations": {}
+  },
+  {
+    "id": 13,
+    "question": "Fill in the blank: She ___ very tired last night.",
+    "options": {
+      "A": "is",
+      "B": "were",
+      "C": "was",
+      "D": "be"
+    },
+    "correct": "C",
+    "explanation": "Past Simple talks about finished actions in the past (yesterday, last week, in 2020). Use past verb forms, and use did/didn’t for questions and negatives.",
+    "explanation_simple": "Past Simple: yesterday/last… Regular verb + -ed; irregular has special form. Negatives/questions use did/didn’t + base verb.",
+    "explanation_detailed": "Step 1: Look for past time words: yesterday, last night, last week, last year.\nStep 2: For actions, use the past form of the verb (regular: -ed; irregular: special form).\nStep 3: For negatives, use didn’t + base verb (not past form).\nStep 4: For questions, start with Did + subject + base verb.\nStep 5: For ‘to be’, use was/were (no did).",
+    "explanation_translations": {}
+  },
+  {
+    "id": 14,
+    "question": "Fill in the blank: Choose the correct negative form: We ___ in London last year.",
+    "options": {
+      "A": "wasn't",
+      "B": "didn't be",
+      "C": "weren't",
+      "D": "didn't were"
+    },
+    "correct": "C",
+    "explanation": "Past Simple talks about finished actions in the past (yesterday, last week, in 2020). Use past verb forms, and use did/didn’t for questions and negatives.",
+    "explanation_simple": "Past Simple: yesterday/last… Regular verb + -ed; irregular has special form. Negatives/questions use did/didn’t + base verb.",
+    "explanation_detailed": "Step 1: Look for past time words: yesterday, last night, last week, last year.\nStep 2: For actions, use the past form of the verb (regular: -ed; irregular: special form).\nStep 3: For negatives, use didn’t + base verb (not past form).\nStep 4: For questions, start with Did + subject + base verb.\nStep 5: For ‘to be’, use was/were (no did).",
+    "explanation_translations": {}
+  },
+  {
+    "id": 15,
+    "question": "Choose the correct sentence: He _ to school and _ football.",
+    "options": {
+      "A": "goes / plays",
+      "B": "went / played",
+      "C": "go / play",
+      "D": "gone / playing"
+    },
+    "correct": "B",
+    "explanation": "Past Simple talks about finished actions in the past (yesterday, last week, in 2020). Use past verb forms, and use did/didn’t for questions and negatives.",
+    "explanation_simple": "Past Simple: yesterday/last… Regular verb + -ed; irregular has special form. Negatives/questions use did/didn’t + base verb.",
+    "explanation_detailed": "Step 1: Look for past time words: yesterday, last night, last week, last year.\nStep 2: For actions, use the past form of the verb (regular: -ed; irregular: special form).\nStep 3: For negatives, use didn’t + base verb (not past form).\nStep 4: For questions, start with Did + subject + base verb.\nStep 5: For ‘to be’, use was/were (no did).",
+    "explanation_translations": {}
+  }
+]

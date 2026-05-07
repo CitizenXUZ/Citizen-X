@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "question": "Choose the correct relative pronoun: The man __ helped me yesterday is my uncle.",
+    "options": {
+      "A": "which",
+      "B": "who",
+      "C": "whose",
+      "D": "where"
+    },
+    "correct": "B",
+    "explanation": "The object pronoun 'who' is used after verbs or prepositions.",
+    "explanation_simple": "The object pronoun 'who' is used after verbs or prepositions.",
+    "explanation_detailed": "The object pronoun 'who' is used after verbs or prepositions.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 2,
+    "question": "Complete the sentence: The book __ I borrowed from the library is very interesting.",
+    "options": {
+      "A": "which",
+      "B": "who",
+      "C": "whose",
+      "D": "where"
+    },
+    "correct": "A",
+    "explanation": "With I, the correct form of 'to be' is which.",
+    "explanation_simple": "With I, the correct form of 'to be' is which.",
+    "explanation_detailed": "With I, the correct form of 'to be' is which.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 3,
+    "question": "Choose the correct sentence:",
+    "options": {
+      "A": "The dog who usually barks lives next door",
+      "B": "The dog which usually barks lives next door",
+      "C": "The dog whose usually barks lives next door",
+      "D": "The dog where usually barks lives next door"
+    },
+    "correct": "B",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 4,
+    "question": "Fill in the blank: A person __ father is a lawyer helped me last time.",
+    "options": {
+      "A": "who",
+      "B": "which",
+      "C": "whose",
+      "D": "whom"
+    },
+    "correct": "C",
+    "explanation": "The verb 'to be' changes with the subject and tense.",
+    "explanation_simple": "The verb 'to be' changes with the subject and tense.",
+    "explanation_detailed": "The verb 'to be' changes with the subject and tense.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 5,
+    "question": "Choose the correct relative pronoun for a place: The cafe __ we met last week is very cozy.",
+    "options": {
+      "A": "whose",
+      "B": "where",
+      "C": "which",
+      "D": "who"
+    },
+    "correct": "B",
+    "explanation": "The object pronoun 'where' is used after verbs or prepositions.",
+    "explanation_simple": "The object pronoun 'where' is used after verbs or prepositions.",
+    "explanation_detailed": "The object pronoun 'where' is used after verbs or prepositions.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 6,
+    "question": "Complete the sentence about an animal: An insect __ bites at night is a mosquito.",
+    "options": {
+      "A": "who",
+      "B": "whose",
+      "C": "which",
+      "D": "where"
+    },
+    "correct": "C",
+    "explanation": "The verb 'to be' changes with the subject and tense.",
+    "explanation_simple": "The verb 'to be' changes with the subject and tense.",
+    "explanation_detailed": "The verb 'to be' changes with the subject and tense.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 7,
+    "question": "Choose the correct interrogative pronoun: __ is the leader of this team?",
+    "options": {
+      "A": "Which",
+      "B": "Who",
+      "C": "Whom",
+      "D": "Whose"
+    },
+    "correct": "B",
+    "explanation": "Who asks about a person.",
+    "explanation_simple": "Who asks about a person.",
+    "explanation_detailed": "Who asks about a person.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 8,
+    "question": "Form a question with 'whom': __ did you send the invitations to?",
+    "options": {
+      "A": "Who",
+      "B": "Whom",
+      "C": "Which",
+      "D": "Whose"
+    },
+    "correct": "B",
+    "explanation": "Questions use auxiliary + subject word order (Do/Does/Did/Is/Are/Will...).",
+    "explanation_simple": "Questions use auxiliary + subject word order (Do/Does/Did/Is/Are/Will...).",
+    "explanation_detailed": "Questions use auxiliary + subject word order (Do/Does/Did/Is/Are/Will...).",
+    "explanation_translations": {}
+  },
+  {
+    "id": 9,
+    "question": "Choose the correct interrogative pronoun: __ car do you like the most?",
+    "options": {
+      "A": "Who",
+      "B": "Whose",
+      "C": "Which",
+      "D": "What"
+    },
+    "correct": "C",
+    "explanation": "Which asks about a choice from a set.",
+    "explanation_simple": "Which asks about a choice from a set.",
+    "explanation_detailed": "Which asks about a choice from a set.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 10,
+    "question": "Complete the sentence: __ tablet is this on the table?",
+    "options": {
+      "A": "Who",
+      "B": "Whose",
+      "C": "Which",
+      "D": "What"
+    },
+    "correct": "B",
+    "explanation": "The verb 'to be' changes with the subject and tense.",
+    "explanation_simple": "The verb 'to be' changes with the subject and tense.",
+    "explanation_detailed": "The verb 'to be' changes with the subject and tense.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 11,
+    "question": "Fill in the blank: The teacher __ teaches us English is very kind.",
+    "options": {
+      "A": "which",
+      "B": "who",
+      "C": "whose",
+      "D": "where"
+    },
+    "correct": "B",
+    "explanation": "The verb 'to be' changes with the subject and tense.",
+    "explanation_simple": "The verb 'to be' changes with the subject and tense.",
+    "explanation_detailed": "The verb 'to be' changes with the subject and tense.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 12,
+    "question": "Complete the sentence: This is the restaurant __ we celebrated my birthday last year.",
+    "options": {
+      "A": "who",
+      "B": "which",
+      "C": "where",
+      "D": "whose"
+    },
+    "correct": "C",
+    "explanation": "The verb 'to be' changes with the subject and tense.",
+    "explanation_simple": "The verb 'to be' changes with the subject and tense.",
+    "explanation_detailed": "The verb 'to be' changes with the subject and tense.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 13,
+    "question": "Choose the correct relative pronoun: I have a friend __ speaks three languages fluently.",
+    "options": {
+      "A": "whose",
+      "B": "who",
+      "C": "which",
+      "D": "whom"
+    },
+    "correct": "B",
+    "explanation": "The object pronoun 'who' is used after verbs or prepositions.",
+    "explanation_simple": "The object pronoun 'who' is used after verbs or prepositions.",
+    "explanation_detailed": "The object pronoun 'who' is used after verbs or prepositions.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 14,
+    "question": "Form the question: __ do you like better: tea or coffee?",
+    "options": {
+      "A": "Who",
+      "B": "Which",
+      "C": "Whose",
+      "D": "What"
+    },
+    "correct": "B",
+    "explanation": "Questions use auxiliary + subject word order (Do/Does/Did/Is/Are/Will...).",
+    "explanation_simple": "Questions use auxiliary + subject word order (Do/Does/Did/Is/Are/Will...).",
+    "explanation_detailed": "Questions use auxiliary + subject word order (Do/Does/Did/Is/Are/Will...).",
+    "explanation_translations": {}
+  },
+  {
+    "id": 15,
+    "question": "Complete the sentence about a person: The student __ mother is a doctor helped me with my homework.",
+    "options": {
+      "A": "who",
+      "B": "which",
+      "C": "whose",
+      "D": "whom"
+    },
+    "correct": "C",
+    "explanation": "The verb 'to be' changes with the subject and tense.",
+    "explanation_simple": "The verb 'to be' changes with the subject and tense.",
+    "explanation_detailed": "The verb 'to be' changes with the subject and tense.",
+    "explanation_translations": {}
+  }
+]

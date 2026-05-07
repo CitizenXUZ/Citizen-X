@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "question": "I ____ TV at 8 p.m. yesterday. (watch)",
+    "options": {
+      "A": "was watching",
+      "B": "were watching",
+      "C": "watch",
+      "D": "watched"
+    },
+    "correct": "A",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 2,
+    "question": "She ____ when her mother came. (not sleep)",
+    "options": {
+      "A": "was not sleeping",
+      "B": "were not sleeping",
+      "C": "didn't sleep",
+      "D": "sleeps not"
+    },
+    "correct": "A",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 3,
+    "question": "____ you studying English at 7 last night?",
+    "options": {
+      "A": "Did",
+      "B": "Was",
+      "C": "Were",
+      "D": "Do"
+    },
+    "correct": "C",
+    "explanation": "The phrase translates to Were.",
+    "explanation_simple": "The phrase translates to Were.",
+    "explanation_detailed": "The phrase translates to Were.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 4,
+    "question": "They ____ football when it started to rain.",
+    "options": {
+      "A": "play",
+      "B": "were playing",
+      "C": "played",
+      "D": "are playing"
+    },
+    "correct": "B",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 5,
+    "question": "My sister ____ dinner while I was doing homework.",
+    "options": {
+      "A": "cooked",
+      "B": "cooks",
+      "C": "was cooking",
+      "D": "cooking"
+    },
+    "correct": "C",
+    "explanation": "With I, the correct form of 'to be' is was cooking.",
+    "explanation_simple": "With I, the correct form of 'to be' is was cooking.",
+    "explanation_detailed": "With I, the correct form of 'to be' is was cooking.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 6,
+    "question": "We ____ to music at this time yesterday.",
+    "options": {
+      "A": "listen",
+      "B": "listened",
+      "C": "were listening",
+      "D": "was listening"
+    },
+    "correct": "C",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 7,
+    "question": "He ____ at 3 p.m. yesterday. (not work)",
+    "options": {
+      "A": "wasn't working",
+      "B": "weren't working",
+      "C": "didn't work",
+      "D": "not working"
+    },
+    "correct": "A",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 8,
+    "question": "While I ____ the book, my brother was sleeping.",
+    "options": {
+      "A": "read",
+      "B": "was reading",
+      "C": "reads",
+      "D": "reading"
+    },
+    "correct": "B",
+    "explanation": "With I, the correct form of 'to be' is was reading.",
+    "explanation_simple": "With I, the correct form of 'to be' is was reading.",
+    "explanation_detailed": "With I, the correct form of 'to be' is was reading.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 9,
+    "question": "The children ____ in the yard when their mom called them.",
+    "options": {
+      "A": "were playing",
+      "B": "played",
+      "C": "play",
+      "D": "are playing"
+    },
+    "correct": "A",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 10,
+    "question": "____ it raining at 9 a.m. this morning?",
+    "options": {
+      "A": "Did",
+      "B": "Was",
+      "C": "Were",
+      "D": "Is"
+    },
+    "correct": "B",
+    "explanation": "The phrase translates to Was.",
+    "explanation_simple": "The phrase translates to Was.",
+    "explanation_detailed": "The phrase translates to Was.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 11,
+    "question": "I ____ to music when my phone rang.",
+    "options": {
+      "A": "was listening",
+      "B": "were listening",
+      "C": "listened",
+      "D": "listening"
+    },
+    "correct": "A",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 12,
+    "question": "They ____ not watching TV at that time.",
+    "options": {
+      "A": "was",
+      "B": "were",
+      "C": "are",
+      "D": "wasn't"
+    },
+    "correct": "B",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 13,
+    "question": "She ____ a book while her father was working.",
+    "options": {
+      "A": "read",
+      "B": "reading",
+      "C": "was reading",
+      "D": "reads"
+    },
+    "correct": "C",
+    "explanation": "With She, the correct form of 'to be' is was reading.",
+    "explanation_simple": "With She, the correct form of 'to be' is was reading.",
+    "explanation_detailed": "With She, the correct form of 'to be' is was reading.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 14,
+    "question": "What ____ you doing at 10 yesterday morning?",
+    "options": {
+      "A": "was",
+      "B": "were",
+      "C": "did",
+      "D": "are"
+    },
+    "correct": "B",
+    "explanation": "The phrase translates to were.",
+    "explanation_simple": "The phrase translates to were.",
+    "explanation_detailed": "The phrase translates to were.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 15,
+    "question": "While we ____ dinner, our friends arrived.",
+    "options": {
+      "A": "had",
+      "B": "were having",
+      "C": "have",
+      "D": "having"
+    },
+    "correct": "B",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  }
+]

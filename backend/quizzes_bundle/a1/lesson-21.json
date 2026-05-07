@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "question": "I ___ play football every day when I was a child.",
+    "options": {
+      "A": "use to",
+      "B": "used to",
+      "C": "am used to",
+      "D": "was use to"
+    },
+    "correct": "B",
+    "explanation": "Choose the option that makes the sentence correct in grammar and meaning. The correct choice is \"used to\". This option fits the rule being tested in the lesson, while the other forms change the meaning or are incorrect."
+  },
+  {
+    "id": 2,
+    "question": "She ___ like coffee, but now she drinks it every morning.",
+    "options": {
+      "A": "didn't use to",
+      "B": "doesn't used to",
+      "C": "wasn't used to",
+      "D": "don't use to"
+    },
+    "correct": "A",
+    "explanation": "Choose the option that makes the sentence correct in grammar and meaning. The correct choice is \"didn't use to\". Possession uses 's for a single owner and s' for plural owners ending in s. This option fits the rule being tested in the lesson, while the other forms change the meaning or are incorrect."
+  },
+  {
+    "id": 3,
+    "question": "There ___ be a cinema here, but it was closed.",
+    "options": {
+      "A": "use",
+      "B": "used",
+      "C": "used to",
+      "D": "is used to"
+    },
+    "correct": "C",
+    "explanation": "Choose the option that makes the sentence correct in grammar and meaning. The correct choice is \"used to\". This option fits the rule being tested in the lesson, while the other forms change the meaning or are incorrect."
+  },
+  {
+    "id": 4,
+    "question": "My grandfather ___ work as a teacher.",
+    "options": {
+      "A": "is used to",
+      "B": "used to",
+      "C": "use to",
+      "D": "was use to"
+    },
+    "correct": "B",
+    "explanation": "Choose the option that makes the sentence correct in grammar and meaning. The correct choice is \"used to\". This option fits the rule being tested in the lesson, while the other forms change the meaning or are incorrect."
+  },
+  {
+    "id": 5,
+    "question": "We ___ live in a small flat before we bought this house.",
+    "options": {
+      "A": "used to",
+      "B": "use to",
+      "C": "are used to",
+      "D": "were used to"
+    },
+    "correct": "A",
+    "explanation": "Choose the option that makes the sentence correct in grammar and meaning. The correct choice is \"used to\". This option fits the rule being tested in the lesson, while the other forms change the meaning or are incorrect."
+  },
+  {
+    "id": 6,
+    "question": "Did you ___ play video games when you were young'",
+    "options": {
+      "A": "use to",
+      "B": "used to",
+      "C": "using to",
+      "D": "use"
+    },
+    "correct": "A",
+    "explanation": "Choose the option that makes the sentence correct in grammar and meaning. The correct choice is \"use to\". This option fits the rule being tested in the lesson, while the other forms change the meaning or are incorrect."
+  },
+  {
+    "id": 7,
+    "question": "I'm not ___ waking up so early.",
+    "options": {
+      "A": "used to",
+      "B": "use to",
+      "C": "used",
+      "D": "using to"
+    },
+    "correct": "A",
+    "explanation": "Choose the option that makes the sentence correct in grammar and meaning. The correct choice is \"used to\". This option fits the rule being tested in the lesson, while the other forms change the meaning or are incorrect."
+  },
+  {
+    "id": 8,
+    "question": "There ___ many trees in this area, but now it's all buildings.",
+    "options": {
+      "A": "were used to",
+      "B": "used to be",
+      "C": "use to be",
+      "D": "are used to"
+    },
+    "correct": "B",
+    "explanation": "Choose the option that makes the sentence correct in grammar and meaning. The correct choice is \"used to be\". This option fits the rule being tested in the lesson, while the other forms change the meaning or are incorrect."
+  },
+  {
+    "id": 9,
+    "question": "He ___ drive to work, but now he takes the bus.",
+    "options": {
+      "A": "used to",
+      "B": "use to",
+      "C": "is used to",
+      "D": "was used to"
+    },
+    "correct": "A",
+    "explanation": "Choose the option that makes the sentence correct in grammar and meaning. The correct choice is \"used to\". This option fits the rule being tested in the lesson, while the other forms change the meaning or are incorrect."
+  },
+  {
+    "id": 10,
+    "question": "My mom ___ cook every day when we were kids.",
+    "options": {
+      "A": "used to",
+      "B": "use to",
+      "C": "using to",
+      "D": "is used to"
+    },
+    "correct": "A",
+    "explanation": "Choose the option that makes the sentence correct in grammar and meaning. The correct choice is \"used to\". This option fits the rule being tested in the lesson, while the other forms change the meaning or are incorrect."
+  },
+  {
+    "id": 11,
+    "question": "They ___ live in London, didn't they'",
+    "options": {
+      "A": "use to",
+      "B": "used to",
+      "C": "are used to",
+      "D": "were use to"
+    },
+    "correct": "B",
+    "explanation": "Choose the option that makes the sentence correct in grammar and meaning. The correct choice is \"used to\". This option fits the rule being tested in the lesson, while the other forms change the meaning or are incorrect."
+  },
+  {
+    "id": 12,
+    "question": "We ___ eating spicy food when we moved to India.",
+    "options": {
+      "A": "are used to",
+      "B": "used to",
+      "C": "use to",
+      "D": "were used to"
+    },
+    "correct": "D",
+    "explanation": "Choose the option that makes the sentence correct in grammar and meaning. The correct choice is \"were used to\". This option fits the rule being tested in the lesson, while the other forms change the meaning or are incorrect."
+  },
+  {
+    "id": 13,
+    "question": "He didn't ___ wear glasses before.",
+    "options": {
+      "A": "use to",
+      "B": "used to",
+      "C": "using to",
+      "D": "uses to"
+    },
+    "correct": "A",
+    "explanation": "Choose the option that makes the sentence correct in grammar and meaning. The correct choice is \"use to\". This option fits the rule being tested in the lesson, while the other forms change the meaning or are incorrect."
+  },
+  {
+    "id": 14,
+    "question": "I ___ go swimming every weekend when I was a child.",
+    "options": {
+      "A": "use to",
+      "B": "used to",
+      "C": "am used to",
+      "D": "was used to"
+    },
+    "correct": "B",
+    "explanation": "Choose the option that makes the sentence correct in grammar and meaning. The correct choice is \"used to\". This option fits the rule being tested in the lesson, while the other forms change the meaning or are incorrect."
+  },
+  {
+    "id": 15,
+    "question": "She's ___ living alone now, but at first it was hard.",
+    "options": {
+      "A": "used to",
+      "B": "use to",
+      "C": "using to",
+      "D": "used"
+    },
+    "correct": "A",
+    "explanation": "Choose the option that makes the sentence correct in grammar and meaning. The correct choice is \"used to\". This option fits the rule being tested in the lesson, while the other forms change the meaning or are incorrect."
+  }
+]

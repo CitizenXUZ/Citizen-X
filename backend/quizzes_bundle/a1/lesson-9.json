@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "question": "Fill in the blank: This is my ___ bag.",
+    "options": {
+      "A": "mother",
+      "B": "mothers",
+      "C": "mother's",
+      "D": "mothers'"
+    },
+    "correct": "C",
+    "explanation": "This blank needs a possessive form (it shows who owns something). Decide if the owner is one person/thing or more than one, then choose the form with an apostrophe in the right place.",
+    "explanation_simple": "To show ownership: one owner → add ’s; plural owners ending in s → add ’ after s.",
+    "explanation_detailed": "Step 1: Ask: “Who owns this thing?” (ownership means: it belongs to someone).\nStep 2: Look at the words around the blank to understand the meaning.\nStep 3: Find the owner word in the options (the person/people or thing/things that own).\nStep 4: If the owner is ONE, English usually adds an apostrophe + s (’s) to the owner word.\nStep 5: Choose the option that shows ownership; forms without an apostrophe are usually just a noun/plural and do not show “belongs to”.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 2,
+    "question": "Fill in the blank: The ___ names are Ali and Aziz.",
+    "options": {
+      "A": "boys'",
+      "B": "boy's",
+      "C": "boys's",
+      "D": "boy"
+    },
+    "correct": "A",
+    "explanation": "This blank needs a possessive form (it shows who owns something). Decide if the owner is one person/thing or more than one, then choose the form with an apostrophe in the right place.",
+    "explanation_simple": "To show ownership: one owner → add ’s; plural owners ending in s → add ’ after s.",
+    "explanation_detailed": "Step 1: Ask: “Who owns this thing?” (ownership means: it belongs to someone).\nStep 2: Look at the words around the blank to understand the meaning.\nStep 3: Find the owner word in the options (the person/people or thing/things that own).\nStep 4: If the owners are MORE THAN ONE and the word already ends in -s, English usually puts the apostrophe AFTER the -s (s’).\nStep 5: Choose the option that shows ownership; forms without an apostrophe are usually just a noun/plural and do not show “belongs to”.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 3,
+    "question": "Fill in the blank: ___ book is on the desk. (belongs to Sunnatullo)",
+    "options": {
+      "A": "Sunnatullo",
+      "B": "Sunnatullo's",
+      "C": "Sunnatullos",
+      "D": "Sunnatullo'"
+    },
+    "correct": "B",
+    "explanation": "This blank needs a possessive form (it shows who owns something). Decide if the owner is one person/thing or more than one, then choose the form with an apostrophe in the right place.",
+    "explanation_simple": "To show ownership: one owner → add ’s; plural owners ending in s → add ’ after s.",
+    "explanation_detailed": "Step 1: Ask: “Who owns this thing?” (ownership means: it belongs to someone).\nStep 2: Use the hint in brackets as a clue about the owner.\nStep 3: Find the owner word in the options (the person/people or thing/things that own).\nStep 4: If the owner is ONE, English usually adds an apostrophe + s (’s) to the owner word.\nStep 5: Choose the option that shows ownership; forms without an apostrophe are usually just a noun/plural and do not show “belongs to”.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 4,
+    "question": "Fill in the blank: My ___ friends are very kind.",
+    "options": {
+      "A": "brother'",
+      "B": "brothers",
+      "C": "brother",
+      "D": "brothers'"
+    },
+    "correct": "D",
+    "explanation": "This blank needs a possessive form (it shows who owns something). Decide if the owner is one person/thing or more than one, then choose the form with an apostrophe in the right place.",
+    "explanation_simple": "To show ownership: one owner → add ’s; plural owners ending in s → add ’ after s.",
+    "explanation_detailed": "Step 1: Ask: “Who owns this thing?” (ownership means: it belongs to someone).\nStep 2: Look at the words around the blank to understand the meaning.\nStep 3: Find the owner word in the options (the person/people or thing/things that own).\nStep 4: If the owners are MORE THAN ONE and the word already ends in -s, English usually puts the apostrophe AFTER the -s (s’).\nStep 5: Choose the option that shows ownership; forms without an apostrophe are usually just a noun/plural and do not show “belongs to”.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 5,
+    "question": "Fill in the blank: The ___ cars are new. (belong to the teachers)",
+    "options": {
+      "A": "teacher'",
+      "B": "teachers'",
+      "C": "teachers",
+      "D": "teacher"
+    },
+    "correct": "B",
+    "explanation": "This blank needs a possessive form (it shows who owns something). Decide if the owner is one person/thing or more than one, then choose the form with an apostrophe in the right place.",
+    "explanation_simple": "To show ownership: one owner → add ’s; plural owners ending in s → add ’ after s.",
+    "explanation_detailed": "Step 1: Ask: “Who owns this thing?” (ownership means: it belongs to someone).\nStep 2: Use the hint in brackets as a clue about the owner.\nStep 3: Find the owner word in the options (the person/people or thing/things that own).\nStep 4: If the owners are MORE THAN ONE and the word already ends in -s, English usually puts the apostrophe AFTER the -s (s’).\nStep 5: Choose the option that shows ownership; forms without an apostrophe are usually just a noun/plural and do not show “belongs to”.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 6,
+    "question": "Fill in the blank: This is ___ phone. (belongs to Azim)",
+    "options": {
+      "A": "Azims",
+      "B": "Azim",
+      "C": "Azim's",
+      "D": "Azims'"
+    },
+    "correct": "C",
+    "explanation": "This blank needs a possessive form (it shows who owns something). Decide if the owner is one person/thing or more than one, then choose the form with an apostrophe in the right place.",
+    "explanation_simple": "To show ownership: one owner → add ’s; plural owners ending in s → add ’ after s.",
+    "explanation_detailed": "Step 1: Ask: “Who owns this thing?” (ownership means: it belongs to someone).\nStep 2: Use the hint in brackets as a clue about the owner.\nStep 3: Find the owner word in the options (the person/people or thing/things that own).\nStep 4: If the owner is ONE, English usually adds an apostrophe + s (’s) to the owner word.\nStep 5: Choose the option that shows ownership; forms without an apostrophe are usually just a noun/plural and do not show “belongs to”.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 7,
+    "question": "Fill in the blank: The ___ color is red. (car)",
+    "options": {
+      "A": "car's",
+      "B": "car",
+      "C": "cars",
+      "D": "cars'"
+    },
+    "correct": "A",
+    "explanation": "This blank needs a possessive form (it shows who owns something). Decide if the owner is one person/thing or more than one, then choose the form with an apostrophe in the right place.",
+    "explanation_simple": "To show ownership: one owner → add ’s; plural owners ending in s → add ’ after s.",
+    "explanation_detailed": "Step 1: Ask: “Who owns this thing?” (ownership means: it belongs to someone).\nStep 2: Use the hint in brackets as a clue about the owner.\nStep 3: Find the owner word in the options (the person/people or thing/things that own).\nStep 4: If the owner is ONE, English usually adds an apostrophe + s (’s) to the owner word.\nStep 5: Choose the option that shows ownership; forms without an apostrophe are usually just a noun/plural and do not show “belongs to”.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 8,
+    "question": "Fill in the blank: The ___ house is very big. (family)",
+    "options": {
+      "A": "families'",
+      "B": "family",
+      "C": "familys",
+      "D": "family's"
+    },
+    "correct": "D",
+    "explanation": "This blank needs a possessive form (it shows who owns something). Decide if the owner is one person/thing or more than one, then choose the form with an apostrophe in the right place.",
+    "explanation_simple": "To show ownership: one owner → add ’s; plural owners ending in s → add ’ after s.",
+    "explanation_detailed": "Step 1: Ask: “Who owns this thing?” (ownership means: it belongs to someone).\nStep 2: Use the hint in brackets as a clue about the owner.\nStep 3: Find the owner word in the options (the person/people or thing/things that own).\nStep 4: If the owner is ONE, English usually adds an apostrophe + s (’s) to the owner word.\nStep 5: Choose the option that shows ownership; forms without an apostrophe are usually just a noun/plural and do not show “belongs to”.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 9,
+    "question": "Fill in the blank: The ___ books are on the shelf. (students)",
+    "options": {
+      "A": "student's",
+      "B": "students'",
+      "C": "students",
+      "D": "students's"
+    },
+    "correct": "B",
+    "explanation": "This blank needs a possessive form (it shows who owns something). Decide if the owner is one person/thing or more than one, then choose the form with an apostrophe in the right place.",
+    "explanation_simple": "To show ownership: one owner → add ’s; plural owners ending in s → add ’ after s.",
+    "explanation_detailed": "Step 1: Ask: “Who owns this thing?” (ownership means: it belongs to someone).\nStep 2: Use the hint in brackets as a clue about the owner.\nStep 3: Find the owner word in the options (the person/people or thing/things that own).\nStep 4: If the owners are MORE THAN ONE and the word already ends in -s, English usually puts the apostrophe AFTER the -s (s’).\nStep 5: Choose the option that shows ownership; forms without an apostrophe are usually just a noun/plural and do not show “belongs to”.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 10,
+    "question": "Fill in the blank: This is my ___ name. (friend)",
+    "options": {
+      "A": "friends",
+      "B": "friend",
+      "C": "friend's",
+      "D": "friends'"
+    },
+    "correct": "C",
+    "explanation": "This blank needs a possessive form (it shows who owns something). Decide if the owner is one person/thing or more than one, then choose the form with an apostrophe in the right place.",
+    "explanation_simple": "To show ownership: one owner → add ’s; plural owners ending in s → add ’ after s.",
+    "explanation_detailed": "Step 1: Ask: “Who owns this thing?” (ownership means: it belongs to someone).\nStep 2: Use the hint in brackets as a clue about the owner.\nStep 3: Find the owner word in the options (the person/people or thing/things that own).\nStep 4: If the owner is ONE, English usually adds an apostrophe + s (’s) to the owner word.\nStep 5: Choose the option that shows ownership; forms without an apostrophe are usually just a noun/plural and do not show “belongs to”.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 11,
+    "question": "Fill in the blank: The keys ___ the door are on the table.",
+    "options": {
+      "A": "of",
+      "B": "in",
+      "C": "for",
+      "D": "at"
+    },
+    "correct": "A",
+    "explanation": "This blank needs a preposition to connect two nouns. Think: is the first thing a part of the second thing, or does it belong to it? Choose the word that shows that relationship.",
+    "explanation_simple": "Use the preposition that means “belonging/part of”.",
+    "explanation_detailed": "Step 1: A preposition is a small word (like in/on/at/of/for) that shows a relationship.\nStep 2: Read the two nouns: “the keys ___ the door” (or “the color ___ the wall”, etc.).\nStep 3: Ask: “Does X belong to Y?” or “Is X a part of Y?”\nStep 4: If yes, pick the preposition that shows “belonging/part of” (not a place like in/at/on).\nStep 5: Now choose the option that matches this meaning.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 12,
+    "question": "Fill in the blank: The color ___ the wall is white.",
+    "options": {
+      "A": "in",
+      "B": "on",
+      "C": "of",
+      "D": "at"
+    },
+    "correct": "C",
+    "explanation": "This blank needs a preposition to connect two nouns. Think: is the first thing a part of the second thing, or does it belong to it? Choose the word that shows that relationship.",
+    "explanation_simple": "Use the preposition that means “belonging/part of”.",
+    "explanation_detailed": "Step 1: A preposition is a small word (like in/on/at/of/for) that shows a relationship.\nStep 2: Read the two nouns: “the keys ___ the door” (or “the color ___ the wall”, etc.).\nStep 3: Ask: “Does X belong to Y?” or “Is X a part of Y?”\nStep 4: If yes, pick the preposition that shows “belonging/part of” (not a place like in/at/on).\nStep 5: Now choose the option that matches this meaning.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 13,
+    "question": "Fill in the blank: The case ___ the phone is black.",
+    "options": {
+      "A": "of",
+      "B": "for",
+      "C": "in",
+      "D": "with"
+    },
+    "correct": "B",
+    "explanation": "This blank needs a preposition that tells the purpose. Think: is the first thing made to be used with the second thing? Choose the word that shows “made for / intended for”.",
+    "explanation_simple": "Use the preposition for purpose (made/intended for).",
+    "explanation_detailed": "Step 1: A preposition can also show purpose: what something is made to be used with.\nStep 2: Read the idea: a case ___ a phone = a case made to protect that phone.\nStep 3: So you need the word that means “intended for”, not a word for place (in/on/at) or ownership (of).\nStep 4: Choose the option that matches purpose.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 14,
+    "question": "Fill in the blank: The legs ___ the chair are short.",
+    "options": {
+      "A": "for",
+      "B": "on",
+      "C": "in",
+      "D": "of"
+    },
+    "correct": "D",
+    "explanation": "This blank needs a preposition to connect two nouns. Think: is the first thing a part of the second thing, or does it belong to it? Choose the word that shows that relationship.",
+    "explanation_simple": "Use the preposition that means “belonging/part of”.",
+    "explanation_detailed": "Step 1: A preposition is a small word (like in/on/at/of/for) that shows a relationship.\nStep 2: Read the two nouns: “the keys ___ the door” (or “the color ___ the wall”, etc.).\nStep 3: Ask: “Does X belong to Y?” or “Is X a part of Y?”\nStep 4: If yes, pick the preposition that shows “belonging/part of” (not a place like in/at/on).\nStep 5: Now choose the option that matches this meaning.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 15,
+    "question": "Fill in the blank: The name ___ this street is Amir Temur.",
+    "options": {
+      "A": "of",
+      "B": "at",
+      "C": "on",
+      "D": "to"
+    },
+    "correct": "A",
+    "explanation": "This blank needs a preposition to connect two nouns. Think: is the first thing a part of the second thing, or does it belong to it? Choose the word that shows that relationship.",
+    "explanation_simple": "Use the preposition that means “belonging/part of”.",
+    "explanation_detailed": "Step 1: A preposition is a small word (like in/on/at/of/for) that shows a relationship.\nStep 2: Read the two nouns: “the keys ___ the door” (or “the color ___ the wall”, etc.).\nStep 3: Ask: “Does X belong to Y?” or “Is X a part of Y?”\nStep 4: If yes, pick the preposition that shows “belonging/part of” (not a place like in/at/on).\nStep 5: Now choose the option that matches this meaning.",
+    "explanation_translations": {}
+  }
+]

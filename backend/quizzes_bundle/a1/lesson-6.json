@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "question": "Fill in the blank: This is ___ book.",
+    "options": {
+      "A": "my",
+      "B": "me",
+      "C": "mine",
+      "D": "I"
+    },
+    "correct": "A",
+    "explanation": "Look at the word after the blank: ‘book’. ‘Book’ is a thing (a noun). When the blank is right before a noun, we need a word that shows who the thing belongs to. Choose the option that can go directly before a noun (___ book).",
+    "explanation_simple": "The blank is before a noun (‘book’), so choose an ownership word that can go before a noun.",
+    "explanation_detailed": "Step 1: Find the noun. Here the noun is ‘book’ (a thing).\nStep 2: The blank is right before the noun: ___ book. Words in this place usually tell ‘whose?’ (who owns it).\nStep 3: In English we use possessive adjectives before nouns (for example: ___ book, ___ bag, ___ phone).\nStep 4: Subject pronouns (like ‘I’, ‘he’, ‘she’) and object pronouns (like ‘me’, ‘him’) do not go before a noun like this.\nStep 5: When we want to show ownership without saying the noun again, we use a possessive pronoun (example: ‘This book is hers.’).\nSo here you should pick the option that works as a possessive adjective before ‘book’.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 2,
+    "question": "Fill in the blank: ___ brother is a doctor.",
+    "options": {
+      "A": "He",
+      "B": "Him",
+      "C": "Hers",
+      "D": "His"
+    },
+    "correct": "D",
+    "explanation": "The blank is before ‘brother’ (a noun), so the missing word must answer ‘whose brother?’ Pick the form that shows ownership for a male person.",
+    "explanation_simple": "Because the blank is before ‘brother’, choose a word that means ‘belonging to him’.",
+    "explanation_detailed": "Step 1: ‘Brother’ is a noun. The blank comes right before it: ___ brother.\nStep 2: Words before a noun often tell ‘whose?’ (who owns/has it).\nStep 3: For a male owner, English uses a possessive adjective (not a subject form like ‘he’ and not an object form like ‘him’).\nStep 4: A word like ‘hers’ is also about ownership, but it is used without a noun (‘The book is hers’).\nSo choose the option that means ‘belonging to him’ and can stand before ‘brother’.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 3,
+    "question": "Fill in the blank: They love ___ parents.",
+    "options": {
+      "A": "them",
+      "B": "their",
+      "C": "theirs",
+      "D": "they"
+    },
+    "correct": "B",
+    "explanation": "The blank comes before ‘parents’ (a noun). You need a word that shows whose parents they are. Choose the possessive adjective that matches ‘they’.",
+    "explanation_simple": "Before ‘parents’, choose the ownership word that matches ‘they’.",
+    "explanation_detailed": "Step 1: ‘Parents’ is a noun (people). The blank is right before it: ___ parents.\nStep 2: This position needs a possessive adjective to show ownership (whose parents?).\nStep 3: ‘They’ is a subject pronoun (used for the doer), and ‘them’ is an object pronoun (used after verbs/prepositions).\nStep 4: A form like ‘theirs’ is a possessive pronoun used without a noun (‘These parents are theirs’).\nSo choose the option that means ‘belonging to them’ and can go before ‘parents’.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 4,
+    "question": "Fill in the blank: We are in ___ classroom.",
+    "options": {
+      "A": "we",
+      "B": "ours",
+      "C": "our",
+      "D": "us"
+    },
+    "correct": "C",
+    "explanation": "The blank is before ‘classroom’ (a noun). We need a possessive adjective that shows the classroom belongs to ‘we’.",
+    "explanation_simple": "Before ‘classroom’, use an ownership word for ‘we’.",
+    "explanation_detailed": "Step 1: Find the noun: ‘classroom’.\nStep 2: The blank is before the noun, so we need a possessive adjective (whose classroom?).\nStep 3: ‘We’ is used as a subject (‘We are…’). ‘Us’ is used as an object (‘Help us’).\nStep 4: A form like ‘ours’ is used without a noun (‘The classroom is ours’).\nSo choose the possessive adjective that matches ‘we’ and can go before ‘classroom’.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 5,
+    "question": "Choose the correct translation: “Её собака”.",
+    "options": {
+      "A": "Her dog",
+      "B": "His dog",
+      "C": "Their dog",
+      "D": "My dog"
+    },
+    "correct": "A",
+    "explanation": "‘Её собака’ means ‘the dog belongs to her’. In English, an ownership word comes before the noun ‘dog’. Choose the translation that shows a female owner and keeps the word order: ___ dog.",
+    "explanation_simple": "‘Её’ means ‘belonging to her’, so pick the option that says a dog belongs to a girl/woman.",
+    "explanation_detailed": "Step 1: Identify the main noun: ‘собака’ = ‘dog’.\nStep 2: The word ‘её’ answers ‘whose?’ — it shows the dog belongs to a girl/woman.\nStep 3: In English, we put the possessive adjective before the noun: ___ dog.\nStep 4: Do not choose a word that means ‘belonging to him’, ‘belonging to them’, or ‘belonging to me’, because the owner is female.\nSo choose the option that uses the female ownership word before ‘dog’.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 6,
+    "question": "Fill in the blank: He left ___ phone at home.",
+    "options": {
+      "A": "him",
+      "B": "he",
+      "C": "his",
+      "D": "theirs"
+    },
+    "correct": "C",
+    "explanation": "The blank is before ‘phone’ (a noun). You need an ownership word that matches ‘he’ and can go before a noun.",
+    "explanation_simple": "Before ‘phone’, choose the ownership word that means ‘belonging to him’, not a subject/object pronoun.",
+    "explanation_detailed": "Step 1: ‘Phone’ is the noun. The blank is before it: ___ phone.\nStep 2: This position needs a possessive adjective (whose phone?).\nStep 3: ‘He’ is a subject pronoun and ‘him’ is an object pronoun; they are not used before nouns to show ownership.\nStep 4: A form like ‘theirs’ is for ‘they’ and is used without a noun (‘The phone is theirs’).\nSo choose the possessive adjective that means ‘belonging to him’ and fits before ‘phone’.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 7,
+    "question": "Fill in the blank: I like ___ teacher.",
+    "options": {
+      "A": "you",
+      "B": "yours",
+      "C": "she",
+      "D": "your"
+    },
+    "correct": "D",
+    "explanation": "The blank is before ‘teacher’ (a noun). You need a possessive adjective that means ‘belonging to you’ and can go before a noun.",
+    "explanation_simple": "Because ‘teacher’ comes after the blank, choose the ownership word for ‘you’ (___ teacher).",
+    "explanation_detailed": "Step 1: Find the noun: ‘teacher’.\nStep 2: The blank is right before the noun, so we need a possessive adjective (whose teacher?).\nStep 3: ‘You’ is a pronoun for a person, but it does not show ownership by itself.\nStep 4: A form like ‘yours’ shows ownership but is used without a noun (‘This teacher is yours’).\nStep 5: ‘She’ talks about a different person (a female subject), so it does not match the meaning here.\nSo choose the possessive adjective that matches ‘you’ and goes before ‘teacher’.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 8,
+    "question": "Fill in the blank: The cat is eating ___ food.",
+    "options": {
+      "A": "it",
+      "B": "its",
+      "C": "it's",
+      "D": "theirs"
+    },
+    "correct": "B",
+    "explanation": "The blank is before ‘food’ (a noun), so you need an ownership word for the cat. Be careful: one option is a short form of ‘it is’, and another option is the possessive form meaning ‘belonging to it’.",
+    "explanation_simple": "Before ‘food’, choose the possessive form for ‘it’ (the cat), not the short form ‘it is’.",
+    "explanation_detailed": "Step 1: The noun is ‘food’. The blank is before it: ___ food.\nStep 2: We need a possessive adjective to show ownership: the food belongs to the cat.\nStep 3: ‘It’ is just a pronoun (the cat), not an ownership word.\nStep 4: ‘It’s’ has an apostrophe and usually means ‘it is’ or ‘it has’ (example: ‘It’s cold.’). That is not about ownership.\nStep 5: ‘Theirs’ means ‘belonging to them’ and is used without a noun (‘The food is theirs’).\nSo choose the option that means ‘belonging to it’ and can go before ‘food’.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 9,
+    "question": "Fill in the blank: We love ___ school.",
+    "options": {
+      "A": "our",
+      "B": "ours",
+      "C": "us",
+      "D": "we"
+    },
+    "correct": "A",
+    "explanation": "The blank is before ‘school’ (a noun), so choose the possessive adjective that matches ‘we’.",
+    "explanation_simple": "Before ‘school’, pick the ownership word for ‘we’.",
+    "explanation_detailed": "Step 1: ‘School’ is a noun. The blank is right before it: ___ school.\nStep 2: This place needs a possessive adjective (whose school?).\nStep 3: A form like ‘ours’ is used without a noun (‘The school is ours’), and ‘us/we’ are not possessive forms.\nSo choose the possessive adjective that fits before ‘school’.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 10,
+    "question": "Fill in the blank: Is this ___ pen",
+    "options": {
+      "A": "you",
+      "B": "your",
+      "C": "yours",
+      "D": "they"
+    },
+    "correct": "B",
+    "explanation": "The blank is before ‘pen’ (a noun). In questions like this, we usually ask whose pen it is, so we need a possessive adjective for ‘you’.",
+    "explanation_simple": "Before ‘pen’, choose the ownership word for ‘you’.",
+    "explanation_detailed": "Step 1: The noun is ‘pen’. The blank is before it: ___ pen.\nStep 2: This position needs a possessive adjective (whose pen?).\nStep 3: ‘You’ is a person pronoun, not an ownership word. ‘Yours’ is ownership but used without a noun (‘This pen is yours’).\nStep 4: ‘They’ is for other people and does not match the meaning.\nSo choose the possessive adjective that matches ‘you’ and goes before ‘pen’.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 11,
+    "question": "Fill in the blank: They're cleaning ___ room now.",
+    "options": {
+      "A": "them",
+      "B": "they",
+      "C": "theirs",
+      "D": "their"
+    },
+    "correct": "D",
+    "explanation": "The blank is before ‘room’ (a noun). Choose the possessive adjective that means ‘belonging to them’.",
+    "explanation_simple": "Before ‘room’, choose the ownership word for ‘they’.",
+    "explanation_detailed": "Step 1: The noun is ‘room’. The blank is right before it.\nStep 2: We need a possessive adjective to answer ‘whose room?’.\nStep 3: ‘They’ (subject) and ‘them’ (object) are not possessive adjectives.\nStep 4: ‘Theirs’ is possessive but used without a noun (‘The room is theirs’).\nSo pick the possessive adjective that fits before ‘room’.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 12,
+    "question": "Fill in the blank: He forgot ___ bag at home.",
+    "options": {
+      "A": "his",
+      "B": "he",
+      "C": "him",
+      "D": "her"
+    },
+    "correct": "A",
+    "explanation": "The blank is before ‘bag’ (a noun). Choose the possessive adjective that shows the bag belongs to ‘he’.",
+    "explanation_simple": "Before ‘bag’, choose an ownership word meaning ‘belonging to him’.",
+    "explanation_detailed": "Step 1: Find the noun: ‘bag’.\nStep 2: The blank is before the noun, so we need a possessive adjective (whose bag?).\nStep 3: ‘He’ and ‘him’ do not show ownership in this position.\nStep 4: A female ownership word would change the meaning.\nSo choose the possessive adjective that matches ‘he’.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 13,
+    "question": "Choose the correct translation: “Наша машина новая.”",
+    "options": {
+      "A": "Ours car is new.",
+      "B": "We car is new.",
+      "C": "Our car is new.",
+      "D": "Us car is new."
+    },
+    "correct": "C",
+    "explanation": "In ‘Наша машина новая’, the noun is ‘car’. In English we use a possessive adjective before a noun: ___ car. Pick the sentence where the ownership word is used correctly before ‘car’.",
+    "explanation_simple": "Before a noun (___ car) use a possessive adjective. When the noun is missing (The car is ___) use a possessive pronoun.",
+    "explanation_detailed": "Step 1: Translate the idea: ‘Наша’ means ‘belonging to us’. ‘Машина’ is ‘car’.\nStep 2: When an ownership word is directly before a noun, English uses a possessive adjective (___ car).\nStep 3: The pronoun form (like ‘theirs’) is used alone: ‘The car is theirs.’ It cannot be used like ‘___ car’.\nStep 4: ‘We’ is a subject pronoun and ‘us’ is an object pronoun; they also cannot go before a noun to show ownership.\nSo choose the option with the correct possessive adjective before ‘car’.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 14,
+    "question": "Fill in the blank: This is ___ house.",
+    "options": {
+      "A": "me",
+      "B": "my",
+      "C": "mine",
+      "D": "I"
+    },
+    "correct": "B",
+    "explanation": "The blank is before ‘house’ (a noun). Choose the possessive adjective that shows ownership by the speaker.",
+    "explanation_simple": "Before ‘house’, choose the ownership word for the speaker (I).",
+    "explanation_detailed": "Step 1: The noun is ‘house’. The blank is right before it: ___ house.\nStep 2: This position needs a possessive adjective (whose house?).\nStep 3: ‘I’ is a subject pronoun and ‘me’ is an object pronoun; they are not used before nouns to show ownership.\nStep 4: A possessive pronoun like ‘mine’ is used without a noun (‘This house is mine’).\nSo choose the possessive adjective that matches the speaker and fits before ‘house’.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 15,
+    "question": "Fill in the blank: She didn't see ___ keys.",
+    "options": {
+      "A": "hers",
+      "B": "she",
+      "C": "they",
+      "D": "her"
+    },
+    "correct": "D",
+    "explanation": "The blank is before ‘keys’ (a noun). Choose the possessive adjective that means the keys belong to ‘she’.",
+    "explanation_simple": "Before ‘keys’, pick the ownership word for ‘she’.",
+    "explanation_detailed": "Step 1: ‘Keys’ is the noun. The blank is right before it.\nStep 2: We need a possessive adjective (whose keys?).\nStep 3: ‘She’ and ‘they’ are subject pronouns; they do not show ownership before a noun.\nStep 4: A form like ‘hers’ is used without a noun (‘The keys are hers’).\nSo choose the possessive adjective that matches ‘she’ and goes before ‘keys’.",
+    "explanation_translations": {}
+  }
+]

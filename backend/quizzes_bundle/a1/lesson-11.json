@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "question": "Which sentence is in Present Simple Tense",
+    "options": {
+      "A": "I am reading a book now.",
+      "B": "I read a book every day.",
+      "C": "I was reading a book yesterday.",
+      "D": "I will read a book tomorrow."
+    },
+    "correct": "B",
+    "explanation": "Present Simple talks about habits (things we do again and again) and facts (things that are always true). Look for time words like “every day”, and check the verb form.",
+    "explanation_simple": "Find the habit/fact sentence.",
+    "explanation_detailed": "Step 1: Ask: Is this about a habit (every day/usually) or a fact (always true)?\nStep 2: Present Continuous usually has “am/is/are + -ing” and often means “now”.\nStep 3: Past Simple usually has a past time word (yesterday/last week) or a past verb form.\nStep 4: Future Simple usually has “will” and a future time word (tomorrow/next week).\nStep 5: Choose the sentence that matches Present Simple habits/facts.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 2,
+    "question": "Fill in the blank: What is the correct form' She ___ TV every evening.",
+    "options": {
+      "A": "watch",
+      "B": "watched",
+      "C": "watches",
+      "D": "watching"
+    },
+    "correct": "C",
+    "explanation": "This question checks Present Simple verb forms. Look at the subject and choose the verb form that matches it.",
+    "explanation_simple": "He/she/it → verb + -s/-es. Others → base verb.",
+    "explanation_detailed": "Step 1: Find the subject (who does the action): I/you/we/they or he/she/it.\nStep 2: In Present Simple, he/she/it usually needs an extra -s or -es on the verb.\nStep 3: I/you/we/they use the base verb (no -s).\nStep 4: Check for time words like “every day / every evening / on Sundays” (they often go with Present Simple).\nStep 5: Choose the option with the correct verb form for the subject.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 3,
+    "question": "Choose the correct sentence:",
+    "options": {
+      "A": "He play football every Sunday.",
+      "B": "He plays football every Sunday.",
+      "C": "He playing football every Sunday.",
+      "D": "He is play football every Sunday."
+    },
+    "correct": "B",
+    "explanation": "This question checks Present Simple verb forms. Look at the subject and choose the verb form that matches it.",
+    "explanation_simple": "He/she/it → verb + -s/-es. Others → base verb.",
+    "explanation_detailed": "Step 1: Find the subject (who does the action): I/you/we/they or he/she/it.\nStep 2: In Present Simple, he/she/it usually needs an extra -s or -es on the verb.\nStep 3: I/you/we/they use the base verb (no -s).\nStep 4: Check for time words like “every day / every evening / on Sundays” (they often go with Present Simple).\nStep 5: Choose the option with the correct verb form for the subject.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 4,
+    "question": "Which of the following shows a habit",
+    "options": {
+      "A": "She is watching TV now.",
+      "B": "She watched TV yesterday.",
+      "C": "She watches TV every day.",
+      "D": "She will watch TV tomorrow."
+    },
+    "correct": "C",
+    "explanation": "Present Simple talks about habits (things we do again and again) and facts (things that are always true). Look for time words like “every day”, and check the verb form.",
+    "explanation_simple": "Find the habit/fact sentence.",
+    "explanation_detailed": "Step 1: Ask: Is this about a habit (every day/usually) or a fact (always true)?\nStep 2: Present Continuous usually has “am/is/are + -ing” and often means “now”.\nStep 3: Past Simple usually has a past time word (yesterday/last week) or a past verb form.\nStep 4: Future Simple usually has “will” and a future time word (tomorrow/next week).\nStep 5: Choose the sentence that matches Present Simple habits/facts.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 5,
+    "question": "Fill in the blank: What is the correct negative form' He ___ play tennis every day.",
+    "options": {
+      "A": "do not",
+      "B": "does not",
+      "C": "didn't",
+      "D": "isn't"
+    },
+    "correct": "B",
+    "explanation": "This blank needs a Present Simple negative helper verb. Choose do/does for the subject, then add not.",
+    "explanation_simple": "Present Simple negative: do/does + not + base verb.",
+    "explanation_detailed": "Step 1: Check if the sentence is negative (it has “not”).\nStep 2: In Present Simple, negatives use do/does + not + base verb.\nStep 3: Use “does” with he/she/it; use “do” with I/you/we/they.\nStep 4: After do/does, the main verb stays in the base form (no -s).\nStep 5: Choose the option that matches these rules.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 6,
+    "question": "Fill in the blank: Choose the correct question form: ___ she go to school every morning",
+    "options": {
+      "A": "Is",
+      "B": "Do",
+      "C": "Does",
+      "D": "Did"
+    },
+    "correct": "C",
+    "explanation": "This blank needs the correct helper for a Present Simple question. Look at the subject and choose Do or Does.",
+    "explanation_simple": "Present Simple questions: Do/Does + subject + base verb.",
+    "explanation_detailed": "Step 1: A Present Simple question often starts with Do/Does.\nStep 2: Use “does” with he/she/it; use “do” with I/you/we/they.\nStep 3: Then use the base verb (go, play, like), not -s and not -ing.\nStep 4: Check the subject in the question to choose do or does.\nStep 5: Pick the option that makes a correct Present Simple question.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 7,
+    "question": "Which verb form is correct with I / we / you / they",
+    "options": {
+      "A": "goes",
+      "B": "play",
+      "C": "plays",
+      "D": "watches"
+    },
+    "correct": "B",
+    "explanation": "This asks which verb form matches I/we/you/they in Present Simple. They use the base verb.",
+    "explanation_simple": "I/we/you/they → base verb (no -s).",
+    "explanation_detailed": "Step 1: Look at the subject group: I / we / you / they.\nStep 2: These subjects use the base verb in Present Simple (no -s).\nStep 3: Only he/she/it usually adds -s or -es.\nStep 4: Pick the verb form that matches I/we/you/they.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 8,
+    "question": "Fill in the blank: What is the correct form' My brother ___ football on Sundays.",
+    "options": {
+      "A": "play",
+      "B": "plays",
+      "C": "playing",
+      "D": "is play"
+    },
+    "correct": "B",
+    "explanation": "This question checks Present Simple verb forms. Look at the subject and choose the verb form that matches it.",
+    "explanation_simple": "He/she/it → verb + -s/-es. Others → base verb.",
+    "explanation_detailed": "Step 1: Find the subject (who does the action): I/you/we/they or he/she/it.\nStep 2: In Present Simple, he/she/it usually needs an extra -s or -es on the verb.\nStep 3: I/you/we/they use the base verb (no -s).\nStep 4: Check for time words like “every day / every evening / on Sundays” (they often go with Present Simple).\nStep 5: Choose the option with the correct verb form for the subject.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 9,
+    "question": "Fill in the blank: Choose the correct negative: We ___ go to school on Sundays.",
+    "options": {
+      "A": "not",
+      "B": "doesn't",
+      "C": "don't",
+      "D": "aren't"
+    },
+    "correct": "C",
+    "explanation": "This blank needs a Present Simple negative helper verb. Choose do/does for the subject, then add not.",
+    "explanation_simple": "Present Simple negative: do/does + not + base verb.",
+    "explanation_detailed": "Step 1: Check if the sentence is negative (it has “not”).\nStep 2: In Present Simple, negatives use do/does + not + base verb.\nStep 3: Use “does” with he/she/it; use “do” with I/you/we/they.\nStep 4: After do/does, the main verb stays in the base form (no -s).\nStep 5: Choose the option that matches these rules.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 10,
+    "question": "Choose the sentence that expresses a fact.",
+    "options": {
+      "A": "The sun rises in the east.",
+      "B": "The sun is rising in the east.",
+      "C": "The sun rose in the east.",
+      "D": "The sun will rise in the east."
+    },
+    "correct": "A",
+    "explanation": "Present Simple talks about habits (things we do again and again) and facts (things that are always true). Look for time words like “every day”, and check the verb form.",
+    "explanation_simple": "Find the habit/fact sentence.",
+    "explanation_detailed": "Step 1: Ask: Is this about a habit (every day/usually) or a fact (always true)?\nStep 2: Present Continuous usually has “am/is/are + -ing” and often means “now”.\nStep 3: Past Simple usually has a past time word (yesterday/last week) or a past verb form.\nStep 4: Future Simple usually has “will” and a future time word (tomorrow/next week).\nStep 5: Choose the sentence that matches Present Simple habits/facts.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 11,
+    "question": "Find the wrong sentence.",
+    "options": {
+      "A": "He goes to school.",
+      "B": "She eat breakfast every morning.",
+      "C": "They play tennis.",
+      "D": "We go to work every day."
+    },
+    "correct": "B",
+    "explanation": "This question checks Present Simple verb forms. Look at the subject and choose the verb form that matches it.",
+    "explanation_simple": "He/she/it → verb + -s/-es. Others → base verb.",
+    "explanation_detailed": "Step 1: Find the subject (who does the action): I/you/we/they or he/she/it.\nStep 2: In Present Simple, he/she/it usually needs an extra -s or -es on the verb.\nStep 3: I/you/we/they use the base verb (no -s).\nStep 4: Check for time words like “every day / every evening / on Sundays” (they often go with Present Simple).\nStep 5: Choose the option with the correct verb form for the subject.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 12,
+    "question": "Fill in the blank: Choose the right question: ___ you play football",
+    "options": {
+      "A": "Do",
+      "B": "Does",
+      "C": "Are",
+      "D": "Did"
+    },
+    "correct": "A",
+    "explanation": "This blank needs the correct helper for a Present Simple question. Look at the subject and choose Do or Does.",
+    "explanation_simple": "Present Simple questions: Do/Does + subject + base verb.",
+    "explanation_detailed": "Step 1: A Present Simple question often starts with Do/Does.\nStep 2: Use “does” with he/she/it; use “do” with I/you/we/they.\nStep 3: Then use the base verb (go, play, like), not -s and not -ing.\nStep 4: Check the subject in the question to choose do or does.\nStep 5: Pick the option that makes a correct Present Simple question.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 13,
+    "question": "Choose the correct sentence.",
+    "options": {
+      "A": "I not play football.",
+      "B": "I doesn't play football.",
+      "C": "I don't play football.",
+      "D": "I am not play football."
+    },
+    "correct": "C",
+    "explanation": "This blank needs a Present Simple negative helper verb. Choose do/does for the subject, then add not.",
+    "explanation_simple": "Present Simple negative: do/does + not + base verb.",
+    "explanation_detailed": "Step 1: Check if the sentence is negative (it has “not”).\nStep 2: In Present Simple, negatives use do/does + not + base verb.\nStep 3: Use “does” with he/she/it; use “do” with I/you/we/they.\nStep 4: After do/does, the main verb stays in the base form (no -s).\nStep 5: Choose the option that matches these rules.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 14,
+    "question": "Which of the following sentences is interrogative",
+    "options": {
+      "A": "He plays football every day.",
+      "B": "Does he play football every day'",
+      "C": "He does not play football every day.",
+      "D": "He playing football every day."
+    },
+    "correct": "B",
+    "explanation": "This blank needs the correct helper for a Present Simple question. Look at the subject and choose Do or Does.",
+    "explanation_simple": "Present Simple questions: Do/Does + subject + base verb.",
+    "explanation_detailed": "Step 1: A Present Simple question often starts with Do/Does.\nStep 2: Use “does” with he/she/it; use “do” with I/you/we/they.\nStep 3: Then use the base verb (go, play, like), not -s and not -ing.\nStep 4: Check the subject in the question to choose do or does.\nStep 5: Pick the option that makes a correct Present Simple question.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 15,
+    "question": "What do we add to verbs with he/she/it in Present Simple",
+    "options": {
+      "A": "-ing",
+      "B": "-ed",
+      "C": "-s or -es",
+      "D": "nothing"
+    },
+    "correct": "C",
+    "explanation": "This question checks Present Simple verb forms. Look at the subject and choose the verb form that matches it.",
+    "explanation_simple": "He/she/it → verb + -s/-es. Others → base verb.",
+    "explanation_detailed": "Step 1: Find the subject (who does the action): I/you/we/they or he/she/it.\nStep 2: In Present Simple, he/she/it usually needs an extra -s or -es on the verb.\nStep 3: I/you/we/they use the base verb (no -s).\nStep 4: Check for time words like “every day / every evening / on Sundays” (they often go with Present Simple).\nStep 5: Choose the option with the correct verb form for the subject.",
+    "explanation_translations": {}
+  }
+]
