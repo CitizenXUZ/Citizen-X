@@ -1034,8 +1034,53 @@ def keyboard_for_role(role: str):
     return build_remove_keyboard()
 
 
+def handle_parent_start(chat_id: int, first_name: str = ""):
+    clear_state(chat_id)
+    set_state(chat_id, "awaiting_parent_self_phone", encode_state_payload({}))
+    send_message(
+        chat_id,
+        "👨‍👩‍👧 <b>Раздел для родителей</b>\n\n"
+        "Введите ваш номер телефона (который ваш ребёнок указал при добавлении вас в профиле), "
+        "и вы начнёте получать уведомления о его результатах.\n\n"
+        "Пример: <code>+998901234567</code>\n\nОтмена: /cancel",
+        reply_markup=build_remove_keyboard(),
+    )
+
+
 def handle_start(chat_id: int, first_name: str):
-    start_login_flow(chat_id, first_name)
+    name = escape_html(first_name.strip()) if first_name and first_name.strip() else "друг"
+    text = (
+        f"👋 Привет, <b>{name}</b>!\n"
+        "\n"
+        "🎓 <b>English with Mr.Sam</b> — онлайн-платформа для подготовки к <b>IELTS</b> и сертификации по <b>CEFR</b> (A1–B2).\n"
+        "\n"
+        "✅ По системе обучения нашей платформы уже <b>более 100 учеников</b> достигли желаемых результатов по IELTS и CEFR.\n"
+        "\n"
+        "🌐 Платформа включает:\n"
+        "• Уроки и задания по уровням (A1, A2, B1, B2)\n"
+        "• Тесты и домашние задания\n"
+        "• Личный кабинет и отслеживание прогресса\n"
+        "• Таблица лидеров и сертификаты\n"
+        "\n"
+        "📲 Для более подробной информации:\n"
+        f"🔗 Сайт: <a href=\"{SITE_WEB_URL}\">english-with-mr-sam.vercel.app</a>\n"
+        "📢 Канал: <a href=\"https://t.me/English_With_MrSam\">@English_With_MrSam</a>\n"
+        "\n"
+        "━━━━━━━━━━━━━━━━━━━━\n"
+        "🔐 <b>Вы ученик платформы?</b> → /login\n"
+        "👨‍👩‍👧 <b>Вы родитель ученика?</b> → /parent\n"
+    )
+    keyboard = build_inline_keyboard([
+        [
+            {"text": "🔐 Войти как ученик", "callback_data": "nav:login"},
+            {"text": "👨‍👩‍👧 Я родитель", "callback_data": "nav:parent"},
+        ],
+        [
+            {"text": "🌐 Перейти на сайт", "url": SITE_WEB_URL},
+            {"text": "📢 Наш канал", "url": "https://t.me/English_With_MrSam"},
+        ],
+    ])
+    send_message(chat_id, text, reply_markup=keyboard)
 
 
 def handle_help(chat_id: int):
@@ -1462,16 +1507,7 @@ def handle_command(chat_id: int, role: str, first_name: str, username: str, text
         handle_level(chat_id)
         return
     if command == "/parent":
-        clear_state(chat_id)
-        set_state(chat_id, "awaiting_parent_self_phone", encode_state_payload({}))
-        send_message(
-            chat_id,
-            "👨‍👩‍👧 <b>Раздел для родителей</b>\n\n"
-            "Введите ваш номер телефона (который ваш ребёнок указал при добавлении вас в профиле), "
-            "и вы начнёте получать уведомления о его результатах.\n\n"
-            "Пример: <code>+998901234567</code>\n\nОтмена: /cancel",
-            reply_markup=build_remove_keyboard(),
-        )
+        handle_parent_start(chat_id, first_name)
         return
     if command == "/admin":
         if role != "admin":
@@ -1526,6 +1562,14 @@ def handle_update(update: dict):
         if callback_id:
             answer_callback_query(callback_id)
 
+        if data == "nav:login":
+            first_name = str(callback.get("from", {}).get("first_name") or "").strip()
+            start_login_flow(int(chat_id), first_name)
+            return
+        if data == "nav:parent":
+            first_name = str(callback.get("from", {}).get("first_name") or "").strip()
+            handle_parent_start(int(chat_id), first_name)
+            return
         if data == "nav:close":
             if message_id:
                 edit_message_reply_markup(int(chat_id), message_id, build_remove_keyboard())
