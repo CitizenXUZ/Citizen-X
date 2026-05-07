@@ -11,7 +11,19 @@
     "correct": "B",
     "explanation": "Alphabet order is: A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z. Find the letter that comes right after D in this sequence.",
     "explanation_simple": "Say the alphabet in order and choose the next letter after D.",
-    "explanation_detailed": "Start from A and go forward: A, B, C, D, E, F... When you reach D, the very next letter you say is the one that comes after it. Pick that next letter."
+    "explanation_detailed": "Start from A and go forward: A, B, C, D, E, F... When you reach D, the very next letter you say is the one that comes after it. Pick that next letter.",
+    "explanation_translations": {
+      "ru": {
+        "main": "Порядок алфавита: A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z. Найдите букву, которая стоит сразу после D в этой последовательности.",
+        "simple": "Произнесите алфавит по порядку и выберите следующую букву после D.",
+        "detailed": "Начните с A и идите вперёд: A, B, C, D, E, F... Дойдя до D, следующая буква — это и есть ответ."
+      },
+      "uz": {
+        "main": "Alifbo tartibi: A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z. Ushbu ketma-ketlikda D dan keyin keladigan harfni toping.",
+        "simple": "Alifboni tartibda ayting va D dan keyingi harfni tanlang.",
+        "detailed": "A dan boshlang va oldinga boring: A, B, C, D, E, F... D ga yetganingizda, keyingi aytadigan harf — javobdir."
+      }
+    }
   },
   {
     "id": 2,
@@ -25,7 +37,19 @@
     "correct": "B",
     "explanation": "Alphabet order is: A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z. Find the letter that comes right before N in this sequence.",
     "explanation_simple": "Find the letter just before N in the alphabet.",
-    "explanation_detailed": "Move through the alphabet: ... L, M, N, O ... The letter before N is the one you say right before N in that sequence."
+    "explanation_detailed": "Move through the alphabet: ... L, M, N, O ... The letter before N is the one you say right before N in that sequence.",
+    "explanation_translations": {
+      "ru": {
+        "main": "Порядок алфавита: A, B, C, D, E, F, G, H, I, J, K, L, M, N... Найдите букву, которая стоит прямо перед N в этой последовательности.",
+        "simple": "Найдите букву, которая стоит перед N в алфавите.",
+        "detailed": "Пройдите по алфавиту: ... L, M, N, O ... Буква перед N — это та, которую вы называете прямо перед N."
+      },
+      "uz": {
+        "main": "Alifbo tartibi: A, B, C, D, E, F, G, H, I, J, K, L, M, N... Ushbu ketma-ketlikda N dan oldin keladigan harfni toping.",
+        "simple": "Alifboda N dan oldin turadigan harfni toping.",
+        "detailed": "Alifbo bo'ylab boring: ... L, M, N, O ... N dan oldin aytadigan harf — javobdir."
+      }
+    }
   },
   {
     "id": 3,
@@ -39,7 +63,19 @@
     "correct": "B",
     "explanation": "Alphabet order is: A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z. Use this sequence to pick the first letter.",
     "explanation_simple": "Pick the very first letter of ABC.",
-    "explanation_detailed": "Think of the alphabet you learned: it begins with the first letter in the ABC song. That first letter is the answer."
+    "explanation_detailed": "Think of the alphabet you learned: it begins with the first letter in the ABC song. That first letter is the answer.",
+    "explanation_translations": {
+      "ru": {
+        "main": "Порядок алфавита: A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z. Используйте эту последовательность, чтобы выбрать первую букву.",
+        "simple": "Выберите самую первую букву алфавита.",
+        "detailed": "Вспомните алфавит: он начинается с первой буквы в песне ABC. Эта первая буква — и есть ответ."
+      },
+      "uz": {
+        "main": "Alifbo tartibi: A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z. Birinchi harfni tanlash uchun ushbu ketma-ketlikdan foydalaning.",
+        "simple": "ABC ning eng birinchi harfini tanlang.",
+        "detailed": "O'rgangan alifbongizni eslab ko'ring: u ABC qo'shig'idagi birinchi harf bilan boshlanadi. O'sha birinchi harf — javobdir."
+      }
+    }
   },
   {
     "id": 4,
@@ -53,7 +89,19 @@
     "correct": "B",
     "explanation": "Alphabet order is: A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z. Use this sequence to pick the last letter.",
     "explanation_simple": "Pick the very last letter of ABC.",
-    "explanation_detailed": "Think of the end of the alphabet: ... V, W, X, Y, Z. The last letter in the whole sequence is the answer."
+    "explanation_detailed": "Think of the end of the alphabet: ... V, W, X, Y, Z. The last letter in the whole sequence is the answer.",
+    "explanation_translations": {
+      "ru": {
+        "main": "Порядок алфавита: A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z. Используйте эту последовательность, чтобы выбрать последнюю букву.",
+        "simple": "Выберите самую последнюю букву алфавита.",
+        "detailed": "Вспомните конец алфавита: ... V, W, X, Y, Z. Последняя буква во всей последовательности — это ответ."
+      },
+      "uz": {
+        "main": "Alifbo tartibi: ...T, U, V, W, X, Y, Z. Oxirgi harfni tanlash uchun ushbu ketma-ketlikdan foydalaning.",
+        "simple": "ABC ning eng oxirgi harfini tanlang.",
+        "detailed": "Alifbo oxirini eslab ko'ring: ... V, W, X, Y, Z. Butun ketma-ketlikdagi oxirgi harf — javobdir."
+      }
+    }
   },
   {
     "id": 5,
@@ -67,7 +115,19 @@
     "correct": "B",
     "explanation": "There are 5 vowels and 21 consonants in English. Add them together to get the total number of letters.",
     "explanation_simple": "Count A to Z.",
-    "explanation_detailed": "The English alphabet has a fixed number of letters. If you count from A, B, C, all the way to Z, the number you get is the correct total."
+    "explanation_detailed": "The English alphabet has a fixed number of letters. If you count from A, B, C, all the way to Z, the number you get is the correct total.",
+    "explanation_translations": {
+      "ru": {
+        "main": "В английском языке 5 гласных и 21 согласная буква. Сложите их вместе, чтобы получить общее количество букв.",
+        "simple": "Посчитайте буквы от A до Z.",
+        "detailed": "В английском алфавите фиксированное количество букв. Если посчитать от A, B, C до Z, вы получите верное общее число."
+      },
+      "uz": {
+        "main": "Ingliz tilida 5 ta unli va 21 ta undosh harf bor. Ularni qo'shib, harflarning umumiy sonini toping.",
+        "simple": "A dan Z gacha harflarni sanang.",
+        "detailed": "Ingliz alifbosida belgilangan miqdorda harf bor. A, B, C dan Z gacha sansangiz, to'g'ri umumiy sonni olasiz."
+      }
+    }
   },
   {
     "id": 6,
@@ -81,7 +141,19 @@
     "correct": "B",
     "explanation": "Alphabet order is: A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z. Correct order means each letter follows the one before it with no jumps.",
     "explanation_simple": "Pick the group that goes forward step by step.",
-    "explanation_detailed": "Look at each option and check the order. The correct group is the one where every next letter is the next one in the alphabet."
+    "explanation_detailed": "Look at each option and check the order. The correct group is the one where every next letter is the next one in the alphabet.",
+    "explanation_translations": {
+      "ru": {
+        "main": "Порядок алфавита: A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z. Правильный порядок означает, что каждая буква идёт за предыдущей без пропусков.",
+        "simple": "Выберите группу, в которой буквы идут вперёд шаг за шагом.",
+        "detailed": "Посмотрите на каждый вариант и проверьте порядок. Правильная группа — та, где каждая следующая буква является следующей в алфавите."
+      },
+      "uz": {
+        "main": "Alifbo tartibi: A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P... To'g'ri tartib — har bir harf oldingisidan ketma-ket, sakramay kelishi.",
+        "simple": "Har bir harf qadam-baqadam oldinga ketadigan guruhni tanlang.",
+        "detailed": "Har bir variantga qarab tartibini tekshiring. To'g'ri guruh — har keyingi harf alifbodagi keyingi harf bo'lgani."
+      }
+    }
   },
   {
     "id": 7,
@@ -95,7 +167,19 @@
     "correct": "C",
     "explanation": "A vowel is one of the special letters we say with an open mouth: A, E, I, O, U. Choose the option that is one of these.",
     "explanation_simple": "Vowels are A, E, I, O, U. Choose one of them.",
-    "explanation_detailed": "Vowels are a small group of five letters: A, E, I, O, U. Look at the options and pick the letter that belongs to this vowel group."
+    "explanation_detailed": "Vowels are a small group of five letters: A, E, I, O, U. Look at the options and pick the letter that belongs to this vowel group.",
+    "explanation_translations": {
+      "ru": {
+        "main": "Гласная — это одна из особых букв, которые произносятся с открытым ртом: A, E, I, O, U. Выберите вариант, который является одной из них.",
+        "simple": "Гласные: A, E, I, O, U. Выберите одну из них.",
+        "detailed": "Гласных всего пять: A, E, I, O, U. Посмотрите на варианты и выберите букву, которая входит в эту группу."
+      },
+      "uz": {
+        "main": "Unli — og'iz ochiq talaffuz qilinadigan maxsus harflardan biri: A, E, I, O, U. Ulardan biri bo'lgan variantni tanlang.",
+        "simple": "Unlilar: A, E, I, O, U. Ulardan birini tanlang.",
+        "detailed": "Unli harflar — beshta: A, E, I, O, U. Variantlarga qarang va ushbu unlilar guruhiga kiruvchi harfni tanlang."
+      }
+    }
   },
   {
     "id": 8,
@@ -109,7 +193,19 @@
     "correct": "D",
     "explanation": "A consonant is any letter that is not a vowel. Vowels are A, E, I, O, U.",
     "explanation_simple": "Pick the letter that is not A, E, I, O, or U.",
-    "explanation_detailed": "First remember the vowels: A, E, I, O, U. A consonant is any other letter. Choose the option that is not in the vowel list."
+    "explanation_detailed": "First remember the vowels: A, E, I, O, U. A consonant is any other letter. Choose the option that is not in the vowel list.",
+    "explanation_translations": {
+      "ru": {
+        "main": "Согласная — это любая буква, которая не является гласной. Гласные: A, E, I, O, U.",
+        "simple": "Выберите букву, которая не является A, E, I, O или U.",
+        "detailed": "Сначала запомните гласные: A, E, I, O, U. Согласная — это любая другая буква. Выберите вариант, которого нет в списке гласных."
+      },
+      "uz": {
+        "main": "Undosh — unli bo'lmagan har qanday harf. Unlilar: A, E, I, O, U.",
+        "simple": "A, E, I, O yoki U bo'lmagan harfni tanlang.",
+        "detailed": "Avval unlilarni eslab qoling: A, E, I, O, U. Undosh — boshqa har qanday harf. Unlilar ro'yxatida bo'lmagan variantni tanlang."
+      }
+    }
   },
   {
     "id": 9,
@@ -123,7 +219,19 @@
     "correct": "B",
     "explanation": "Numbers from 13 to 19 end with '-teen'. Use that pattern to choose the correct spelling.",
     "explanation_simple": "Use the '-teen' ending for 13.",
-    "explanation_detailed": "For 13, English uses the base sound 'thir-' and adds '-teen'. Avoid spellings that use '-ty' or extra letters."
+    "explanation_detailed": "For 13, English uses the base sound 'thir-' and adds '-teen'. Avoid spellings that use '-ty' or extra letters.",
+    "explanation_translations": {
+      "ru": {
+        "main": "Числа от 13 до 19 оканчиваются на '-teen'. Используйте этот шаблон, чтобы выбрать правильное написание.",
+        "simple": "Для числа 13 используйте окончание '-teen'.",
+        "detailed": "Для 13 в английском используется основа 'thir-' и добавляется '-teen'. Избегайте написаний с '-ty' или лишними буквами."
+      },
+      "uz": {
+        "main": "13 dan 19 gacha bo'lgan sonlar '-teen' bilan tugaydi. To'g'ri yozilishni tanlash uchun ushbu qolipni ishlating.",
+        "simple": "13 uchun '-teen' qo'shimchasini ishlating.",
+        "detailed": "13 uchun inglizcha 'thir-' asosi ishlatiladi va '-teen' qo'shiladi. '-ty' yoki qo'shimcha harflar bilan yozilishlardan saqlaning."
+      }
+    }
   },
   {
     "id": 10,
@@ -137,7 +245,19 @@
     "correct": "C",
     "explanation": "The number 40 is spelled with '-ty' and does not use the letter 'u' from 'four'.",
     "explanation_simple": "40 drops the 'u' from 'four'.",
-    "explanation_detailed": "The correct spelling for 40 uses 'for-' plus '-ty'. It removes the 'u' in 'four' and does not add extra letters."
+    "explanation_detailed": "The correct spelling for 40 uses 'for-' plus '-ty'. It removes the 'u' in 'four' and does not add extra letters.",
+    "explanation_translations": {
+      "ru": {
+        "main": "Число 40 пишется с '-ty' и не использует букву 'u' из слова 'four'.",
+        "simple": "40 убирает 'u' из слова 'four'.",
+        "detailed": "Правильное написание 40 — 'for-' плюс '-ty'. Буква 'u' из 'four' убирается, лишние буквы не добавляются."
+      },
+      "uz": {
+        "main": "40 soni '-ty' bilan yoziladi va 'four' so'zidagi 'u' harfi ishlatilmaydi.",
+        "simple": "40 yozilishida 'four' dan 'u' olib tashlanadi.",
+        "detailed": "40 ning to'g'ri yozilishi — 'for-' va '-ty'. 'four' dagi 'u' olib tashlanadi va qo'shimcha harflar qo'shilmaydi."
+      }
+    }
   },
   {
     "id": 11,
@@ -151,7 +271,19 @@
     "correct": "A",
     "explanation": "The number 80 keeps the 'gh' from 'eight' and ends with '-ty'.",
     "explanation_simple": "Use 'eight' + '-ty'.",
-    "explanation_detailed": "Start with the word 'eight'. Keep the 'gh', then add the ending '-ty'. Avoid double letters or extra vowels."
+    "explanation_detailed": "Start with the word 'eight'. Keep the 'gh', then add the ending '-ty'. Avoid double letters or extra vowels.",
+    "explanation_translations": {
+      "ru": {
+        "main": "Число 80 сохраняет 'gh' из слова 'eight' и оканчивается на '-ty'.",
+        "simple": "Используйте 'eight' + '-ty'.",
+        "detailed": "Начните со слова 'eight'. Сохраните 'gh', затем добавьте окончание '-ty'. Избегайте удвоения букв или лишних гласных."
+      },
+      "uz": {
+        "main": "80 soni 'eight' so'zidagi 'gh' ni saqlab, '-ty' bilan tugaydi.",
+        "simple": "'eight' + '-ty' ni ishlating.",
+        "detailed": "'eight' so'zidan boshlang. 'gh' ni saqlang, keyin '-ty' qo'shimchasini qo'shing. Ikkilangan harf yoki qo'shimcha unlilardan saqlaning."
+      }
+    }
   },
   {
     "id": 12,
@@ -165,7 +297,19 @@
     "correct": "B",
     "explanation": "After twenty-nine, the next number in order is the answer.",
     "explanation_simple": "Choose the next number after 29.",
-    "explanation_detailed": "Count forward: twenty-seven, twenty-eight, twenty-nine, then the next number. The word for that next number is correct."
+    "explanation_detailed": "Count forward: twenty-seven, twenty-eight, twenty-nine, then the next number. The word for that next number is correct.",
+    "explanation_translations": {
+      "ru": {
+        "main": "После twenty-nine следующее число по порядку — это ответ.",
+        "simple": "Выберите следующее число после 29.",
+        "detailed": "Считайте вперёд: twenty-seven, twenty-eight, twenty-nine, затем следующее число. Слово для этого следующего числа — правильный ответ."
+      },
+      "uz": {
+        "main": "Twenty-nine dan keyin navbatdagi son — javobdir.",
+        "simple": "29 dan keyingi sonni tanlang.",
+        "detailed": "Oldinga sanang: twenty-seven, twenty-eight, twenty-nine, keyin keyingi son. O'sha keyingi son uchun so'z — to'g'ri javobdir."
+      }
+    }
   },
   {
     "id": 13,
@@ -179,7 +323,19 @@
     "correct": "A",
     "explanation": "Before twenty is the number just one step back.",
     "explanation_simple": "Choose the number before 20.",
-    "explanation_detailed": "Count backward from twenty: the number right before 20 is the correct choice."
+    "explanation_detailed": "Count backward from twenty: the number right before 20 is the correct choice.",
+    "explanation_translations": {
+      "ru": {
+        "main": "Перед twenty стоит число, которое ровно на один шаг назад.",
+        "simple": "Выберите число, которое стоит перед 20.",
+        "detailed": "Считайте от twenty назад: число прямо перед 20 — это правильный выбор."
+      },
+      "uz": {
+        "main": "Twenty dan oldin bir qadam orqada turgan son — javobdir.",
+        "simple": "20 dan oldingi sonni tanlang.",
+        "detailed": "Twenty dan orqaga sanang: 20 dan to'g'ridan-to'g'ri oldin turadigan son — to'g'ri tanlovdir."
+      }
+    }
   },
   {
     "id": 14,
@@ -193,7 +349,19 @@
     "correct": "A",
     "explanation": "The word for 60 ends with '-ty' and keeps the 'x' sound from six.",
     "explanation_simple": "Choose the spelling with '-ty'.",
-    "explanation_detailed": "Start with 'six' and change the ending to '-ty'. The correct spelling keeps the x and does not add extra letters."
+    "explanation_detailed": "Start with 'six' and change the ending to '-ty'. The correct spelling keeps the x and does not add extra letters.",
+    "explanation_translations": {
+      "ru": {
+        "main": "Слово для 60 оканчивается на '-ty' и сохраняет звук 'x' из слова six.",
+        "simple": "Выберите написание с окончанием '-ty'.",
+        "detailed": "Возьмите слово 'six' и измените окончание на '-ty'. Правильное написание сохраняет x и не добавляет лишних букв."
+      },
+      "uz": {
+        "main": "60 ning so'zi '-ty' bilan tugaydi va 'six' so'zidan 'x' tovushini saqlaydi.",
+        "simple": "'-ty' bilan yozilgan variantni tanlang.",
+        "detailed": "'six' so'zini oling va oxirini '-ty' ga o'zgartiring. To'g'ri yozilish 'x' ni saqlaydi va qo'shimcha harflar qo'shmaydi."
+      }
+    }
   },
   {
     "id": 15,
@@ -207,6 +375,18 @@
     "correct": "A",
     "explanation": "Compare the sizes of the numbers and choose the biggest one.",
     "explanation_simple": "Pick the largest number word.",
-    "explanation_detailed": "Think of the values: fifty = 50, sixty = 60, seventy = 70, ninety = 90. The largest value is the correct choice."
+    "explanation_detailed": "Think of the values: fifty = 50, sixty = 60, seventy = 70, ninety = 90. The largest value is the correct choice.",
+    "explanation_translations": {
+      "ru": {
+        "main": "Сравните значения чисел и выберите наибольшее.",
+        "simple": "Выберите слово наибольшего числа.",
+        "detailed": "Подумайте о значениях: fifty = 50, sixty = 60, seventy = 70, ninety = 90. Наибольшее значение — правильный ответ."
+      },
+      "uz": {
+        "main": "Sonlarning qiymatlarini solishtiring va eng kattasini tanlang.",
+        "simple": "Eng katta son so'zini tanlang.",
+        "detailed": "Qiymatlarni o'ylang: fifty = 50, sixty = 60, seventy = 70, ninety = 90. Eng katta qiymat — to'g'ri javobdir."
+      }
+    }
   }
 ]

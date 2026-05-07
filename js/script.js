@@ -2745,11 +2745,11 @@ if (tasksPage) {
     if (quizCard) {
       quizCard.hidden = true;
     }
-    if (defaultCard) {
-      defaultCard.hidden = false;
-    }
     if (openQuizBtn) {
       openQuizBtn.hidden = true;
+    }
+    if (!openHomeworkOnly && defaultCard) {
+      defaultCard.hidden = false;
     }
     if (openHomeworkOnly) {
       openHomeworkModal();
@@ -2782,7 +2782,7 @@ if (tasksPage) {
   // Default: tasks page shows tests only if requested via ?open=quiz.
   if (openQuizOnly) {
     showQuizCard();
-  } else {
+  } else if (!openHomeworkOnly) {
     showTasksCard();
   }
   window.dispatchEvent(new CustomEvent("ewms:tasks-ready"));

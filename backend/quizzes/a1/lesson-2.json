@@ -12,7 +12,18 @@
     "explanation": "A noun is a naming word. It can name a person (mom), a place (park), a thing (toy), or an idea (love). Read the options and choose the one that says this meaning.",
     "explanation_simple": "A noun is a naming word. It can name a person, place, thing, or idea. Choose the option that says this meaning.",
     "explanation_detailed": "A noun is a word that names something. It can be a person (mom), a place (park), a thing (ball), or an idea (love). Read each option and choose the one that explains this meaning.",
-    "explanation_translations": {}
+    "explanation_translations": {
+      "ru": {
+        "main": "Существительное — слово-название. Оно называет человека (мама), место (парк), вещь (игрушка) или идею (любовь). Прочитайте варианты и выберите тот, который объясняет это значение.",
+        "simple": "Существительное — слово-название для человека, места, вещи или идеи. Выберите вариант с таким значением.",
+        "detailed": "Существительное — слово, называющее что-то. Это человек (мама), место (парк), вещь (мяч) или идея (любовь). Прочитайте каждый вариант и выберите тот, который объясняет это."
+      },
+      "uz": {
+        "main": "Ot — nomlash so'zi. U odamni (ona), joyni (bog'), narsani (o'yinchoq) yoki g'oyani (sevgi) nomlashi mumkin. Variantlarni o'qing va ushbu ma'noni bildiruvchisini tanlang.",
+        "simple": "Ot — odam, joy, narsa yoki g'oyaning nomlash so'zi. O'sha ma'noli variantni tanlang.",
+        "detailed": "Ot — nimadir nomini aytuvchi so'z. Bu odam (ona), joy (bog'), narsa (to'p) yoki g'oya (sevgi) bo'lishi mumkin. Har bir variantni o'qing va ushbu ma'noni tushuntirayotganini tanlang."
+      }
+    }
   },
   {
     "id": 2,
@@ -27,7 +38,18 @@
     "explanation": "Look for a word that is a thing you can name or point to. A noun is not an action and not how something is done. Choose the naming word.",
     "explanation_simple": "A noun is a thing you can name or point to. The other words show actions or how something is done. Choose the naming word.",
     "explanation_detailed": "Ask yourself: can I see it, touch it, or name it? If yes, it can be a noun. Words that show actions or tell how are not nouns. Check each option and choose the naming word.",
-    "explanation_translations": {}
+    "explanation_translations": {
+      "ru": {
+        "main": "Ищите слово, которое называет вещь, которую можно назвать или показать. Существительное — не действие и не то, как что-то делается. Выберите слово-название.",
+        "simple": "Существительное — это то, что можно назвать или на что можно указать. Другие слова — действия или то, как что-то делается. Выберите слово-название.",
+        "detailed": "Спросите себя: могу ли я это увидеть, потрогать или назвать? Если да — это может быть существительное. Слова-действия и слова о том «как» — не существительные. Выберите слово-название."
+      },
+      "uz": {
+        "main": "Nomlab yoki ko'rsatib bo'ladigan so'zni qidiring. Ot — harakat emas va biror narsa qanday qilinishini bildirmaydi. Nomlash so'zini tanlang.",
+        "simple": "Ot — nomlab yoki ko'rsatib bo'ladigan narsa. Boshqa so'zlar harakat yoki qanday bajarilishini bildiradi. Nomlash so'zini tanlang.",
+        "detailed": "O'zingizga so'rang: uni ko'ra olamanmi, ushlab ko'ra olamanmi yoki nomlay olamanmi? Ha bo'lsa, bu ot bo'lishi mumkin. Harakat va 'qanday' so'zlari ot emas. Nomlash so'zini tanlang."
+      }
+    }
   },
   {
     "id": 3,
@@ -42,7 +64,18 @@
     "explanation": "A sentence has a noun if it names a person, place, or thing. Read each sentence and look for a naming word. Pick the sentence that names someone or something.",
     "explanation_simple": "A noun is a naming word. Read each sentence and look for a person, place, or thing. Choose the sentence that has one.",
     "explanation_detailed": "Read each sentence slowly. If you hear a word that names someone or something (like a boy, a city, a toy), that sentence has a noun. Choose the sentence with that naming word.",
-    "explanation_translations": {}
+    "explanation_translations": {
+      "ru": {
+        "main": "В предложении есть существительное, если в нём называется человек, место или вещь. Прочитайте каждое предложение и найдите слово-название. Выберите предложение, в котором называется кто-то или что-то.",
+        "simple": "Существительное — слово-название. Прочитайте каждое предложение и найдите человека, место или вещь. Выберите предложение с таким словом.",
+        "detailed": "Читайте каждое предложение медленно. Если вы слышите слово, называющее кого-то или что-то (мальчик, город, игрушка), в этом предложении есть существительное. Выберите его."
+      },
+      "uz": {
+        "main": "Agar gapdagi odam, joy yoki narsa nomlangan bo'lsa, unda ot bor. Har bir gapni o'qing va nomlash so'zini qidiring. Kimnidir yoki nimadir nomlangan gapni tanlang.",
+        "simple": "Ot — nomlash so'zi. Har bir gapni o'qing va odam, joy yoki narsani qidiring. Bunday so'z bor gapni tanlang.",
+        "detailed": "Har bir gapni sekin o'qing. Kimnidir yoki nimadir nomlagan so'z eshitsangiz (bola, shahar, o'yinchoq), o'sha gapda ot bor. O'sha nomlash so'zi bor gapni tanlang."
+      }
+    }
   },
   {
     "id": 4,
@@ -57,7 +90,18 @@
     "explanation": "A noun can name a real thing or an idea/feeling you cannot touch. It is not a color, not an action, and not a word that tells how. Choose the word that names a thing or an idea.",
     "explanation_simple": "A noun can name a thing or an idea/feeling you cannot touch. It is not a color word, not an action, and not a word that tells how. Pick the naming word.",
     "explanation_detailed": "Some words describe (like colors), some show actions (like run), and some tell how. A noun is the name of a thing or an idea/feeling (like joy or love). Look at each option and choose the word that acts as a name.",
-    "explanation_translations": {}
+    "explanation_translations": {
+      "ru": {
+        "main": "Существительное может называть реальную вещь или идею/чувство, которое нельзя потрогать. Это не цвет, не действие и не слово о том, как. Выберите слово, называющее вещь или идею.",
+        "simple": "Существительное называет вещь или идею/чувство. Это не слово-цвет, не действие и не слово о том, как. Выберите слово-название.",
+        "detailed": "Некоторые слова описывают (как цвета), некоторые показывают действия (run), некоторые говорят о том, как. Существительное — это название вещи или идеи/чувства (joy, love). Выберите слово-название."
+      },
+      "uz": {
+        "main": "Ot real narsani yoki qo'l bilan ushlab bo'lmaydigan g'oya/his-tuyg'uni nomlashi mumkin. Bu rang so'zi emas, harakat emas va 'qanday' so'zi ham emas. Narsa yoki g'oyani nomlagan so'zni tanlang.",
+        "simple": "Ot narsa yoki his-tuyg'uni nomlashi mumkin. Bu rang so'zi emas, harakat emas va 'qanday' so'zi ham emas. Nomlash so'zini tanlang.",
+        "detailed": "Ba'zi so'zlar ta'riflaydi (rang kabi), ba'zilari harakat ko'rsatadi (run), ba'zilari qanday qilinishini aytadi. Ot — narsa yoki g'oya nomi (joy, love kabi). Nom vazifasini bajaruvchi so'zni tanlang."
+      }
+    }
   },
   {
     "id": 5,
@@ -72,7 +116,18 @@
     "explanation": "In a sentence, the noun tells who or what the sentence is about. Read the sentence and find the word that names the animal. Choose that naming word.",
     "explanation_simple": "In the sentence, find the word that names the animal. That naming word is the noun. Choose it.",
     "explanation_detailed": "A noun tells who or what the sentence is about. Read the sentence and ask: what animal is being talked about? The word that names that animal is the noun. Pick that word.",
-    "explanation_translations": {}
+    "explanation_translations": {
+      "ru": {
+        "main": "В предложении существительное указывает, о ком или о чём идёт речь. Прочитайте предложение и найдите слово, называющее животное. Выберите это слово-название.",
+        "simple": "В предложении найдите слово, называющее животное. Это слово-название — существительное. Выберите его.",
+        "detailed": "Существительное указывает, о ком или о чём предложение. Прочитайте и спросите: о каком животном идёт речь? Слово, называющее это животное, — существительное."
+      },
+      "uz": {
+        "main": "Gapdagi ot gapning kimi yoki nimasi haqida ekanligini bildiradi. Gapni o'qing va hayvonni nomlagan so'zni toping. O'sha nomlash so'zini tanlang.",
+        "simple": "Gapdagi hayvonni nomlagan so'zni toping. O'sha nomlash so'zi — otdir. Uni tanlang.",
+        "detailed": "Ot gapning kimi yoki nimasi haqida ekanligini bildiradi. Gapni o'qib so'rang: qaysi hayvon haqida so'z ketmoqda? O'sha hayvonni nomlagan so'z — ot."
+      }
+    }
   },
   {
     "id": 6,
@@ -87,7 +142,18 @@
     "explanation": "A person noun names a person or a job. It is not a place, object, or material. Choose the word that is a person.",
     "explanation_simple": "A person noun names a person or a job. It is not a place or object. Choose the word that is a person.",
     "explanation_detailed": "Person nouns can be names or jobs like parent, doctor, or firefighter. Places and things are not person nouns. Look at the options and choose the one that is a person.",
-    "explanation_translations": {}
+    "explanation_translations": {
+      "ru": {
+        "main": "Существительное-лицо называет человека или профессию. Это не место, не предмет и не материал. Выберите слово, называющее человека.",
+        "simple": "Существительное-лицо называет человека или профессию. Это не место и не предмет. Выберите слово-человека.",
+        "detailed": "Существительные-лица — это имена или профессии: родитель, доктор, пожарный. Места и вещи — не лица. Посмотрите на варианты и выберите человека."
+      },
+      "uz": {
+        "main": "Odam oti — odam yoki kasb nomi. Bu joy emas, narsa emas va material ham emas. Odamni nomlagan so'zni tanlang.",
+        "simple": "Odam oti — odam yoki kasb nomini bildiradi. Bu joy yoki narsa emas. Odamni nomlagan so'zni tanlang.",
+        "detailed": "Odam otlari ism yoki kasb bo'lishi mumkin: ota-ona, shifokor, o't o'chiruvchi. Joylar va narsalar odam oti emas. Variantlar ichidan odam bo'lganini tanlang."
+      }
+    }
   },
   {
     "id": 7,
@@ -102,7 +168,18 @@
     "explanation": "A place noun is a location you can go to, like a home or a park. Choose the word that names a place.",
     "explanation_simple": "A place noun is a location you can go to. It is not an action or describing word. Choose the place word.",
     "explanation_detailed": "Think of places you can visit, like home, school, or park. Those are place nouns. Read the options and choose the word that is a location.",
-    "explanation_translations": {}
+    "explanation_translations": {
+      "ru": {
+        "main": "Существительное-место — это место, куда можно отправиться, например дом или парк. Выберите слово, называющее место.",
+        "simple": "Существительное-место — это место, куда можно пойти. Это не действие и не описание. Выберите слово-место.",
+        "detailed": "Вспомните места, которые можно посетить: дом, школа, парк. Это существительные-места. Прочитайте варианты и выберите слово-место."
+      },
+      "uz": {
+        "main": "Joy oti — borish mumkin bo'lgan joy, masalan uy yoki bog'. Joy nomini bildirgan so'zni tanlang.",
+        "simple": "Joy oti — borish mumkin bo'lgan joy. Bu harakat yoki ta'rif so'zi emas. Joy so'zini tanlang.",
+        "detailed": "Borsa bo'ladigan joylarni o'ylab ko'ring: uy, maktab, bog'. Bular joy otlari. Variantlarni o'qing va joy bo'lgan so'zni tanlang."
+      }
+    }
   },
   {
     "id": 8,
@@ -117,7 +194,18 @@
     "explanation": "A thing noun names an object you can see or touch. It is not an action or a feeling. Choose the object word.",
     "explanation_simple": "A thing noun names an object you can see or touch. It is not an action or a feeling. Choose the object word.",
     "explanation_detailed": "If you can hold it, see it, or point to it, it can be a thing noun. Actions and feelings are not nouns. Check each option and choose the object word.",
-    "explanation_translations": {}
+    "explanation_translations": {
+      "ru": {
+        "main": "Существительное-предмет называет объект, который можно увидеть или потрогать. Это не действие и не чувство. Выберите слово-объект.",
+        "simple": "Существительное-предмет — объект, который можно увидеть или потрогать. Это не действие и не чувство. Выберите слово-объект.",
+        "detailed": "Если можно держать в руках, видеть или показывать — это может быть существительное-предмет. Действия и чувства — не существительные. Выберите слово-объект."
+      },
+      "uz": {
+        "main": "Narsa oti — ko'rish yoki ushlab bo'ladigan buyumni nomlaydi. Bu harakat yoki his-tuyg'u emas. Buyum so'zini tanlang.",
+        "simple": "Narsa oti — ko'rish yoki ushlab bo'ladigan buyum. Bu harakat yoki his-tuyg'u emas. Buyum so'zini tanlang.",
+        "detailed": "Ushlab, ko'rib yoki ko'rsatib bo'lsa, u narsa oti bo'lishi mumkin. Harakat va his-tuyg'ular ot emas. Har bir variantni tekshiring va buyum so'zini tanlang."
+      }
+    }
   },
   {
     "id": 9,
@@ -132,7 +220,18 @@
     "explanation": "Some words show actions, but a noun can be the name of the person who does the action. Choose the word that names a person.",
     "explanation_simple": "Some words are actions. A noun can be the name of the person who does the action. Choose the person word.",
     "explanation_detailed": "Some options show the action itself or the action happening. The noun is the person who does the action. Look for the word that names the person.",
-    "explanation_translations": {}
+    "explanation_translations": {
+      "ru": {
+        "main": "Некоторые слова показывают действия, но существительное может называть человека, который выполняет это действие. Выберите слово, называющее человека.",
+        "simple": "Некоторые слова — действия. Существительное может называть человека, который выполняет действие. Выберите слово-человека.",
+        "detailed": "Некоторые варианты показывают само действие или как оно происходит. Существительное — это человек, выполняющий действие. Найдите слово, называющее этого человека."
+      },
+      "uz": {
+        "main": "Ba'zi so'zlar harakatni bildiradi, lekin ot harakatni bajaruvchi odamni nomlashi mumkin. Odamni nomlagan so'zni tanlang.",
+        "simple": "Ba'zi so'zlar harakatdir. Ot harakatni bajaruvchi odamni nomlashi mumkin. Odam so'zini tanlang.",
+        "detailed": "Ba'zi variantlar harakatning o'zini yoki u sodir bo'lishini ko'rsatadi. Ot — harakatni bajaruvchi odam. O'sha odamni nomlagan so'zni toping."
+      }
+    }
   },
   {
     "id": 10,
@@ -147,7 +246,18 @@
     "explanation": "Read the sentence and ask: what thing is being liked? The word that names that thing is the noun among the options. Choose the naming word.",
     "explanation_simple": "Read the sentence and ask: what thing is liked? The word that names that thing is the noun. Choose it.",
     "explanation_detailed": "In the sentence, one word names the thing being liked. Actions tell what someone does; the noun names the thing. Find the naming word for the thing in the sentence.",
-    "explanation_translations": {}
+    "explanation_translations": {
+      "ru": {
+        "main": "Прочитайте предложение и спросите: что именно нравится? Слово, называющее эту вещь, — существительное. Выберите слово-название.",
+        "simple": "Прочитайте предложение и спросите: какая вещь нравится? Слово, называющее эту вещь, — существительное. Выберите его.",
+        "detailed": "В предложении одно слово называет вещь, которая нравится. Действия говорят о том, что делают; существительное называет саму вещь. Найдите слово-название для вещи."
+      },
+      "uz": {
+        "main": "Gapni o'qing va so'rang: nima yoqadi? O'sha narsani nomlagan so'z — otdir. Nomlash so'zini tanlang.",
+        "simple": "Gapni o'qing va so'rang: qaysi narsa yoqadi? O'sha narsani nomlagan so'z — ot. Uni tanlang.",
+        "detailed": "Gapdagi bir so'z yoqadigan narsani nomlaydi. Harakatlar kimning nima qilishini aytadi; ot — narsaning o'z nomini bildiradi. Gapdagi narsa uchun nomlash so'zini toping."
+      }
+    }
   },
   {
     "id": 11,
@@ -162,7 +272,18 @@
     "explanation": "A noun is a naming word for a thing. The other options show actions, descriptions, or how something is done. Choose the thing word.",
     "explanation_simple": "A noun names a person, place, or thing. The other words describe, show actions, or tell how. Choose the naming word.",
     "explanation_detailed": "Check each option: is it a thing you can name? If yes, it is a noun. Words that show actions or descriptions are not nouns. Pick the word that names a thing.",
-    "explanation_translations": {}
+    "explanation_translations": {
+      "ru": {
+        "main": "Существительное — слово-название для вещи. Другие варианты показывают действия, описания или то, как что-то происходит. Выберите слово-вещь.",
+        "simple": "Существительное называет человека, место или вещь. Другие слова описывают, показывают действия или говорят о том, как. Выберите слово-название.",
+        "detailed": "Проверьте каждый вариант: можно ли его назвать? Если да — это существительное. Слова-действия и описания — не существительные. Выберите слово, называющее вещь."
+      },
+      "uz": {
+        "main": "Ot — narsa nomlash so'zi. Boshqa variantlar harakat, ta'rif yoki qanday qilinishini bildiradi. Narsa so'zini tanlang.",
+        "simple": "Ot — odam, joy yoki narsani nomlaydi. Boshqa so'zlar ta'riflaydi, harakat yoki 'qanday' ma'nosini bildiradi. Nomlash so'zini tanlang.",
+        "detailed": "Har bir variantni tekshiring: uni nomlab bo'ladimi? Ha bo'lsa, u otdir. Harakat yoki ta'rif so'zlari ot emas. Narsani nomlagan so'zni tanlang."
+      }
+    }
   },
   {
     "id": 12,
@@ -177,7 +298,18 @@
     "explanation": "A sentence contains a noun if it names a person or thing. Read each sentence and find the one that names something.",
     "explanation_simple": "A sentence has a noun if it names a person or thing. Read each sentence and find the one that names something.",
     "explanation_detailed": "Read each sentence and look for a word that names a person, place, or thing. The sentence that contains that naming word is the correct one.",
-    "explanation_translations": {}
+    "explanation_translations": {
+      "ru": {
+        "main": "Предложение содержит существительное, если в нём называется человек или вещь. Прочитайте каждое предложение и найдите то, в котором что-то называется.",
+        "simple": "В предложении есть существительное, если в нём называется человек или вещь. Найдите такое предложение.",
+        "detailed": "Прочитайте каждое предложение и найдите слово, называющее человека, место или вещь. Предложение с таким словом — правильный ответ."
+      },
+      "uz": {
+        "main": "Agar gapdagi odam yoki narsa nomlangan bo'lsa, unda ot bor. Har bir gapni o'qing va nimadir nomlanganini toping.",
+        "simple": "Gapdagi odam yoki narsa nomlangan bo'lsa, u yerda ot bor. Shunday gapni toping.",
+        "detailed": "Har bir gapni o'qib, odam, joy yoki narsani nomlagan so'zni qidiring. O'sha nomlash so'zi bor gap — to'g'ri javobdir."
+      }
+    }
   },
   {
     "id": 13,
@@ -192,7 +324,18 @@
     "explanation": "A noun can name an idea, like kindness or joy. It is not a describing word, not an action, and not a word that tells how. Choose the idea or thing word.",
     "explanation_simple": "A noun can name an idea like kindness or joy. It is not a describing word and not an action. Choose the idea word.",
     "explanation_detailed": "Some words describe how something looks or happens. A noun names the idea itself. Pick the option that is the name of the idea.",
-    "explanation_translations": {}
+    "explanation_translations": {
+      "ru": {
+        "main": "Существительное может называть идею, например kindness (доброта) или joy (радость). Это не описание, не действие и не слово о том, как. Выберите слово-идею или слово-вещь.",
+        "simple": "Существительное может называть идею, как kindness или joy. Это не описание и не действие. Выберите слово-идею.",
+        "detailed": "Некоторые слова описывают то, как что-то выглядит или происходит. Существительное называет саму идею. Выберите вариант, который является названием идеи."
+      },
+      "uz": {
+        "main": "Ot g'oyani nomlashi mumkin, masalan kindness (mehribonlik) yoki joy (quvonch). Bu ta'rif so'zi emas, harakat emas va 'qanday' so'zi ham emas. G'oya yoki narsa so'zini tanlang.",
+        "simple": "Ot kindness yoki joy kabi g'oyani nomlashi mumkin. Bu ta'rif so'zi emas va harakat ham emas. G'oya so'zini tanlang.",
+        "detailed": "Ba'zi so'zlar narsa qanday ko'rinishini yoki sodir bo'lishini ta'riflaydi. Ot — g'oyaning o'z nomini bildiradi. G'oya nomi bo'lgan variantni tanlang."
+      }
+    }
   },
   {
     "id": 14,
@@ -207,7 +350,18 @@
     "explanation": "A proper noun is a special name of one specific person or place, and it starts with a capital letter. Choose the special name.",
     "explanation_simple": "A proper noun is a special name of one specific person or place, and it starts with a capital letter. Choose the special name.",
     "explanation_detailed": "Proper nouns are special names for one specific person or place. They start with a capital letter. Read the options and choose the specific name.",
-    "explanation_translations": {}
+    "explanation_translations": {
+      "ru": {
+        "main": "Имя собственное — особое название одного конкретного человека или места, которое пишется с заглавной буквы. Выберите особое имя.",
+        "simple": "Имя собственное — особое имя конкретного человека или места, пишется с заглавной буквы. Выберите особое имя.",
+        "detailed": "Имена собственные — особые названия для одного конкретного человека или места. Они пишутся с заглавной буквы. Прочитайте варианты и выберите конкретное имя."
+      },
+      "uz": {
+        "main": "Atoqli ot — bitta aniq odam yoki joyning maxsus nomi bo'lib, katta harf bilan yoziladi. Maxsus ismni tanlang.",
+        "simple": "Atoqli ot — bitta aniq odam yoki joyning maxsus nomi, katta harf bilan yoziladi. Maxsus ismni tanlang.",
+        "detailed": "Atoqli otlar — bitta aniq odam yoki joy uchun maxsus nomlar. Ular katta harf bilan yoziladi. Variantlarni o'qing va aniq ismni tanlang."
+      }
+    }
   },
   {
     "id": 15,
@@ -222,6 +376,17 @@
     "explanation": "In the sentence, the noun is the word that names the people. Action words tell what they do, and small words like articles are not nouns. Choose the naming word for the people.",
     "explanation_simple": "In the sentence, find the word that names the people. That naming word is the noun. Choose it.",
     "explanation_detailed": "Ask: who is doing the action? The word that names the people is the noun. Small words like articles are not nouns. Choose the naming word for the people.",
-    "explanation_translations": {}
+    "explanation_translations": {
+      "ru": {
+        "main": "В предложении существительное — это слово, называющее людей. Слова-действия говорят о том, что они делают, а маленькие слова — артикли — не существительные. Выберите слово-название для людей.",
+        "simple": "В предложении найдите слово, называющее людей. Это слово-название — существительное. Выберите его.",
+        "detailed": "Спросите: кто выполняет действие? Слово, называющее людей, — существительное. Маленькие слова-артикли — не существительные. Выберите слово-название для людей."
+      },
+      "uz": {
+        "main": "Gapdagi ot — odamlarni nomlagan so'z. Harakat so'zlari ularning nima qilishini bildiradi, artikl kabi kichik so'zlar esa ot emas. Odamlarni nomlagan so'zni tanlang.",
+        "simple": "Gapdagi odamlarni nomlagan so'zni toping. O'sha nomlash so'zi — otdir. Uni tanlang.",
+        "detailed": "So'rang: harakatni kim bajarmoqda? Odamlarni nomlagan so'z — ot. Artikl kabi kichik so'zlar ot emas. Odamlarni nomlagan so'zni tanlang."
+      }
+    }
   }
 ]

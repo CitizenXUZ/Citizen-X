@@ -9,10 +9,21 @@
       "D": "she"
     },
     "correct": "B",
-    "explanation": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_simple": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_detailed": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_translations": {}
+    "explanation": "Reflexive pronouns are used when the subject and object are the same person. 'She' → 'herself'.",
+    "explanation_simple": "When the subject and object are the same person, use 'herself' for 'she'.",
+    "explanation_detailed": "'She' is the subject. She looked at herself — the object is also her. So we use 'herself'. 'Her' is a regular object pronoun, not reflexive.",
+    "explanation_translations": {
+      "ru": {
+        "main": "Возвратные местоимения используются, когда подлежащее и дополнение — одно и то же лицо. «She» (она) → возвратное местоимение «herself».",
+        "simple": "Когда подлежащее и дополнение — одно лицо, используйте «herself» для «she».",
+        "detailed": "«She» — подлежащее. Она смотрела на саму себя — объект тоже она. Поэтому «herself». «Her» — обычное дополнение (помоги ей), а не возвратное."
+      },
+      "uz": {
+        "main": "Qaytish olmoshlari ega va to'ldiruvchi bir xil shaxs bo'lganda ishlatiladi. «She» (u-qiz) → qaytish olmoshi «herself».",
+        "simple": "Ega va to'ldiruvchi bir shaxs bo'lsa, «she» uchun «herself» ishlating.",
+        "detailed": "«She» — ega. U o'ziga qaradi — ob'ekt ham o'zidir. Shuning uchun «herself». «Her» — oddiy to'ldiruvchi (unga yordam ber), qaytish olmoshi emas."
+      }
+    }
   },
   {
     "id": 2,
@@ -24,10 +35,21 @@
       "D": "I"
     },
     "correct": "B",
-    "explanation": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_simple": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_detailed": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_translations": {}
+    "explanation": "Reflexive pronouns are used when the subject and object are the same person. 'I' → 'myself'. 'By myself' means alone, without help.",
+    "explanation_simple": "When the subject and object are the same person, use 'myself' for 'I'.",
+    "explanation_detailed": "'I' is the subject. 'By myself' means alone, without anyone's help. 'Me' is a regular object pronoun (help me), while 'myself' is reflexive (I did it myself).",
+    "explanation_translations": {
+      "ru": {
+        "main": "Возвратные местоимения используются, когда подлежащее и дополнение — одно лицо. «I» (я) → возвратное местоимение «myself». «By myself» означает самостоятельно.",
+        "simple": "Когда подлежащее и дополнение — одно лицо, используйте «myself» для «I».",
+        "detailed": "«I» — подлежащее. «By myself» означает «один, без чьей-либо помощи». «Me» — обычное дополнение (помоги мне), а «myself» — возвратное (я сам сделал это)."
+      },
+      "uz": {
+        "main": "Qaytish olmoshlari ega va to'ldiruvchi bir xil shaxs bo'lganda ishlatiladi. «I» (men) → qaytish olmoshi «myself». «By myself» — o'zim, yordamsiz demakdir.",
+        "simple": "Ega va to'ldiruvchi bir shaxs bo'lsa, «I» uchun «myself» ishlating.",
+        "detailed": "«I» — ega. «By myself» — yolg'iz, hech kimning yordamisiz demakdir. «Me» — oddiy to'ldiruvchi (menga yordam ber), «myself» esa qaytish olmoshi (men o'zim qildim)."
+      }
+    }
   },
   {
     "id": 3,
@@ -39,10 +61,21 @@
       "D": "they"
     },
     "correct": "B",
-    "explanation": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_simple": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_detailed": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_translations": {}
+    "explanation": "Reflexive pronouns are used when the subject and object are the same. 'They' → 'themselves'. Note: 'theirselves' does not exist in English.",
+    "explanation_simple": "Use 'themselves' for 'they'. 'Theirselves' is not a real English word.",
+    "explanation_detailed": "'They' is the subject. The correct reflexive form for 'they' is 'themselves'. 'Theirselves' is a common mistake — it does not exist in English.",
+    "explanation_translations": {
+      "ru": {
+        "main": "Возвратные местоимения используются, когда подлежащее и дополнение — одно лицо. «They» (они) → возвратное «themselves». «Theirselves» — не существует в английском.",
+        "simple": "Используйте «themselves» для «they». «Theirselves» — несуществующее слово.",
+        "detailed": "«They» — подлежащее. Правильная возвратная форма для «they» — «themselves». «Theirselves» — распространённая ошибка, такого слова в английском нет."
+      },
+      "uz": {
+        "main": "Qaytish olmoshlari ega va to'ldiruvchi bir xil bo'lganda ishlatiladi. «They» (ular) → qaytish olmoshi «themselves». «Theirselves» ingliz tilida mavjud emas.",
+        "simple": "«They» uchun «themselves» ishlating. «Theirselves» — bu so'z ingliz tilida yo'q.",
+        "detailed": "«They» — ega. «They» uchun to'g'ri qaytish shakli «themselves». «Theirselves» — keng tarqalgan xato, ingliz tilida bunday so'z yo'q."
+      }
+    }
   },
   {
     "id": 4,
@@ -54,10 +87,21 @@
       "D": "he"
     },
     "correct": "B",
-    "explanation": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_simple": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_detailed": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_translations": {}
+    "explanation": "Reflexive pronouns are used when the subject and object are the same person. 'He' → 'himself'.",
+    "explanation_simple": "When the subject and object are the same person, use 'himself' for 'he'.",
+    "explanation_detailed": "'He' is the subject. He hurt himself — the object is also him. So we use 'himself'. 'Him' is a regular object pronoun (help him), not reflexive.",
+    "explanation_translations": {
+      "ru": {
+        "main": "Возвратные местоимения используются, когда подлежащее и дополнение — одно лицо. «He» (он) → возвратное «himself».",
+        "simple": "Когда подлежащее и дополнение — одно лицо, используйте «himself» для «he».",
+        "detailed": "«He» — подлежащее. Он ударил сам себя — объект тоже он. Поэтому «himself». «Him» — обычное дополнение (помоги ему), а не возвратное."
+      },
+      "uz": {
+        "main": "Qaytish olmoshlari ega va to'ldiruvchi bir xil shaxs bo'lganda ishlatiladi. «He» (u-erkak) → qaytish olmoshi «himself».",
+        "simple": "Ega va to'ldiruvchi bir shaxs bo'lsa, «he» uchun «himself» ishlating.",
+        "detailed": "«He» — ega. U o'zini jarohatladi — ob'ekt ham o'zidir. Shuning uchun «himself». «Him» — oddiy to'ldiruvchi (unga yordam ber), qaytish olmoshi emas."
+      }
+    }
   },
   {
     "id": 5,
@@ -69,14 +113,25 @@
       "D": "we"
     },
     "correct": "A",
-    "explanation": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_simple": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_detailed": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_translations": {}
+    "explanation": "Reflexive pronouns are used when the subject and object are the same. 'We' → 'ourselves'.",
+    "explanation_simple": "When 'we' acts on ourselves, use 'ourselves'.",
+    "explanation_detailed": "'We' is the subject. 'We enjoyed ourselves' means we had a good time — we were both the ones enjoying and being enjoyed. So 'ourselves' is correct.",
+    "explanation_translations": {
+      "ru": {
+        "main": "Возвратные местоимения используются, когда подлежащее и дополнение — одно лицо. «We» (мы) → возвратное «ourselves».",
+        "simple": "Когда «we» действует на самих себя, используйте «ourselves».",
+        "detailed": "«We» — подлежащее. «We enjoyed ourselves» — нам было весело, мы сами веселились. Объект — тоже «мы», поэтому «ourselves»."
+      },
+      "uz": {
+        "main": "Qaytish olmoshlari ega va to'ldiruvchi bir xil bo'lganda ishlatiladi. «We» (biz) → qaytish olmoshi «ourselves».",
+        "simple": "«We» o'zlari ustida harakat qilsa, «ourselves» ishlating.",
+        "detailed": "«We» — ega. «We enjoyed ourselves» — biz o'zimiz yaxshi dam oldik demakdir. To'ldiruvchi ham «biz», shuning uchun «ourselves»."
+      }
+    }
   },
   {
     "id": 6,
-    "question": "Did you make this cake by ____' (one person)",
+    "question": "Did you make this cake by ____ (one person)",
     "options": {
       "A": "yourself",
       "B": "yourselves",
@@ -84,10 +139,21 @@
       "D": "your"
     },
     "correct": "A",
-    "explanation": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_simple": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_detailed": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_translations": {}
+    "explanation": "For one person: 'you' → 'yourself'. For more than one person: 'you' → 'yourselves'. The question says 'one person'.",
+    "explanation_simple": "Use 'yourself' for one person, 'yourselves' for a group.",
+    "explanation_detailed": "When 'you' refers to one person, the reflexive form is 'yourself'. When 'you' refers to multiple people, use 'yourselves'. The question specifies 'one person'.",
+    "explanation_translations": {
+      "ru": {
+        "main": "Для одного человека: «you» → «yourself». Для нескольких: «you» → «yourselves». В вопросе указано «один человек».",
+        "simple": "Используйте «yourself» для одного человека, «yourselves» — для группы.",
+        "detailed": "Когда «you» относится к одному человеку, возвратная форма — «yourself». Для нескольких людей — «yourselves». В задании указано «один человек»."
+      },
+      "uz": {
+        "main": "Bir kishi uchun: «you» → «yourself». Bir nechta uchun: «you» → «yourselves». Savolda «bir kishi» ko'rsatilgan.",
+        "simple": "Bir kishi uchun «yourself», guruh uchun «yourselves» ishlating.",
+        "detailed": "«You» bir kishiga tegishli bo'lsa, qaytish shakli «yourself». Bir necha kishiga tegishli bo'lsa, «yourselves» ishlatiladi. Topshiriqda «bir kishi» ko'rsatilgan."
+      }
+    }
   },
   {
     "id": 7,
@@ -99,10 +165,21 @@
       "D": "it's"
     },
     "correct": "B",
-    "explanation": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_simple": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_detailed": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_translations": {}
+    "explanation": "Reflexive pronouns are used when the subject and object are the same. For things and animals: 'it' → 'itself'.",
+    "explanation_simple": "Use 'itself' for 'it' (things and animals) when subject and object are the same.",
+    "explanation_detailed": "'It' is used for things and animals. The cat washes itself — the object is the same as the subject. So 'itself'. 'It' and 'its' are not reflexive forms. 'It's' means 'it is'.",
+    "explanation_translations": {
+      "ru": {
+        "main": "Возвратные местоимения используются, когда подлежащее и дополнение — одно. Для предметов и животных: «it» → «itself».",
+        "simple": "Используйте «itself» для «it» (вещи и животные), когда подлежащее и объект совпадают.",
+        "detailed": "«It» используется для предметов и животных. Кошка умывает саму себя — объект совпадает с подлежащим. Поэтому «itself». «It» и «its» — не возвратные формы. «It's» означает «it is»."
+      },
+      "uz": {
+        "main": "Qaytish olmoshlari ega va to'ldiruvchi bir xil bo'lganda ishlatiladi. Narsa va hayvonlar uchun: «it» → «itself».",
+        "simple": "Ega va to'ldiruvchi bir xil bo'lsa, «it» (narsa/hayvon) uchun «itself» ishlating.",
+        "detailed": "«It» narsa va hayvonlar uchun ishlatiladi. Mushuk o'zini yuv — ob'ekt ega bilan bir xil. Shuning uchun «itself». «It» va «its» qaytish shakli emas. «It's» — «it is» demakdir."
+      }
+    }
   },
   {
     "id": 8,
@@ -114,10 +191,21 @@
       "D": "hers"
     },
     "correct": "B",
-    "explanation": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_simple": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_detailed": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_translations": {}
+    "explanation": "Reflexive pronouns are used when the subject and object are the same. 'She / sister' → 'herself'. 'By herself' means alone.",
+    "explanation_simple": "'By herself' means alone. Use 'herself' for 'she'.",
+    "explanation_detailed": "'By herself' means being alone or doing something without help. The subject is 'sister' (she), so the reflexive form is 'herself'.",
+    "explanation_translations": {
+      "ru": {
+        "main": "Возвратные местоимения используются, когда подлежащее и дополнение — одно лицо. «She / sister» → возвратное «herself». «By herself» означает одна.",
+        "simple": "«By herself» — одна, без помощи. Используйте «herself» для «she».",
+        "detailed": "«By herself» означает быть одной или делать что-то без помощи. Подлежащее — сестра (she), поэтому возвратная форма «herself»."
+      },
+      "uz": {
+        "main": "Qaytish olmoshlari ega va to'ldiruvchi bir xil shaxs bo'lganda ishlatiladi. «She / singilcha» → qaytish olmoshi «herself». «By herself» — yolg'iz demakdir.",
+        "simple": "«By herself» — yolg'iz, yordamsiz demakdir. «She» uchun «herself» ishlating.",
+        "detailed": "«By herself» — yolg'iz yoki yordamsiz bo'lish demakdir. Ega — singilcha (she), shuning uchun qaytish shakli «herself»."
+      }
+    }
   },
   {
     "id": 9,
@@ -129,10 +217,21 @@
       "D": "they"
     },
     "correct": "B",
-    "explanation": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_simple": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_detailed": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_translations": {}
+    "explanation": "Reflexive pronouns are used when the subject and object are the same. 'Children / they' → 'themselves'.",
+    "explanation_simple": "Use 'themselves' when 'they' or 'children' act on themselves.",
+    "explanation_detailed": "'Children' is the subject. They dress themselves — the object is also them. 'Them' is a regular object pronoun, while 'themselves' is the correct reflexive form for 'they / children'.",
+    "explanation_translations": {
+      "ru": {
+        "main": "Возвратные местоимения используются, когда подлежащее и дополнение — одно лицо. «Children / they» → возвратное «themselves».",
+        "simple": "Используйте «themselves», когда «they» или «children» действуют сами на себя.",
+        "detailed": "«Children» — подлежащее. Они одеваются сами — объект тоже они. «Them» — обычное дополнение, а «themselves» — правильная возвратная форма для «they / children»."
+      },
+      "uz": {
+        "main": "Qaytish olmoshlari ega va to'ldiruvchi bir xil bo'lganda ishlatiladi. «Children / they» → qaytish olmoshi «themselves».",
+        "simple": "«They» yoki «children» o'zlari ustida harakat qilsa, «themselves» ishlating.",
+        "detailed": "«Children» — ega. Ular o'zlari kiyinadi — to'ldiruvchi ham o'zlaridir. «Them» — oddiy to'ldiruvchi, «themselves» esa «they / children» uchun to'g'ri qaytish olmoshi."
+      }
+    }
   },
   {
     "id": 10,
@@ -144,10 +243,21 @@
       "D": "he"
     },
     "correct": "B",
-    "explanation": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_simple": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_detailed": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_translations": {}
+    "explanation": "Reflexive pronouns are used when the subject and object are the same. 'He' → 'himself'. 'Talking to himself' means he was speaking to himself.",
+    "explanation_simple": "Use 'himself' for 'he' when the subject and object are the same person.",
+    "explanation_detailed": "'Talking to himself' means he was speaking to himself — he is both the speaker and the one spoken to. So 'himself', not 'him'.",
+    "explanation_translations": {
+      "ru": {
+        "main": "Возвратные местоимения используются, когда подлежащее и дополнение — одно лицо. «He» (он) → «himself». «Talking to himself» — говорил сам с собой.",
+        "simple": "Используйте «himself» для «he», когда подлежащее и объект — одно лицо.",
+        "detailed": "«Talking to himself» — он говорил сам с собой. Он и говорящий, и тот, к кому обращаются. Поэтому «himself», а не «him»."
+      },
+      "uz": {
+        "main": "Qaytish olmoshlari ega va to'ldiruvchi bir xil bo'lganda ishlatiladi. «He» → «himself». «Talking to himself» — o'zi bilan gaplashdi.",
+        "simple": "Ega va to'ldiruvchi bir shaxs bo'lsa, «he» uchun «himself» ishlating.",
+        "detailed": "«Talking to himself» — u o'zi bilan gaplashdi. U ham gapiruvchi, ham murojaat qilinuvchi. Shuning uchun «himself», «him» emas."
+      }
+    }
   },
   {
     "id": 11,
@@ -159,10 +269,21 @@
       "D": "I"
     },
     "correct": "B",
-    "explanation": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_simple": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_detailed": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_translations": {}
+    "explanation": "Reflexive pronouns are used when the subject and object are the same. 'I' → 'myself'. I am proud of myself — I am both the one feeling proud and the one being proud of.",
+    "explanation_simple": "Use 'myself' for 'I' when subject and object are the same.",
+    "explanation_detailed": "I am proud of myself — the subject and object are both 'I'. So we use 'myself'. 'Me' is a regular object pronoun, not reflexive.",
+    "explanation_translations": {
+      "ru": {
+        "main": "Возвратные местоимения используются, когда подлежащее и дополнение — одно лицо. «I» (я) → «myself». Я горжусь собой — я и тот, кто гордится, и тот, кем гордятся.",
+        "simple": "Используйте «myself» для «I», когда подлежащее и объект совпадают.",
+        "detailed": "Я горжусь собой — подлежащее и объект — оба «я». Поэтому «myself». «Me» — обычное дополнение, а не возвратное."
+      },
+      "uz": {
+        "main": "Qaytish olmoshlari ega va to'ldiruvchi bir xil bo'lganda ishlatiladi. «I» (men) → «myself». Men o'zimdan faxrlanaman — ega va to'ldiruvchi ikkalasi ham «men».",
+        "simple": "Ega va to'ldiruvchi bir shaxs bo'lsa, «I» uchun «myself» ishlating.",
+        "detailed": "Men o'zimdan faxrlanaman — ega va to'ldiruvchi ikkalasi ham «men». Shuning uchun «myself». «Me» — oddiy to'ldiruvchi, qaytish olmoshi emas."
+      }
+    }
   },
   {
     "id": 12,
@@ -174,10 +295,21 @@
       "D": "hers"
     },
     "correct": "A",
-    "explanation": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_simple": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_detailed": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_translations": {}
+    "explanation": "Reflexive pronouns are used when the subject and object are the same. 'She' → 'herself'. She blames herself — the object is the same as the subject.",
+    "explanation_simple": "Use 'herself' for 'she' when subject and object are the same person.",
+    "explanation_detailed": "She blames herself — the subject and object are the same person. So 'herself'. 'Her' is a regular object pronoun (he helped her), while 'herself' is reflexive.",
+    "explanation_translations": {
+      "ru": {
+        "main": "Возвратные местоимения используются, когда подлежащее и дополнение — одно лицо. «She» (она) → «herself». Она обвиняет саму себя — объект совпадает с подлежащим.",
+        "simple": "Используйте «herself» для «she», когда подлежащее и объект — одно лицо.",
+        "detailed": "Она обвиняет саму себя — подлежащее и объект — одно лицо. Поэтому «herself». «Her» — обычное дополнение (он помог ей), а «herself» — возвратное."
+      },
+      "uz": {
+        "main": "Qaytish olmoshlari ega va to'ldiruvchi bir xil bo'lganda ishlatiladi. «She» (u-qiz) → «herself». U o'zini ayblaydi — to'ldiruvchi ega bilan bir xil.",
+        "simple": "Ega va to'ldiruvchi bir shaxs bo'lsa, «she» uchun «herself» ishlating.",
+        "detailed": "U o'zini ayblaydi — ega va to'ldiruvchi bir xil shaxs. Shuning uchun «herself». «Her» — oddiy to'ldiruvchi (u unga yordam berdi), «herself» — qaytish olmoshi."
+      }
+    }
   },
   {
     "id": 13,
@@ -189,10 +321,21 @@
       "D": "we"
     },
     "correct": "A",
-    "explanation": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_simple": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_detailed": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_translations": {}
+    "explanation": "Reflexive pronouns are used when the subject and object are the same. 'Let's' = 'let us' (we) → 'ourselves'.",
+    "explanation_simple": "Use 'ourselves' when 'we' acts on itself.",
+    "explanation_detailed": "'Let's' means 'let us' — the subject is 'we'. We are making ourselves comfortable, so the object is also 'we'. Therefore 'ourselves'.",
+    "explanation_translations": {
+      "ru": {
+        "main": "Возвратные местоимения используются, когда подлежащее и дополнение — одно лицо. «Let's» = «let us» (мы) → «ourselves».",
+        "simple": "Используйте «ourselves», когда «we» действует на самих себя.",
+        "detailed": "«Let's» означает «let us» — подлежащее «мы». Мы делаем удобно для самих себя, объект тоже «мы». Поэтому «ourselves»."
+      },
+      "uz": {
+        "main": "Qaytish olmoshlari ega va to'ldiruvchi bir xil bo'lganda ishlatiladi. «Let's» = «let us» (biz) → «ourselves».",
+        "simple": "«We» o'zlari ustida harakat qilsa, «ourselves» ishlating.",
+        "detailed": "«Let's» — «let us» demakdir, ega «biz». Biz o'zimiz uchun qulay qilamiz, to'ldiruvchi ham «biz». Shuning uchun «ourselves»."
+      }
+    }
   },
   {
     "id": 14,
@@ -204,10 +347,21 @@
       "D": "you"
     },
     "correct": "A",
-    "explanation": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_simple": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_detailed": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_translations": {}
+    "explanation": "For one person: 'you' → 'yourself'. For more than one: 'you' → 'yourselves'. The question says 'one person'.",
+    "explanation_simple": "Use 'yourself' for one person, 'yourselves' for a group.",
+    "explanation_detailed": "The question specifies 'one person'. For singular 'you', the reflexive form is 'yourself'. If it were multiple people, we would use 'yourselves'.",
+    "explanation_translations": {
+      "ru": {
+        "main": "Для одного человека: «you» → «yourself». Для нескольких: «you» → «yourselves». В вопросе указано «один человек».",
+        "simple": "Используйте «yourself» для одного человека, «yourselves» — для группы.",
+        "detailed": "В задании указано «один человек». Для единственного числа «you» возвратная форма — «yourself». Для нескольких людей — «yourselves»."
+      },
+      "uz": {
+        "main": "Bir kishi uchun: «you» → «yourself». Bir nechta uchun: «you» → «yourselves». Savolda «bir kishi» ko'rsatilgan.",
+        "simple": "Bir kishi uchun «yourself», guruh uchun «yourselves» ishlating.",
+        "detailed": "Topshiriqda «bir kishi» ko'rsatilgan. Birlik «you» uchun qaytish shakli «yourself». Bir necha kishi bo'lsa, «yourselves» ishlatilardi."
+      }
+    }
   },
   {
     "id": 15,
@@ -219,9 +373,20 @@
       "D": "he"
     },
     "correct": "B",
-    "explanation": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_simple": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_detailed": "Reflexive pronouns are used when the subject and object are the same person or thing.",
-    "explanation_translations": {}
+    "explanation": "Reflexive pronouns are used when the subject and object are the same. 'He' → 'himself'. He taught himself — he had no teacher, he learned on his own.",
+    "explanation_simple": "Use 'himself' when 'he' teaches himself.",
+    "explanation_detailed": "He taught himself to play — there was no teacher, he learned alone. Subject and object are the same person (he). So 'himself'. 'Him' is a regular object pronoun, not reflexive.",
+    "explanation_translations": {
+      "ru": {
+        "main": "Возвратные местоимения используются, когда подлежащее и дополнение — одно лицо. «He» (он) → «himself». Он научил себя — учителя не было, он учился сам.",
+        "simple": "Используйте «himself», когда «he» сам учит себя.",
+        "detailed": "Он научил себя играть — учителя не было, он учился самостоятельно. Подлежащее и объект — одно лицо (он). Поэтому «himself». «Him» — обычное дополнение, а не возвратное."
+      },
+      "uz": {
+        "main": "Qaytish olmoshlari ega va to'ldiruvchi bir xil bo'lganda ishlatiladi. «He» (u-erkak) → «himself». U o'zini o'qitdi — o'qituvchisi yo'q edi, o'zi o'rgandi.",
+        "simple": "«He» o'zini o'zi o'qitsa, «himself» ishlating.",
+        "detailed": "U o'zini o'zi piano chalishga o'rgatdi — o'qituvchisi yo'q edi, yolg'iz o'rgandi. Ega va to'ldiruvchi bir shaxs (u). Shuning uchun «himself». «Him» — oddiy to'ldiruvchi, qaytish olmoshi emas."
+      }
+    }
   }
 ]
