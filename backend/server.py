@@ -1685,7 +1685,9 @@ def build_progress_summary(cur, user_row):
     schedule_raw = user_row["lesson_schedule"] if "lesson_schedule" in user_row.keys() else ""
     access_started_local = get_schedule_anchor_dt(access_started_dt, level_label, schedule_raw)
     now_local = local_now()
-    available_lessons = get_available_lessons(
+    user_role = str(user_row["role"] if "role" in user_row.keys() else "").strip().lower()
+    is_privileged = user_role in ("admin", "mentor")
+    available_lessons = total_lessons if is_privileged else get_available_lessons(
         access_started_local,
         level_label,
         schedule_raw,
@@ -2377,6 +2379,38 @@ def init_db():
                         "UPDATE users SET password = '', password_hash = ?, salt = ? WHERE id = ?",
                         (new_hash, new_salt, admin_row["id"]),
     )
+
+        # Seed second admin account (MrSam_admin)
+        _MRSAM_ADMIN_USERNAME = "MrSam_admin"
+        _MRSAM_ADMIN_PASSWORD = "MrSam0105"
+        _MRSAM_ADMIN_PHONE = "+998933503459"
+        cur.execute("SELECT id FROM users WHERE username = ?", (_MRSAM_ADMIN_USERNAME,))
+        mrsam_admin = cur.fetchone()
+        if mrsam_admin is None:
+            _salt = secrets.token_hex(16)
+            _hash = hash_password(_MRSAM_ADMIN_PASSWORD, _salt)
+            cur.execute(
+                """
+                INSERT INTO users (username, password, password_hash, salt, role, phone, created_at, access_started_at)
+                VALUES (?, '', ?, ?, 'admin', ?, ?, ?)
+                """,
+                (_MRSAM_ADMIN_USERNAME, _hash, _salt, _MRSAM_ADMIN_PHONE,
+                 datetime.now(timezone.utc).isoformat(), datetime.now(timezone.utc).isoformat()),
+            )
+        else:
+            # Keep password in sync
+            cur.execute("SELECT id, password_hash, salt FROM users WHERE username = ?", (_MRSAM_ADMIN_USERNAME,))
+            _row = cur.fetchone()
+            if _row is not None:
+                _stored_hash = str(_row["password_hash"] or "").strip()
+                _stored_salt = str(_row["salt"] or "").strip()
+                if not _stored_salt or hash_password(_MRSAM_ADMIN_PASSWORD, _stored_salt) != _stored_hash:
+                    _new_salt = secrets.token_hex(16)
+                    _new_hash = hash_password(_MRSAM_ADMIN_PASSWORD, _new_salt)
+                    cur.execute(
+                        "UPDATE users SET password = '', password_hash = ?, salt = ?, role = 'admin', phone = ? WHERE id = ?",
+                        (_new_hash, _new_salt, _MRSAM_ADMIN_PHONE, _row["id"]),
+                    )
 
     cur.execute(
         """
@@ -7445,7 +7479,7 @@ class Handler(BaseHTTPRequestHandler):
 
             subscription_expires_at = None
             subscription_expired = False
-            if user_role != "admin" and is_same_level:
+            if user_role not in ("admin", "mentor") and is_same_level:
                 subscription_expires_at_dt = get_subscription_expires_at(session_user["created_at"])
                 if subscription_expires_at_dt is not None:
                     subscription_expires_at = to_utc_iso(subscription_expires_at_dt)
@@ -7484,7 +7518,7 @@ class Handler(BaseHTTPRequestHandler):
                 )
                 return
 
-            if user_role != "admin" and is_same_level and lesson_number > 1:
+            if user_role not in ("admin", "mentor") and is_same_level and lesson_number > 1:
                 cur = None
                 access_started_raw = session_user["access_started_at"] or session_user["created_at"]
                 created_dt = parse_iso_datetime(access_started_raw)

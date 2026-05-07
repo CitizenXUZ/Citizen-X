@@ -1307,7 +1307,7 @@ if (lessonPage) {
       if (isFinalLesson) {
         return;
       }
-      if (getLocalAuthRole() === "admin" || (typeof isAdminUser === "function" && isAdminUser())) {
+      if (getLocalAuthRole() === "admin" || getLocalAuthRole() === "mentor" || (typeof isAdminUser === "function" && isAdminUser())) {
         window.location.href = homeworkUrl;
         return;
       }
@@ -2738,7 +2738,7 @@ if (tasksPage) {
   const isAdminRole = () => {
     const authState = getAuthState();
     const authRole = authState && authState.role ? String(authState.role).toLowerCase() : "";
-    return authRole === "admin" || getLocalAuthRole() === "admin";
+    return authRole === "admin" || authRole === "mentor" || getLocalAuthRole() === "admin" || getLocalAuthRole() === "mentor";
   };
 
   if (!hasQuiz) {
@@ -8144,7 +8144,7 @@ const applyLessonAccessLocks = async () => {
 
   const authState = getAuthState();
   const currentCourse = getCourseFromPathname();
-  if (authState && authState.role === "admin") {
+  if (authState && (authState.role === "admin" || authState.role === "mentor")) {
     return;
   }
   const hasLevelMismatch = !!(
@@ -8437,7 +8437,7 @@ const syncLessonsPageProgressFromServer = async () => {
   if (!authState || !authState.username || !course) {
     return;
   }
-  if (authState.role === "admin") {
+  if (authState.role === "admin" || authState.role === "mentor") {
     return;
   }
 
