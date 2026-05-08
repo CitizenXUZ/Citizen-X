@@ -248,7 +248,32 @@
       </div>
     </div>
   </div>
+
+  <!-- Partners strip -->
+  <div class="partners-strip" id="partners-strip" hidden>
+    <p class="partners-strip-label">In collaboration with:</p>
+    <div class="partners-list" id="partners-list"></div>
+    <button type="button" class="partners-edit-btn admin-only-el" id="partners-edit-btn" hidden aria-label="Edit partners">✏️ Edit</button>
+  </div>
 </section>
+
+<!-- Partners admin modal -->
+<div id="partners-admin-modal" class="admin-lessons-modal" aria-hidden="true">
+  <div class="admin-lessons-card partners-admin-card" role="dialog" aria-modal="true" aria-label="Edit partners">
+    <div class="admin-lessons-header">
+      <h2 class="admin-lessons-title">In collaboration with — Edit</h2>
+      <button type="button" class="admin-lessons-close" id="partners-admin-close" aria-label="Close">&times;</button>
+    </div>
+    <div id="partners-admin-list" class="partners-admin-list"></div>
+    <div class="partners-admin-footer">
+      <button type="button" class="btn admin-lessons-secondary" id="partners-admin-add">+ Add partner</button>
+      <div class="admin-quiz-save-wrap">
+        <p id="partners-admin-status" class="admin-lessons-status" aria-live="polite"></p>
+        <button type="button" class="btn admin-lessons-primary" id="partners-admin-save">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div id="daily-pin-modal" class="admin-lessons-modal" aria-hidden="true">
   <div class="admin-lessons-card" role="dialog" aria-modal="true" aria-labelledby="daily-pin-title">

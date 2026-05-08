@@ -17494,3 +17494,232 @@ document.addEventListener("keydown", (event) => {
 // See more Results — navigate immediately; overlay runs on results.html side
 // (no handler needed here)
 
+// ── Partners section ──────────────────────────────────────────────────────────
+(function initPartnersSection() {
+  const strip = document.getElementById("partners-strip");
+  const list = document.getElementById("partners-list");
+  const editBtn = document.getElementById("partners-edit-btn");
+  if (!strip || !list) return;
+
+  let partnersData = []; // current loaded partners
+
+  // ── Render partners list (public view) ──
+  const renderPartners = (items) => {
+    list.innerHTML = "";
+    if (!items || items.length === 0) return;
+    items.forEach((p) => {
+      const el = document.createElement("div");
+      el.className = "partner-item";
+      if (p.logo_url) {
+        el.innerHTML = `<img class="partner-logo" src="${escapeHtml(p.logo_url)}" alt="${escapeHtml(p.name)}" loading="lazy"><span class="partner-name">${escapeHtml(p.name)}</span>`;
+      } else {
+        el.innerHTML = `<div class="partner-logo-placeholder">🏫</div><span class="partner-name">${escapeHtml(p.name)}</span>`;
+      }
+      list.appendChild(el);
+    });
+  };
+
+  // ── Load partners from API ──
+  const loadPartners = async () => {
+    try {
+      await ensureApiBaseUrl();
+      const res = await fetch(`${API_BASE_URL}/api/partners`);
+      if (!res.ok) return;
+      const data = await res.json();
+      partnersData = Array.isArray(data.items) ? data.items : [];
+      if (partnersData.length > 0) {
+        strip.hidden = false;
+        renderPartners(partnersData);
+      }
+    } catch (_e) { /* silent */ }
+  };
+
+  loadPartners();
+
+  // ── Show edit button for admins ──
+  const maybeShowEditBtn = () => {
+    const role = getLocalAuthRole();
+    if (role === "admin" && editBtn) {
+      editBtn.hidden = false;
+    }
+  };
+  maybeShowEditBtn();
+  window.addEventListener("ewms:auth-changed", maybeShowEditBtn);
+
+  if (!editBtn) return;
+
+  // ── Admin modal ──
+  const modal = document.getElementById("partners-admin-modal");
+  const closeBtn = document.getElementById("partners-admin-close");
+  const addBtn = document.getElementById("partners-admin-add");
+  const saveBtn = document.getElementById("partners-admin-save");
+  const statusEl = document.getElementById("partners-admin-status");
+  const adminList = document.getElementById("partners-admin-list");
+  if (!modal || !adminList) return;
+
+  let pendingUploads = {}; // id → { file, dataUrl }
+  let adminRows = []; // { id, name, logo_file, logo_url, isNew }
+
+  const openModal = () => {
+    // Clone current data for editing
+    adminRows = partnersData.map((p) => ({ ...p, isNew: false }));
+    if (adminRows.length === 0) adminRows = [];
+    renderAdminRows();
+    modal.classList.add("is-open");
+    modal.setAttribute("aria-hidden", "false");
+    if (statusEl) statusEl.textContent = "";
+  };
+
+  const closeModal = () => {
+    modal.classList.remove("is-open");
+    modal.setAttribute("aria-hidden", "true");
+    pendingUploads = {};
+  };
+
+  editBtn.addEventListener("click", openModal);
+  if (closeBtn) closeBtn.addEventListener("click", closeModal);
+  modal.addEventListener("click", (e) => { if (e.target === modal) closeModal(); });
+
+  const renderAdminRows = () => {
+    adminList.innerHTML = "";
+    adminRows.forEach((row, idx) => {
+      const div = document.createElement("div");
+      div.className = "partners-admin-row";
+      div.dataset.idx = idx;
+
+      // Logo preview / upload
+      const logoDivId = `partner-logo-preview-${idx}`;
+      const fileInputId = `partner-logo-input-${idx}`;
+      const preview = document.createElement("label");
+      preview.className = "partners-admin-logo-preview";
+      preview.htmlFor = fileInputId;
+      preview.title = "Click to upload logo";
+      const pendUp = pendingUploads[row.id];
+      if (pendUp) {
+        preview.innerHTML = `<img src="${escapeHtml(pendUp.dataUrl)}" alt="logo">`;
+      } else if (row.logo_url) {
+        preview.innerHTML = `<img src="${escapeHtml(row.logo_url)}" alt="logo">`;
+      } else {
+        preview.textContent = "🏫";
+      }
+      preview.id = logoDivId;
+
+      const fileInput = document.createElement("input");
+      fileInput.type = "file";
+      fileInput.accept = "image/png,image/jpeg,image/webp";
+      fileInput.id = fileInputId;
+      fileInput.style.display = "none";
+      fileInput.addEventListener("change", () => {
+        const file = fileInput.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          pendingUploads[row.id] = { file, dataUrl: e.target.result };
+          const prev = document.getElementById(logoDivId);
+          if (prev) prev.innerHTML = `<img src="${escapeHtml(e.target.result)}" alt="logo">`;
+        };
+        reader.readAsDataURL(file);
+      });
+
+      // Name input
+      const fields = document.createElement("div");
+      fields.className = "partners-admin-fields";
+      const nameInput = document.createElement("input");
+      nameInput.className = "admin-lessons-input";
+      nameInput.type = "text";
+      nameInput.placeholder = "Partner / school name";
+      nameInput.value = row.name || "";
+      nameInput.addEventListener("input", () => { adminRows[idx].name = nameInput.value; });
+
+      fields.appendChild(nameInput);
+
+      // Remove button
+      const removeBtn = document.createElement("button");
+      removeBtn.type = "button";
+      removeBtn.className = "btn admin-lessons-secondary";
+      removeBtn.style.cssText = "padding:4px 10px;font-size:0.85rem;color:#b91c1c;border-color:#fca5a5;";
+      removeBtn.textContent = "✕";
+      removeBtn.title = "Remove";
+      removeBtn.addEventListener("click", () => {
+        adminRows.splice(idx, 1);
+        delete pendingUploads[row.id];
+        renderAdminRows();
+      });
+
+      div.appendChild(preview);
+      div.appendChild(fileInput);
+      div.appendChild(fields);
+      div.appendChild(removeBtn);
+      adminList.appendChild(div);
+    });
+  };
+
+  if (addBtn) {
+    addBtn.addEventListener("click", () => {
+      const newId = `partner_${Date.now()}`;
+      adminRows.push({ id: newId, name: "", logo_file: "", logo_url: "", isNew: true });
+      renderAdminRows();
+      // Scroll to bottom
+      adminList.scrollTop = adminList.scrollHeight;
+    });
+  }
+
+  if (saveBtn) {
+    saveBtn.addEventListener("click", async () => {
+      saveBtn.disabled = true;
+      if (statusEl) statusEl.textContent = "Saving...";
+
+      const adminUsername = (() => {
+        try { const s = getAuthState(); return s && s.username ? s.username : ""; } catch (_) { return ""; }
+      })();
+
+      try {
+        // 1. Upload any pending logos
+        for (const [pid, upload] of Object.entries(pendingUploads)) {
+          const uploadRes = await fetch(`${API_BASE_URL}/api/admin/partners/logo/upload`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json", ...({ "X-Session-Token": getSessionTokenFromStorage() }) },
+            body: JSON.stringify({ admin_username: adminUsername, file_name: upload.file.name, file_data: upload.dataUrl }),
+          });
+          if (!uploadRes.ok) {
+            if (statusEl) statusEl.textContent = "Logo upload failed.";
+            saveBtn.disabled = false;
+            return;
+          }
+          const uploadData = await uploadRes.json();
+          const rowIdx = adminRows.findIndex((r) => r.id === pid);
+          if (rowIdx >= 0) {
+            adminRows[rowIdx].logo_file = uploadData.file;
+          }
+        }
+        pendingUploads = {};
+
+        // 2. Save all partners
+        const items = adminRows
+          .filter((r) => r.name && r.name.trim())
+          .map((r, i) => ({ id: r.id, name: r.name.trim(), logo_file: r.logo_file || "", order: i }));
+
+        const res = await fetch(`${API_BASE_URL}/api/admin/partners/set-all`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", ...({ "X-Session-Token": getSessionTokenFromStorage() }) },
+          body: JSON.stringify({ admin_username: adminUsername, items }),
+        });
+        if (!res.ok) {
+          if (statusEl) statusEl.textContent = "Save failed.";
+          saveBtn.disabled = false;
+          return;
+        }
+
+        if (statusEl) statusEl.textContent = "Saved!";
+        // Reload
+        await loadPartners();
+        setTimeout(closeModal, 700);
+      } catch (_e) {
+        if (statusEl) statusEl.textContent = "Error.";
+      }
+      saveBtn.disabled = false;
+    });
+  }
+})();
+// ── END Partners section ──────────────────────────────────────────────────────
+

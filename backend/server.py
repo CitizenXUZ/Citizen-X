@@ -458,6 +458,8 @@ CERTIFICATE_OVERRIDES_PATH = DEFAULT_DB_DIR / "certificates_overrides.json"
 SUBSCRIPTION_OVERRIDES_PATH = DEFAULT_DB_DIR / "subscriptions_overrides.json"
 TEAM_OVERRIDES_PATH = DEFAULT_DB_DIR / "team_overrides.json"
 TEAM_AVATAR_UPLOAD_DIR = DEFAULT_DB_DIR / "uploads" / "team"
+PARTNERS_PATH = DEFAULT_DB_DIR / "partners.json"
+PARTNER_LOGO_UPLOAD_DIR = DEFAULT_DB_DIR / "uploads" / "partners"
 MAX_COVER_BYTES = 5 * 1024 * 1024
 MAX_PRESENTATION_BYTES = 25 * 1024 * 1024
 ALLOWED_COVER_EXTENSIONS = {".png", ".jpg", ".jpeg", ".webp"}
@@ -466,6 +468,7 @@ COVER_UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
 CERTIFICATE_UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
 LESSON_OVERRIDES_DIR.mkdir(parents=True, exist_ok=True)
 TEAM_AVATAR_UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
+PARTNER_LOGO_UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
 PRESENTATIONS_BY_COURSE = {
     "a1": {
         1: "abc_and_numbers.pdf",
@@ -738,6 +741,25 @@ def save_team_overrides(items: list[dict]) -> bool:
         return True
     except OSError:
         return False
+
+def load_partners() -> list[dict]:
+    if not PARTNERS_PATH.exists():
+        return []
+    try:
+        raw_text = PARTNERS_PATH.read_text(encoding="utf-8-sig")
+        payload = json.loads(raw_text)
+    except (OSError, json.JSONDecodeError):
+        return []
+    return [item for item in payload if isinstance(item, dict)]
+
+
+def save_partners(items: list[dict]) -> bool:
+    try:
+        atomic_write_text(PARTNERS_PATH, json.dumps(items, ensure_ascii=False, indent=2))
+        return True
+    except OSError:
+        return False
+
 
 def is_admin_user(conn: sqlite3.Connection, username: str) -> bool:
     cleaned = str(username or "").strip()
@@ -2838,6 +2860,65 @@ class Handler(BaseHTTPRequestHandler):
             if not file_path.exists():
                 self._set_headers(404)
                 self.wfile.write(json.dumps({"error": "avatar missing on disk"}).encode("utf-8"))
+                return
+            data = file_path.read_bytes()
+            content_type, _ = mimetypes.guess_type(file_path.name)
+            self.send_response(200)
+            self.send_header("Content-Type", content_type or "application/octet-stream")
+            self.send_header("Access-Control-Allow-Origin", "*")
+            self.end_headers()
+            self.wfile.write(data)
+            return
+
+        if parsed.path == "/api/partners":
+            partners = load_partners()
+            safe = []
+            for idx, item in enumerate(partners):
+                if not isinstance(item, dict):
+                    continue
+                pid = str(item.get("id", "") or "").strip()
+                name = str(item.get("name", "") or "").strip()
+                if not pid or not name:
+                    continue
+                logo_file = str(item.get("logo_file", "") or "").strip()
+                logo_url = f"/api/partners/logo?id={quote(pid)}" if logo_file else ""
+                safe.append({
+                    "id": pid,
+                    "name": name,
+                    "logo_url": logo_url,
+                    "order": _to_int_or(item.get("order"), idx),
+                })
+            safe.sort(key=lambda x: x["order"])
+            self._set_headers(200)
+            self.wfile.write(json.dumps({"items": safe}).encode("utf-8"))
+            return
+
+        if parsed.path == "/api/partners/logo":
+            params = {key: values[0] for key, values in parse_qs(parsed.query).items()}
+            pid = str(params.get("id", "") or "").strip()
+            if not pid:
+                self._set_headers(400)
+                self.wfile.write(json.dumps({"error": "id is required"}).encode("utf-8"))
+                return
+            partners = load_partners()
+            match = next((p for p in partners if isinstance(p, dict) and str(p.get("id", "") or "").strip() == pid), None)
+            if match is None:
+                self._set_headers(404)
+                self.wfile.write(json.dumps({"error": "partner not found"}).encode("utf-8"))
+                return
+            logo_file = str(match.get("logo_file", "") or "").strip()
+            if not logo_file:
+                self._set_headers(404)
+                self.wfile.write(json.dumps({"error": "logo not found"}).encode("utf-8"))
+                return
+            file_path = (PARTNER_LOGO_UPLOAD_DIR / logo_file).resolve()
+            try:
+                file_path.relative_to(PARTNER_LOGO_UPLOAD_DIR.resolve())
+            except ValueError:
+                self._set_headers(403)
+                return
+            if not file_path.exists():
+                self._set_headers(404)
                 return
             data = file_path.read_bytes()
             content_type, _ = mimetypes.guess_type(file_path.name)
@@ -5090,6 +5171,87 @@ class Handler(BaseHTTPRequestHandler):
                 next_items.append(safe)
 
             if not save_team_overrides(next_items):
+                self._set_headers(500)
+                self.wfile.write(json.dumps({"error": "save_failed"}).encode("utf-8"))
+                return
+            self._set_headers(200)
+            self.wfile.write(json.dumps({"ok": True, "count": len(next_items)}).encode("utf-8"))
+            return
+
+        if self.path == "/api/admin/partners/logo/upload":
+            data = self._read_json()
+            file_name = str(data.get("file_name", "")).strip()
+            file_data = str(data.get("file_data", "")).strip()
+            if not file_data:
+                self._set_headers(400)
+                self.wfile.write(json.dumps({"error": "file_data is required"}).encode("utf-8"))
+                return
+            try:
+                _, b64_data = file_data.split(",", 1)
+            except ValueError:
+                b64_data = file_data
+            try:
+                blob = base64.b64decode(b64_data, validate=False)
+            except (ValueError, TypeError):
+                self._set_headers(400)
+                self.wfile.write(json.dumps({"error": "invalid_file_data"}).encode("utf-8"))
+                return
+            if len(blob) <= 0 or len(blob) > MAX_COVER_BYTES:
+                self._set_headers(400)
+                self.wfile.write(json.dumps({"error": "file_too_large"}).encode("utf-8"))
+                return
+            ext = Path(file_name).suffix.lower() if file_name else ".png"
+            if ext not in ALLOWED_COVER_EXTENSIONS:
+                ext = ".png"
+            safe_stem = re.sub(r"[^A-Za-z0-9_-]", "_", Path(file_name).stem)[:40] or "partner"
+            stamp = datetime.now(timezone.utc).strftime("%Y%m%d%H%M%S")
+            token = secrets.token_hex(6)
+            out_name = f"{safe_stem}_{stamp}_{token}{ext}"
+            out_path = PARTNER_LOGO_UPLOAD_DIR / out_name
+            conn = get_connection()
+            if not self._require_admin(conn):
+                conn.close()
+                return
+            conn.close()
+            try:
+                out_path.write_bytes(blob)
+            except OSError:
+                self._set_headers(500)
+                self.wfile.write(json.dumps({"error": "upload_failed"}).encode("utf-8"))
+                return
+            self._set_headers(200)
+            self.wfile.write(json.dumps({"ok": True, "file": out_name}).encode("utf-8"))
+            return
+
+        if self.path == "/api/admin/partners/set-all":
+            data = self._read_json()
+            raw_items = data.get("items", None)
+            if not isinstance(raw_items, list):
+                self._set_headers(400)
+                self.wfile.write(json.dumps({"error": "items are required"}).encode("utf-8"))
+                return
+            conn = get_connection()
+            if not self._require_admin(conn):
+                conn.close()
+                return
+            conn.close()
+            next_items: list[dict] = []
+            seen_ids: set[str] = set()
+            existing = {str(p.get("id", "") or "").strip(): p for p in load_partners() if isinstance(p, dict)}
+            for idx, item in enumerate(raw_items[:200]):
+                if not isinstance(item, dict):
+                    continue
+                pid = str(item.get("id", "") or "").strip()
+                name = str(item.get("name", "") or "").strip()
+                if not pid or not name:
+                    continue
+                if pid in seen_ids:
+                    continue
+                seen_ids.add(pid)
+                prev = existing.get(pid, {})
+                logo_file = str(item.get("logo_file", "") or prev.get("logo_file", "") or "").strip()
+                next_items.append({"id": pid, "name": name, "logo_file": logo_file, "order": idx})
+            if not save_partners(next_items):
                 self._set_headers(500)
                 self.wfile.write(json.dumps({"error": "save_failed"}).encode("utf-8"))
                 return
