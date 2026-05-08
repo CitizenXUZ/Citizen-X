@@ -17536,11 +17536,12 @@ document.addEventListener("keydown", (event) => {
 
   loadPartners();
 
-  // ── Show edit button for admins ──
+  // ── Show edit button for admins (always show strip for admins) ──
   const maybeShowEditBtn = () => {
     const role = getLocalAuthRole();
     if (role === "admin" && editBtn) {
       editBtn.hidden = false;
+      strip.hidden = false; // show strip even if no partners yet
     }
   };
   maybeShowEditBtn();
