@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "question": "I ____ study harder next month.",
+    "options": {
+      "A": "will",
+      "B": "am",
+      "C": "was",
+      "D": "did"
+    },
+    "correct": "A",
+    "explanation": "Look at the time words. “Next month” tells us it is the future, so we need the Future Simple pattern: a future helper word + the base verb.",
+    "explanation_simple": "“Next month” = future. Use: future helper + base verb (study).",
+    "explanation_detailed": "1) Find the time clue: “next month” means the action happens in the future.\n2) For Future Simple, English uses a special small helper word to show the future, and then we keep the main verb in its base (dictionary) form.\n3) The base verb is the simplest form: no -s, no -ed, no -ing.\nNow choose the option that has the future helper and then the base verb “study”.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 2,
+    "question": "She ____ not come to school tomorrow.",
+    "options": {
+      "A": "will",
+      "B": "willn't",
+      "C": "was",
+      "D": "doesn't"
+    },
+    "correct": "A",
+    "explanation": "“Tomorrow” shows the future. In a Future Simple negative, we put NOT after the future helper word, then the base verb.",
+    "explanation_simple": "Future + NOT: future helper + not + base verb.",
+    "explanation_detailed": "1) “Tomorrow” is a future time word.\n2) To make Future Simple negative, English uses: future helper + not + base verb.\n3) Be careful: we do not make a negative by adding random letters to the helper word.\nChoose the option that follows the correct order and keeps the verb in base form (come).",
+    "explanation_translations": {}
+  },
+  {
+    "id": 3,
+    "question": "____ you go to the cinema with us?",
+    "options": {
+      "A": "Do",
+      "B": "Will",
+      "C": "Are",
+      "D": "Did"
+    },
+    "correct": "B",
+    "explanation": "This is a question about the future. In Future Simple questions, the future helper word goes first, then the subject (you), then the base verb.",
+    "explanation_simple": "Future question: helper first + you + base verb.",
+    "explanation_detailed": "1) This sentence is a question (it has a question mark).\n2) It asks about something that can happen later (a plan/invitation).\n3) In Future Simple questions, English usually puts the future helper word at the start: helper + subject + base verb.\n4) Options like “Do/Did” are for present/past, and “Are” is for ‘now’ or for a different tense.\nChoose the option that matches the Future Simple question pattern.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 4,
+    "question": "We ____ be at home in the evening.",
+    "options": {
+      "A": "will",
+      "B": "are",
+      "C": "were",
+      "D": "do"
+    },
+    "correct": "A",
+    "explanation": "The phrase “in the evening” can talk about a future plan. For Future Simple, use the future helper word + the base verb. The verb “be” stays “be” after the helper.",
+    "explanation_simple": "Future Simple: helper + be.",
+    "explanation_detailed": "1) Think: is this about now, the past, or the future? Here it sounds like a plan for later.\n2) Future Simple uses: future helper + base verb.\n3) “Be” is special, but after the future helper it stays in the base form “be” (it does not change to is/are).\nChoose the option that shows the future helper and then “be”.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 5,
+    "question": "He ____ help you with your homework.",
+    "options": {
+      "A": "will",
+      "B": "is",
+      "C": "has",
+      "D": "does"
+    },
+    "correct": "A",
+    "explanation": "This sentence talks about help in the future. Future Simple uses a future helper word before the base verb “help”.",
+    "explanation_simple": "Use Future Simple: helper + base verb (help).",
+    "explanation_detailed": "1) The sentence is about a promise or decision about later.\n2) For Future Simple, we put a future helper word before the main verb.\n3) The main verb stays in base form: help (not helps / helped / helping).\nChoose the option that follows this pattern.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 6,
+    "question": "I think it ____ rain tomorrow.",
+    "options": {
+      "A": "is",
+      "B": "will",
+      "C": "was",
+      "D": "does"
+    },
+    "correct": "B",
+    "explanation": "“Tomorrow” is future, and “I think” shows a prediction. Predictions often use Future Simple: future helper word + base verb.",
+    "explanation_simple": "Prediction + tomorrow → Future Simple.",
+    "explanation_detailed": "1) “Tomorrow” tells us the time is in the future.\n2) “I think …” means it is a guess/prediction.\n3) A common way to talk about predictions is Future Simple: future helper + base verb.\n4) Keep the verb in base form: rain.\nChoose the option that matches this structure.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 7,
+    "question": "They ____ travel to Dubai next year.",
+    "options": {
+      "A": "will",
+      "B": "were",
+      "C": "did",
+      "D": "do"
+    },
+    "correct": "A",
+    "explanation": "“Next year” is future. Use Future Simple: future helper word + base verb “travel”.",
+    "explanation_simple": "Next year = future → helper + travel.",
+    "explanation_detailed": "1) Find the future clue: “next year”.\n2) Future Simple uses a helper word to show the future.\n3) After that helper, the main verb stays base: travel.\nChoose the option that has the future helper and the base verb.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 8,
+    "question": "____ she be at the meeting tomorrow?",
+    "options": {
+      "A": "Does",
+      "B": "Will",
+      "C": "Is",
+      "D": "Was"
+    },
+    "correct": "B",
+    "explanation": "This is a future question (“tomorrow”). In Future Simple questions, the future helper word goes first, then the subject, then the base verb. After the helper we use “be”, not is/are.",
+    "explanation_simple": "Future question: helper + she + be … ?",
+    "explanation_detailed": "1) “Tomorrow” tells us it is the future.\n2) This is a question, so the helper comes first.\n3) Future Simple question order: future helper + subject + base verb.\n4) With the verb “be”, after the helper we use the base form “be”.\nChoose the option that matches this word order.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 9,
+    "question": "I ____ call you when I arrive.",
+    "options": {
+      "A": "will",
+      "B": "am",
+      "C": "was",
+      "D": "did"
+    },
+    "correct": "A",
+    "explanation": "This is a promise about the future. The main part uses Future Simple: future helper word + base verb “call”.",
+    "explanation_simple": "Future promise: helper + call.",
+    "explanation_detailed": "1) The sentence is about a future moment: you plan to call later.\n2) In the main clause, Future Simple is used: future helper + base verb.\n3) Notice “when I arrive” is a time clause. In English, after words like “when”, we often use a present form to talk about the future time.\n4) But the blank is in the main clause, so choose the option that makes the main clause Future Simple.\nPick the option that uses the future helper and keeps “call” in base form.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 10,
+    "question": "He ____ play football next weekend.",
+    "options": {
+      "A": "will not",
+      "B": "not will",
+      "C": "don't",
+      "D": "didn't"
+    },
+    "correct": "A",
+    "explanation": "“Next weekend” is future. For a Future Simple negative, the order is: future helper + not + base verb.",
+    "explanation_simple": "Negative future: helper + not + base verb.",
+    "explanation_detailed": "1) “Next weekend” tells us it is in the future.\n2) The sentence is negative (it means he does NOT do the action).\n3) In Future Simple negatives, English puts “not” after the future helper, not before it.\n4) The main verb stays in base form: play.\nChoose the option with the correct order and the base verb.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 11,
+    "question": "We ____ visit our grandparents on Sunday.",
+    "options": {
+      "A": "will",
+      "B": "do",
+      "C": "are",
+      "D": "did"
+    },
+    "correct": "A",
+    "explanation": "“On Sunday” can be a future plan. Use Future Simple: future helper word + base verb “visit”.",
+    "explanation_simple": "Future plan: helper + visit.",
+    "explanation_detailed": "1) The time phrase “on Sunday” tells us when.\n2) If Sunday is in the future, we need Future Simple.\n3) Future Simple structure: future helper + base verb.\n4) Keep “visit” in base form.\nChoose the option that matches this pattern.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 12,
+    "question": "____ they come to the party tonight?",
+    "options": {
+      "A": "Do",
+      "B": "Are",
+      "C": "Will",
+      "D": "Were"
+    },
+    "correct": "C",
+    "explanation": "This is a question about the future (“tonight”). In Future Simple questions, the helper goes first, then subject, then base verb.",
+    "explanation_simple": "Future question: helper first + they + come.",
+    "explanation_detailed": "1) “Tonight” is a future time (later today).\n2) It is a question, so the helper word goes at the start.\n3) Future Simple question order: future helper + subject + base verb.\n4) Other helpers like “Do/Did/Are” belong to other tenses.\nChoose the option that fits the Future Simple question pattern.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 13,
+    "question": "She ____ be a doctor in the future.",
+    "options": {
+      "A": "is",
+      "B": "will",
+      "C": "was",
+      "D": "are"
+    },
+    "correct": "B",
+    "explanation": "“In the future” tells us to use Future Simple. With “be”, we still use the base form “be” after the future helper word.",
+    "explanation_simple": "Future Simple with “be”: helper + be.",
+    "explanation_detailed": "1) The sentence clearly says “in the future”, so the time is future.\n2) Future Simple uses: future helper + base verb.\n3) The verb “be” is special: after the future helper we use “be” (not is/are/was).\nChoose the option that matches this structure.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 14,
+    "question": "I ____ go to bed early tonight.",
+    "options": {
+      "A": "am",
+      "B": "will",
+      "C": "was",
+      "D": "did"
+    },
+    "correct": "B",
+    "explanation": "“Tonight” is future time. Use Future Simple: a future helper word + base verb “go”.",
+    "explanation_simple": "Tonight = future → helper + go.",
+    "explanation_detailed": "1) “Tonight” tells us when: later today.\n2) Because the action happens later, we use Future Simple.\n3) Future Simple puts a future helper word before the main verb.\n4) The main verb stays base: go.\nChoose the option that follows this pattern (future helper + go).",
+    "explanation_translations": {}
+  },
+  {
+    "id": 15,
+    "question": "He ____ not be late again.",
+    "options": {
+      "A": "will",
+      "B": "is",
+      "C": "don't",
+      "D": "doesn't"
+    },
+    "correct": "A",
+    "explanation": "This is a Future Simple negative with the verb “be”. Use: future helper + not + be.",
+    "explanation_simple": "Negative future with “be”: helper + not + be.",
+    "explanation_detailed": "1) The sentence is negative because it has “not”.\n2) It talks about the future (a promise like “again / later”).\n3) Future Simple negative structure is: future helper + not + base verb.\n4) When the verb is “be”, after the helper we keep it as “be”.\nChoose the option that has the correct order and uses “be” after the helper.",
+    "explanation_translations": {}
+  }
+]

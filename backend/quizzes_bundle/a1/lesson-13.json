@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "question": "Fill in the blank: The cat is hiding ___ the sofa.",
+    "options": {
+      "A": "in",
+      "B": "under",
+      "C": "between",
+      "D": "on"
+    },
+    "correct": "B",
+    "explanation": "Prepositions of place tell where something is. Make a small picture in your head, then choose the option that matches the position.",
+    "explanation_simple": "Match the meaning: inside / on top / under / behind / in front / between / next to / near / at.",
+    "explanation_detailed": "Step 1: Read the sentence and imagine the picture. Here we need: below.\nStep 2: A preposition of place is a small word that answers: “Where is it?”\nStep 3: Now eliminate options that mean a different place (for example: inside vs on top vs below vs between two things).\nStep 4: - in: means inside (not outside) (so it does not fit this picture).\nStep 5: - between: means in the middle of two things (so it does not fit this picture).\nStep 6: - on: means touching a surface / on top (so it does not fit this picture).\nStep 7: Choose the one option left whose meaning matches the picture.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 2,
+    "question": "Fill in the blank: There is a picture ___ the wall above the bed.",
+    "options": {
+      "A": "on",
+      "B": "in",
+      "C": "under",
+      "D": "behind"
+    },
+    "correct": "A",
+    "explanation": "Prepositions of place tell where something is. Make a small picture in your head, then choose the option that matches the position.",
+    "explanation_simple": "Match the meaning: inside / on top / under / behind / in front / between / next to / near / at.",
+    "explanation_detailed": "Step 1: Read the sentence and imagine the picture. Here we need: touching a surface / on top.\nStep 2: A preposition of place is a small word that answers: “Where is it?”\nStep 3: Now eliminate options that mean a different place (for example: inside vs on top vs below vs between two things).\nStep 4: - in: means inside (not outside) (so it does not fit this picture).\nStep 5: - under: means below (so it does not fit this picture).\nStep 6: - behind: means at the back (so it does not fit this picture).\nStep 7: Choose the one option left whose meaning matches the picture.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 3,
+    "question": "Fill in the blank: Choose the correct preposition: The teacher is standing ___ the students.",
+    "options": {
+      "A": "above",
+      "B": "under",
+      "C": "inside",
+      "D": "in front of"
+    },
+    "correct": "D",
+    "explanation": "Prepositions of place tell where something is. Make a small picture in your head, then choose the option that matches the position.",
+    "explanation_simple": "Match the meaning: inside / on top / under / behind / in front / between / next to / near / at.",
+    "explanation_detailed": "Step 1: Read the sentence and imagine the picture. Here we need: at the front (before it).\nStep 2: A preposition of place is a small word that answers: “Where is it?”\nStep 3: Now eliminate options that mean a different place (for example: inside vs on top vs below vs between two things).\nStep 4: - above: means higher than something (so it does not fit this picture).\nStep 5: - under: means below (so it does not fit this picture).\nStep 6: - inside: means inside (so it does not fit this picture).\nStep 7: Choose the one option left whose meaning matches the picture.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 4,
+    "question": "Fill in the blank: There is a small shop ___ the corner.",
+    "options": {
+      "A": "inside",
+      "B": "in",
+      "C": "at",
+      "D": "near"
+    },
+    "correct": "C",
+    "explanation": "Prepositions of place tell where something is. Make a small picture in your head, then choose the option that matches the position.",
+    "explanation_simple": "Match the meaning: inside / on top / under / behind / in front / between / next to / near / at.",
+    "explanation_detailed": "Step 1: Read the sentence and imagine the picture. Here we need: at a specific point/place (at the corner, at the door).\nStep 2: A preposition of place is a small word that answers: “Where is it?”\nStep 3: Now eliminate options that mean a different place (for example: inside vs on top vs below vs between two things).\nStep 4: - inside: means inside (so it does not fit this picture).\nStep 5: - in: means inside (not outside) (so it does not fit this picture).\nStep 6: - near: means close (but not necessarily touching) (so it does not fit this picture).\nStep 7: Choose the one option left whose meaning matches the picture.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 5,
+    "question": "Fill in the blank: The books are ___ the shelf.",
+    "options": {
+      "A": "in",
+      "B": "on",
+      "C": "between",
+      "D": "under"
+    },
+    "correct": "B",
+    "explanation": "Prepositions of place tell where something is. Make a small picture in your head, then choose the option that matches the position.",
+    "explanation_simple": "Match the meaning: inside / on top / under / behind / in front / between / next to / near / at.",
+    "explanation_detailed": "Step 1: Read the sentence and imagine the picture. Here we need: touching a surface / on top.\nStep 2: A preposition of place is a small word that answers: “Where is it?”\nStep 3: Now eliminate options that mean a different place (for example: inside vs on top vs below vs between two things).\nStep 4: - in: means inside (not outside) (so it does not fit this picture).\nStep 5: - between: means in the middle of two things (so it does not fit this picture).\nStep 6: - under: means below (so it does not fit this picture).\nStep 7: Choose the one option left whose meaning matches the picture.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 6,
+    "question": "Fill in the blank: Your shoes are ___ the table! Please move them.",
+    "options": {
+      "A": "on",
+      "B": "inside",
+      "C": "between",
+      "D": "next"
+    },
+    "correct": "A",
+    "explanation": "Prepositions of place tell where something is. Make a small picture in your head, then choose the option that matches the position.",
+    "explanation_simple": "Match the meaning: inside / on top / under / behind / in front / between / next to / near / at.",
+    "explanation_detailed": "Step 1: Read the sentence and imagine the picture. Here we need: touching a surface / on top.\nStep 2: A preposition of place is a small word that answers: “Where is it?”\nStep 3: Now eliminate options that mean a different place (for example: inside vs on top vs below vs between two things).\nStep 4: - inside: means inside (so it does not fit this picture).\nStep 5: - between: means in the middle of two things (so it does not fit this picture).\nStep 6: - next: means beside / next to (so it does not fit this picture).\nStep 7: Choose the one option left whose meaning matches the picture.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 7,
+    "question": "Fill in the blank: There's a new café ___ my house.",
+    "options": {
+      "A": "inside",
+      "B": "near",
+      "C": "between",
+      "D": "above"
+    },
+    "correct": "B",
+    "explanation": "Prepositions of place tell where something is. Make a small picture in your head, then choose the option that matches the position.",
+    "explanation_simple": "Match the meaning: inside / on top / under / behind / in front / between / next to / near / at.",
+    "explanation_detailed": "Step 1: Read the sentence and imagine the picture. Here we need: close (but not necessarily touching).\nStep 2: A preposition of place is a small word that answers: “Where is it?”\nStep 3: Now eliminate options that mean a different place (for example: inside vs on top vs below vs between two things).\nStep 4: - inside: means inside (so it does not fit this picture).\nStep 5: - between: means in the middle of two things (so it does not fit this picture).\nStep 6: - above: means higher than something (so it does not fit this picture).\nStep 7: Choose the one option left whose meaning matches the picture.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 8,
+    "question": "Fill in the blank: The ball is ___ the two boxes.",
+    "options": {
+      "A": "behind",
+      "B": "between",
+      "C": "next to",
+      "D": "under"
+    },
+    "correct": "B",
+    "explanation": "Prepositions of place tell where something is. Make a small picture in your head, then choose the option that matches the position.",
+    "explanation_simple": "Match the meaning: inside / on top / under / behind / in front / between / next to / near / at.",
+    "explanation_detailed": "Step 1: Read the sentence and imagine the picture. Here we need: in the middle of two things.\nStep 2: A preposition of place is a small word that answers: “Where is it?”\nStep 3: Now eliminate options that mean a different place (for example: inside vs on top vs below vs between two things).\nStep 4: - behind: means at the back (so it does not fit this picture).\nStep 5: - next to: means very close at the side (beside) (so it does not fit this picture).\nStep 6: - under: means below (so it does not fit this picture).\nStep 7: Choose the one option left whose meaning matches the picture.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 9,
+    "question": "Fill in the blank: Choose the correct preposition: The lamp is ___ the table and the window.",
+    "options": {
+      "A": "under",
+      "B": "between",
+      "C": "behind",
+      "D": "above"
+    },
+    "correct": "B",
+    "explanation": "Prepositions of place tell where something is. Make a small picture in your head, then choose the option that matches the position.",
+    "explanation_simple": "Match the meaning: inside / on top / under / behind / in front / between / next to / near / at.",
+    "explanation_detailed": "Step 1: Read the sentence and imagine the picture. Here we need: in the middle of two things.\nStep 2: A preposition of place is a small word that answers: “Where is it?”\nStep 3: Now eliminate options that mean a different place (for example: inside vs on top vs below vs between two things).\nStep 4: - under: means below (so it does not fit this picture).\nStep 5: - behind: means at the back (so it does not fit this picture).\nStep 6: - above: means higher than something (so it does not fit this picture).\nStep 7: Choose the one option left whose meaning matches the picture.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 10,
+    "question": "Fill in the blank: The dog is sitting ___ its owner.",
+    "options": {
+      "A": "next to",
+      "B": "inside",
+      "C": "under",
+      "D": "in"
+    },
+    "correct": "A",
+    "explanation": "Prepositions of place tell where something is. Make a small picture in your head, then choose the option that matches the position.",
+    "explanation_simple": "Match the meaning: inside / on top / under / behind / in front / between / next to / near / at.",
+    "explanation_detailed": "Step 1: Read the sentence and imagine the picture. Here we need: very close at the side (beside).\nStep 2: A preposition of place is a small word that answers: “Where is it?”\nStep 3: Now eliminate options that mean a different place (for example: inside vs on top vs below vs between two things).\nStep 4: - inside: means inside (so it does not fit this picture).\nStep 5: - under: means below (so it does not fit this picture).\nStep 6: - in: means inside (not outside) (so it does not fit this picture).\nStep 7: Choose the one option left whose meaning matches the picture.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 11,
+    "question": "Choose the correct form: There's a picture _ the wall, not _ the floor.",
+    "options": {
+      "A": "on / in",
+      "B": "in / on",
+      "C": "on / under",
+      "D": "under / in"
+    },
+    "correct": "C",
+    "explanation": "Prepositions of place tell where something is. Make a small picture in your head, then choose the option that matches the position.",
+    "explanation_simple": "Match the meaning: inside / on top / under / behind / in front / between / next to / near / at.",
+    "explanation_detailed": "Step 1: This sentence has TWO blanks, so decide the place for each blank.\nStep 2: First blank (picture ___ wall): the picture is attached to a surface.\nStep 3: Second blank (not ___ floor): the floor is below; choose the word that shows “below”.\nStep 4: Now eliminate options by meaning:\nStep 5: - on / in: touching a surface / on top / inside (not outside)\nStep 6: - in / on: inside (not outside) / touching a surface / on top\nStep 7: - under / in: below / inside (not outside)",
+    "explanation_translations": {}
+  },
+  {
+    "id": 12,
+    "question": "Fill in the blank: The car is parked ___ the building, not in front of it.",
+    "options": {
+      "A": "above",
+      "B": "behind",
+      "C": "inside",
+      "D": "under"
+    },
+    "correct": "B",
+    "explanation": "Prepositions of place tell where something is. Make a small picture in your head, then choose the option that matches the position.",
+    "explanation_simple": "Match the meaning: inside / on top / under / behind / in front / between / next to / near / at.",
+    "explanation_detailed": "Step 1: Read the sentence and imagine the picture. Here we need: at the back.\nStep 2: A preposition of place is a small word that answers: “Where is it?”\nStep 3: Now eliminate options that mean a different place (for example: inside vs on top vs below vs between two things).\nStep 4: - above: means higher than something (so it does not fit this picture).\nStep 5: - inside: means inside (so it does not fit this picture).\nStep 6: - under: means below (so it does not fit this picture).\nStep 7: Choose the one option left whose meaning matches the picture.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 13,
+    "question": "Fill in the blank: My office is ___ the fifth floor.",
+    "options": {
+      "A": "at",
+      "B": "in",
+      "C": "on",
+      "D": "near"
+    },
+    "correct": "C",
+    "explanation": "Prepositions of place tell where something is. Make a small picture in your head, then choose the option that matches the position.",
+    "explanation_simple": "Match the meaning: inside / on top / under / behind / in front / between / next to / near / at.",
+    "explanation_detailed": "Step 1: Read the sentence and imagine the picture. Here we need: touching a surface / on top.\nStep 2: A preposition of place is a small word that answers: “Where is it?”\nStep 3: Now eliminate options that mean a different place (for example: inside vs on top vs below vs between two things).\nStep 4: - at: means at a specific point/place (at the corner, at the door) (so it does not fit this picture).\nStep 5: - in: means inside (not outside) (so it does not fit this picture).\nStep 6: - near: means close (but not necessarily touching) (so it does not fit this picture).\nStep 7: Choose the one option left whose meaning matches the picture.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 14,
+    "question": "Fill in the blank: The restaurant is ___ the bank and the pharmacy.",
+    "options": {
+      "A": "between",
+      "B": "behind",
+      "C": "next",
+      "D": "near"
+    },
+    "correct": "A",
+    "explanation": "Prepositions of place tell where something is. Make a small picture in your head, then choose the option that matches the position.",
+    "explanation_simple": "Match the meaning: inside / on top / under / behind / in front / between / next to / near / at.",
+    "explanation_detailed": "Step 1: Read the sentence and imagine the picture. Here we need: in the middle of two things.\nStep 2: A preposition of place is a small word that answers: “Where is it?”\nStep 3: Now eliminate options that mean a different place (for example: inside vs on top vs below vs between two things).\nStep 4: - behind: means at the back (so it does not fit this picture).\nStep 5: - next: means beside / next to (so it does not fit this picture).\nStep 6: - near: means close (but not necessarily touching) (so it does not fit this picture).\nStep 7: Choose the one option left whose meaning matches the picture.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 15,
+    "question": "Fill in the blank: The dog is sleeping ___ the bed.",
+    "options": {
+      "A": "inside",
+      "B": "under",
+      "C": "between",
+      "D": "near"
+    },
+    "correct": "B",
+    "explanation": "Prepositions of place tell where something is. Make a small picture in your head, then choose the option that matches the position.",
+    "explanation_simple": "Match the meaning: inside / on top / under / behind / in front / between / next to / near / at.",
+    "explanation_detailed": "Step 1: Read the sentence and imagine the picture. Here we need: below.\nStep 2: A preposition of place is a small word that answers: “Where is it?”\nStep 3: Now eliminate options that mean a different place (for example: inside vs on top vs below vs between two things).\nStep 4: - inside: means inside (so it does not fit this picture).\nStep 5: - between: means in the middle of two things (so it does not fit this picture).\nStep 6: - near: means close (but not necessarily touching) (so it does not fit this picture).\nStep 7: Choose the one option left whose meaning matches the picture.",
+    "explanation_translations": {}
+  }
+]

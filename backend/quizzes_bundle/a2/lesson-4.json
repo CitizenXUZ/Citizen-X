@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "question": "This is my ____ phone. (one brother)",
+    "options": {
+      "A": "brother",
+      "B": "brothers",
+      "C": "brother's",
+      "D": "brothers'"
+    },
+    "correct": "C",
+    "explanation": "The verb 'to be' changes with the subject and tense.",
+    "explanation_simple": "The verb 'to be' changes with the subject and tense.",
+    "explanation_detailed": "The verb 'to be' changes with the subject and tense.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 2,
+    "question": "The ____ books are on the table. (many students)",
+    "options": {
+      "A": "students",
+      "B": "student's",
+      "C": "students'",
+      "D": "student"
+    },
+    "correct": "C",
+    "explanation": "The verb 'to be' changes with the subject and tense.",
+    "explanation_simple": "The verb 'to be' changes with the subject and tense.",
+    "explanation_detailed": "The verb 'to be' changes with the subject and tense.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 3,
+    "question": "My ____ car is very old. (both parents)",
+    "options": {
+      "A": "parents",
+      "B": "parent's",
+      "C": "parents'",
+      "D": "parent"
+    },
+    "correct": "C",
+    "explanation": "The verb 'to be' changes with the subject and tense.",
+    "explanation_simple": "The verb 'to be' changes with the subject and tense.",
+    "explanation_detailed": "The verb 'to be' changes with the subject and tense.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 4,
+    "question": "A friend ____ mine lives in Samarkand.",
+    "options": {
+      "A": "of",
+      "B": "from",
+      "C": "to",
+      "D": "about"
+    },
+    "correct": "A",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 5,
+    "question": "____ house is next to the river.",
+    "options": {
+      "A": "Ali",
+      "B": "Alis",
+      "C": "Ali's",
+      "D": "Alis'"
+    },
+    "correct": "C",
+    "explanation": "The verb 'to be' changes with the subject and tense.",
+    "explanation_simple": "The verb 'to be' changes with the subject and tense.",
+    "explanation_detailed": "The verb 'to be' changes with the subject and tense.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 6,
+    "question": "The ____ names are written on the wall.",
+    "options": {
+      "A": "children",
+      "B": "childrens",
+      "C": "children's",
+      "D": "childrens'"
+    },
+    "correct": "C",
+    "explanation": "The verb 'to be' changes with the subject and tense.",
+    "explanation_simple": "The verb 'to be' changes with the subject and tense.",
+    "explanation_detailed": "The verb 'to be' changes with the subject and tense.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 7,
+    "question": "____ and Laylo's project got the highest mark. (one project)",
+    "options": {
+      "A": "Bobur",
+      "B": "Bobur's",
+      "C": "Boburs",
+      "D": "Bobur'"
+    },
+    "correct": "A",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 8,
+    "question": "The ____ color is blue. (one car)",
+    "options": {
+      "A": "car",
+      "B": "cars",
+      "C": "car's",
+      "D": "cars'"
+    },
+    "correct": "C",
+    "explanation": "The verb 'to be' changes with the subject and tense.",
+    "explanation_simple": "The verb 'to be' changes with the subject and tense.",
+    "explanation_detailed": "The verb 'to be' changes with the subject and tense.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 9,
+    "question": "These are my ____ rooms. (several friends)",
+    "options": {
+      "A": "friends",
+      "B": "friend's",
+      "C": "friends'",
+      "D": "friend"
+    },
+    "correct": "C",
+    "explanation": "The verb 'to be' changes with the subject and tense.",
+    "explanation_simple": "The verb 'to be' changes with the subject and tense.",
+    "explanation_detailed": "The verb 'to be' changes with the subject and tense.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 10,
+    "question": "A car ____ yours is very fast.",
+    "options": {
+      "A": "to",
+      "B": "from",
+      "C": "of",
+      "D": "about"
+    },
+    "correct": "C",
+    "explanation": "The verb 'to be' changes with the subject and tense.",
+    "explanation_simple": "The verb 'to be' changes with the subject and tense.",
+    "explanation_detailed": "The verb 'to be' changes with the subject and tense.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 11,
+    "question": "The ____ food is delicious. (one restaurant)",
+    "options": {
+      "A": "restaurant",
+      "B": "restaurants",
+      "C": "restaurant's",
+      "D": "restaurants'"
+    },
+    "correct": "C",
+    "explanation": "The verb 'to be' changes with the subject and tense.",
+    "explanation_simple": "The verb 'to be' changes with the subject and tense.",
+    "explanation_detailed": "The verb 'to be' changes with the subject and tense.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 12,
+    "question": "The ____ uniform is green. (one soldier)",
+    "options": {
+      "A": "soldiers",
+      "B": "soldiers'",
+      "C": "soldier",
+      "D": "soldier's"
+    },
+    "correct": "D",
+    "explanation": "The verb 'to be' changes with the subject and tense.",
+    "explanation_simple": "The verb 'to be' changes with the subject and tense.",
+    "explanation_detailed": "The verb 'to be' changes with the subject and tense.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 13,
+    "question": "____ bag is on the chair. (one sister)",
+    "options": {
+      "A": "My sister",
+      "B": "My sisters",
+      "C": "My sisters'",
+      "D": "My sister's"
+    },
+    "correct": "D",
+    "explanation": "The verb 'to be' changes with the subject and tense.",
+    "explanation_simple": "The verb 'to be' changes with the subject and tense.",
+    "explanation_detailed": "The verb 'to be' changes with the subject and tense.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 14,
+    "question": "The ____ windows are open. (one school)",
+    "options": {
+      "A": "school",
+      "B": "school's",
+      "C": "schools",
+      "D": "schools'"
+    },
+    "correct": "B",
+    "explanation": "The verb 'to be' changes with the subject and tense.",
+    "explanation_simple": "The verb 'to be' changes with the subject and tense.",
+    "explanation_detailed": "The verb 'to be' changes with the subject and tense.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 15,
+    "question": "The ____ door is painted red. (one teacher)",
+    "options": {
+      "A": "teacher's room",
+      "B": "teachers room",
+      "C": "teachers' room",
+      "D": "teacher room"
+    },
+    "correct": "A",
+    "explanation": "The verb 'to be' changes with the subject and tense.",
+    "explanation_simple": "The verb 'to be' changes with the subject and tense.",
+    "explanation_detailed": "The verb 'to be' changes with the subject and tense.",
+    "explanation_translations": {}
+  }
+]

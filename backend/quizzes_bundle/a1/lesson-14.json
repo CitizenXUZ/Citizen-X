@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "question": "Choose the correct sentence:",
+    "options": {
+      "A": "I help he.",
+      "B": "I help him.",
+      "C": "I help he's.",
+      "D": "I help his."
+    },
+    "correct": "B",
+    "explanation": "This lesson is about object pronouns (me/him/her/us/them). After a verb (help, love, know, see), we usually use an object pronoun, not a subject pronoun (I/he/she/we/they).",
+    "explanation_simple": "After a verb → use object pronoun: me/him/her/us/them.",
+    "explanation_detailed": "Step 1: Find the verb (help, love, know, see, call…).\nStep 2: Ask: Who receives the action? (That person is the object.)\nStep 3: Use an object pronoun for the object: me/him/her/us/them.\nStep 4: Do not use subject pronouns (I/he/she/we/they) after a verb in this position.\nStep 5: Do not use possessives (my/his/her/their) because they show ownership, not the object.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 2,
+    "question": "Fill in the blank: She loves ___.",
+    "options": {
+      "A": "he",
+      "B": "him",
+      "C": "his",
+      "D": "her"
+    },
+    "correct": "B",
+    "explanation": "This lesson is about object pronouns (me/him/her/us/them). After a verb (help, love, know, see), we usually use an object pronoun, not a subject pronoun (I/he/she/we/they).",
+    "explanation_simple": "After a verb → use object pronoun: me/him/her/us/them.",
+    "explanation_detailed": "Step 1: Find the verb (help, love, know, see, call…).\nStep 2: Ask: Who receives the action? (That person is the object.)\nStep 3: Use an object pronoun for the object: me/him/her/us/them.\nStep 4: Do not use subject pronouns (I/he/she/we/they) after a verb in this position.\nStep 5: Do not use possessives (my/his/her/their) because they show ownership, not the object.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 3,
+    "question": "Fill in the blank: They know ___.",
+    "options": {
+      "A": "we",
+      "B": "us",
+      "C": "ours",
+      "D": "ourselves"
+    },
+    "correct": "B",
+    "explanation": "This lesson is about object pronouns (me/him/her/us/them). After a verb (help, love, know, see), we usually use an object pronoun, not a subject pronoun (I/he/she/we/they).",
+    "explanation_simple": "After a verb → use object pronoun: me/him/her/us/them.",
+    "explanation_detailed": "Step 1: Find the verb (help, love, know, see, call…).\nStep 2: Ask: Who receives the action? (That person is the object.)\nStep 3: Use an object pronoun for the object: me/him/her/us/them.\nStep 4: Do not use subject pronouns (I/he/she/we/they) after a verb in this position.\nStep 5: Do not use possessives (my/his/her/their) because they show ownership, not the object.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 4,
+    "question": "Choose the correct sentence:",
+    "options": {
+      "A": "He listens we.",
+      "B": "He listens us.",
+      "C": "He listens our.",
+      "D": "He listens they."
+    },
+    "correct": "B",
+    "explanation": "This lesson is about object pronouns (me/him/her/us/them). After a verb (help, love, know, see), we usually use an object pronoun, not a subject pronoun (I/he/she/we/they).",
+    "explanation_simple": "After a verb → use object pronoun: me/him/her/us/them.",
+    "explanation_detailed": "Step 1: Find the verb (help, love, know, see, call…).\nStep 2: Ask: Who receives the action? (That person is the object.)\nStep 3: Use an object pronoun for the object: me/him/her/us/them.\nStep 4: Do not use subject pronouns (I/he/she/we/they) after a verb in this position.\nStep 5: Do not use possessives (my/his/her/their) because they show ownership, not the object.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 5,
+    "question": "Fill in the blank: My parents support ___.",
+    "options": {
+      "A": "me",
+      "B": "I",
+      "C": "mine",
+      "D": "myself"
+    },
+    "correct": "A",
+    "explanation": "This lesson is about object pronouns (me/him/her/us/them). After a verb (help, love, know, see), we usually use an object pronoun, not a subject pronoun (I/he/she/we/they).",
+    "explanation_simple": "After a verb → use object pronoun: me/him/her/us/them.",
+    "explanation_detailed": "Step 1: Find the verb (help, love, know, see, call…).\nStep 2: Ask: Who receives the action? (That person is the object.)\nStep 3: Use an object pronoun for the object: me/him/her/us/them.\nStep 4: Do not use subject pronouns (I/he/she/we/they) after a verb in this position.\nStep 5: Do not use possessives (my/his/her/their) because they show ownership, not the object.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 6,
+    "question": "Choose the correct sentence:",
+    "options": {
+      "A": "I don't understand she.",
+      "B": "I don't understand her.",
+      "C": "I don't understand hers.",
+      "D": "I don't understand she's."
+    },
+    "correct": "B",
+    "explanation": "This lesson is about object pronouns (me/him/her/us/them). After a verb (help, love, know, see), we usually use an object pronoun, not a subject pronoun (I/he/she/we/they).",
+    "explanation_simple": "After a verb → use object pronoun: me/him/her/us/them.",
+    "explanation_detailed": "Step 1: Find the verb (help, love, know, see, call…).\nStep 2: Ask: Who receives the action? (That person is the object.)\nStep 3: Use an object pronoun for the object: me/him/her/us/them.\nStep 4: Do not use subject pronouns (I/he/she/we/they) after a verb in this position.\nStep 5: Do not use possessives (my/his/her/their) because they show ownership, not the object.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 7,
+    "question": "Fill in the blank: Can you help ___",
+    "options": {
+      "A": "I",
+      "B": "me",
+      "C": "my",
+      "D": "mine"
+    },
+    "correct": "B",
+    "explanation": "This lesson is about object pronouns (me/him/her/us/them). After a verb (help, love, know, see), we usually use an object pronoun, not a subject pronoun (I/he/she/we/they).",
+    "explanation_simple": "After a verb → use object pronoun: me/him/her/us/them.",
+    "explanation_detailed": "Step 1: Find the verb (help, love, know, see, call…).\nStep 2: Ask: Who receives the action? (That person is the object.)\nStep 3: Use an object pronoun for the object: me/him/her/us/them.\nStep 4: Do not use subject pronouns (I/he/she/we/they) after a verb in this position.\nStep 5: Do not use possessives (my/his/her/their) because they show ownership, not the object.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 8,
+    "question": "Fill in the blank: He always believes ___.",
+    "options": {
+      "A": "they",
+      "B": "them",
+      "C": "their",
+      "D": "theirs"
+    },
+    "correct": "B",
+    "explanation": "This lesson is about object pronouns (me/him/her/us/them). After a verb (help, love, know, see), we usually use an object pronoun, not a subject pronoun (I/he/she/we/they).",
+    "explanation_simple": "After a verb → use object pronoun: me/him/her/us/them.",
+    "explanation_detailed": "Step 1: Find the verb (help, love, know, see, call…).\nStep 2: Ask: Who receives the action? (That person is the object.)\nStep 3: Use an object pronoun for the object: me/him/her/us/them.\nStep 4: Do not use subject pronouns (I/he/she/we/they) after a verb in this position.\nStep 5: Do not use possessives (my/his/her/their) because they show ownership, not the object.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 9,
+    "question": "Choose the correct sentence:",
+    "options": {
+      "A": "We see they every day.",
+      "B": "We see them every day.",
+      "C": "We see their every day.",
+      "D": "We see theirs every day."
+    },
+    "correct": "B",
+    "explanation": "This lesson is about object pronouns (me/him/her/us/them). After a verb (help, love, know, see), we usually use an object pronoun, not a subject pronoun (I/he/she/we/they).",
+    "explanation_simple": "After a verb → use object pronoun: me/him/her/us/them.",
+    "explanation_detailed": "Step 1: Find the verb (help, love, know, see, call…).\nStep 2: Ask: Who receives the action? (That person is the object.)\nStep 3: Use an object pronoun for the object: me/him/her/us/them.\nStep 4: Do not use subject pronouns (I/he/she/we/they) after a verb in this position.\nStep 5: Do not use possessives (my/his/her/their) because they show ownership, not the object.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 10,
+    "question": "Fill in the blank: Do you know ___' (referring to me)",
+    "options": {
+      "A": "my",
+      "B": "I",
+      "C": "me",
+      "D": "mine"
+    },
+    "correct": "C",
+    "explanation": "This lesson is about object pronouns (me/him/her/us/them). After a verb (help, love, know, see), we usually use an object pronoun, not a subject pronoun (I/he/she/we/they).",
+    "explanation_simple": "After a verb → use object pronoun: me/him/her/us/them.",
+    "explanation_detailed": "Step 1: Find the verb (help, love, know, see, call…).\nStep 2: Ask: Who receives the action? (That person is the object.)\nStep 3: Use an object pronoun for the object: me/him/her/us/them.\nStep 4: Do not use subject pronouns (I/he/she/we/they) after a verb in this position.\nStep 5: Do not use possessives (my/his/her/their) because they show ownership, not the object.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 11,
+    "question": "Choose the correct sentence:",
+    "options": {
+      "A": "The teacher looks at we.",
+      "B": "The teacher looks at us.",
+      "C": "The teacher looks at our.",
+      "D": "The teacher looks at we're."
+    },
+    "correct": "B",
+    "explanation": "This lesson is about object pronouns (me/him/her/us/them). After a verb (help, love, know, see), we usually use an object pronoun, not a subject pronoun (I/he/she/we/they).",
+    "explanation_simple": "After a verb → use object pronoun: me/him/her/us/them.",
+    "explanation_detailed": "Step 1: Find the verb (help, love, know, see, call…).\nStep 2: Ask: Who receives the action? (That person is the object.)\nStep 3: Use an object pronoun for the object: me/him/her/us/them.\nStep 4: Do not use subject pronouns (I/he/she/we/they) after a verb in this position.\nStep 5: Do not use possessives (my/his/her/their) because they show ownership, not the object.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 12,
+    "question": "Choose the correct sentence:",
+    "options": {
+      "A": "I give she a book.",
+      "B": "I give her a book.",
+      "C": "I give hers a book.",
+      "D": "I give she's a book."
+    },
+    "correct": "B",
+    "explanation": "This lesson is about object pronouns (me/him/her/us/them). After a verb (help, love, know, see), we usually use an object pronoun, not a subject pronoun (I/he/she/we/they).",
+    "explanation_simple": "After a verb → use object pronoun: me/him/her/us/them.",
+    "explanation_detailed": "Step 1: Find the verb (help, love, know, see, call…).\nStep 2: Ask: Who receives the action? (That person is the object.)\nStep 3: Use an object pronoun for the object: me/him/her/us/them.\nStep 4: Do not use subject pronouns (I/he/she/we/they) after a verb in this position.\nStep 5: Do not use possessives (my/his/her/their) because they show ownership, not the object.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 13,
+    "question": "Fill in the blank: He always talks to ___.",
+    "options": {
+      "A": "she",
+      "B": "her",
+      "C": "hers",
+      "D": "she's"
+    },
+    "correct": "B",
+    "explanation": "This lesson is about object pronouns (me/him/her/us/them). After a verb (help, love, know, see), we usually use an object pronoun, not a subject pronoun (I/he/she/we/they).",
+    "explanation_simple": "After a verb → use object pronoun: me/him/her/us/them.",
+    "explanation_detailed": "Step 1: Find the verb (help, love, know, see, call…).\nStep 2: Ask: Who receives the action? (That person is the object.)\nStep 3: Use an object pronoun for the object: me/him/her/us/them.\nStep 4: Do not use subject pronouns (I/he/she/we/they) after a verb in this position.\nStep 5: Do not use possessives (my/his/her/their) because they show ownership, not the object.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 14,
+    "question": "Fill in the blank: Can you call ___ later' (referring to “them”)",
+    "options": {
+      "A": "they",
+      "B": "them",
+      "C": "their",
+      "D": "theirs"
+    },
+    "correct": "B",
+    "explanation": "This lesson is about object pronouns (me/him/her/us/them). After a verb (help, love, know, see), we usually use an object pronoun, not a subject pronoun (I/he/she/we/they).",
+    "explanation_simple": "After a verb → use object pronoun: me/him/her/us/them.",
+    "explanation_detailed": "Step 1: Find the verb (help, love, know, see, call…).\nStep 2: Ask: Who receives the action? (That person is the object.)\nStep 3: Use an object pronoun for the object: me/him/her/us/them.\nStep 4: Do not use subject pronouns (I/he/she/we/they) after a verb in this position.\nStep 5: Do not use possessives (my/his/her/their) because they show ownership, not the object.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 15,
+    "question": "Choose the correct sentence:",
+    "options": {
+      "A": "I like he.",
+      "B": "I like him.",
+      "C": "I like his.",
+      "D": "I like he's."
+    },
+    "correct": "B",
+    "explanation": "This lesson is about object pronouns (me/him/her/us/them). After a verb (help, love, know, see), we usually use an object pronoun, not a subject pronoun (I/he/she/we/they).",
+    "explanation_simple": "After a verb → use object pronoun: me/him/her/us/them.",
+    "explanation_detailed": "Step 1: Find the verb (help, love, know, see, call…).\nStep 2: Ask: Who receives the action? (That person is the object.)\nStep 3: Use an object pronoun for the object: me/him/her/us/them.\nStep 4: Do not use subject pronouns (I/he/she/we/they) after a verb in this position.\nStep 5: Do not use possessives (my/his/her/their) because they show ownership, not the object.",
+    "explanation_translations": {}
+  }
+]

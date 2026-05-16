@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "question": "The Earth ____ around the Sun.",
+    "options": {
+      "A": "rotate",
+      "B": "rotates",
+      "C": "is rotating",
+      "D": "rotated"
+    },
+    "correct": "B",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 2,
+    "question": "My father ____ coffee every morning.",
+    "options": {
+      "A": "drink",
+      "B": "drinks",
+      "C": "is drinking",
+      "D": "drank"
+    },
+    "correct": "B",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 3,
+    "question": "She usually ____ her homework after dinner.",
+    "options": {
+      "A": "do",
+      "B": "does",
+      "C": "doing",
+      "D": "did"
+    },
+    "correct": "B",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 4,
+    "question": "They ____ to school on Sundays.",
+    "options": {
+      "A": "not go",
+      "B": "doesn't go",
+      "C": "don't go",
+      "D": "didn't go"
+    },
+    "correct": "C",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 5,
+    "question": "It always ____ in winter.",
+    "options": {
+      "A": "snow",
+      "B": "snows",
+      "C": "snowing",
+      "D": "snowed"
+    },
+    "correct": "B",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 6,
+    "question": "I ____ football three times a week.",
+    "options": {
+      "A": "play",
+      "B": "plays",
+      "C": "am playing",
+      "D": "played"
+    },
+    "correct": "A",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 7,
+    "question": "My friends ____ visit me on weekends.",
+    "options": {
+      "A": "often",
+      "B": "are often",
+      "C": "is often",
+      "D": "have often"
+    },
+    "correct": "A",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 8,
+    "question": "The capital of Uzbekistan ____ Tashkent.",
+    "options": {
+      "A": "are",
+      "B": "is",
+      "C": "be",
+      "D": "was"
+    },
+    "correct": "B",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 9,
+    "question": "We ____ our homework every night.",
+    "options": {
+      "A": "make",
+      "B": "do",
+      "C": "did",
+      "D": "done"
+    },
+    "correct": "B",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 10,
+    "question": "She ____ to work every day.",
+    "options": {
+      "A": "go",
+      "B": "goes",
+      "C": "going",
+      "D": "gone"
+    },
+    "correct": "B",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 11,
+    "question": "How often ____ you eat out?",
+    "options": {
+      "A": "are",
+      "B": "do",
+      "C": "does",
+      "D": "did"
+    },
+    "correct": "B",
+    "explanation": "The phrase translates to do.",
+    "explanation_simple": "The phrase translates to do.",
+    "explanation_detailed": "The phrase translates to do.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 12,
+    "question": "He ____ his grandparents twice a month.",
+    "options": {
+      "A": "visit",
+      "B": "visits",
+      "C": "is visiting",
+      "D": "visiting"
+    },
+    "correct": "B",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 13,
+    "question": "I usually ____ breakfast at 7 a.m.",
+    "options": {
+      "A": "have",
+      "B": "has",
+      "C": "am having",
+      "D": "had"
+    },
+    "correct": "A",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 14,
+    "question": "They ____ TV every evening after school.",
+    "options": {
+      "A": "watches",
+      "B": "are watching",
+      "C": "watch",
+      "D": "watched"
+    },
+    "correct": "C",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 15,
+    "question": "The Sun ____ in the East.",
+    "options": {
+      "A": "rise",
+      "B": "rises",
+      "C": "rising",
+      "D": "rose"
+    },
+    "correct": "B",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  }
+]

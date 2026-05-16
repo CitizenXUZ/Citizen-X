@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "question": "She ____ to music right now.",
+    "options": {
+      "A": "listens",
+      "B": "is listening",
+      "C": "listen",
+      "D": "listening"
+    },
+    "correct": "B",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 2,
+    "question": "I ____ a letter at the moment.",
+    "options": {
+      "A": "write",
+      "B": "am writing",
+      "C": "writing",
+      "D": "writes"
+    },
+    "correct": "B",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 3,
+    "question": "They ____ football in the yard now.",
+    "options": {
+      "A": "play",
+      "B": "are playing",
+      "C": "playing",
+      "D": "plays"
+    },
+    "correct": "B",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 4,
+    "question": "We ____ not studying English now.",
+    "options": {
+      "A": "are",
+      "B": "are not",
+      "C": "is",
+      "D": "am"
+    },
+    "correct": "A",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 5,
+    "question": "____ you doing your homework right now?",
+    "options": {
+      "A": "Do",
+      "B": "Are",
+      "C": "Is",
+      "D": "Did"
+    },
+    "correct": "B",
+    "explanation": "The phrase translates to Are.",
+    "explanation_simple": "The phrase translates to Are.",
+    "explanation_detailed": "The phrase translates to Are.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 6,
+    "question": "My brother ____ TV at the moment.",
+    "options": {
+      "A": "is watching",
+      "B": "watches",
+      "C": "watch",
+      "D": "watching"
+    },
+    "correct": "A",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 7,
+    "question": "She ____ dinner for her family today.",
+    "options": {
+      "A": "cooks",
+      "B": "is cooking",
+      "C": "cook",
+      "D": "cooked"
+    },
+    "correct": "B",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 8,
+    "question": "They ____ to visit their friends this weekend.",
+    "options": {
+      "A": "are going",
+      "B": "go",
+      "C": "are going to",
+      "D": "is going"
+    },
+    "correct": "A",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 9,
+    "question": "We ____ to the park after the lesson today.",
+    "options": {
+      "A": "going",
+      "B": "are going",
+      "C": "go",
+      "D": "goes"
+    },
+    "correct": "B",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 10,
+    "question": "Be quiet! The baby ____.",
+    "options": {
+      "A": "sleep",
+      "B": "sleeps",
+      "C": "is sleeping",
+      "D": "sleeping"
+    },
+    "correct": "C",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 11,
+    "question": "Don't disturb him, he ____ to his teacher now.",
+    "options": {
+      "A": "talk",
+      "B": "is talking",
+      "C": "talks",
+      "D": "talking"
+    },
+    "correct": "B",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 12,
+    "question": "I ____ my keys! I can't find them.",
+    "options": {
+      "A": "am losing",
+      "B": "lose",
+      "C": "am lose",
+      "D": "losing"
+    },
+    "correct": "A",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 13,
+    "question": "She can't answer the phone. She ____ a shower.",
+    "options": {
+      "A": "takes",
+      "B": "is taking",
+      "C": "take",
+      "D": "taking"
+    },
+    "correct": "B",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 14,
+    "question": "I ____ my future plans right now.",
+    "options": {
+      "A": "think",
+      "B": "am thinking",
+      "C": "thinking",
+      "D": "thinks"
+    },
+    "correct": "B",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 15,
+    "question": "Right now, we ____ English with Mr. Sunnatullo.",
+    "options": {
+      "A": "study",
+      "B": "studying",
+      "C": "are studying",
+      "D": "studies"
+    },
+    "correct": "C",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  }
+]

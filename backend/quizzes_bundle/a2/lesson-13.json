@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "question": "I ______ swim very well.",
+    "options": {
+      "A": "can",
+      "B": "must",
+      "C": "should",
+      "D": "may"
+    },
+    "correct": "A",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 2,
+    "question": "You ______ stop when the traffic light is red.",
+    "options": {
+      "A": "can",
+      "B": "must",
+      "C": "may",
+      "D": "could"
+    },
+    "correct": "B",
+    "explanation": "With You, the correct form of 'to be' is must.",
+    "explanation_simple": "With You, the correct form of 'to be' is must.",
+    "explanation_detailed": "With You, the correct form of 'to be' is must.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 3,
+    "question": "______ I open the window?",
+    "options": {
+      "A": "Must",
+      "B": "Should",
+      "C": "May",
+      "D": "Need"
+    },
+    "correct": "C",
+    "explanation": "The phrase translates to May.",
+    "explanation_simple": "The phrase translates to May.",
+    "explanation_detailed": "The phrase translates to May.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 4,
+    "question": "You ______ eat more vegetables. It is good for you.",
+    "options": {
+      "A": "must",
+      "B": "should",
+      "C": "can",
+      "D": "may"
+    },
+    "correct": "B",
+    "explanation": "With You, the correct form of 'to be' is should.",
+    "explanation_simple": "With You, the correct form of 'to be' is should.",
+    "explanation_detailed": "With You, the correct form of 'to be' is should.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 5,
+    "question": "Students ______ use phones during the exam.",
+    "options": {
+      "A": "mustn't",
+      "B": "can",
+      "C": "should",
+      "D": "may"
+    },
+    "correct": "A",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 6,
+    "question": "She ______ speak three languages.",
+    "options": {
+      "A": "should",
+      "B": "can",
+      "C": "must",
+      "D": "might"
+    },
+    "correct": "B",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 7,
+    "question": "We ______ be quiet in the library.",
+    "options": {
+      "A": "can",
+      "B": "must",
+      "C": "may",
+      "D": "could"
+    },
+    "correct": "B",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 8,
+    "question": "______ you help me with this homework?",
+    "options": {
+      "A": "Must",
+      "B": "Should",
+      "C": "Can",
+      "D": "May"
+    },
+    "correct": "C",
+    "explanation": "The phrase translates to Can.",
+    "explanation_simple": "The phrase translates to Can.",
+    "explanation_detailed": "The phrase translates to Can.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 9,
+    "question": "You ______ take an umbrella. It may rain.",
+    "options": {
+      "A": "must",
+      "B": "should",
+      "C": "can",
+      "D": "might"
+    },
+    "correct": "B",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 10,
+    "question": "______ I borrow your pen?",
+    "options": {
+      "A": "Must",
+      "B": "Should",
+      "C": "May",
+      "D": "Can"
+    },
+    "correct": "C",
+    "explanation": "The phrase translates to May.",
+    "explanation_simple": "The phrase translates to May.",
+    "explanation_detailed": "The phrase translates to May.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 11,
+    "question": "People ______ drive carefully in the city.",
+    "options": {
+      "A": "must",
+      "B": "may",
+      "C": "can",
+      "D": "might"
+    },
+    "correct": "A",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 12,
+    "question": "He ______ play the piano when he was five.",
+    "options": {
+      "A": "must",
+      "B": "could",
+      "C": "should",
+      "D": "may"
+    },
+    "correct": "B",
+    "explanation": "With He, the correct form of 'to be' is could.",
+    "explanation_simple": "With He, the correct form of 'to be' is could.",
+    "explanation_detailed": "With He, the correct form of 'to be' is could.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 13,
+    "question": "You ______ run in the hospital.",
+    "options": {
+      "A": "can",
+      "B": "mustn't",
+      "C": "should",
+      "D": "may"
+    },
+    "correct": "B",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 14,
+    "question": "______ we start the lesson now?",
+    "options": {
+      "A": "May",
+      "B": "Should",
+      "C": "Must",
+      "D": "Can"
+    },
+    "correct": "D",
+    "explanation": "The phrase translates to Can.",
+    "explanation_simple": "The phrase translates to Can.",
+    "explanation_detailed": "The phrase translates to Can.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 15,
+    "question": "She ______ finish her homework before watching TV.",
+    "options": {
+      "A": "can",
+      "B": "must",
+      "C": "may",
+      "D": "might"
+    },
+    "correct": "B",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  }
+]

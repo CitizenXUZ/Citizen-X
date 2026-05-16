@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "question": "Choose the correct sentence:",
+    "options": {
+      "A": "I have already finished my homework before dinner",
+      "B": "I has already finished my homework before dinner",
+      "C": "I have finish my homework before dinner",
+      "D": "I already have finish my homework before dinner"
+    },
+    "correct": "A",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 2,
+    "question": "Which sentence is correct negative form?",
+    "options": {
+      "A": "She hasn't ever went to Italy",
+      "B": "She has never been to Italy",
+      "C": "She has not ever went to Italy",
+      "D": "All of the above"
+    },
+    "correct": "B",
+    "explanation": "The verb 'to be' changes with the subject and tense.",
+    "explanation_simple": "The verb 'to be' changes with the subject and tense.",
+    "explanation_detailed": "The verb 'to be' changes with the subject and tense.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 3,
+    "question": "Complete the sentence: I ___ my work already.",
+    "options": {
+      "A": "have done",
+      "B": "had done",
+      "C": "have did",
+      "D": "has done"
+    },
+    "correct": "A",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 4,
+    "question": "Form the correct question: you / finish / the book / yet",
+    "options": {
+      "A": "Did you finish the book yet?",
+      "B": "Have you finished the book yet?",
+      "C": "Have you finish the book yet?",
+      "D": "Do you finished the book yet?"
+    },
+    "correct": "B",
+    "explanation": "Questions use auxiliary + subject word order (Do/Does/Did/Is/Are/Will...).",
+    "explanation_simple": "Questions use auxiliary + subject word order (Do/Does/Did/Is/Are/Will...).",
+    "explanation_detailed": "Questions use auxiliary + subject word order (Do/Does/Did/Is/Are/Will...).",
+    "explanation_translations": {}
+  },
+  {
+    "id": 5,
+    "question": "Choose the correct sentence with 'recently':",
+    "options": {
+      "A": "I have recently read an interesting article",
+      "B": "I recently has read an interesting article",
+      "C": "I have read recently an interesting articles",
+      "D": "I has recently read an interesting article"
+    },
+    "correct": "A",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 6,
+    "question": "Which sentence is negative?",
+    "options": {
+      "A": "We have yet seen that movie",
+      "B": "We have not yet seen that movie",
+      "C": "We haven't yet saw that movie",
+      "D": "We haven't saw that movie"
+    },
+    "correct": "B",
+    "explanation": "The verb 'to be' changes with the subject and tense.",
+    "explanation_simple": "The verb 'to be' changes with the subject and tense.",
+    "explanation_detailed": "The verb 'to be' changes with the subject and tense.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 7,
+    "question": "Complete the sentence: She ___ to London three times this year.",
+    "options": {
+      "A": "has been",
+      "B": "have been",
+      "C": "has gone",
+      "D": "has went"
+    },
+    "correct": "A",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 8,
+    "question": "Form the correct question with 'ever': you / visit / Paris",
+    "options": {
+      "A": "Have you ever visited Paris?",
+      "B": "Did you ever visited Paris?",
+      "C": "Have you ever visit Paris?",
+      "D": "Have you ever been visited Paris?"
+    },
+    "correct": "A",
+    "explanation": "Questions use auxiliary + subject word order (Do/Does/Did/Is/Are/Will...).",
+    "explanation_simple": "Questions use auxiliary + subject word order (Do/Does/Did/Is/Are/Will...).",
+    "explanation_detailed": "Questions use auxiliary + subject word order (Do/Does/Did/Is/Are/Will...).",
+    "explanation_translations": {}
+  },
+  {
+    "id": 9,
+    "question": "Choose the correct sentence:",
+    "options": {
+      "A": "I have just eaten dinner",
+      "B": "I had just eaten dinner",
+      "C": "I have eat just dinner",
+      "D": "I just have eaten dinner"
+    },
+    "correct": "A",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 10,
+    "question": "Negative form: He ___ finished his assignment yet.",
+    "options": {
+      "A": "has not",
+      "B": "have not",
+      "C": "did not",
+      "D": "has never"
+    },
+    "correct": "A",
+    "explanation": "Negatives use not with the correct auxiliary (do/does/did) or with be.",
+    "explanation_simple": "Negatives use not with the correct auxiliary (do/does/did) or with be.",
+    "explanation_detailed": "Negatives use not with the correct auxiliary (do/does/did) or with be.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 11,
+    "question": "Complete the sentence: By now, they ___ their exams.",
+    "options": {
+      "A": "have completed",
+      "B": "has completed",
+      "C": "have complete",
+      "D": "had completed"
+    },
+    "correct": "A",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 12,
+    "question": "Which question is correct?",
+    "options": {
+      "A": "Has she ever seen a rainbow?",
+      "B": "Have she ever seen a rainbow?",
+      "C": "Has she ever saw a rainbow?",
+      "D": "Did she ever seen a rainbow?"
+    },
+    "correct": "A",
+    "explanation": "The verb 'to be' changes with the subject and tense.",
+    "explanation_simple": "The verb 'to be' changes with the subject and tense.",
+    "explanation_detailed": "The verb 'to be' changes with the subject and tense.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 13,
+    "question": "Complete the sentence with 'already': I have already ___ breakfast, so I'm not hungry.",
+    "options": {
+      "A": "eaten",
+      "B": "ate",
+      "C": "eat",
+      "D": "eating"
+    },
+    "correct": "A",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 14,
+    "question": "Choose the correct negative sentence with 'yet':",
+    "options": {
+      "A": "I haven't finished my homework yet",
+      "B": "I hasn't finished my homework yet",
+      "C": "I haven't finish my homework yet",
+      "D": "I have not finished my homework already"
+    },
+    "correct": "A",
+    "explanation": "Negatives use not with the correct auxiliary (do/does/did) or with be.",
+    "explanation_simple": "Negatives use not with the correct auxiliary (do/does/did) or with be.",
+    "explanation_detailed": "Negatives use not with the correct auxiliary (do/does/did) or with be.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 15,
+    "question": "Complete the question: How long ___ you lived in this city?",
+    "options": {
+      "A": "have",
+      "B": "has",
+      "C": "did",
+      "D": "do"
+    },
+    "correct": "A",
+    "explanation": "Questions use auxiliary + subject word order (Do/Does/Did/Is/Are/Will...).",
+    "explanation_simple": "Questions use auxiliary + subject word order (Do/Does/Did/Is/Are/Will...).",
+    "explanation_detailed": "Questions use auxiliary + subject word order (Do/Does/Did/Is/Are/Will...).",
+    "explanation_translations": {}
+  }
+]

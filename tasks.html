@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3MEMMC38WR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3MEMMC38WR');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasks - Citizen X</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="tasks-loading-overlay" class="results-loading-overlay is-active" aria-hidden="false">
+  <div class="results-loading-card">
+    <div class="results-loading-spinner"></div>
+    <p class="results-loading-text" id="tasks-loading-text">Loading tasks...</p>
+    <div class="results-loading-bar-wrap">
+      <div class="results-loading-bar" id="tasks-loading-bar"></div>
+    </div>
+    <p class="results-loading-percent" id="tasks-loading-percent">0%</p>
+  </div>
+</div>
+
+<header class="level-header">
+  <div class="logo"><img src="assets/images/logo.png" alt="Citizen X"></div>
+  <a id="tasks-back-btn" href="a1.html" class="btn">Back to lessons</a>
+</header>
+
+<main class="tasks-page" data-tasks-page>
+  <section id="tasks-default-card" class="tasks-card" hidden>
+    <h1 id="tasks-title">Lesson Tasks</h1>
+    <p id="tasks-description">Complete the practice tasks for this lesson.</p>
+    <p id="tasks-runtime-status" class="tasks-runtime-status" hidden></p>
+    <ol class="tasks-list">
+      <li>Watch the full lesson video and take notes.</li>
+      <li>Write 5 examples using the new vocabulary.</li>
+      <li>Complete the grammar mini-quiz.</li>
+      <li>Record a short speaking response (1-2 minutes).</li>
+    </ol>
+    <a id="tasks-open-lesson-btn" href="lesson.html?course=a1&lesson=1" class="btn lesson-nav-btn lesson-nav-btn-primary">Open lesson video</a>
+    <button id="tasks-open-quiz-btn" type="button" class="btn lesson-nav-btn">Open tests</button>
+  </section>
+
+  <section id="alphabet-quiz-card" class="quiz-card" hidden>
+    <div class="quiz-topbar">
+      <h1 id="quiz-lesson-title">Lesson Quiz</h1>
+      <a id="quiz-open-lesson-btn" href="lesson.html?course=a1&lesson=1" class="btn lesson-nav-btn btn-exit">Back to lesson</a>
+    </div>
+
+    <p class="quiz-subtitle">Choose the correct answer and press Check.</p>
+
+    <div class="quiz-question-shell">
+      <p class="quiz-task-number" id="quiz-task-number">Task #1</p>
+      <p class="quiz-question" id="quiz-question">Question text</p>
+    </div>
+
+    <div id="quiz-options" class="quiz-options"></div>
+
+    <div class="quiz-actions-row">
+      <button id="quiz-check-btn" class="btn quiz-check-btn" type="button">Check</button>
+      <button id="quiz-explain-btn" class="btn quiz-explain-btn" type="button" disabled>Explanation</button>
+    </div>
+
+    <div class="quiz-nav-row">
+      <button id="quiz-prev-btn" class="btn quiz-nav-btn quiz-nav-left" type="button">Previous</button>
+      <div class="quiz-nav-center">
+        <p id="quiz-status" class="quiz-status"></p>
+        <p id="quiz-counter" class="quiz-counter">1 / 15</p>
+      </div>
+      <div class="quiz-nav-right">
+        <button id="quiz-next-btn" class="btn quiz-nav-btn quiz-nav-btn-primary" type="button">Next</button>
+      </div>
+    </div>
+
+    <p id="quiz-final-result" class="quiz-final-result"></p>
+  </section>
+</main>
+
+<div id="quiz-retry-modal" class="quiz-retry-modal" aria-hidden="true">
+  <div class="quiz-retry-card">
+    <div class="quiz-retry-icon" aria-hidden="true">!</div>
+    <h3>Good effort! Let's review together and try again!</h3>
+    <p>You can watch the theory video and give it another try.</p>
+    <a id="quiz-modal-theory-btn" href="lesson.html?course=a1&lesson=1" class="btn quiz-modal-theory-btn">Theory</a>
+    <button id="quiz-modal-retry-btn" type="button" class="btn quiz-modal-retry-btn">Try again</button>
+  </div>
+</div>
+
+<div id="quiz-explain-modal" class="quiz-explain-modal" aria-hidden="true">
+  <div class="quiz-explain-card" role="dialog" aria-modal="true" aria-labelledby="quiz-explain-title">
+    <div class="quiz-explain-header">
+      <h3 id="quiz-explain-title">Explanation</h3>
+      <button id="quiz-explain-close" type="button" class="quiz-explain-close" aria-label="Close explanation">Close</button>
+    </div>
+	    <p id="quiz-explain-question" class="quiz-explain-question"></p>
+	    <p id="quiz-explain-text" class="quiz-explain-text"></p>
+	    <div class="quiz-explain-actions">
+	      <p class="quiz-explain-ask">Need it simpler or more detailed?</p>
+	      <div class="quiz-explain-options">
+	        <button type="button" class="btn quiz-explain-option" data-explain-mode="simple">Simpler</button>
+	        <button type="button" class="btn quiz-explain-option" data-explain-mode="detailed">More detail</button>
+	      </div>
+	      <div id="quiz-explain-lang" class="quiz-explain-lang">
+	        <span class="quiz-explain-lang-label">Language</span>
+	        <div class="quiz-explain-lang-dropdown">
+	          <button id="quiz-explain-lang-trigger" class="quiz-explain-lang-trigger" type="button" aria-haspopup="listbox" aria-expanded="false">
+	            <span id="quiz-explain-lang-flag" class="lang-flag lang-flag--eng" aria-hidden="true"></span>
+	            <span id="quiz-explain-lang-value" class="quiz-explain-lang-value">Eng</span>
+	            <span class="quiz-explain-lang-caret" aria-hidden="true"></span>
+	          </button>
+	          <div id="quiz-explain-lang-list" class="quiz-explain-lang-list" role="listbox">
+	            <button type="button" class="quiz-explain-lang-item" data-lang="en" role="option">
+	              <span class="lang-flag lang-flag--eng" aria-hidden="true"></span>
+	              <span>Eng</span>
+	            </button>
+	            <button type="button" class="quiz-explain-lang-item" data-lang="ru" role="option">
+	              <span class="lang-flag lang-flag--rus" aria-hidden="true"></span>
+	              <span>Русский</span>
+	            </button>
+	            <button type="button" class="quiz-explain-lang-item" data-lang="uz" role="option">
+	              <span class="lang-flag lang-flag--uzb" aria-hidden="true"></span>
+	              <span>O'zbekcha</span>
+	            </button>
+	          </div>
+	        </div>
+	      </div>
+	      <p id="quiz-explain-note" class="quiz-explain-note" aria-live="polite"></p>
+	    </div>
+	  </div>
+	</div>
+
+<div id="homework-modal" class="homework-modal" aria-hidden="true">
+  <div class="homework-card" role="dialog" aria-modal="true" aria-labelledby="homework-title">
+    <div class="homework-header">
+      <span class="homework-badge">Homework</span>
+      <button id="homework-close" type="button" class="homework-close" aria-label="Close homework">Close</button>
+    </div>
+    <h3 id="homework-title" class="homework-title">Homework</h3>
+    <p id="homework-subtitle" class="homework-subtitle"></p>
+    <div id="homework-list" class="homework-list"></div>
+    <div class="homework-form">
+      <label class="homework-label" for="homework-text">Homework text</label>
+      <textarea id="homework-text" class="homework-textarea" rows="6" placeholder="Write your answer here..."></textarea>
+      <label class="homework-label" for="homework-file">Attach file (optional)</label>
+      <input id="homework-file" class="homework-file" type="file" multiple accept=".pdf,.doc,.docx,.jpg,.jpeg,.png,.mp3,.m4a,.wav">
+      <div id="homework-file-list" class="homework-file-list" hidden></div>
+      <p class="homework-hint">Formats: PDF, DOC/DOCX, JPG/PNG, MP3/M4A/WAV. Max 10 MB.</p>
+    </div>
+    <div class="homework-actions">
+      <button id="homework-upload-btn" type="button" class="btn homework-upload-btn">Submit homework</button>
+    </div>
+    <p id="homework-status" class="homework-status" aria-live="polite"></p>
+    <p id="homework-note" class="homework-note">Send your homework for feedback.</p>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+<script>
+(function () {
+  var overlay = document.getElementById("tasks-loading-overlay");
+  var bar = document.getElementById("tasks-loading-bar");
+  var percent = document.getElementById("tasks-loading-percent");
+  var textEl = document.getElementById("tasks-loading-text");
+  if (!overlay) return;
+
+  // Detect mode from URL to show correct label
+  var params = new URLSearchParams(window.location.search);
+  var openParam = (params.get("open") || "").toLowerCase();
+  if (openParam === "homework" && textEl) {
+    textEl.textContent = "Loading homework...";
+  }
+
+  var hidden = false;
+  function hide() {
+    if (hidden) return;
+    hidden = true;
+    if (bar) bar.style.width = "100%";
+    if (percent) percent.textContent = "100%";
+    setTimeout(function () {
+      overlay.classList.remove("is-active");
+      overlay.setAttribute("aria-hidden", "true");
+    }, 120);
+  }
+
+  // Animate progress bar while loading
+  var progress = 0;
+  var tickInterval = setInterval(function () {
+    if (hidden) { clearInterval(tickInterval); return; }
+    // Accelerate quickly to ~85%, then slow down
+    var step = progress < 60 ? 4 : progress < 80 ? 1.5 : 0.4;
+    progress = Math.min(progress + step, 88);
+    if (bar) bar.style.width = progress + "%";
+    if (percent) percent.textContent = Math.round(progress) + "%";
+  }, 80);
+
+  // Safety fallback: hide after 8s no matter what
+  var fallback = setTimeout(function () {
+    clearInterval(tickInterval);
+    hide();
+  }, 8000);
+
+  window.addEventListener("cx:tasks-ready", function () {
+    clearInterval(tickInterval);
+    clearTimeout(fallback);
+    hide();
+  }, { once: true });
+})();
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

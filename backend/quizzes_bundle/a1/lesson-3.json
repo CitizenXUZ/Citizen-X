@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "question": "Fill in the blank: ___ am from Uzbekistan.",
+    "options": {
+      "A": "He",
+      "B": "I",
+      "C": "She",
+      "D": "They"
+    },
+    "correct": "B",
+    "explanation": "This sentence is about the person who is speaking. In English, the speaker uses a special subject word for themself. The blank needs that speaker word before \"am,\" not a word for another person.",
+    "explanation_simple": "The sentence is about the speaker (me). Use the subject word for the speaker before \"am.\"",
+    "explanation_detailed": "Look at the verb \"am.\" It is used only with the speaker. So the blank must be the subject word the speaker uses for themself, not the word for a boy, a girl, or a group.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 2,
+    "question": "Fill in the blank: My name is Alex. ___ like football.",
+    "options": {
+      "A": "He",
+      "B": "I",
+      "C": "You",
+      "D": "It"
+    },
+    "correct": "B",
+    "explanation": "Two sentences are about the same person talking. The second sentence still refers to the speaker. Choose the subject word the speaker uses for themself.",
+    "explanation_simple": "The same speaker continues the idea. Use the subject word for the speaker.",
+    "explanation_detailed": "\"My name is Alex\" shows who is speaking. The next sentence is still about that same person, so use the subject word for the speaker, not for someone else or a thing.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 3,
+    "question": "Fill in the blank: Tom is my brother. ___ is 16 years old.",
+    "options": {
+      "A": "He",
+      "B": "She",
+      "C": "We",
+      "D": "They"
+    },
+    "correct": "A",
+    "explanation": "The sentence is about Tom, and Tom is one male person. Use the subject word for one male person.",
+    "explanation_simple": "One male person -> use the subject word for a male.",
+    "explanation_detailed": "Find who the sentence is about: Tom. Tom is one male person, so choose the subject word used for a single male.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 4,
+    "question": "Fill in the blank: Sara and I are friends. ___ go to the same school.",
+    "options": {
+      "A": "They",
+      "B": "We",
+      "C": "She",
+      "D": "He"
+    },
+    "correct": "B",
+    "explanation": "\"Sara and I\" means the speaker plus another person. Use the subject word for a group that includes the speaker.",
+    "explanation_simple": "Me + another person = group that includes the speaker. Use that subject word.",
+    "explanation_detailed": "When you say \"I\" with someone else, you are talking about a group that includes yourself. Choose the subject word for \"me + others,\" not the word for \"other people only.\"",
+    "explanation_translations": {}
+  },
+  {
+    "id": 5,
+    "question": "Fill in the blank: This is my dog. ___ is very cute.",
+    "options": {
+      "A": "He",
+      "B": "She",
+      "C": "It",
+      "D": "You"
+    },
+    "correct": "C",
+    "explanation": "The subject is a dog, a single animal. Use the subject word for one thing or animal, not for a person.",
+    "explanation_simple": "One animal/thing -> use the subject word for a single thing.",
+    "explanation_detailed": "This sentence talks about one animal. English uses one subject word for things or animals. Choose that word, not the ones for people.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 6,
+    "question": "Fill in the blank: My parents are at work. ___ are teachers.",
+    "options": {
+      "A": "He",
+      "B": "She",
+      "C": "They",
+      "D": "We"
+    },
+    "correct": "C",
+    "explanation": "\"Parents\" means more than one person, and the speaker is not included. Use the subject word for a group of other people.",
+    "explanation_simple": "Plural people, not me -> use the subject word for other people.",
+    "explanation_detailed": "There are two parents, so it is plural. The speaker is not part of that group, so choose the subject word for \"other people\" (plural), not the one that includes the speaker.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 7,
+    "question": "Fill in the blank: Ali, this is your book. ___ is on the table.",
+    "options": {
+      "A": "It",
+      "B": "She",
+      "C": "They",
+      "D": "We"
+    },
+    "correct": "A",
+    "explanation": "The word \"book\" is a single thing. Use the subject word for one thing.",
+    "explanation_simple": "Book = one thing -> use the subject word for a single thing.",
+    "explanation_detailed": "This sentence is about one object (a book). English has a special subject word for a single thing or animal. Choose that one.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 8,
+    "question": "Fill in the blank: My sister is tall. ___ has long hair.",
+    "options": {
+      "A": "He",
+      "B": "She",
+      "C": "You",
+      "D": "They"
+    },
+    "correct": "B",
+    "explanation": "Sister means one female person. Use the subject word for one female person.",
+    "explanation_simple": "One female person -> use the female subject word.",
+    "explanation_detailed": "The subject is \"my sister.\" She is one female person, so choose the subject word used for a single female.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 9,
+    "question": "Fill in the blank: I ___ a student.",
+    "options": {
+      "A": "am",
+      "B": "is",
+      "C": "are",
+      "D": "be"
+    },
+    "correct": "A",
+    "explanation": "The subject is the speaker word. The verb \"to be\" has a special form used only with the speaker. Choose that form.",
+    "explanation_simple": "With the speaker subject, use the special \"to be\" form that goes only with the speaker.",
+    "explanation_detailed": "The verb \"to be\" has three basic forms. One is used only with the speaker word, one with he/she/it, and one with you/we/they. Here the subject is the speaker, so choose the form that matches the speaker.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 10,
+    "question": "Fill in the blank: He ___ from Tashkent.",
+    "options": {
+      "A": "are",
+      "B": "is",
+      "C": "am",
+      "D": "be"
+    },
+    "correct": "B",
+    "explanation": "He means one male person. Use the single-person form of \"to be.\"",
+    "explanation_simple": "He = one person. Use the single-person \"to be\" form.",
+    "explanation_detailed": "For he/she/it, use the singular form of \"to be.\" It is different from the plural form used with you/we/they. Choose the singular one.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 11,
+    "question": "Fill in the blank: They ___ in class.",
+    "options": {
+      "A": "is",
+      "B": "am",
+      "C": "are",
+      "D": "be"
+    },
+    "correct": "C",
+    "explanation": "They means more than one person. Use the plural form of \"to be.\"",
+    "explanation_simple": "They = more than one person. Use the plural \"to be\" form.",
+    "explanation_detailed": "When the subject is plural like they/we/you, English uses the plural form of \"to be.\" Choose that form.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 12,
+    "question": "Fill in the blank: Choose the correct negative form: She ___ not a teacher.",
+    "options": {
+      "A": "is not",
+      "B": "are",
+      "C": "am",
+      "D": "is"
+    },
+    "correct": "D",
+    "explanation": "The word \"not\" is already after the blank, so the blank should be only the correct \"to be\" form for one female person.",
+    "explanation_simple": "Not is already there. Use the single-person \"to be\" form for a female.",
+    "explanation_detailed": "We already have \"not\" in the sentence, so do not choose a form that includes \"not.\" The subject is one female person, so pick the singular \"to be\" form used with she.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 13,
+    "question": "Fill in the blank: ___ you ready",
+    "options": {
+      "A": "Are",
+      "B": "Is",
+      "C": "Am",
+      "D": "Be"
+    },
+    "correct": "A",
+    "explanation": "This is a question with \"you.\" In questions with \"to be,\" the \"to be\" form comes before the subject. Use the form that matches you.",
+    "explanation_simple": "Question + you: put the \"to be\" form first and use the one that matches you.",
+    "explanation_detailed": "In English questions with \"to be,\" the helping word comes before the subject (before \"you\"). Choose the \"to be\" form used with you/we/they, not the one for he/she/it.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 14,
+    "question": "Fill in the blank: We ___ at home.",
+    "options": {
+      "A": "is",
+      "B": "are",
+      "C": "am",
+      "D": "be"
+    },
+    "correct": "B",
+    "explanation": "We means the speaker plus others. Use the plural form of \"to be.\"",
+    "explanation_simple": "We = me + others -> use the plural \"to be\" form.",
+    "explanation_detailed": "We is a plural subject that includes the speaker. English uses the plural \"to be\" form with we/you/they. Choose that form.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 15,
+    "question": "Fill in the blank: ___ he your friend",
+    "options": {
+      "A": "Are",
+      "B": "Am",
+      "C": "Is",
+      "D": "Be"
+    },
+    "correct": "C",
+    "explanation": "This is a question about \"he.\" Put the \"to be\" form before the subject and choose the singular form.",
+    "explanation_simple": "Question + he -> use the singular \"to be\" form before he.",
+    "explanation_detailed": "In a question, the \"to be\" form comes first. With he/she/it, use the singular form (not the plural one). Choose that form.",
+    "explanation_translations": {}
+  }
+]

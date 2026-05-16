@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "question": "Choose the correct sentence:",
+    "options": {
+      "A": "I listen to music now.",
+      "B": "I am listen to music now.",
+      "C": "I am listening to music now.",
+      "D": "I listening music now."
+    },
+    "correct": "C",
+    "explanation": "Present Continuous is used for actions happening now or around now. It uses: am/is/are + verb-ing.",
+    "explanation_simple": "Present Continuous: am/is/are + verb-ing (now/at the moment).",
+    "explanation_detailed": "Step 1: Look for time words: now, right now, at the moment, today, tonight.\nStep 2: Build the form: am/is/are + verb + -ing.\nStep 3: For negatives: am/is/are + not + verb-ing.\nStep 4: For questions: Am/Is/Are + subject + verb-ing?\nStep 5: If it is ‘going to’, use: am/is/are + going to + base verb.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 2,
+    "question": "Choose the correct negative form:",
+    "options": {
+      "A": "She not is watching TV.",
+      "B": "She isn't watching TV.",
+      "C": "She doesn't watching TV.",
+      "D": "She not watching TV."
+    },
+    "correct": "B",
+    "explanation": "Present Continuous is used for actions happening now or around now. It uses: am/is/are + verb-ing.",
+    "explanation_simple": "Present Continuous: am/is/are + verb-ing (now/at the moment).",
+    "explanation_detailed": "Step 1: Look for time words: now, right now, at the moment, today, tonight.\nStep 2: Build the form: am/is/are + verb + -ing.\nStep 3: For negatives: am/is/are + not + verb-ing.\nStep 4: For questions: Am/Is/Are + subject + verb-ing?\nStep 5: If it is ‘going to’, use: am/is/are + going to + base verb.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 3,
+    "question": "Fill in the blank: ___ you studying English at the moment",
+    "options": {
+      "A": "Are",
+      "B": "Do",
+      "C": "Did",
+      "D": "Have"
+    },
+    "correct": "A",
+    "explanation": "Present Continuous is used for actions happening now or around now. It uses: am/is/are + verb-ing.",
+    "explanation_simple": "Present Continuous: am/is/are + verb-ing (now/at the moment).",
+    "explanation_detailed": "Step 1: Look for time words: now, right now, at the moment, today, tonight.\nStep 2: Build the form: am/is/are + verb + -ing.\nStep 3: For negatives: am/is/are + not + verb-ing.\nStep 4: For questions: Am/Is/Are + subject + verb-ing?\nStep 5: If it is ‘going to’, use: am/is/are + going to + base verb.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 4,
+    "question": "Choose the correct sentence:",
+    "options": {
+      "A": "They is playing football.",
+      "B": "They are playing football.",
+      "C": "They playing football.",
+      "D": "They plays football."
+    },
+    "correct": "B",
+    "explanation": "Present Continuous is used for actions happening now or around now. It uses: am/is/are + verb-ing.",
+    "explanation_simple": "Present Continuous: am/is/are + verb-ing (now/at the moment).",
+    "explanation_detailed": "Step 1: Look for time words: now, right now, at the moment, today, tonight.\nStep 2: Build the form: am/is/are + verb + -ing.\nStep 3: For negatives: am/is/are + not + verb-ing.\nStep 4: For questions: Am/Is/Are + subject + verb-ing?\nStep 5: If it is ‘going to’, use: am/is/are + going to + base verb.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 5,
+    "question": "Which sentence is in Present Continuous",
+    "options": {
+      "A": "I play basketball every Sunday.",
+      "B": "I am playing basketball now.",
+      "C": "I played basketball yesterday.",
+      "D": "I will play basketball tomorrow."
+    },
+    "correct": "B",
+    "explanation": "Present Continuous is used for actions happening now or around now. It uses: am/is/are + verb-ing.",
+    "explanation_simple": "Present Continuous: am/is/are + verb-ing (now/at the moment).",
+    "explanation_detailed": "Step 1: Look for time words: now, right now, at the moment, today, tonight.\nStep 2: Build the form: am/is/are + verb + -ing.\nStep 3: For negatives: am/is/are + not + verb-ing.\nStep 4: For questions: Am/Is/Are + subject + verb-ing?\nStep 5: If it is ‘going to’, use: am/is/are + going to + base verb.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 6,
+    "question": "Fill in the blank: Choose the correct question form: ___ he working today",
+    "options": {
+      "A": "Does",
+      "B": "Is",
+      "C": "Are",
+      "D": "Did"
+    },
+    "correct": "B",
+    "explanation": "Present Continuous is used for actions happening now or around now. It uses: am/is/are + verb-ing.",
+    "explanation_simple": "Present Continuous: am/is/are + verb-ing (now/at the moment).",
+    "explanation_detailed": "Step 1: Look for time words: now, right now, at the moment, today, tonight.\nStep 2: Build the form: am/is/are + verb + -ing.\nStep 3: For negatives: am/is/are + not + verb-ing.\nStep 4: For questions: Am/Is/Are + subject + verb-ing?\nStep 5: If it is ‘going to’, use: am/is/are + going to + base verb.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 7,
+    "question": "Fill in the blank: Choose the correct negative: I ___ sleeping now.",
+    "options": {
+      "A": "am not",
+      "B": "is not",
+      "C": "are not",
+      "D": "do not"
+    },
+    "correct": "A",
+    "explanation": "Present Continuous is used for actions happening now or around now. It uses: am/is/are + verb-ing.",
+    "explanation_simple": "Present Continuous: am/is/are + verb-ing (now/at the moment).",
+    "explanation_detailed": "Step 1: Look for time words: now, right now, at the moment, today, tonight.\nStep 2: Build the form: am/is/are + verb + -ing.\nStep 3: For negatives: am/is/are + not + verb-ing.\nStep 4: For questions: Am/Is/Are + subject + verb-ing?\nStep 5: If it is ‘going to’, use: am/is/are + going to + base verb.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 8,
+    "question": "Fill in the blank: We ___ to the park right now.",
+    "options": {
+      "A": "goes",
+      "B": "go",
+      "C": "are going",
+      "D": "going"
+    },
+    "correct": "C",
+    "explanation": "Present Continuous is used for actions happening now or around now. It uses: am/is/are + verb-ing.",
+    "explanation_simple": "Present Continuous: am/is/are + verb-ing (now/at the moment).",
+    "explanation_detailed": "Step 1: Look for time words: now, right now, at the moment, today, tonight.\nStep 2: Build the form: am/is/are + verb + -ing.\nStep 3: For negatives: am/is/are + not + verb-ing.\nStep 4: For questions: Am/Is/Are + subject + verb-ing?\nStep 5: If it is ‘going to’, use: am/is/are + going to + base verb.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 9,
+    "question": "Choose the correct sentence with “to be going to”:",
+    "options": {
+      "A": "I am going buy a car.",
+      "B": "I am going to buy a car.",
+      "C": "I going to buy a car.",
+      "D": "I am to buy a car."
+    },
+    "correct": "B",
+    "explanation": "Present Continuous is used for actions happening now or around now. It uses: am/is/are + verb-ing.",
+    "explanation_simple": "Present Continuous: am/is/are + verb-ing (now/at the moment).",
+    "explanation_detailed": "Step 1: Look for time words: now, right now, at the moment, today, tonight.\nStep 2: Build the form: am/is/are + verb + -ing.\nStep 3: For negatives: am/is/are + not + verb-ing.\nStep 4: For questions: Am/Is/Are + subject + verb-ing?\nStep 5: If it is ‘going to’, use: am/is/are + going to + base verb.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 10,
+    "question": "Fill in the blank: He ___ coming to the party tonight.",
+    "options": {
+      "A": "is",
+      "B": "are",
+      "C": "am",
+      "D": "be"
+    },
+    "correct": "A",
+    "explanation": "Present Continuous is used for actions happening now or around now. It uses: am/is/are + verb-ing.",
+    "explanation_simple": "Present Continuous: am/is/are + verb-ing (now/at the moment).",
+    "explanation_detailed": "Step 1: Look for time words: now, right now, at the moment, today, tonight.\nStep 2: Build the form: am/is/are + verb + -ing.\nStep 3: For negatives: am/is/are + not + verb-ing.\nStep 4: For questions: Am/Is/Are + subject + verb-ing?\nStep 5: If it is ‘going to’, use: am/is/are + going to + base verb.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 11,
+    "question": "Fill in the blank: They ___ going to visit us next year.",
+    "options": {
+      "A": "are",
+      "B": "is",
+      "C": "am",
+      "D": "were"
+    },
+    "correct": "A",
+    "explanation": "Present Continuous is used for actions happening now or around now. It uses: am/is/are + verb-ing.",
+    "explanation_simple": "Present Continuous: am/is/are + verb-ing (now/at the moment).",
+    "explanation_detailed": "Step 1: Look for time words: now, right now, at the moment, today, tonight.\nStep 2: Build the form: am/is/are + verb + -ing.\nStep 3: For negatives: am/is/are + not + verb-ing.\nStep 4: For questions: Am/Is/Are + subject + verb-ing?\nStep 5: If it is ‘going to’, use: am/is/are + going to + base verb.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 12,
+    "question": "Choose the correct sentence:",
+    "options": {
+      "A": "She am reading a book now.",
+      "B": "She is reading a book now.",
+      "C": "She are reading a book now.",
+      "D": "She reading a book now."
+    },
+    "correct": "B",
+    "explanation": "Present Continuous is used for actions happening now or around now. It uses: am/is/are + verb-ing.",
+    "explanation_simple": "Present Continuous: am/is/are + verb-ing (now/at the moment).",
+    "explanation_detailed": "Step 1: Look for time words: now, right now, at the moment, today, tonight.\nStep 2: Build the form: am/is/are + verb + -ing.\nStep 3: For negatives: am/is/are + not + verb-ing.\nStep 4: For questions: Am/Is/Are + subject + verb-ing?\nStep 5: If it is ‘going to’, use: am/is/are + going to + base verb.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 13,
+    "question": "Fill in the blank: What ___ you doing now",
+    "options": {
+      "A": "do",
+      "B": "are",
+      "C": "did",
+      "D": "does"
+    },
+    "correct": "B",
+    "explanation": "Present Continuous is used for actions happening now or around now. It uses: am/is/are + verb-ing.",
+    "explanation_simple": "Present Continuous: am/is/are + verb-ing (now/at the moment).",
+    "explanation_detailed": "Step 1: Look for time words: now, right now, at the moment, today, tonight.\nStep 2: Build the form: am/is/are + verb + -ing.\nStep 3: For negatives: am/is/are + not + verb-ing.\nStep 4: For questions: Am/Is/Are + subject + verb-ing?\nStep 5: If it is ‘going to’, use: am/is/are + going to + base verb.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 14,
+    "question": "Choose the correct sentence: We are not going to travel this year.",
+    "options": {
+      "A": "Correct",
+      "B": "Incorrect",
+      "C": "Not sure",
+      "D": "Depends"
+    },
+    "correct": "A",
+    "explanation": "Present Continuous is used for actions happening now or around now. It uses: am/is/are + verb-ing.",
+    "explanation_simple": "Present Continuous: am/is/are + verb-ing (now/at the moment).",
+    "explanation_detailed": "Step 1: Look for time words: now, right now, at the moment, today, tonight.\nStep 2: Build the form: am/is/are + verb + -ing.\nStep 3: For negatives: am/is/are + not + verb-ing.\nStep 4: For questions: Am/Is/Are + subject + verb-ing?\nStep 5: If it is ‘going to’, use: am/is/are + going to + base verb.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 15,
+    "question": "Choose the correct time expression for Present Continuous:",
+    "options": {
+      "A": "every day",
+      "B": "often",
+      "C": "now",
+      "D": "usually"
+    },
+    "correct": "C",
+    "explanation": "Present Continuous is used for actions happening now or around now. It uses: am/is/are + verb-ing.",
+    "explanation_simple": "Present Continuous: am/is/are + verb-ing (now/at the moment).",
+    "explanation_detailed": "Step 1: Look for time words: now, right now, at the moment, today, tonight.\nStep 2: Build the form: am/is/are + verb + -ing.\nStep 3: For negatives: am/is/are + not + verb-ing.\nStep 4: For questions: Am/Is/Are + subject + verb-ing?\nStep 5: If it is ‘going to’, use: am/is/are + going to + base verb.",
+    "explanation_translations": {}
+  }
+]

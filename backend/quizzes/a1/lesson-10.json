@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "question": "Fill in the blank: There are ___ students in the class. (a lot of)",
+    "options": {
+      "A": "much",
+      "B": "many",
+      "C": "little",
+      "D": "few"
+    },
+    "correct": "B",
+    "explanation": "This blank needs a word meaning “a lot of”. Choose the word used with countable plural nouns or the word used with uncountable nouns.",
+    "explanation_simple": "Countable plural → “many”; uncountable → “much”.",
+    "explanation_detailed": "Step 1: Find the noun after the blank (students? time? coffee?).\nStep 2: Countable nouns can be counted (one, two, three). Uncountable nouns are like a “mass” (water, milk, time) and we do not count them as 1/2/3 in basic English.\nStep 3: If you can count them (1, 2, 3…), it is countable → use the word for countable plural.\nStep 4: If you cannot count it as 1/2/3 (like time, water, money), it is uncountable → use the word for uncountable.\nStep 5: The hint in brackets (like “a lot of”) tells you the meaning: big quantity.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 2,
+    "question": "Fill in the blank: I don't have ___ time today.",
+    "options": {
+      "A": "many",
+      "B": "much",
+      "C": "few",
+      "D": "a few"
+    },
+    "correct": "B",
+    "explanation": "This blank needs a word meaning “a lot of”. Choose the word used with countable plural nouns or the word used with uncountable nouns.",
+    "explanation_simple": "Countable plural → “many”; uncountable → “much”.",
+    "explanation_detailed": "Step 1: Find the noun after the blank (students? time? coffee?).\nStep 2: Countable nouns can be counted (one, two, three). Uncountable nouns are like a “mass” (water, milk, time) and we do not count them as 1/2/3 in basic English.\nStep 3: If you can count them (1, 2, 3…), it is countable → use the word for countable plural.\nStep 4: If you cannot count it as 1/2/3 (like time, water, money), it is uncountable → use the word for uncountable.\nStep 5: Now choose the option that matches the noun type.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 3,
+    "question": "Fill in the blank: She has ___ friends. She is very sociable.",
+    "options": {
+      "A": "few",
+      "B": "a few",
+      "C": "much",
+      "D": "little"
+    },
+    "correct": "B",
+    "explanation": "This blank needs a word meaning “a small number/amount”. First decide: countable (friends/apples) or uncountable (water/money). Then decide if the meaning is “some (ok)” or “almost none (not enough)”.",
+    "explanation_simple": "Countable: few/a few. Uncountable: little/a little. “a” = some (positive). No “a” = almost none (negative).",
+    "explanation_detailed": "Step 1: Find the noun after the blank.\nStep 2: Countable nouns can be counted (one, two, three). Uncountable nouns are like a “mass” (water, milk, time) and we do not count them as 1/2/3 in basic English.\nStep 3: If it is countable and plural, choose a word for a small number.\nStep 4: If it is uncountable, choose a word for a small amount.\nStep 5: If the sentence sounds positive/OK (for example: ‘I can buy it’), choose the form with “a”.\nStep 6: Now pick the option that matches both the noun type and the meaning.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 4,
+    "question": "Fill in the blank: He doesn't drink ___ coffee.",
+    "options": {
+      "A": "many",
+      "B": "few",
+      "C": "much",
+      "D": "little"
+    },
+    "correct": "C",
+    "explanation": "This blank needs a word meaning “a lot of”. Choose the word used with countable plural nouns or the word used with uncountable nouns.",
+    "explanation_simple": "Countable plural → “many”; uncountable → “much”.",
+    "explanation_detailed": "Step 1: Find the noun after the blank (students? time? coffee?).\nStep 2: Countable nouns can be counted (one, two, three). Uncountable nouns are like a “mass” (water, milk, time) and we do not count them as 1/2/3 in basic English.\nStep 3: If you can count them (1, 2, 3…), it is countable → use the word for countable plural.\nStep 4: If you cannot count it as 1/2/3 (like time, water, money), it is uncountable → use the word for uncountable.\nStep 5: Now choose the option that matches the noun type.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 5,
+    "question": "Fill in the blank: There are ___ apples on the table. (some)",
+    "options": {
+      "A": "a few",
+      "B": "few",
+      "C": "little",
+      "D": "much"
+    },
+    "correct": "A",
+    "explanation": "This blank needs a word meaning “a small number/amount”. First decide: countable (friends/apples) or uncountable (water/money). Then decide if the meaning is “some (ok)” or “almost none (not enough)”.",
+    "explanation_simple": "Countable: few/a few. Uncountable: little/a little. “a” = some (positive). No “a” = almost none (negative).",
+    "explanation_detailed": "Step 1: Find the noun after the blank.\nStep 2: Countable nouns can be counted (one, two, three). Uncountable nouns are like a “mass” (water, milk, time) and we do not count them as 1/2/3 in basic English.\nStep 3: If it is countable and plural, choose a word for a small number.\nStep 4: If it is uncountable, choose a word for a small amount.\nStep 5: If the sentence sounds positive/OK (for example: ‘I can buy it’), choose the form with “a”.\nStep 6: The hint in brackets helps you choose the meaning.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 6,
+    "question": "Fill in the blank: There is ___ water in the bottle. (50–100 ml)",
+    "options": {
+      "A": "much",
+      "B": "little",
+      "C": "a little",
+      "D": "few"
+    },
+    "correct": "C",
+    "explanation": "This blank needs a word meaning “a small number/amount”. First decide: countable (friends/apples) or uncountable (water/money). Then decide if the meaning is “some (ok)” or “almost none (not enough)”.",
+    "explanation_simple": "Countable: few/a few. Uncountable: little/a little. “a” = some (positive). No “a” = almost none (negative).",
+    "explanation_detailed": "Step 1: Find the noun after the blank.\nStep 2: Countable nouns can be counted (one, two, three). Uncountable nouns are like a “mass” (water, milk, time) and we do not count them as 1/2/3 in basic English.\nStep 3: If it is countable and plural, choose a word for a small number.\nStep 4: If it is uncountable, choose a word for a small amount.\nStep 5: If the sentence sounds positive/OK (for example: ‘I can buy it’), choose the form with “a”.\nStep 6: The hint in brackets helps you choose the meaning.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 7,
+    "question": "Fill in the blank: I have ___ money. I can buy the book. (enough)",
+    "options": {
+      "A": "few",
+      "B": "little",
+      "C": "a little",
+      "D": "many"
+    },
+    "correct": "C",
+    "explanation": "This blank needs a word meaning “a small number/amount”. First decide: countable (friends/apples) or uncountable (water/money). Then decide if the meaning is “some (ok)” or “almost none (not enough)”.",
+    "explanation_simple": "Countable: few/a few. Uncountable: little/a little. “a” = some (positive). No “a” = almost none (negative).",
+    "explanation_detailed": "Step 1: Find the noun after the blank.\nStep 2: Countable nouns can be counted (one, two, three). Uncountable nouns are like a “mass” (water, milk, time) and we do not count them as 1/2/3 in basic English.\nStep 3: If it is countable and plural, choose a word for a small number.\nStep 4: If it is uncountable, choose a word for a small amount.\nStep 5: If the sentence sounds positive/OK (for example: ‘I can buy it’), choose the form with “a”.\nStep 6: The hint in brackets helps you choose the meaning.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 8,
+    "question": "Fill in the blank: There are ___ cars on the road today. It's very quiet.",
+    "options": {
+      "A": "few",
+      "B": "a few",
+      "C": "much",
+      "D": "little"
+    },
+    "correct": "A",
+    "explanation": "This blank needs a word meaning “a small number/amount”. First decide: countable (friends/apples) or uncountable (water/money). Then decide if the meaning is “some (ok)” or “almost none (not enough)”.",
+    "explanation_simple": "Countable: few/a few. Uncountable: little/a little. “a” = some (positive). No “a” = almost none (negative).",
+    "explanation_detailed": "Step 1: Find the noun after the blank.\nStep 2: Countable nouns can be counted (one, two, three). Uncountable nouns are like a “mass” (water, milk, time) and we do not count them as 1/2/3 in basic English.\nStep 3: If it is countable and plural, choose a word for a small number.\nStep 4: If it is uncountable, choose a word for a small amount.\nStep 5: If the sentence sounds negative/not enough (for example: ‘almost none’ or ‘very quiet’), choose the form without “a”.\nStep 6: Now pick the option that matches both the noun type and the meaning.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 9,
+    "question": "Fill in the blank: We don't have ___ homework today.",
+    "options": {
+      "A": "many",
+      "B": "much",
+      "C": "few",
+      "D": "little"
+    },
+    "correct": "B",
+    "explanation": "This blank needs a word meaning “a lot of”. Choose the word used with countable plural nouns or the word used with uncountable nouns.",
+    "explanation_simple": "Countable plural → “many”; uncountable → “much”.",
+    "explanation_detailed": "Step 1: Find the noun after the blank (students? time? coffee?).\nStep 2: Countable nouns can be counted (one, two, three). Uncountable nouns are like a “mass” (water, milk, time) and we do not count them as 1/2/3 in basic English.\nStep 3: If you can count them (1, 2, 3…), it is countable → use the word for countable plural.\nStep 4: If you cannot count it as 1/2/3 (like time, water, money), it is uncountable → use the word for uncountable.\nStep 5: Now choose the option that matches the noun type.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 10,
+    "question": "Fill in the blank: ___ milk do you drink every morning",
+    "options": {
+      "A": "How many",
+      "B": "How much",
+      "C": "How few",
+      "D": "How little"
+    },
+    "correct": "B",
+    "explanation": "This blank needs a question phrase about quantity. First decide if the noun is countable (friends/people) or uncountable (milk/money).",
+    "explanation_simple": "Countable plural → question with “many”; uncountable → question with “much”.",
+    "explanation_detailed": "Step 1: Find the noun after the blank (friends? milk? people?).\nStep 2: Countable nouns can be counted (one, two, three). Uncountable nouns are like a “mass” (water, milk, time) and we do not count them as 1/2/3 in basic English.\nStep 3: If it is countable and plural, choose the question phrase used for counting.\nStep 4: If it is uncountable, choose the question phrase used for amount.\nStep 5: Choose the phrase that matches the noun type.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 11,
+    "question": "Fill in the blank: ___ friends do you have",
+    "options": {
+      "A": "How many",
+      "B": "How much",
+      "C": "How little",
+      "D": "How few"
+    },
+    "correct": "A",
+    "explanation": "This blank needs a question phrase about quantity. First decide if the noun is countable (friends/people) or uncountable (milk/money).",
+    "explanation_simple": "Countable plural → question with “many”; uncountable → question with “much”.",
+    "explanation_detailed": "Step 1: Find the noun after the blank (friends? milk? people?).\nStep 2: Countable nouns can be counted (one, two, three). Uncountable nouns are like a “mass” (water, milk, time) and we do not count them as 1/2/3 in basic English.\nStep 3: If it is countable and plural, choose the question phrase used for counting.\nStep 4: If it is uncountable, choose the question phrase used for amount.\nStep 5: Choose the phrase that matches the noun type.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 12,
+    "question": "Fill in the blank: ___ is this T-shirt' (price)",
+    "options": {
+      "A": "How many",
+      "B": "How much",
+      "C": "How few",
+      "D": "What many"
+    },
+    "correct": "B",
+    "explanation": "This blank needs a question phrase about quantity. First decide if the noun is countable (friends/people) or uncountable (milk/money).",
+    "explanation_simple": "Countable plural → question with “many”; uncountable → question with “much”.",
+    "explanation_detailed": "Step 1: Find the noun after the blank (friends? milk? people?).\nStep 2: Countable nouns can be counted (one, two, three). Uncountable nouns are like a “mass” (water, milk, time) and we do not count them as 1/2/3 in basic English.\nStep 3: If it is countable and plural, choose the question phrase used for counting.\nStep 4: If it is uncountable, choose the question phrase used for amount.\nStep 5: The hint in brackets helps (for example: price → an amount, not a number of items).",
+    "explanation_translations": {}
+  },
+  {
+    "id": 13,
+    "question": "Fill in the blank: He has ___ problems at school. (almost none)",
+    "options": {
+      "A": "a few",
+      "B": "few",
+      "C": "a little",
+      "D": "much"
+    },
+    "correct": "B",
+    "explanation": "This blank needs a word meaning “a small number/amount”. First decide: countable (friends/apples) or uncountable (water/money). Then decide if the meaning is “some (ok)” or “almost none (not enough)”.",
+    "explanation_simple": "Countable: few/a few. Uncountable: little/a little. “a” = some (positive). No “a” = almost none (negative).",
+    "explanation_detailed": "Step 1: Find the noun after the blank.\nStep 2: Countable nouns can be counted (one, two, three). Uncountable nouns are like a “mass” (water, milk, time) and we do not count them as 1/2/3 in basic English.\nStep 3: If it is countable and plural, choose a word for a small number.\nStep 4: If it is uncountable, choose a word for a small amount.\nStep 5: If the sentence sounds negative/not enough (for example: ‘almost none’ or ‘very quiet’), choose the form without “a”.\nStep 6: The hint in brackets helps you choose the meaning.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 14,
+    "question": "Fill in the blank: She added ___ sugar to her tea. (a small amount)",
+    "options": {
+      "A": "few",
+      "B": "a few",
+      "C": "a little",
+      "D": "much"
+    },
+    "correct": "C",
+    "explanation": "This blank needs a word meaning “a small number/amount”. First decide: countable (friends/apples) or uncountable (water/money). Then decide if the meaning is “some (ok)” or “almost none (not enough)”.",
+    "explanation_simple": "Countable: few/a few. Uncountable: little/a little. “a” = some (positive). No “a” = almost none (negative).",
+    "explanation_detailed": "Step 1: Find the noun after the blank.\nStep 2: Countable nouns can be counted (one, two, three). Uncountable nouns are like a “mass” (water, milk, time) and we do not count them as 1/2/3 in basic English.\nStep 3: If it is countable and plural, choose a word for a small number.\nStep 4: If it is uncountable, choose a word for a small amount.\nStep 5: If the sentence sounds positive/OK (for example: ‘I can buy it’), choose the form with “a”.\nStep 6: The hint in brackets helps you choose the meaning.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 15,
+    "question": "Fill in the blank: ___ people are there in your family",
+    "options": {
+      "A": "How much",
+      "B": "How many",
+      "C": "How little",
+      "D": "How few"
+    },
+    "correct": "B",
+    "explanation": "This blank needs a question phrase about quantity. First decide if the noun is countable (friends/people) or uncountable (milk/money).",
+    "explanation_simple": "Countable plural → question with “many”; uncountable → question with “much”.",
+    "explanation_detailed": "Step 1: Find the noun after the blank (friends? milk? people?).\nStep 2: Countable nouns can be counted (one, two, three). Uncountable nouns are like a “mass” (water, milk, time) and we do not count them as 1/2/3 in basic English.\nStep 3: If it is countable and plural, choose the question phrase used for counting.\nStep 4: If it is uncountable, choose the question phrase used for amount.\nStep 5: Choose the phrase that matches the noun type.",
+    "explanation_translations": {}
+  }
+]

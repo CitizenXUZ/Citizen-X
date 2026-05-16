@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "question": "Choose the correct sentence:",
+    "options": {
+      "A": "Either he or she are right.",
+      "B": "Either he or she is right.",
+      "C": "Either he nor she is right.",
+      "D": "Neither he or she is right."
+    },
+    "correct": "B",
+    "explanation": "These words talk about choices and groups: either/neither/both/all. First decide the meaning (one of two, none of two, both of two, or everyone).",
+    "explanation_simple": "Either = one of two. Neither = none of two. Both = two together. All = everyone.",
+    "explanation_detailed": "Step 1: Decide the meaning: one of two / none of two / both / all.\nStep 2: Choose the sentence that matches the meaning and grammar.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 2,
+    "question": "Choose the correct translation: “Either study or work.”",
+    "options": {
+      "A": "Или учись, или работай.",
+      "B": "Ни учись, ни работай.",
+      "C": "И учись, и работай.",
+      "D": "Все учатся и работают."
+    },
+    "correct": "A",
+    "explanation": "These words talk about choices and groups: either/neither/both/all. First decide the meaning (one of two, none of two, both of two, or everyone).",
+    "explanation_simple": "Either = one of two. Neither = none of two. Both = two together. All = everyone.",
+    "explanation_detailed": "Step 1: Either…or… means: choose ONE of two things.\nStep 2: Neither…nor… means: NOT this one and NOT that one (zero of two).\nStep 3: Both…and… means: the two together.\nStep 4: All means: everyone/everything in a group.\nStep 5: Choose the option whose meaning matches the sentence.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 3,
+    "question": "Choose the correct sentence:",
+    "options": {
+      "A": "Neither he nor his brother are at home.",
+      "B": "Neither he or his brother is at home.",
+      "C": "Either he nor his brother are at home.",
+      "D": "Both he nor his brother is at home."
+    },
+    "correct": "A",
+    "explanation": "These words talk about choices and groups: either/neither/both/all. First decide the meaning (one of two, none of two, both of two, or everyone).",
+    "explanation_simple": "Either = one of two. Neither = none of two. Both = two together. All = everyone.",
+    "explanation_detailed": "Step 1: Decide the meaning: one of two / none of two / both / all.\nStep 2: Choose the sentence that matches the meaning and grammar.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 4,
+    "question": "Which is correct",
+    "options": {
+      "A": "Both my friends is kind.",
+      "B": "Both my friend are kind.",
+      "C": "Both my friends are kind.",
+      "D": "All my friend are kind."
+    },
+    "correct": "C",
+    "explanation": "These words talk about choices and groups: either/neither/both/all. First decide the meaning (one of two, none of two, both of two, or everyone).",
+    "explanation_simple": "Either = one of two. Neither = none of two. Both = two together. All = everyone.",
+    "explanation_detailed": "Step 1: Decide the meaning: one of two / none of two / both / all.\nStep 2: Choose the sentence that matches the meaning and grammar.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 5,
+    "question": "Fill in the blank: ___ of you can come with me. (one of two)",
+    "options": {
+      "A": "Either",
+      "B": "Neither",
+      "C": "Both",
+      "D": "All"
+    },
+    "correct": "A",
+    "explanation": "These words talk about choices and groups: either/neither/both/all. First decide the meaning (one of two, none of two, both of two, or everyone).",
+    "explanation_simple": "Either = one of two. Neither = none of two. Both = two together. All = everyone.",
+    "explanation_detailed": "Step 1: Decide the meaning: one of two / none of two / both / all.\nStep 2: Choose the sentence that matches the meaning and grammar.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 6,
+    "question": "Choose the correct sentence:",
+    "options": {
+      "A": "He neither eats nor drinks.",
+      "B": "He neither eats or drinks.",
+      "C": "He either eats nor drinks.",
+      "D": "He both eats nor drinks."
+    },
+    "correct": "A",
+    "explanation": "These words talk about choices and groups: either/neither/both/all. First decide the meaning (one of two, none of two, both of two, or everyone).",
+    "explanation_simple": "Either = one of two. Neither = none of two. Both = two together. All = everyone.",
+    "explanation_detailed": "Step 1: Decide the meaning: one of two / none of two / both / all.\nStep 2: Choose the sentence that matches the meaning and grammar.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 7,
+    "question": "Choose the correct meaning of: “She neither studies nor works.”",
+    "options": {
+      "A": "Она и учится, и работает.",
+      "B": "Она не учится и не работает.",
+      "C": "Она учится или работает.",
+      "D": "Она работает, но не учится."
+    },
+    "correct": "B",
+    "explanation": "These words talk about choices and groups: either/neither/both/all. First decide the meaning (one of two, none of two, both of two, or everyone).",
+    "explanation_simple": "Either = one of two. Neither = none of two. Both = two together. All = everyone.",
+    "explanation_detailed": "Step 1: Either…or… means: choose ONE of two things.\nStep 2: Neither…nor… means: NOT this one and NOT that one (zero of two).\nStep 3: Both…and… means: the two together.\nStep 4: All means: everyone/everything in a group.\nStep 5: Choose the option whose meaning matches the sentence.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 8,
+    "question": "Choose the correct sentence:",
+    "options": {
+      "A": "Either you or I am going to the meeting.",
+      "B": "Either you nor I am going to the meeting.",
+      "C": "Neither you or I am going to the meeting.",
+      "D": "Both you or I am going to the meeting."
+    },
+    "correct": "A",
+    "explanation": "These words talk about choices and groups: either/neither/both/all. First decide the meaning (one of two, none of two, both of two, or everyone).",
+    "explanation_simple": "Either = one of two. Neither = none of two. Both = two together. All = everyone.",
+    "explanation_detailed": "Step 1: Decide the meaning: one of two / none of two / both / all.\nStep 2: Choose the sentence that matches the meaning and grammar.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 9,
+    "question": "Fill in the blank: ___ of my parents can drive a car. (both of them)",
+    "options": {
+      "A": "Either",
+      "B": "Neither",
+      "C": "Both",
+      "D": "All"
+    },
+    "correct": "C",
+    "explanation": "These words talk about choices and groups: either/neither/both/all. First decide the meaning (one of two, none of two, both of two, or everyone).",
+    "explanation_simple": "Either = one of two. Neither = none of two. Both = two together. All = everyone.",
+    "explanation_detailed": "Step 1: Decide how many choices there are: two choices or more.\nStep 2: If it is about two choices: use either (one) or neither (zero).\nStep 3: If it is about two together: use both.\nStep 4: If it is about everyone in a group: use all.\nStep 5: In sentences with either…or… / neither…nor…, the verb often matches the closest subject (the one right before the verb).",
+    "explanation_translations": {}
+  },
+  {
+    "id": 10,
+    "question": "Choose the correct sentence:",
+    "options": {
+      "A": "All students is ready.",
+      "B": "All the students are ready.",
+      "C": "Both students are ready.",
+      "D": "Either students are ready."
+    },
+    "correct": "B",
+    "explanation": "These words talk about choices and groups: either/neither/both/all. First decide the meaning (one of two, none of two, both of two, or everyone).",
+    "explanation_simple": "Either = one of two. Neither = none of two. Both = two together. All = everyone.",
+    "explanation_detailed": "Step 1: Decide the meaning: one of two / none of two / both / all.\nStep 2: Choose the sentence that matches the meaning and grammar.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 11,
+    "question": "Choose the correct answer: He can speak _ English _ Spanish.",
+    "options": {
+      "A": "both / and",
+      "B": "either / or",
+      "C": "neither / nor",
+      "D": "all / and"
+    },
+    "correct": "A",
+    "explanation": "These words talk about choices and groups: either/neither/both/all. First decide the meaning (one of two, none of two, both of two, or everyone).",
+    "explanation_simple": "Either = one of two. Neither = none of two. Both = two together. All = everyone.",
+    "explanation_detailed": "Step 1: Decide the meaning: one of two / none of two / both / all.\nStep 2: Choose the sentence that matches the meaning and grammar.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 12,
+    "question": "Choose the correct meaning: “All students are tired.”",
+    "options": {
+      "A": "Ни один студент не устал.",
+      "B": "Некоторые студенты устали.",
+      "C": "Все студенты устали.",
+      "D": "Только один студент устал."
+    },
+    "correct": "C",
+    "explanation": "These words talk about choices and groups: either/neither/both/all. First decide the meaning (one of two, none of two, both of two, or everyone).",
+    "explanation_simple": "Either = one of two. Neither = none of two. Both = two together. All = everyone.",
+    "explanation_detailed": "Step 1: Either…or… means: choose ONE of two things.\nStep 2: Neither…nor… means: NOT this one and NOT that one (zero of two).\nStep 3: Both…and… means: the two together.\nStep 4: All means: everyone/everything in a group.\nStep 5: Choose the option whose meaning matches the sentence.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 13,
+    "question": "Fill in the blank: ___ of them knows the answer. (ни один)",
+    "options": {
+      "A": "Either",
+      "B": "Both",
+      "C": "Neither",
+      "D": "All"
+    },
+    "correct": "C",
+    "explanation": "These words talk about choices and groups: either/neither/both/all. First decide the meaning (one of two, none of two, both of two, or everyone).",
+    "explanation_simple": "Either = one of two. Neither = none of two. Both = two together. All = everyone.",
+    "explanation_detailed": "Step 1: Decide the meaning: one of two / none of two / both / all.\nStep 2: Choose the sentence that matches the meaning and grammar.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 14,
+    "question": "Choose the correct sentence:",
+    "options": {
+      "A": "Both my brothers plays football.",
+      "B": "Both my brothers play football.",
+      "C": "Both my brother play football.",
+      "D": "All my brother plays football."
+    },
+    "correct": "B",
+    "explanation": "These words talk about choices and groups: either/neither/both/all. First decide the meaning (one of two, none of two, both of two, or everyone).",
+    "explanation_simple": "Either = one of two. Neither = none of two. Both = two together. All = everyone.",
+    "explanation_detailed": "Step 1: Decide the meaning: one of two / none of two / both / all.\nStep 2: Choose the sentence that matches the meaning and grammar.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 15,
+    "question": "Choose the correct sentence:",
+    "options": {
+      "A": "Neither doctors nor nurses are at the hospital.",
+      "B": "Neither doctors or nurses are at the hospital.",
+      "C": "Either doctors nor nurses are at the hospital.",
+      "D": "Both doctors nor nurses are at the hospital."
+    },
+    "correct": "A",
+    "explanation": "These words talk about choices and groups: either/neither/both/all. First decide the meaning (one of two, none of two, both of two, or everyone).",
+    "explanation_simple": "Either = one of two. Neither = none of two. Both = two together. All = everyone.",
+    "explanation_detailed": "Step 1: Decide the meaning: one of two / none of two / both / all.\nStep 2: Choose the sentence that matches the meaning and grammar.",
+    "explanation_translations": {}
+  }
+]

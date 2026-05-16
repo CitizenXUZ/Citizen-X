@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "question": "Fill in the blank: Choose the correct demonstrative: ___ is my bag.",
+    "options": {
+      "A": "This",
+      "B": "These",
+      "C": "Those",
+      "D": "They"
+    },
+    "correct": "A",
+    "explanation": "First check the grammar clue: the sentence uses ‘is’, so we talk about one thing. Then think about distance: use the word for one thing near you, or one thing far from you.",
+    "explanation_simple": "‘Is’ = one thing. Choose the demonstrative for one thing (near or far).",
+    "explanation_detailed": "Step 1: Look at the verb: ‘is’. ‘Is’ is used with ONE thing.\nStep 2: Look at the noun: ‘bag’ is one item.\nStep 3: Demonstratives have 2 ideas: (1) one vs many, (2) near vs far.\nStep 4: So you need the demonstrative that works with ONE item.\nStep 5: If the bag is close to you, choose the ‘near’ form. If it is far away, choose the ‘far’ form.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 2,
+    "question": "Fill in the blank: ___ are my shoes.",
+    "options": {
+      "A": "This",
+      "B": "These",
+      "C": "That",
+      "D": "It"
+    },
+    "correct": "B",
+    "explanation": "The verb is ‘are’, so the sentence is about more than one thing. Choose the demonstrative that is used for many items (near or far).",
+    "explanation_simple": "‘Are’ = many things. Choose the demonstrative for many (near or far).",
+    "explanation_detailed": "Step 1: Check the verb: ‘are’. This usually means we talk about MORE THAN ONE thing.\nStep 2: ‘Shoes’ is plural (two shoes = a pair).\nStep 3: Demonstratives: one vs many + near vs far.\nStep 4: So you need a demonstrative for MANY things.\nStep 5: If the shoes are close, choose the ‘near’ plural form; if they are far, choose the ‘far’ plural form.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 3,
+    "question": "Fill in the blank: ___ car is very old.",
+    "options": {
+      "A": "These",
+      "B": "Those",
+      "C": "That",
+      "D": "They"
+    },
+    "correct": "C",
+    "explanation": "‘Car’ is one thing and the verb is ‘is’. Choose the demonstrative for one thing. Then decide near vs far.",
+    "explanation_simple": "One car + ‘is’ → demonstrative for one thing.",
+    "explanation_detailed": "Step 1: ‘Car’ is a single noun (one thing).\nStep 2: The verb is ‘is’, so it matches ONE thing.\nStep 3: Pick a demonstrative that works with ONE noun (not a plural form).\nStep 4: Finally, choose near vs far depending on where the car is (close to you or far away).",
+    "explanation_translations": {}
+  },
+  {
+    "id": 4,
+    "question": "Fill in the blank: Choose the correct plural form: ___ apples are fresh.",
+    "options": {
+      "A": "This",
+      "B": "That",
+      "C": "It",
+      "D": "These"
+    },
+    "correct": "D",
+    "explanation": "The noun ‘apples’ is plural and the verb is ‘are’. Choose the demonstrative for many items.",
+    "explanation_simple": "Plural noun + ‘are’ → demonstrative for many.",
+    "explanation_detailed": "Step 1: ‘Apples’ ends with -s, so it is plural (many).\nStep 2: The sentence uses ‘are’, which also matches many.\nStep 3: Demonstratives must match number: one vs many.\nStep 4: Choose the plural demonstrative.\nStep 5: Use the ‘near’ plural form if the apples are close, and the ‘far’ plural form if they are far.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 5,
+    "question": "Fill in the blank: ___ boy is my brother.",
+    "options": {
+      "A": "This",
+      "B": "These",
+      "C": "Those",
+      "D": "They"
+    },
+    "correct": "A",
+    "explanation": "‘Boy’ is one person and the verb is ‘is’. Choose the demonstrative for one person/thing.",
+    "explanation_simple": "One boy + ‘is’ → demonstrative for one.",
+    "explanation_detailed": "Step 1: ‘Boy’ is singular (one person).\nStep 2: The verb is ‘is’, so it matches one person.\nStep 3: Choose a demonstrative that is used with ONE noun.\nStep 4: Decide near vs far depending on where the boy is (close to you or far away).",
+    "explanation_translations": {}
+  },
+  {
+    "id": 6,
+    "question": "Fill in the blank: ___ are my classmates over there.",
+    "options": {
+      "A": "That",
+      "B": "Those",
+      "C": "This",
+      "D": "It"
+    },
+    "correct": "B",
+    "explanation": "The key clue is ‘over there’ (far away) and the verb ‘are’ (many). Choose the demonstrative for many things far away.",
+    "explanation_simple": "‘Are’ = many, ‘over there’ = far.",
+    "explanation_detailed": "Step 1: ‘Classmates’ is plural (many people).\nStep 2: The verb is ‘are’, so we need a plural demonstrative.\nStep 3: The phrase ‘over there’ tells us the people are FAR from the speaker.\nStep 4: So choose the demonstrative that matches: MANY + FAR.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 7,
+    "question": "Fill in the blank: ___ pen is blue, but ___ one is black.",
+    "options": {
+      "A": "This / those",
+      "B": "These / that",
+      "C": "This / that",
+      "D": "These / these"
+    },
+    "correct": "C",
+    "explanation": "There are two blanks and two different pens. Use a singular demonstrative for ‘pen’ and another singular demonstrative for ‘one’. Often, the first one is the pen you point to now, and the second one is the other pen.",
+    "explanation_simple": "Two singular blanks: one before ‘pen’, one before ‘one’. Match one vs many, then near vs far.",
+    "explanation_detailed": "Step 1: Find the nouns: ‘pen’ (singular) and ‘one’ (singular replacement for ‘pen’).\nStep 2: Because both nouns are singular, both blanks need singular demonstratives (not plural forms).\nStep 3: Now think about meaning: you compare two different pens (blue vs black).\nStep 4: Usually you use the ‘near’ word for the item you are holding/pointing at, and the ‘far’ word for the other item.\nStep 5: Pick the option where BOTH parts are singular and the near/far idea makes sense.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 8,
+    "question": "Fill in the blank: ___ is my favorite teacher.",
+    "options": {
+      "A": "These",
+      "B": "Those",
+      "C": "They",
+      "D": "This"
+    },
+    "correct": "D",
+    "explanation": "The sentence uses ‘is’, so it talks about one person. Choose the demonstrative that matches one person/thing.",
+    "explanation_simple": "‘Is’ = one person/thing.",
+    "explanation_detailed": "Step 1: Look at the verb: ‘is’ → one person/thing.\nStep 2: Demonstratives must match number: one vs many.\nStep 3: Eliminate plural demonstratives.\nStep 4: Choose the singular demonstrative that fits the situation (near if the teacher is here, far if you point from far).",
+    "explanation_translations": {}
+  },
+  {
+    "id": 9,
+    "question": "Fill in the blank: ___ chairs are broken.",
+    "options": {
+      "A": "Those",
+      "B": "That",
+      "C": "This",
+      "D": "It"
+    },
+    "correct": "A",
+    "explanation": "‘Chairs’ is plural and we use ‘are’. Choose the demonstrative for many things.",
+    "explanation_simple": "Plural ‘chairs’ → demonstrative for many.",
+    "explanation_detailed": "Step 1: ‘Chairs’ is plural (more than one).\nStep 2: The sentence uses ‘are’, also plural.\nStep 3: Choose the plural demonstrative.\nStep 4: Decide near vs far: if the chairs are far away, use the ‘far’ plural form; if close, use the ‘near’ plural form.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 10,
+    "question": "Fill in the blank: ___ dog is very friendly.",
+    "options": {
+      "A": "Those",
+      "B": "That",
+      "C": "These",
+      "D": "They"
+    },
+    "correct": "B",
+    "explanation": "‘Dog’ is one thing and the verb is ‘is’. Choose the demonstrative for one thing (near or far).",
+    "explanation_simple": "One dog + ‘is’ → singular demonstrative.",
+    "explanation_detailed": "Step 1: ‘Dog’ is singular (one).\nStep 2: The verb ‘is’ matches one.\nStep 3: Pick a singular demonstrative (not plural).\nStep 4: Choose near vs far depending on where the dog is.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 11,
+    "question": "Fill in the blank: ___ a book on the table.",
+    "options": {
+      "A": "There are",
+      "B": "There be",
+      "C": "There is",
+      "D": "It is"
+    },
+    "correct": "C",
+    "explanation": "This sentence talks about something existing in a place. Look at ‘a book’ (one). Use ‘There’ + the singular form of ‘be’ (is) for one thing, and the plural form (are) for many things.",
+    "explanation_simple": "‘A book’ = one → ‘There’ + singular ‘be’.",
+    "explanation_detailed": "Step 1: These sentences start with ‘There …’ when we say something exists somewhere.\nStep 2: Look at the noun: ‘a book’ = ONE book.\nStep 3: ONE thing uses the singular form of ‘be’ (is).\nStep 4: MANY things use the plural form of ‘be’ (are).\nStep 5: Choose the option that matches ‘There’ + singular ‘be’.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 12,
+    "question": "Fill in the blank: ___ many people in the park.",
+    "options": {
+      "A": "There are",
+      "B": "There is",
+      "C": "It is",
+      "D": "It are"
+    },
+    "correct": "A",
+    "explanation": "‘Many people’ means more than one person. Use ‘There’ + the plural form of ‘be’ (are).",
+    "explanation_simple": "‘Many people’ = plural → ‘There’ + plural ‘be’.",
+    "explanation_detailed": "Step 1: ‘People’ is plural (more than one).\nStep 2: The word ‘many’ also tells us it is plural.\nStep 3: For plural, we use ‘There’ + the plural form of ‘be’ (are).\nStep 4: Choose the option that matches plural.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 13,
+    "question": "Fill in the blank: Choose the correct negative form: ___ not any milk in the fridge.",
+    "options": {
+      "A": "There are",
+      "B": "There isn't",
+      "C": "There aren't",
+      "D": "There is"
+    },
+    "correct": "B",
+    "explanation": "Milk is not countable like ‘two milks’. For uncountable/singular things, use ‘There’ + singular ‘be’ in the negative (is + not). For plural things, use the plural negative (are + not).",
+    "explanation_simple": "Milk is uncountable → use singular negative (‘is’ + not).",
+    "explanation_detailed": "Step 1: ‘Milk’ is uncountable (we say ‘some milk’, not ‘three milks’).\nStep 2: Uncountable nouns use the singular verb form: ‘is’.\nStep 3: The negative is made with ‘not’ (often shortened in English).\nStep 4: The plural negative (with ‘are’) is for plural nouns only.\nStep 5: Choose the option that matches ‘There’ + singular negative.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 14,
+    "question": "Fill in the blank: ___ two windows in my room.",
+    "options": {
+      "A": "There is",
+      "B": "There are",
+      "C": "There be",
+      "D": "There was"
+    },
+    "correct": "B",
+    "explanation": "‘Two windows’ is plural (more than one). Use ‘There’ + the plural form of ‘be’ (are).",
+    "explanation_simple": "‘Two’ = plural → ‘There’ + plural ‘be’.",
+    "explanation_detailed": "Step 1: The number ‘two’ means more than one.\nStep 2: ‘Windows’ is plural.\nStep 3: For plural, we use ‘There’ + the plural form of ‘be’ (are).\nStep 4: Choose the option that matches plural.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 15,
+    "question": "Fill in the blank: ___ a computer in your classroom",
+    "options": {
+      "A": "Are there",
+      "B": "There is",
+      "C": "Is there",
+      "D": "There are"
+    },
+    "correct": "C",
+    "explanation": "This is a question about existence. In English questions, the verb comes first: singular uses ‘is’, plural uses ‘are’. Look at ‘a computer’ (one) and choose the singular question pattern.",
+    "explanation_simple": "Question + ‘a …’ (one) → singular question pattern.",
+    "explanation_detailed": "Step 1: It is a question, so the verb goes first.\nStep 2: ‘A computer’ means ONE computer (singular).\nStep 3: Singular questions use ‘is’ (plural questions use ‘are’).\nStep 4: Choose the option that starts with the singular verb + ‘there’.",
+    "explanation_translations": {}
+  }
+]

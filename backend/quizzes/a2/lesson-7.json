@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "question": "I ____ football yesterday.",
+    "options": {
+      "A": "plays",
+      "B": "played",
+      "C": "play",
+      "D": "playing"
+    },
+    "correct": "B",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 2,
+    "question": "She ____ to school last Monday.",
+    "options": {
+      "A": "go",
+      "B": "goes",
+      "C": "went",
+      "D": "going"
+    },
+    "correct": "C",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 3,
+    "question": "They ____ not at home yesterday.",
+    "options": {
+      "A": "was",
+      "B": "were",
+      "C": "are",
+      "D": "is"
+    },
+    "correct": "B",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 4,
+    "question": "____ you watch the movie last night?",
+    "options": {
+      "A": "Do",
+      "B": "Did",
+      "C": "Does",
+      "D": "Were"
+    },
+    "correct": "B",
+    "explanation": "The phrase translates to Did.",
+    "explanation_simple": "The phrase translates to Did.",
+    "explanation_detailed": "The phrase translates to Did.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 5,
+    "question": "He ____ a new car last month.",
+    "options": {
+      "A": "buy",
+      "B": "buys",
+      "C": "bought",
+      "D": "buying"
+    },
+    "correct": "C",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 6,
+    "question": "We ____ dinner at 7 p.m. yesterday.",
+    "options": {
+      "A": "have",
+      "B": "had",
+      "C": "has",
+      "D": "having"
+    },
+    "correct": "B",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 7,
+    "question": "She didn't ____ breakfast this morning.",
+    "options": {
+      "A": "eats",
+      "B": "eat",
+      "C": "ate",
+      "D": "eaten"
+    },
+    "correct": "B",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 8,
+    "question": "I ____ my grandparents last weekend.",
+    "options": {
+      "A": "visit",
+      "B": "visited",
+      "C": "visiting",
+      "D": "visits"
+    },
+    "correct": "B",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 9,
+    "question": "They ____ tired after the trip.",
+    "options": {
+      "A": "is",
+      "B": "was",
+      "C": "were",
+      "D": "are"
+    },
+    "correct": "C",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 10,
+    "question": "____ he at work yesterday?",
+    "options": {
+      "A": "Was",
+      "B": "Were",
+      "C": "Did",
+      "D": "Is"
+    },
+    "correct": "A",
+    "explanation": "The phrase translates to Was.",
+    "explanation_simple": "The phrase translates to Was.",
+    "explanation_detailed": "The phrase translates to Was.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 11,
+    "question": "He ____ TV and then went to bed.",
+    "options": {
+      "A": "watch",
+      "B": "watched",
+      "C": "watching",
+      "D": "watches"
+    },
+    "correct": "B",
+    "explanation": "With He, the correct form of 'to be' is watched.",
+    "explanation_simple": "With He, the correct form of 'to be' is watched.",
+    "explanation_detailed": "With He, the correct form of 'to be' is watched.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 12,
+    "question": "We ____ in Tashkent last summer.",
+    "options": {
+      "A": "stay",
+      "B": "stayed",
+      "C": "staying",
+      "D": "stays"
+    },
+    "correct": "B",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 13,
+    "question": "I ____ the window because it was hot.",
+    "options": {
+      "A": "open",
+      "B": "opened",
+      "C": "opens",
+      "D": "opening"
+    },
+    "correct": "B",
+    "explanation": "With I, the correct form of 'to be' is opened.",
+    "explanation_simple": "With I, the correct form of 'to be' is opened.",
+    "explanation_detailed": "With I, the correct form of 'to be' is opened.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 14,
+    "question": "My father ____ a doctor when he was young.",
+    "options": {
+      "A": "is",
+      "B": "are",
+      "C": "was",
+      "D": "were"
+    },
+    "correct": "C",
+    "explanation": "The verb 'to be' changes with the subject and tense.",
+    "explanation_simple": "The verb 'to be' changes with the subject and tense.",
+    "explanation_detailed": "The verb 'to be' changes with the subject and tense.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 15,
+    "question": "What time ____ you get up yesterday?",
+    "options": {
+      "A": "do",
+      "B": "did",
+      "C": "does",
+      "D": "was"
+    },
+    "correct": "B",
+    "explanation": "The phrase translates to did.",
+    "explanation_simple": "The phrase translates to did.",
+    "explanation_detailed": "The phrase translates to did.",
+    "explanation_translations": {}
+  }
+]

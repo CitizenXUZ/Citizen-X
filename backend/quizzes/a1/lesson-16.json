@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "question": "Fill in the blank: 07:00 is ___.",
+    "options": {
+      "A": "It is seven p.m.",
+      "B": "It is seven a.m.",
+      "C": "It is seventeen o'clock.",
+      "D": "It is seven to twelve."
+    },
+    "correct": "B",
+    "explanation": "To say the time, we can use patterns like o’clock, past, to, half past, and a quarter. Read the hours and minutes, then choose the phrase that matches.",
+    "explanation_simple": "00 = o’clock; 15 = a quarter past; 30 = half past; 45 = a quarter to; 55 = five to.",
+    "explanation_detailed": "Step 1: Read the time: 07:00 (hours : minutes).\nStep 2: Convert the hour: 7 becomes 7 in 12-hour time. That is morning.\nStep 3: minutes are 00 → use the pattern “___ o’clock”.\nStep 4: If an option uses a.m./p.m., pick the one that matches the time of day (morning vs afternoon/evening).\nStep 5: Now pick the option that matches these rules (same hour, correct minutes pattern).\n- It is seven p.m.: check if it matches the hour (7 or next hour 8) and the minutes rule; if not, eliminate it.\n- It is seventeen o'clock.: check if it matches the hour (7 or next hour 8) and the minutes rule; if not, eliminate it.\n- It is seven to twelve.: check if it matches the hour (7 or next hour 8) and the minutes rule; if not, eliminate it.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 2,
+    "question": "Fill in the blank: 14:30 is ___.",
+    "options": {
+      "A": "It is half past two.",
+      "B": "It is half to three.",
+      "C": "It is thirty past two.",
+      "D": "It is two and half."
+    },
+    "correct": "A",
+    "explanation": "To say the time, we can use patterns like o’clock, past, to, half past, and a quarter. Read the hours and minutes, then choose the phrase that matches.",
+    "explanation_simple": "00 = o’clock; 15 = a quarter past; 30 = half past; 45 = a quarter to; 55 = five to.",
+    "explanation_detailed": "Step 1: Read the time: 14:30 (hours : minutes).\nStep 2: Convert the hour: 14 becomes 2 in 12-hour time. That is afternoon/evening.\nStep 3: 30 minutes → use the pattern “half past + hour”.\nStep 4: If an option uses a.m./p.m., pick the one that matches the time of day (morning vs afternoon/evening).\nStep 5: Now pick the option that matches these rules (same hour, correct minutes pattern).\n- It is half to three.: check if it matches the hour (2 or next hour 3) and the minutes rule; if not, eliminate it.\n- It is thirty past two.: check if it matches the hour (2 or next hour 3) and the minutes rule; if not, eliminate it.\n- It is two and half.: check if it matches the hour (2 or next hour 3) and the minutes rule; if not, eliminate it.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 3,
+    "question": "Fill in the blank: 22:15 is ___.",
+    "options": {
+      "A": "It is a quarter past ten.",
+      "B": "It is a quarter to ten.",
+      "C": "It is ten past ten.",
+      "D": "It is ten to ten."
+    },
+    "correct": "A",
+    "explanation": "To say the time, we can use patterns like o’clock, past, to, half past, and a quarter. Read the hours and minutes, then choose the phrase that matches.",
+    "explanation_simple": "00 = o’clock; 15 = a quarter past; 30 = half past; 45 = a quarter to; 55 = five to.",
+    "explanation_detailed": "Step 1: Read the time: 22:15 (hours : minutes).\nStep 2: Convert the hour: 22 becomes 10 in 12-hour time. That is afternoon/evening.\nStep 3: 15 minutes → use the pattern “a quarter past + hour”.\nStep 4: If an option uses a.m./p.m., pick the one that matches the time of day (morning vs afternoon/evening).\nStep 5: Now pick the option that matches these rules (same hour, correct minutes pattern).\n- It is a quarter to ten.: check if it matches the hour (10 or next hour 11) and the minutes rule; if not, eliminate it.\n- It is ten past ten.: check if it matches the hour (10 or next hour 11) and the minutes rule; if not, eliminate it.\n- It is ten to ten.: check if it matches the hour (10 or next hour 11) and the minutes rule; if not, eliminate it.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 4,
+    "question": "Fill in the blank: 12:45 is ___.",
+    "options": {
+      "A": "It is a quarter to twelve.",
+      "B": "It is a quarter to one.",
+      "C": "It is a quarter past twelve.",
+      "D": "It is half past twelve."
+    },
+    "correct": "B",
+    "explanation": "To say the time, we can use patterns like o’clock, past, to, half past, and a quarter. Read the hours and minutes, then choose the phrase that matches.",
+    "explanation_simple": "00 = o’clock; 15 = a quarter past; 30 = half past; 45 = a quarter to; 55 = five to.",
+    "explanation_detailed": "Step 1: Read the time: 12:45 (hours : minutes).\nStep 2: Convert the hour: 12 becomes 12 in 12-hour time. That is afternoon/evening.\nStep 3: 45 minutes → use the pattern “a quarter to + next hour”.\nStep 4: If an option uses a.m./p.m., pick the one that matches the time of day (morning vs afternoon/evening).\nStep 5: Now pick the option that matches these rules (same hour, correct minutes pattern).\n- It is a quarter to twelve.: check if it matches the hour (12 or next hour 1) and the minutes rule; if not, eliminate it.\n- It is a quarter past twelve.: check if it matches the hour (12 or next hour 1) and the minutes rule; if not, eliminate it.\n- It is half past twelve.: check if it matches the hour (12 or next hour 1) and the minutes rule; if not, eliminate it.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 5,
+    "question": "Choose the correct sentence:",
+    "options": {
+      "A": "It is 10 p.m. — morning.",
+      "B": "It is 10 p.m. — evening.",
+      "C": "It is 10 a.m. — evening.",
+      "D": "It is 10 a.m. — night."
+    },
+    "correct": "B",
+    "explanation": "To say the time, we can use patterns like o’clock, past, to, half past, and a quarter. Read the hours and minutes, then choose the phrase that matches.",
+    "explanation_simple": "00 = o’clock; 15 = a quarter past; 30 = half past; 45 = a quarter to; 55 = five to.",
+    "explanation_detailed": "Step 1: Find the hours and minutes in the time.\nStep 2: Pick the matching time phrase.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 6,
+    "question": "What time is 6:30",
+    "options": {
+      "A": "It is half past six.",
+      "B": "It is half to seven.",
+      "C": "It is thirty to seven.",
+      "D": "It is six and half."
+    },
+    "correct": "A",
+    "explanation": "To say the time, we can use patterns like o’clock, past, to, half past, and a quarter. Read the hours and minutes, then choose the phrase that matches.",
+    "explanation_simple": "00 = o’clock; 15 = a quarter past; 30 = half past; 45 = a quarter to; 55 = five to.",
+    "explanation_detailed": "Step 1: Read the time: 06:30 (hours : minutes).\nStep 2: Convert the hour: 6 becomes 6 in 12-hour time. That is morning.\nStep 3: 30 minutes → use the pattern “half past + hour”.\nStep 4: If an option uses a.m./p.m., pick the one that matches the time of day (morning vs afternoon/evening).\nStep 5: Now pick the option that matches these rules (same hour, correct minutes pattern).\n- It is half to seven.: check if it matches the hour (6 or next hour 7) and the minutes rule; if not, eliminate it.\n- It is thirty to seven.: check if it matches the hour (6 or next hour 7) and the minutes rule; if not, eliminate it.\n- It is six and half.: check if it matches the hour (6 or next hour 7) and the minutes rule; if not, eliminate it.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 7,
+    "question": "What time is 9:15",
+    "options": {
+      "A": "It is fifteen past nine.",
+      "B": "It is a quarter past nine.",
+      "C": "It is fifteen to nine.",
+      "D": "It is nine quarter."
+    },
+    "correct": "B",
+    "explanation": "To say the time, we can use patterns like o’clock, past, to, half past, and a quarter. Read the hours and minutes, then choose the phrase that matches.",
+    "explanation_simple": "00 = o’clock; 15 = a quarter past; 30 = half past; 45 = a quarter to; 55 = five to.",
+    "explanation_detailed": "Step 1: Read the time: 09:15 (hours : minutes).\nStep 2: Convert the hour: 9 becomes 9 in 12-hour time. That is morning.\nStep 3: 15 minutes → use the pattern “a quarter past + hour”.\nStep 4: If an option uses a.m./p.m., pick the one that matches the time of day (morning vs afternoon/evening).\nStep 5: Now pick the option that matches these rules (same hour, correct minutes pattern).\n- It is fifteen past nine.: check if it matches the hour (9 or next hour 10) and the minutes rule; if not, eliminate it.\n- It is fifteen to nine.: check if it matches the hour (9 or next hour 10) and the minutes rule; if not, eliminate it.\n- It is nine quarter.: check if it matches the hour (9 or next hour 10) and the minutes rule; if not, eliminate it.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 8,
+    "question": "What time is 8:45",
+    "options": {
+      "A": "It is a quarter to nine.",
+      "B": "It is a quarter past eight.",
+      "C": "It is forty-five past eight.",
+      "D": "It is eight quarter."
+    },
+    "correct": "A",
+    "explanation": "To say the time, we can use patterns like o’clock, past, to, half past, and a quarter. Read the hours and minutes, then choose the phrase that matches.",
+    "explanation_simple": "00 = o’clock; 15 = a quarter past; 30 = half past; 45 = a quarter to; 55 = five to.",
+    "explanation_detailed": "Step 1: Read the time: 08:45 (hours : minutes).\nStep 2: Convert the hour: 8 becomes 8 in 12-hour time. That is morning.\nStep 3: 45 minutes → use the pattern “a quarter to + next hour”.\nStep 4: If an option uses a.m./p.m., pick the one that matches the time of day (morning vs afternoon/evening).\nStep 5: Now pick the option that matches these rules (same hour, correct minutes pattern).\n- It is a quarter past eight.: check if it matches the hour (8 or next hour 9) and the minutes rule; if not, eliminate it.\n- It is forty-five past eight.: check if it matches the hour (8 or next hour 9) and the minutes rule; if not, eliminate it.\n- It is eight quarter.: check if it matches the hour (8 or next hour 9) and the minutes rule; if not, eliminate it.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 9,
+    "question": "What time is 11:55",
+    "options": {
+      "A": "It is a quarter past eleven.",
+      "B": "It is five to twelve.",
+      "C": "It is fifty-five past eleven.",
+      "D": "It is five past twelve."
+    },
+    "correct": "B",
+    "explanation": "To say the time, we can use patterns like o’clock, past, to, half past, and a quarter. Read the hours and minutes, then choose the phrase that matches.",
+    "explanation_simple": "00 = o’clock; 15 = a quarter past; 30 = half past; 45 = a quarter to; 55 = five to.",
+    "explanation_detailed": "Step 1: Read the time: 11:55 (hours : minutes).\nStep 2: Convert the hour: 11 becomes 11 in 12-hour time. That is morning.\nStep 3: 5 minutes to the next hour → use the pattern “5 to + next hour”.\nStep 4: If an option uses a.m./p.m., pick the one that matches the time of day (morning vs afternoon/evening).\nStep 5: Now pick the option that matches these rules (same hour, correct minutes pattern).\n- It is a quarter past eleven.: check if it matches the hour (11 or next hour 12) and the minutes rule; if not, eliminate it.\n- It is fifty-five past eleven.: check if it matches the hour (11 or next hour 12) and the minutes rule; if not, eliminate it.\n- It is five past twelve.: check if it matches the hour (11 or next hour 12) and the minutes rule; if not, eliminate it.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 10,
+    "question": "What time is 3:40",
+    "options": {
+      "A": "It is twenty to four.",
+      "B": "It is twenty past three.",
+      "C": "It is a quarter past three.",
+      "D": "It is ten to four."
+    },
+    "correct": "A",
+    "explanation": "To say the time, we can use patterns like o’clock, past, to, half past, and a quarter. Read the hours and minutes, then choose the phrase that matches.",
+    "explanation_simple": "00 = o’clock; 15 = a quarter past; 30 = half past; 45 = a quarter to; 55 = five to.",
+    "explanation_detailed": "Step 1: Read the time: 03:40 (hours : minutes).\nStep 2: Convert the hour: 3 becomes 3 in 12-hour time. That is morning.\nStep 3: 20 minutes to the next hour → use the pattern “20 to + next hour”.\nStep 4: If an option uses a.m./p.m., pick the one that matches the time of day (morning vs afternoon/evening).\nStep 5: Now pick the option that matches these rules (same hour, correct minutes pattern).\n- It is twenty past three.: check if it matches the hour (3 or next hour 4) and the minutes rule; if not, eliminate it.\n- It is a quarter past three.: check if it matches the hour (3 or next hour 4) and the minutes rule; if not, eliminate it.\n- It is ten to four.: check if it matches the hour (3 or next hour 4) and the minutes rule; if not, eliminate it.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 11,
+    "question": "Fill in the blank: a.m. means ___.",
+    "options": {
+      "A": "After morning",
+      "B": "Afternoon",
+      "C": "Before noon",
+      "D": "Past midnight"
+    },
+    "correct": "C",
+    "explanation": "To say the time, we can use patterns like o’clock, past, to, half past, and a quarter. Read the hours and minutes, then choose the phrase that matches.",
+    "explanation_simple": "00 = o’clock; 15 = a quarter past; 30 = half past; 45 = a quarter to; 55 = five to.",
+    "explanation_detailed": "Step 1: Noon is 12:00 in the middle of the day.\nStep 2: Times BEFORE noon (00:00–11:59) are called a.m.\nStep 3: Times AFTER noon (12:00–23:59) are called p.m.\nStep 4: Choose the option that matches this meaning.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 12,
+    "question": "Fill in the blank: p.m. means ___.",
+    "options": {
+      "A": "Past morning",
+      "B": "After noon",
+      "C": "Past midnight",
+      "D": "Pre-morning"
+    },
+    "correct": "B",
+    "explanation": "To say the time, we can use patterns like o’clock, past, to, half past, and a quarter. Read the hours and minutes, then choose the phrase that matches.",
+    "explanation_simple": "00 = o’clock; 15 = a quarter past; 30 = half past; 45 = a quarter to; 55 = five to.",
+    "explanation_detailed": "Step 1: Noon is 12:00 in the middle of the day.\nStep 2: Times BEFORE noon (00:00–11:59) are called a.m.\nStep 3: Times AFTER noon (12:00–23:59) are called p.m.\nStep 4: Choose the option that matches this meaning.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 13,
+    "question": "What time is 13:22",
+    "options": {
+      "A": "It is 22 to 1.",
+      "B": "It is 22 past 1.",
+      "C": "It is 22 to 2.",
+      "D": "It is 22 past 2."
+    },
+    "correct": "B",
+    "explanation": "To say the time, we can use patterns like o’clock, past, to, half past, and a quarter. Read the hours and minutes, then choose the phrase that matches.",
+    "explanation_simple": "00 = o’clock; 15 = a quarter past; 30 = half past; 45 = a quarter to; 55 = five to.",
+    "explanation_detailed": "Step 1: Read the time: 13:22 (hours : minutes).\nStep 2: Convert the hour: 13 becomes 1 in 12-hour time. That is afternoon/evening.\nStep 3: 22 minutes past the hour → use the pattern “22 past + hour”.\nStep 4: If an option uses a.m./p.m., pick the one that matches the time of day (morning vs afternoon/evening).\nStep 5: Now pick the option that matches these rules (same hour, correct minutes pattern).\n- It is 22 to 1.: check if it matches the hour (1 or next hour 2) and the minutes rule; if not, eliminate it.\n- It is 22 to 2.: check if it matches the hour (1 or next hour 2) and the minutes rule; if not, eliminate it.\n- It is 22 past 2.: check if it matches the hour (1 or next hour 2) and the minutes rule; if not, eliminate it.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 14,
+    "question": "What time is 18:35",
+    "options": {
+      "A": "It is 35 past 6.",
+      "B": "It is 25 to 7.",
+      "C": "It is 25 past 7.",
+      "D": "It is 35 to 7."
+    },
+    "correct": "B",
+    "explanation": "To say the time, we can use patterns like o’clock, past, to, half past, and a quarter. Read the hours and minutes, then choose the phrase that matches.",
+    "explanation_simple": "00 = o’clock; 15 = a quarter past; 30 = half past; 45 = a quarter to; 55 = five to.",
+    "explanation_detailed": "Step 1: Read the time: 18:35 (hours : minutes).\nStep 2: Convert the hour: 18 becomes 6 in 12-hour time. That is afternoon/evening.\nStep 3: 25 minutes to the next hour → use the pattern “25 to + next hour”.\nStep 4: If an option uses a.m./p.m., pick the one that matches the time of day (morning vs afternoon/evening).\nStep 5: Now pick the option that matches these rules (same hour, correct minutes pattern).\n- It is 35 past 6.: check if it matches the hour (6 or next hour 7) and the minutes rule; if not, eliminate it.\n- It is 25 past 7.: check if it matches the hour (6 or next hour 7) and the minutes rule; if not, eliminate it.\n- It is 35 to 7.: check if it matches the hour (6 or next hour 7) and the minutes rule; if not, eliminate it.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 15,
+    "question": "What time is 22:55",
+    "options": {
+      "A": "It is 5 past 11.",
+      "B": "It is 5 past 10.",
+      "C": "It is 5 to 11.",
+      "D": "It is 11 past 5."
+    },
+    "correct": "C",
+    "explanation": "To say the time, we can use patterns like o’clock, past, to, half past, and a quarter. Read the hours and minutes, then choose the phrase that matches.",
+    "explanation_simple": "00 = o’clock; 15 = a quarter past; 30 = half past; 45 = a quarter to; 55 = five to.",
+    "explanation_detailed": "Step 1: Read the time: 22:55 (hours : minutes).\nStep 2: Convert the hour: 22 becomes 10 in 12-hour time. That is afternoon/evening.\nStep 3: 5 minutes to the next hour → use the pattern “5 to + next hour”.\nStep 4: If an option uses a.m./p.m., pick the one that matches the time of day (morning vs afternoon/evening).\nStep 5: Now pick the option that matches these rules (same hour, correct minutes pattern).\n- It is 5 past 11.: check if it matches the hour (10 or next hour 11) and the minutes rule; if not, eliminate it.\n- It is 5 past 10.: check if it matches the hour (10 or next hour 11) and the minutes rule; if not, eliminate it.\n- It is 11 past 5.: check if it matches the hour (10 or next hour 11) and the minutes rule; if not, eliminate it.",
+    "explanation_translations": {}
+  }
+]

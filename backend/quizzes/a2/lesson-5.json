@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "question": "How ______ apples are on the table?",
+    "options": {
+      "A": "Many",
+      "B": "Much",
+      "C": "Little",
+      "D": "Very"
+    },
+    "correct": "A",
+    "explanation": "The verb 'to be' changes with the subject and tense.",
+    "explanation_simple": "The verb 'to be' changes with the subject and tense.",
+    "explanation_detailed": "The verb 'to be' changes with the subject and tense.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 2,
+    "question": "How ______ milk is in the glass?",
+    "options": {
+      "A": "Many",
+      "B": "Much",
+      "C": "Few",
+      "D": "Several"
+    },
+    "correct": "B",
+    "explanation": "The verb 'to be' changes with the subject and tense.",
+    "explanation_simple": "The verb 'to be' changes with the subject and tense.",
+    "explanation_detailed": "The verb 'to be' changes with the subject and tense.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 3,
+    "question": "There are ______ students in the classroom.",
+    "options": {
+      "A": "much",
+      "B": "little",
+      "C": "many",
+      "D": "a little"
+    },
+    "correct": "C",
+    "explanation": "The verb 'to be' changes with the subject and tense.",
+    "explanation_simple": "The verb 'to be' changes with the subject and tense.",
+    "explanation_detailed": "The verb 'to be' changes with the subject and tense.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 4,
+    "question": "There isn't ______ sugar in my tea.",
+    "options": {
+      "A": "many",
+      "B": "few",
+      "C": "a few",
+      "D": "much"
+    },
+    "correct": "D",
+    "explanation": "There is is used with singular or uncountable nouns, and there are is used with plural nouns.",
+    "explanation_simple": "There is is used with singular or uncountable nouns, and there are is used with plural nouns.",
+    "explanation_detailed": "There is is used with singular or uncountable nouns, and there are is used with plural nouns.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 5,
+    "question": "How ______ books do you have?",
+    "options": {
+      "A": "many",
+      "B": "much",
+      "C": "little",
+      "D": "very"
+    },
+    "correct": "A",
+    "explanation": "The phrase translates to many.",
+    "explanation_simple": "The phrase translates to many.",
+    "explanation_detailed": "The phrase translates to many.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 6,
+    "question": "How ______ water do you drink every day?",
+    "options": {
+      "A": "many",
+      "B": "few",
+      "C": "much",
+      "D": "several"
+    },
+    "correct": "C",
+    "explanation": "The phrase translates to much.",
+    "explanation_simple": "The phrase translates to much.",
+    "explanation_detailed": "The phrase translates to much.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 7,
+    "question": "She doesn't have ______ friends here.",
+    "options": {
+      "A": "much",
+      "B": "many",
+      "C": "little",
+      "D": "very"
+    },
+    "correct": "B",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 8,
+    "question": "There isn't ______ juice in the bottle.",
+    "options": {
+      "A": "many",
+      "B": "few",
+      "C": "much",
+      "D": "several"
+    },
+    "correct": "C",
+    "explanation": "There is is used with singular or uncountable nouns, and there are is used with plural nouns.",
+    "explanation_simple": "There is is used with singular or uncountable nouns, and there are is used with plural nouns.",
+    "explanation_detailed": "There is is used with singular or uncountable nouns, and there are is used with plural nouns.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 9,
+    "question": "______ people came to the meeting.",
+    "options": {
+      "A": "Much",
+      "B": "Many",
+      "C": "Little",
+      "D": "Very"
+    },
+    "correct": "B",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 10,
+    "question": "There isn't ______ information about this topic.",
+    "options": {
+      "A": "few",
+      "B": "several",
+      "C": "many",
+      "D": "much"
+    },
+    "correct": "D",
+    "explanation": "There is is used with singular or uncountable nouns, and there are is used with plural nouns.",
+    "explanation_simple": "There is is used with singular or uncountable nouns, and there are is used with plural nouns.",
+    "explanation_detailed": "There is is used with singular or uncountable nouns, and there are is used with plural nouns.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 11,
+    "question": "How ______ homework do you have today?",
+    "options": {
+      "A": "Many",
+      "B": "Much",
+      "C": "Few",
+      "D": "Very"
+    },
+    "correct": "B",
+    "explanation": "The phrase translates to Much.",
+    "explanation_simple": "The phrase translates to Much.",
+    "explanation_detailed": "The phrase translates to Much.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 12,
+    "question": "There are ______ cars on this street.",
+    "options": {
+      "A": "many",
+      "B": "much",
+      "C": "little",
+      "D": "a little"
+    },
+    "correct": "A",
+    "explanation": "The verb 'to be' changes with the subject and tense.",
+    "explanation_simple": "The verb 'to be' changes with the subject and tense.",
+    "explanation_detailed": "The verb 'to be' changes with the subject and tense.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 13,
+    "question": "We don't have ______ time.",
+    "options": {
+      "A": "many",
+      "B": "several",
+      "C": "much",
+      "D": "few"
+    },
+    "correct": "C",
+    "explanation": "This sentence matches the grammar point being tested.",
+    "explanation_simple": "This sentence matches the grammar point being tested.",
+    "explanation_detailed": "This sentence matches the grammar point being tested.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 14,
+    "question": "How ______ chairs are in the room?",
+    "options": {
+      "A": "Much",
+      "B": "Many",
+      "C": "Little",
+      "D": "Very"
+    },
+    "correct": "B",
+    "explanation": "The verb 'to be' changes with the subject and tense.",
+    "explanation_simple": "The verb 'to be' changes with the subject and tense.",
+    "explanation_detailed": "The verb 'to be' changes with the subject and tense.",
+    "explanation_translations": {}
+  },
+  {
+    "id": 15,
+    "question": "There isn't ______ bread in the kitchen.",
+    "options": {
+      "A": "few",
+      "B": "many",
+      "C": "much",
+      "D": "several"
+    },
+    "correct": "C",
+    "explanation": "There is is used with singular or uncountable nouns, and there are is used with plural nouns.",
+    "explanation_simple": "There is is used with singular or uncountable nouns, and there are is used with plural nouns.",
+    "explanation_detailed": "There is is used with singular or uncountable nouns, and there are is used with plural nouns.",
+    "explanation_translations": {}
+  }
+]
