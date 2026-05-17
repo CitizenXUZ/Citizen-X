@@ -7356,6 +7356,49 @@ class Handler(BaseHTTPRequestHandler):
                 f"UPDATE users SET {', '.join(update_fields)} WHERE username = ?",
                 update_values,
             )
+
+            # ── Re-anchor access_started_at after level change ─────────────────
+            # When a user's level changes (especially from regular → Express),
+            # the old access_started_at may result in FEWER available lessons
+            # under the new level formula. We push access_started_at back far
+            # enough so that all previously-completed lessons stay accessible
+            # AND the next lesson becomes immediately available.
+            user_id = target["id"]
+            course_key, _ = normalize_level(level_label)
+            if course_key in COURSE_LESSON_COUNTS:
+                cur.execute(
+                    "SELECT MAX(lesson_number) AS m FROM task_completions WHERE user_id = ? AND course = ?",
+                    (user_id, course_key),
+                )
+                max_task = int((cur.fetchone()["m"] or 0))
+                cur.execute(
+                    """SELECT MAX(lesson_number) AS m FROM quiz_answer_events
+                       WHERE user_id = ? AND course = ? AND question_id IS NOT NULL""",
+                    (user_id, course_key),
+                )
+                max_quiz = int((cur.fetchone()["m"] or 0))
+                max_completed = max(max_task, max_quiz, 1)
+
+                # desired_available = completed lessons + 1
+                desired_available = max_completed + 1
+
+                desired_access_dt = estimate_access_started_at(
+                    local_now(), level_label, lesson_schedule_key, desired_available
+                )
+
+                cur.execute("SELECT access_started_at FROM users WHERE id = ?", (user_id,))
+                row = cur.fetchone()
+                cur_access_raw = str((row["access_started_at"] if row else "") or "").strip()
+                cur_access_dt = parse_iso_datetime(cur_access_raw)
+                cur_access_local = to_local(cur_access_dt) if cur_access_dt else None
+
+                # Only move it BACK (further in the past) — never forward
+                if cur_access_local is None or desired_access_dt < cur_access_local:
+                    cur.execute(
+                        "UPDATE users SET access_started_at = ? WHERE id = ?",
+                        (to_utc_naive_iso(desired_access_dt), user_id),
+                    )
+
             conn.commit()
             conn.close()
 
