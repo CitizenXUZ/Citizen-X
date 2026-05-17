@@ -16095,18 +16095,29 @@ const adminPage = document.querySelector("[data-admin-page]");
       }
     };
 
+    const showAdminError = (msg) => {
+      if (adminGuard) {
+        adminGuard.hidden = false;
+        adminGuard.innerHTML = `
+          <span>${msg}</span>
+          <button type="button" id="admin-retry-btn" style="margin-left:12px;padding:6px 16px;border-radius:8px;border:none;background:#1f4f7a;color:#fff;cursor:pointer;font-size:0.9rem;">Retry</button>
+        `;
+        const retryBtn = document.getElementById("admin-retry-btn");
+        if (retryBtn) retryBtn.addEventListener("click", () => loadAdminOverview());
+      }
+      if (adminContent) adminContent.hidden = true;
+    };
+
     const loadAdminOverview = async () => {
       try {
         await ensureApiBaseUrl();
         const response = await adminFetchRaw(`${API_BASE_URL}/api/admin/overview`);
         if (!response.ok) {
-          if (adminGuard) {
-            adminGuard.hidden = false;
-            adminGuard.textContent = "Failed to load admin data.";
-          }
-          if (adminContent) {
-            adminContent.hidden = true;
-          }
+          showAdminError("Failed to load admin data.");
+          // Auto-retry after 6 seconds in case the server is restarting.
+          setTimeout(() => {
+            if (adminGuard && !adminGuard.hidden) loadAdminOverview();
+          }, 6000);
           return;
         }
 
@@ -16145,13 +16156,11 @@ const adminPage = document.querySelector("[data-admin-page]");
           renderProgressUsers(progressUsers);
         }
       } catch (error) {
-        if (adminGuard) {
-          adminGuard.hidden = false;
-          adminGuard.textContent = "Auth server is not running.";
-        }
-        if (adminContent) {
-          adminContent.hidden = true;
-        }
+        showAdminError("Auth server is not running.");
+        // Auto-retry after 6 seconds in case the server is restarting after a deploy.
+        setTimeout(() => {
+          if (adminGuard && !adminGuard.hidden) loadAdminOverview();
+        }, 6000);
       }
     };
 
