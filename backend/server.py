@@ -518,7 +518,7 @@ DEFAULT_TEAM_MEMBERS: list[dict] = [
     {
         "id": "seed_mrsam",
         "order": 0,
-        "header": "Citizen X - Founder & Lead Teacher",
+        "header": "Mr.Sam - Founder & Lead Teacher",
         "subheader": "IELTS instructor with practical exam strategy, CEFR-based planning, and clear step-by-step guidance from beginner to upper-intermediate levels.",
         "achievements": [
             "Practical exam strategies for IELTS and CEFR.",
@@ -528,7 +528,7 @@ DEFAULT_TEAM_MEMBERS: list[dict] = [
         "instagram_username": "citizenx",
         "whatsapp_phone": "+998933503459",
         # Served by the web root (frontend), not by the API.
-        "avatar_url": "/assets/images/citizen_x_ava.jpg",
+        "avatar_url": "/assets/images/Mr_Sam_ava.jpg",
         "avatar_file": "",
         "avatar_original_name": "",
     },
