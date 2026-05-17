@@ -4997,8 +4997,28 @@ const renderLessonsCatalogFromOverrides = async () => {
   if (!gridEl) {
     return;
   }
+
+  // Show loading overlay while we fetch covers — hide the raw grid so
+  // old hardcoded covers never flash on screen.
+  gridEl.classList.remove("is-loaded");
+  let overlayEl = lessonsPageEl.querySelector(".lessons-loading-overlay");
+  if (!overlayEl) {
+    overlayEl = document.createElement("div");
+    overlayEl.className = "lessons-loading-overlay";
+    overlayEl.innerHTML =
+      `<div class="lessons-spinner"></div><p>Loading lessons…</p>`;
+    gridEl.insertAdjacentElement("beforebegin", overlayEl);
+  }
+  overlayEl.style.display = "flex";
+
   const merged = await mergeCourseLessons(course);
+
+  // Always hide the overlay and reveal the grid, even if the fetch fails.
+  overlayEl.style.display = "none";
+
   if (!merged || !Array.isArray(merged.list) || merged.list.length === 0) {
+    // Reveal whatever was already in the grid (fallback content).
+    gridEl.classList.add("is-loaded");
     return;
   }
 
@@ -5025,6 +5045,11 @@ const renderLessonsCatalogFromOverrides = async () => {
     .join("");
 
   gridEl.innerHTML = cards;
+
+  // Fade in the freshly-rendered grid with correct covers.
+  requestAnimationFrame(() => {
+    gridEl.classList.add("is-loaded");
+  });
 };
 
 let adminModalsCloseBound = false;

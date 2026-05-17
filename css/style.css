@@ -5227,6 +5227,42 @@ a.partner-item:hover::after {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 22px;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.lessons-grid.is-loaded {
+  opacity: 1;
+}
+
+.lessons-loading-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  padding: 60px 20px;
+  min-height: 320px;
+}
+
+.lessons-loading-overlay .lessons-spinner {
+  width: 52px;
+  height: 52px;
+  border: 5px solid rgba(30, 100, 200, 0.15);
+  border-top-color: #1e64c8;
+  border-radius: 50%;
+  animation: lessons-spin 0.85s linear infinite;
+}
+
+.lessons-loading-overlay p {
+  font-size: 1.05rem;
+  color: #5a7a9a;
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+
+@keyframes lessons-spin {
+  to { transform: rotate(360deg); }
 }
 
 .lesson-card {
