@@ -16121,6 +16121,10 @@ const adminPage = document.querySelector("[data-admin-page]");
           return;
         }
 
+        // Hide error banner and show content on success.
+        if (adminGuard) adminGuard.hidden = true;
+        if (adminContent) adminContent.hidden = false;
+
         const payload = await response.json();
         if (statUsersEl) {
           statUsersEl.textContent = String(payload.stats.total_users || 0);
