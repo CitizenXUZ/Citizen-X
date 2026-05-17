@@ -12417,6 +12417,12 @@ if (loginForm) {
         level: data.level || "",
         sessionToken: data.session_token || "",
       });
+      // If we were redirected here from admin panel (session expired), go back.
+      const _redir = new URLSearchParams(window.location.search).get("redirect");
+      if (_redir === "admin" && (data.role || "student") === "admin") {
+        window.location.replace("admin.html");
+        return;
+      }
 	      closeLoginModal();
 	      updateLoginButton();
 	      refreshAdminPanelBadge();
@@ -12440,6 +12446,16 @@ if (loginShowPassword && loginPassword) {
     loginPassword.type = loginShowPassword.checked ? "text" : "password";
   });
 }
+
+// Auto-open login modal when redirected here from admin panel (session expired).
+(function () {
+  const params = new URLSearchParams(window.location.search);
+  if (params.get("redirect") === "admin" && !getAuthState()) {
+    setTimeout(() => {
+      if (typeof openLoginModal === "function") openLoginModal();
+    }, 300);
+  }
+})();
 
 const ensureTeamModals = () => {
   if (document.getElementById("team-modal")) {
@@ -16113,6 +16129,13 @@ const adminPage = document.querySelector("[data-admin-page]");
         await ensureApiBaseUrl();
         const response = await adminFetchRaw(`${API_BASE_URL}/api/admin/overview`);
         if (!response.ok) {
+          if (response.status === 401 || response.status === 403) {
+            // Session expired or invalid — clear stale auth and redirect to login.
+            // After login the user will be sent straight back here.
+            setAuthState(null);
+            window.location.replace("index.html?redirect=admin");
+            return;
+          }
           showAdminError("Failed to load admin data.");
           // Auto-retry after 6 seconds in case the server is restarting.
           setTimeout(() => {
