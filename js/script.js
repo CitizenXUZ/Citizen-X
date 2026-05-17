@@ -8397,7 +8397,130 @@ const applyLessonAccessLocks = async () => {
       phantom.id = "upgrade-modal";
       phantom.setAttribute("aria-hidden", "true");
       phantom.style.cssText = "position:fixed;visibility:hidden;pointer-events:none;z-index:-9999;width:0;height:0;overflow:hidden";
-      phantom.innerHTML = '<div class="upgrade-modal-card"><div class="upgrade-plan-grid"></div></div>';
+      // Pre-populate with static fallback plans so the level modal always has
+      // something to show even if no subscription overrides exist in the DB.
+      phantom.innerHTML = `<div class="upgrade-modal-card"><div class="upgrade-plan-grid">
+        <div class="upgrade-plan-row">
+          <article class="upgrade-plan-card">
+            <div class="upgrade-plan-head"><h4>A1</h4></div>
+            <p class="upgrade-plan-subtitle">What's included:</p>
+            <ul class="upgrade-feature-list">
+              <li>20 beginner video lessons</li>
+              <li>Basic grammar and vocabulary practice</li>
+              <li>Pronunciation drills for daily speech</li>
+              <li>Mini quizzes after each unit</li>
+              <li>Teacher support and feedback</li>
+            </ul>
+            <button type="button" class="btn upgrade-plan-price-btn" data-level="A1" data-price="175 000 so'm">
+              <span class="upgrade-price-row"><span class="upgrade-old-price">350 000 so'm</span><span class="upgrade-off-badge">50% off</span><span class="upgrade-new-price">175 000 so'm</span></span>
+            </button>
+          </article>
+          <article class="upgrade-plan-card upgrade-plan-card--express">
+            <div class="upgrade-plan-head"><h4>A1</h4><span class="upgrade-badge upgrade-badge--express">Express</span></div>
+            <p class="upgrade-plan-subtitle">What's included:</p>
+            <ul class="upgrade-feature-list">
+              <li>20 beginner video lessons</li>
+              <li>Basic grammar and vocabulary practice</li>
+              <li>Pronunciation drills for daily speech</li>
+              <li>Mini quizzes after each unit</li>
+              <li>Teacher support and feedback</li>
+            </ul>
+            <button type="button" class="btn upgrade-plan-price-btn" data-level="A1" data-price="225 000 so'm (Express)">
+              <span class="upgrade-price-row"><span class="upgrade-old-price">450 000 so'm</span><span class="upgrade-off-badge">50% off</span><span class="upgrade-new-price">225 000 so'm</span></span>
+            </button>
+          </article>
+        </div>
+        <div class="upgrade-plan-row">
+          <article class="upgrade-plan-card">
+            <div class="upgrade-plan-head"><h4>A2</h4></div>
+            <p class="upgrade-plan-subtitle">What's included:</p>
+            <ul class="upgrade-feature-list">
+              <li>25 elementary level video lessons</li>
+              <li>Sentence building and speaking tasks</li>
+              <li>Grammar tests with explanations</li>
+              <li>Weekly progress checkpoints</li>
+              <li>Teacher support and feedback</li>
+            </ul>
+            <button type="button" class="btn upgrade-plan-price-btn" data-level="A2" data-price="200 000 so'm">
+              <span class="upgrade-price-row"><span class="upgrade-old-price">400 000 so'm</span><span class="upgrade-off-badge">50% off</span><span class="upgrade-new-price">200 000 so'm</span></span>
+            </button>
+          </article>
+          <article class="upgrade-plan-card upgrade-plan-card--express">
+            <div class="upgrade-plan-head"><h4>A2</h4><span class="upgrade-badge upgrade-badge--express">Express</span></div>
+            <p class="upgrade-plan-subtitle">What's included:</p>
+            <ul class="upgrade-feature-list">
+              <li>25 elementary level video lessons</li>
+              <li>Sentence building and speaking tasks</li>
+              <li>Grammar tests with explanations</li>
+              <li>Weekly progress checkpoints</li>
+              <li>Teacher support and feedback</li>
+            </ul>
+            <button type="button" class="btn upgrade-plan-price-btn" data-level="A2" data-price="250 000 so'm (Express)">
+              <span class="upgrade-price-row"><span class="upgrade-old-price">500 000 so'm</span><span class="upgrade-off-badge">50% off</span><span class="upgrade-new-price">250 000 so'm</span></span>
+            </button>
+          </article>
+        </div>
+        <div class="upgrade-plan-row">
+          <article class="upgrade-plan-card">
+            <div class="upgrade-plan-head"><h4>B1</h4></div>
+            <p class="upgrade-plan-subtitle">What's included:</p>
+            <ul class="upgrade-feature-list">
+              <li>30 intermediate video lessons</li>
+              <li>Writing and reading improvement tasks</li>
+              <li>Essay structure training</li>
+              <li>Mock tests with analytics</li>
+              <li>Teacher support and feedback</li>
+            </ul>
+            <button type="button" class="btn upgrade-plan-price-btn" data-level="B1" data-price="225 000 so'm">
+              <span class="upgrade-price-row"><span class="upgrade-old-price">450 000 so'm</span><span class="upgrade-off-badge">50% off</span><span class="upgrade-new-price">225 000 so'm</span></span>
+            </button>
+          </article>
+          <article class="upgrade-plan-card upgrade-plan-card--express">
+            <div class="upgrade-plan-head"><h4>B1</h4><span class="upgrade-badge upgrade-badge--express">Express</span></div>
+            <p class="upgrade-plan-subtitle">What's included:</p>
+            <ul class="upgrade-feature-list">
+              <li>30 intermediate video lessons</li>
+              <li>Writing and reading improvement tasks</li>
+              <li>Essay structure training</li>
+              <li>Mock tests with analytics</li>
+              <li>Teacher support and feedback</li>
+            </ul>
+            <button type="button" class="btn upgrade-plan-price-btn" data-level="B1" data-price="275 000 so'm (Express)">
+              <span class="upgrade-price-row"><span class="upgrade-old-price">550 000 so'm</span><span class="upgrade-off-badge">50% off</span><span class="upgrade-new-price">275 000 so'm</span></span>
+            </button>
+          </article>
+        </div>
+        <div class="upgrade-plan-row">
+          <article class="upgrade-plan-card">
+            <div class="upgrade-plan-head"><h4>B2</h4></div>
+            <p class="upgrade-plan-subtitle">What's included:</p>
+            <ul class="upgrade-feature-list">
+              <li>Advanced grammar and fluency lessons</li>
+              <li>Academic writing practice</li>
+              <li>Exam-oriented speaking sessions</li>
+              <li>Full unit tests with explanations</li>
+              <li>Teacher support and feedback</li>
+            </ul>
+            <button type="button" class="btn upgrade-plan-price-btn" data-level="B2" data-price="250 000 so'm">
+              <span class="upgrade-price-row"><span class="upgrade-old-price">500 000 so'm</span><span class="upgrade-off-badge">50% off</span><span class="upgrade-new-price">250 000 so'm</span></span>
+            </button>
+          </article>
+          <article class="upgrade-plan-card upgrade-plan-card--express">
+            <div class="upgrade-plan-head"><h4>B2</h4><span class="upgrade-badge upgrade-badge--express">Express</span></div>
+            <p class="upgrade-plan-subtitle">What's included:</p>
+            <ul class="upgrade-feature-list">
+              <li>Advanced grammar and fluency lessons</li>
+              <li>Academic writing practice</li>
+              <li>Exam-oriented speaking sessions</li>
+              <li>Full unit tests with explanations</li>
+              <li>Teacher support and feedback</li>
+            </ul>
+            <button type="button" class="btn upgrade-plan-price-btn" data-level="B2" data-price="300 000 so'm (Express)">
+              <span class="upgrade-price-row"><span class="upgrade-old-price">600 000 so'm</span><span class="upgrade-off-badge">50% off</span><span class="upgrade-new-price">300 000 so'm</span></span>
+            </button>
+          </article>
+        </div>
+      </div></div>`;
       document.body.appendChild(phantom);
     }
 
