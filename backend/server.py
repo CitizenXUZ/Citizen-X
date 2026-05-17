@@ -7277,7 +7277,7 @@ class Handler(BaseHTTPRequestHandler):
         if self.path == "/api/admin/users/update":
             data = self._read_json()
             admin_username = str(data.get("admin_username", "")).strip()
-            target_username = str(data.get("username", "")).strip()
+            target_username = str(data.get("target_username", "") or data.get("username", "")).strip()
             full_name = str(data.get("name", "")).strip()
             level_raw = str(data.get("level", "")).strip()
             lesson_schedule_raw = str(data.get("lesson_schedule", "") or data.get("schedule", "")).strip()
